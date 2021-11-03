@@ -7,10 +7,3 @@ public:
     ~add();
 };
 
-add::add(/* args */)
-{
-}
-
-add::~add()
-{
-}
