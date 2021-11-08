@@ -9,8 +9,8 @@ private:
 	Rocket* myRocket;
 
 public:
-	Launch(Rocket*);
-	void execute();
-}
+	Launch(Rocket* R) { myRocket = R; };
+	void execute() { myRocket->Launch(); };
+};
 
 #endif

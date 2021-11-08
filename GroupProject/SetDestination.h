@@ -7,10 +7,11 @@
 class SetDestination :public Command {
 private:
 	Rocket* myRocket;
+	string destination;
 
 public:
-	SetDestination(Rocket* r);
-	void execute();
-}
+	SetDestination(Rocket* R, string d) { myRocket = R; destination = d; };
+	void execute() { myRocket->setDestination(destination); };
+};
 
 #endif

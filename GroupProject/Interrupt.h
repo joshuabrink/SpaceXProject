@@ -9,8 +9,8 @@ private:
 	Rocket* myRocket;
 
 public:
-	Interrupt(Rocket*);
-	void execute();
-}
+	Interrupt(Rocket* R) { myRocket = R; };
+	void execute() { myRocket->Interrupt(); };
+};
 
 #endif

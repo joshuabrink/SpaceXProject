@@ -151,11 +151,7 @@
     <ClInclude Include="SimulationBackupStore.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Build.cpp" />
-    <ClCompile Include="Interrupt.cpp" />
-    <ClCompile Include="Launch.cpp" />
-    <ClCompile Include="NextStage.cpp" />
-    <ClCompile Include="SetDestination.cpp" />
+    <ClCompile Include="Rocket.cpp" />
     <ClCompile Include="Simulation.cpp" />
     <ClCompile Include="SimulationBackup.cpp" />
     <ClCompile Include="SimulationBackupStore.cpp" />
