@@ -10,8 +10,8 @@
 class StageBuilder
 {
 public:
-    virtual void buildEngines() = 0;
-    virtual void buildCores() = 0;
+    virtual void buildEngines(int stageNum, string rocketName) = 0;
+    virtual void buildCores(int stageNum, string rocketName) = 0;
 };
 
 
