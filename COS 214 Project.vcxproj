@@ -160,6 +160,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Payload.cpp" />
     <ClCompile Include="PayloadFactory.cpp" />
+    <ClCompile Include="SpaceCraft.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
