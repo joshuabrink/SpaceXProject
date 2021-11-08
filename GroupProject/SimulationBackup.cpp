@@ -1,6 +1,6 @@
 #include "SimulationBackup.h"
 
-SimulationBackup::SimulationBackup()//add variables 
+SimulationBackup::SimulationBackup(Destination*,Rocket*)//add variables 
 {
 }
 

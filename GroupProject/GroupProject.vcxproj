@@ -141,8 +141,12 @@
   <ItemGroup>
     <ClInclude Include="Build.h" />
     <ClInclude Include="Command.h" />
+    <ClInclude Include="Destination.h" />
+    <ClInclude Include="Earth.h" />
     <ClInclude Include="Interrupt.h" />
+    <ClInclude Include="ISS.h" />
     <ClInclude Include="Launch.h" />
+    <ClInclude Include="LowOrbit.h" />
     <ClInclude Include="NextStage.h" />
     <ClInclude Include="Rocket.h" />
     <ClInclude Include="SetDestination.h" />

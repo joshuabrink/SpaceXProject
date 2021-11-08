@@ -1,6 +1,6 @@
 #include "Simulation.h"
 
-Simulation::Simulation()
+Simulation::Simulation(Destination* d):destination(d),rocket(nullptr)
 {
 }
 
@@ -10,11 +10,31 @@ Simulation::~Simulation()
 
 SimulationBackup* Simulation::makeBackup()
 {
-	
+	return new SimulationBackup(destination,rocket);
 }
 
 void Simulation::restore(SimulationBackup*)
 {
+}
+
+Destination* Simulation::getTripDestination()
+{
+	return destination;
+}
+
+void Simulation::setTripDestination(Destination* D)
+{
+	destination = D;
+}
+
+Rocket* Simulation::getRocket()
+{
+	return rocket;
+}
+
+void Simulation::setRocket(Rocket* R)
+{
+	rocket = R;
 }
 
 void Simulation::Build()
@@ -22,7 +42,7 @@ void Simulation::Build()
 	buildCommand->execute();
 }
 
-void Simulation::Destination()
+void Simulation::DestinationCommand()
 {
 	setDestinationCommand->execute();
 }
