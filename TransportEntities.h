@@ -15,14 +15,6 @@ private:
 
 };
 
-TransportEntities::TransportEntities()
-{
-}
-
-TransportEntities::~TransportEntities()
-{
-}
-
 
 class Cargo :  public TransportEntities
 {
@@ -37,13 +29,6 @@ private:
 	string Description;
 };
 
-Cargo::Cargo()
-{
-}
-
-Cargo::~Cargo()
-{
-}
 
 class Crew : public TransportEntities
 {
@@ -60,12 +45,5 @@ private:
 	string jobDescription;
 };
 
-Crew::Crew()
-{
-}
-
-Crew::~Crew()
-{
-}
 
 #endif

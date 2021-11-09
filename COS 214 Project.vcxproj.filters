@@ -71,10 +71,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PayloadFactory.cpp">
+    <ClCompile Include="SpaceCraft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SpaceCraft.cpp">
+    <ClCompile Include="TransportEntities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
