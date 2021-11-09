@@ -18,16 +18,7 @@ public:
     ~StarlinkGroundUsers();
 };
 
-StarlinkGroundUsers::StarlinkGroundUsers(/* args */)
-{
-}
-void StarlinkGroundUsers::Communicate(string message,string communication)
-{
 
-}
-StarlinkGroundUsers::~StarlinkGroundUsers()
-{
-}
 
 
 #endif

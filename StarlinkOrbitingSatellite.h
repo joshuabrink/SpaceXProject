@@ -3,6 +3,7 @@
 
 #include "StarlinkCommunication.h"
 #include "Satellite.h"
+#include "ConcreteSatelliteIterator.h"
 
 class StarlinkOrbitingSatellite: public StarlinkCommunication,public Satellite
 {
@@ -12,20 +13,9 @@ public:
     StarlinkOrbitingSatellite(/* args */);
     void Communicate(string message,string communication) override;
     Satellite* clone() override;
+    SatelliteIterator* createIterator() override;
     ~StarlinkOrbitingSatellite();
 };
-
-StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args */)
-{
-}
-
-void  StarlinkOrbitingSatellite::Communicate(string message,string communication)
-{
-    
-}
-StarlinkOrbitingSatellite::~StarlinkOrbitingSatellite()
-{
-}
 
 
 #endif

@@ -22,13 +22,7 @@ public:
     ~StarlinkCommunication();
 };
 
-StarlinkCommunication::StarlinkCommunication(/* args */)
-{
-}
 
-StarlinkCommunication::~StarlinkCommunication()
-{
-}
 
 
 #endif
