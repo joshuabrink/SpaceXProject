@@ -3,16 +3,17 @@
 
 #include <string>
 #include <iostream>
+#include "Destination.h"
 using namespace std;
 
 class Rocket {
 private:
-	string destination;
+    Destination* destination;
 public:
 	virtual void Launch()=0;
 	virtual void Interrupt()=0;
 	virtual void NextStage() =0;
-	void setDestination(string d);
+	void setDestination(Destination* d);
 
 	string getDestination();
 };

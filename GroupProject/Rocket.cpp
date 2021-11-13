@@ -1,12 +1,13 @@
 #include "Rocket.h"
 
-void Rocket::setDestination(string d)
+void Rocket::setDestination(Destination* d)
 {
 	destination = d;
-	cout << "Destination set to " + d << endl;
+	cout << "Destination set to " + d->getDestination() << endl;
 }
 
 string Rocket::getDestination()
 {
-	return destination;
+    return destination->getDestination();
+    
 }

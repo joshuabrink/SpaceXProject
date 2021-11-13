@@ -2,6 +2,7 @@
 #define BUILD_H
 
 #include "Command.h"
+#include "RocketFactory.h"
 
 class Build:public Command{
 private:
@@ -10,6 +11,6 @@ private:
 public:
 	Build(RocketFactory*);
 	void execute();
-}
+};
 
 #endif

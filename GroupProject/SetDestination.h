@@ -3,14 +3,15 @@
 
 #include "Command.h"
 #include "Rocket.h"
+#include "Destination.h"
 
 class SetDestination :public Command {
 private:
 	Rocket* myRocket;
-	string destination;
+	Destination* destination;
 
 public:
-	SetDestination(Rocket* R, string d) { myRocket = R; destination = d; };
+    SetDestination(Rocket* R, Destination* d) { myRocket = R; destination = d; };
 	void execute() { myRocket->setDestination(destination); };
 };
 
