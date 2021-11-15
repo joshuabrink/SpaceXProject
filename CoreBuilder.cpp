@@ -2,6 +2,11 @@
 // Created by Leonardo on 2021/11/07.
 //
 
+/**
+ @author Leonardo Wessels
+ */
+
+
 #include "CoreBuilder.h"
 CoreBuilder::~CoreBuilder()
 {
@@ -15,6 +20,11 @@ CoreBuilder::~CoreBuilder()
 
     delete [] coreArray;
 }
+
+/**
+ * @param[out] stageNumber The stage of the rocket for which we would like to create the product
+ * @param[out] rocketName The name of the rocket to generate the correct core for
+ */
 
 void CoreBuilder::buildCores(int stageNumber, string rocketName)
 {
@@ -56,7 +66,7 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
     }
 }
 
-void CoreBuilder::buildEngines(int stageNumber)
+void CoreBuilder::buildEngines(int stageNumber, string rocketName)
 {
     cout << "This shouldn't be called with this object EngineBuilder.cpp, this should be engine creation only" << endl;
 }
