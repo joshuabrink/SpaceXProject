@@ -7,11 +7,11 @@
  *
  */
 
-void EngineBuilder::~EngineBuilder()
+EngineBuilder::~EngineBuilder()
 {
     if(engineArray)
     {
-        for (Engines* e: engineArray)
+        for (Engine* e : engineArray)
         {
             delete e;
         }
@@ -29,7 +29,7 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
     // check to see if the cores are instantiated if not then instantiate them
     if(engineArray)
     {
-        for (Engines* e: engineArray)
+        for (Engine* e: engineArray)
         {
             delete e;
         }

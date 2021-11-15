@@ -12,7 +12,7 @@ CoreBuilder::~CoreBuilder()
 {
     if(coreArray)
     {
-        for (RocketCoreProduct rcp: coresArray)
+        for (Core* rcp : coreArray)
         {
             delete rcp;
         }
@@ -31,7 +31,7 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
     // check to see if the cores are instantiated if not then instantiate them
     if(coreArray)
     {
-        for (Engines* e: engineArray)
+        for (Core* e: coreArray)
         {
             delete e;
         }

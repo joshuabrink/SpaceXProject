@@ -128,101 +128,77 @@ SpaceXProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/build
 .PHONY : SpaceXProject/fast
 
-Falcon9Stage1.obj: Falcon9Stage1.cpp.obj
-.PHONY : Falcon9Stage1.obj
+CoreBuilder.obj: CoreBuilder.cpp.obj
+.PHONY : CoreBuilder.obj
 
 # target to build an object file
-Falcon9Stage1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage1.cpp.obj
-.PHONY : Falcon9Stage1.cpp.obj
+CoreBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj
+.PHONY : CoreBuilder.cpp.obj
 
-Falcon9Stage1.i: Falcon9Stage1.cpp.i
-.PHONY : Falcon9Stage1.i
+CoreBuilder.i: CoreBuilder.cpp.i
+.PHONY : CoreBuilder.i
 
 # target to preprocess a source file
-Falcon9Stage1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage1.cpp.i
-.PHONY : Falcon9Stage1.cpp.i
+CoreBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.i
+.PHONY : CoreBuilder.cpp.i
 
-Falcon9Stage1.s: Falcon9Stage1.cpp.s
-.PHONY : Falcon9Stage1.s
+CoreBuilder.s: CoreBuilder.cpp.s
+.PHONY : CoreBuilder.s
 
 # target to generate assembly for a file
-Falcon9Stage1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage1.cpp.s
-.PHONY : Falcon9Stage1.cpp.s
+CoreBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.s
+.PHONY : CoreBuilder.cpp.s
 
-Falcon9Stage2.obj: Falcon9Stage2.cpp.obj
-.PHONY : Falcon9Stage2.obj
+EngineBuilder.obj: EngineBuilder.cpp.obj
+.PHONY : EngineBuilder.obj
 
 # target to build an object file
-Falcon9Stage2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage2.cpp.obj
-.PHONY : Falcon9Stage2.cpp.obj
+EngineBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj
+.PHONY : EngineBuilder.cpp.obj
 
-Falcon9Stage2.i: Falcon9Stage2.cpp.i
-.PHONY : Falcon9Stage2.i
+EngineBuilder.i: EngineBuilder.cpp.i
+.PHONY : EngineBuilder.i
 
 # target to preprocess a source file
-Falcon9Stage2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage2.cpp.i
-.PHONY : Falcon9Stage2.cpp.i
+EngineBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.i
+.PHONY : EngineBuilder.cpp.i
 
-Falcon9Stage2.s: Falcon9Stage2.cpp.s
-.PHONY : Falcon9Stage2.s
+EngineBuilder.s: EngineBuilder.cpp.s
+.PHONY : EngineBuilder.s
 
 # target to generate assembly for a file
-Falcon9Stage2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Falcon9Stage2.cpp.s
-.PHONY : Falcon9Stage2.cpp.s
+EngineBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s
+.PHONY : EngineBuilder.cpp.s
 
-FalconHeavyStage1.obj: FalconHeavyStage1.cpp.obj
-.PHONY : FalconHeavyStage1.obj
+RocketCompositeStage.obj: RocketCompositeStage.cpp.obj
+.PHONY : RocketCompositeStage.obj
 
 # target to build an object file
-FalconHeavyStage1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage1.cpp.obj
-.PHONY : FalconHeavyStage1.cpp.obj
+RocketCompositeStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.obj
+.PHONY : RocketCompositeStage.cpp.obj
 
-FalconHeavyStage1.i: FalconHeavyStage1.cpp.i
-.PHONY : FalconHeavyStage1.i
-
-# target to preprocess a source file
-FalconHeavyStage1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage1.cpp.i
-.PHONY : FalconHeavyStage1.cpp.i
-
-FalconHeavyStage1.s: FalconHeavyStage1.cpp.s
-.PHONY : FalconHeavyStage1.s
-
-# target to generate assembly for a file
-FalconHeavyStage1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage1.cpp.s
-.PHONY : FalconHeavyStage1.cpp.s
-
-FalconHeavyStage2.obj: FalconHeavyStage2.cpp.obj
-.PHONY : FalconHeavyStage2.obj
-
-# target to build an object file
-FalconHeavyStage2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage2.cpp.obj
-.PHONY : FalconHeavyStage2.cpp.obj
-
-FalconHeavyStage2.i: FalconHeavyStage2.cpp.i
-.PHONY : FalconHeavyStage2.i
+RocketCompositeStage.i: RocketCompositeStage.cpp.i
+.PHONY : RocketCompositeStage.i
 
 # target to preprocess a source file
-FalconHeavyStage2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage2.cpp.i
-.PHONY : FalconHeavyStage2.cpp.i
+RocketCompositeStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.i
+.PHONY : RocketCompositeStage.cpp.i
 
-FalconHeavyStage2.s: FalconHeavyStage2.cpp.s
-.PHONY : FalconHeavyStage2.s
+RocketCompositeStage.s: RocketCompositeStage.cpp.s
+.PHONY : RocketCompositeStage.s
 
 # target to generate assembly for a file
-FalconHeavyStage2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/FalconHeavyStage2.cpp.s
-.PHONY : FalconHeavyStage2.cpp.s
+RocketCompositeStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.s
+.PHONY : RocketCompositeStage.cpp.s
 
 StageBuilder.obj: StageBuilder.cpp.obj
 .PHONY : StageBuilder.obj
@@ -257,18 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SpaceXProject
-	@echo ... Falcon9Stage1.obj
-	@echo ... Falcon9Stage1.i
-	@echo ... Falcon9Stage1.s
-	@echo ... Falcon9Stage2.obj
-	@echo ... Falcon9Stage2.i
-	@echo ... Falcon9Stage2.s
-	@echo ... FalconHeavyStage1.obj
-	@echo ... FalconHeavyStage1.i
-	@echo ... FalconHeavyStage1.s
-	@echo ... FalconHeavyStage2.obj
-	@echo ... FalconHeavyStage2.i
-	@echo ... FalconHeavyStage2.s
+	@echo ... CoreBuilder.obj
+	@echo ... CoreBuilder.i
+	@echo ... CoreBuilder.s
+	@echo ... EngineBuilder.obj
+	@echo ... EngineBuilder.i
+	@echo ... EngineBuilder.s
+	@echo ... RocketCompositeStage.obj
+	@echo ... RocketCompositeStage.i
+	@echo ... RocketCompositeStage.s
 	@echo ... StageBuilder.obj
 	@echo ... StageBuilder.i
 	@echo ... StageBuilder.s

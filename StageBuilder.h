@@ -5,11 +5,17 @@
 #ifndef SPACEXPROJECT_STAGEBUILDER_H
 #define SPACEXPROJECT_STAGEBUILDER_H
 #include <string>
+#include <iostream>
+
+class Engine;
+class Core;
 
 /**
  * @class Stagebuilder
  * this is the abstract builder for the class and provides the abstract classes that will be created to be used as products for the client
  */
+
+using namespace std;
 
 class StageBuilder
 {

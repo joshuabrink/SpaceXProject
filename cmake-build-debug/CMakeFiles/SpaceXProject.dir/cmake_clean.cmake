@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SpaceXProject.dir/Falcon9Stage1.cpp.obj"
-  "CMakeFiles/SpaceXProject.dir/Falcon9Stage2.cpp.obj"
-  "CMakeFiles/SpaceXProject.dir/FalconHeavyStage1.cpp.obj"
-  "CMakeFiles/SpaceXProject.dir/FalconHeavyStage2.cpp.obj"
+  "CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj"
+  "CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj"
+  "CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj"
   "SpaceXProject.exe"
   "SpaceXProject.exe.manifest"

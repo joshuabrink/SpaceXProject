@@ -7,9 +7,6 @@
 
 #include "StageBuilder.h"
 
-class RocketCoreProduct;
-class Engine;
-
 /**
  * @class CoreBuilder
  * Concrete Builder to create cores based on product type
@@ -18,13 +15,13 @@ class Engine;
 class CoreBuilder : public StageBuilder
 {
 public:
-    Cores** coreArray;
+    Core** coreArray;
 
     CoreBuilder(){coreArray = nullptr;};
     ~CoreBuilder();
     void buildCores(int stageNumber, string rocketName) override;
     void buildEngines(int stageNumber, string rocketName) override;
-    Cores** getResult();
+    Core** getResult();
 };
 
 

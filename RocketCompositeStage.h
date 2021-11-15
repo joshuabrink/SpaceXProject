@@ -5,6 +5,8 @@
 #ifndef SPACEXPROJECT_ROCKETCOMPOSITESTAGE_H
 #define SPACEXPROJECT_ROCKETCOMPOSITESTAGE_H
 #include "StageBuilder.h"
+#include "CoreBuilder.h"
+#include "EngineBuilder.h"
 
 /**
  * @class RocketCompositeStage
@@ -15,10 +17,13 @@
 class RocketCompositeStage
 {
 public:
-    Cores** cores;
-    Engines** engines;
-    StageBuilder* sb = new StageBuilder;
-    RocketCompositeStage(StageBuilder* stageB){sb = stageB};
+    Core** cores;
+    Engine** engines;
+    CoreBuilder* cb = new CoreBuilder();
+    EngineBuilder* eb = new EngineBuilder();
+    RocketCompositeStage();
+    void setCoreBuilder();
+    void setEngineBuilder();
     void makeFalcon9Stage1();
     void makeFalcon9Stage2();
     void makeFalconHeavyStage1();

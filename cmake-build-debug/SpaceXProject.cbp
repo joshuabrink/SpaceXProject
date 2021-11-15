@@ -82,49 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/.gitignore">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/SpaceXProject.iml">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/modules.xml">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/shelf/Changes.xml">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/shelf/Changes/shelved.patch">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketCompositeStage.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/vcs.xml">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/.idea/workspace.xml">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Falcon9Stage1.cpp">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Falcon9Stage1.h">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Falcon9Stage2.cpp">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Falcon9Stage2.h">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/FalconHeavyStage1.cpp">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/FalconHeavyStage1.h">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/FalconHeavyStage2.cpp">
-			<Option target="SpaceXProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/FalconHeavyStage2.h">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketCompositeStage.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.cpp">
