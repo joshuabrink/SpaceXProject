@@ -7,6 +7,11 @@
 
 #include "StageBuilder.h"
 
+/**
+ * @class EngineBuilder
+ * Concrete Builder to create engines based on product type
+ */
+
 class EngineBuilder : public  StageBuilder
 {
 public:

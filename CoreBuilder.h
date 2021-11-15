@@ -10,6 +10,11 @@
 class RocketCoreProduct;
 class Engine;
 
+/**
+ * @class CoreBuilder
+ * Concrete Builder to create cores based on product type
+ */
+
 class CoreBuilder : public StageBuilder
 {
 public:

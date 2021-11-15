@@ -3,7 +3,7 @@
 //
 
 /**
- @author Leonardo Wessels
+ @author Leonardo Wessels u17229457
  */
 
 
@@ -22,8 +22,8 @@ CoreBuilder::~CoreBuilder()
 }
 
 /**
- * @param[out] stageNumber The stage of the rocket for which we would like to create the product
- * @param[out] rocketName The name of the rocket to generate the correct core for
+ * @param stageNumber The stage of the rocket for which we would like to create the product
+ * @param rocketName The name of the rocket to generate the correct core for
  */
 
 void CoreBuilder::buildCores(int stageNumber, string rocketName)
@@ -66,10 +66,20 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
     }
 }
 
+/**
+ * @param stageNumber The stage of the rocket for which we would like to create the product
+ * @param rocketName The name of the rocket to generate the correct core for
+ */
+
 void CoreBuilder::buildEngines(int stageNumber, string rocketName)
 {
     cout << "This shouldn't be called with this object EngineBuilder.cpp, this should be engine creation only" << endl;
 }
+
+/**
+ *
+ * @return product array of core objects
+ */
 
 Core** CoreBuilder::getResult()
 {

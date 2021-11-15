@@ -6,6 +6,10 @@
 #define SPACEXPROJECT_STAGEBUILDER_H
 #include <string>
 
+/**
+ * @class Stagebuilder
+ * this is the abstract builder for the class and provides the abstract classes that will be created to be used as products for the client
+ */
 
 class StageBuilder
 {

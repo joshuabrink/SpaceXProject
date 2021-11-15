@@ -1,8 +1,12 @@
 //
 // Created by Leonardo on 2021/11/07.
 //
-
 #include "EngineBuilder.h"
+
+/**
+ *
+ */
+
 void EngineBuilder::~EngineBuilder()
 {
     if(engineArray)
@@ -15,7 +19,11 @@ void EngineBuilder::~EngineBuilder()
     delete [] engineArray;
 }
 
-
+/**
+ *
+ * @param stageNumber The stage of the rocket for which we would like to create the product
+ * @param rocketName The name of the rocket to generate the correct core for
+ */
 void EngineBuilder::buildEngines(int stageNumber, string rocketName)
 {
     // check to see if the cores are instantiated if not then instantiate them
@@ -61,10 +69,20 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
     }
 }
 
-void EngineBuilder::buildCores(int stageNumber)
+/**
+ * @param stageNumber The stage of the rocket for which we would like to create the product
+ * @param rocketName The name of the rocket to generate the correct core for
+ */
+
+void EngineBuilder::buildCores(int stageNumber, string rocketName)
 {
     cout << "This shouldn't be called with this object EngineBuilder.cpp, this should be engine creation only" << endl;
 }
+
+/**
+ *
+ * @return product array of engine objects
+ */
 
 Engine** EngineBuilder::getResult()
 {

@@ -6,6 +6,12 @@
 #define SPACEXPROJECT_ROCKETCOMPOSITESTAGE_H
 #include "StageBuilder.h"
 
+/**
+ * @class RocketCompositeStage
+ * Serves as the leaf class for the composite design
+ * and has arrays of the concrete objects used for the class
+ */
+
 class RocketCompositeStage
 {
 public:
