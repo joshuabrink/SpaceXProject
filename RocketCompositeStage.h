@@ -7,6 +7,7 @@
 #include "StageBuilder.h"
 #include "CoreBuilder.h"
 #include "EngineBuilder.h"
+#include "Core.h"
 
 /**
  * @class RocketCompositeStage

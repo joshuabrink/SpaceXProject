@@ -128,6 +128,30 @@ SpaceXProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/build
 .PHONY : SpaceXProject/fast
 
+Core.obj: Core.cpp.obj
+.PHONY : Core.obj
+
+# target to build an object file
+Core.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.obj
+.PHONY : Core.cpp.obj
+
+Core.i: Core.cpp.i
+.PHONY : Core.i
+
+# target to preprocess a source file
+Core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.i
+.PHONY : Core.cpp.i
+
+Core.s: Core.cpp.s
+.PHONY : Core.s
+
+# target to generate assembly for a file
+Core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.s
+.PHONY : Core.cpp.s
+
 CoreBuilder.obj: CoreBuilder.cpp.obj
 .PHONY : CoreBuilder.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SpaceXProject
+	@echo ... Core.obj
+	@echo ... Core.i
+	@echo ... Core.s
 	@echo ... CoreBuilder.obj
 	@echo ... CoreBuilder.i
 	@echo ... CoreBuilder.s

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>

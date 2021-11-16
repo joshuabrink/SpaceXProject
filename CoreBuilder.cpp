@@ -3,18 +3,25 @@
 //
 
 /**
- @author Leonardo Wessels u17229457
+ * @author Leonardo Wessels u17229457
  */
 
 
 #include "CoreBuilder.h"
+CoreBuilder::CoreBuilder()
+{
+    coreArray = nullptr;
+    coreFactory = new Core();
+    arrSize = 0;
+}
+
 CoreBuilder::~CoreBuilder()
 {
     if(coreArray)
     {
-        for (Core* rcp : coreArray)
+        for (int i = 0; i < arrSize; i++)
         {
-            delete rcp;
+            delete coreArray[i];
         }
     }
 
@@ -31,9 +38,9 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
     // check to see if the cores are instantiated if not then instantiate them
     if(coreArray)
     {
-        for (Core* e: coreArray)
+        for (int i = 0; i < arrSize; i++)
         {
-            delete e;
+            delete coreArray[i];
         }
     }
     if(stageNumber == 1)
@@ -43,14 +50,16 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
         {
             coreArray = new Core*[1];
             coreArray[0] = new Core();
+            arrSize = 1;
         }
         else
         {
             coreArray = new Core*[3];
             for (int i = 0; i < 3; ++i)
             {
-                coreArray = new Core();
+                coreArray[i] = coreFactory->getCore();
             }
+            arrSize = 3;
         }
     }
     else

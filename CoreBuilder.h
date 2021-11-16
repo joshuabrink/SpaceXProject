@@ -15,13 +15,15 @@
 class CoreBuilder : public StageBuilder
 {
 public:
-    Core** coreArray;
-
-    CoreBuilder(){coreArray = nullptr;};
+    CoreBuilder();
     ~CoreBuilder();
     void buildCores(int stageNumber, string rocketName) override;
     void buildEngines(int stageNumber, string rocketName) override;
     Core** getResult();
+private:
+    int arrSize;
+    Core** coreArray = nullptr;
+    Core* coreFactory;
 };
 
 

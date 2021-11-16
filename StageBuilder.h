@@ -6,9 +6,9 @@
 #define SPACEXPROJECT_STAGEBUILDER_H
 #include <string>
 #include <iostream>
+#include "Core.h"
 
 class Engine;
-class Core;
 
 /**
  * @class Stagebuilder

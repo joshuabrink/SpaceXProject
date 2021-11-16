@@ -15,13 +15,14 @@
 class EngineBuilder : public  StageBuilder
 {
 public:
-    Engine** engineArray;
-
-    EngineBuilder(){engineArray = nullptr;}
+    EngineBuilder();
     ~EngineBuilder();
     void buildCores(int stageNumber, string rocketName) override;
     void buildEngines(int stageNumber, string rocketName) override;
     Engine** getResult();
+private:
+    int arrSize;
+    Engine** engineArray;
 };
 
 
