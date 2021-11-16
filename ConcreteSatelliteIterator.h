@@ -1,7 +1,11 @@
 #ifndef CONCRETESATELLITEITERATOR_H
 #define CONCRETESATELLITEITERATOR_H
 #include "SatelliteIterator.h"
-
+/**
+ * @author Tshegofatso Manthata
+ * 
+ * 
+ */
 class ConcreteSatelliteIterator:public SatelliteIterator
 {
 
