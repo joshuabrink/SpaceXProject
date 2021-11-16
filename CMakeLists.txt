@@ -11,6 +11,5 @@ add_executable(SpaceXProject
         EngineBuilder.cpp
         EngineBuilder.h
         RocketCompositeStage.cpp
-        RocketCompositeStage.h
         StageBuilder.cpp
         StageBuilder.h Core.cpp Core.h)
