@@ -1,0 +1,43 @@
+Index: CoreBuilder.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//\r\n// Created by Leonardo on 2021/11/07.\r\n//\r\n\r\n#include \"CoreBuilder.h\"\r\nCoreBuilder::~CoreBuilder()\r\n{\r\n    if(coreArray)\r\n    {\r\n        for (RocketCoreProduct rcp: coresArray)\r\n        {\r\n            delete rcp;\r\n        }\r\n    }\r\n\r\n    delete [] coreArray;\r\n}\r\n\r\nvoid CoreBuilder::buildCores(int stageNumber, string rocketName)\r\n{\r\n    // check to see if the cores are instantiated if not then instantiate them\r\n    if(coreArray)\r\n    {\r\n        for (Engines* e: engineArray)\r\n        {\r\n            delete e;\r\n        }\r\n    }\r\n    if(stageNumber == 1)\r\n    {\r\n        //if we already have the coresArray we need to reset it so delete the old\r\n        if(rocketName == \"falcon9\")\r\n        {\r\n            coreArray = new Core*[1];\r\n            coreArray[0] = new Core();\r\n        }\r\n        else\r\n        {\r\n            coreArray = new Core*[3];\r\n            for (int i = 0; i < 3; ++i)\r\n            {\r\n                coreArray = new Core();\r\n            }\r\n        }\r\n    }\r\n    else\r\n    {\r\n        if(rocketName == \"falcon9\")\r\n        {\r\n            coreArray = nullptr;\r\n        }\r\n        else\r\n        {\r\n            coreArray = nullptr;\r\n        }\r\n    }\r\n}\r\n\r\nvoid CoreBuilder::buildEngines(int stageNumber)\r\n{\r\n    cout << \"This shouldn't be called with this object EngineBuilder.cpp, this should be engine creation only\" << endl;\r\n}\r\n\r\nCore** CoreBuilder::getResult()\r\n{\r\n    return coreArray;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CoreBuilder.cpp b/CoreBuilder.cpp
+--- a/CoreBuilder.cpp	(revision 396cec92dba013e4b66f2f4dc08f20a09dd22f58)
++++ b/CoreBuilder.cpp	(date 1636890130730)
+@@ -2,6 +2,11 @@
+ // Created by Leonardo on 2021/11/07.
+ //
+ 
++/**
++ @author Leonardo Wessels
++ */
++
++
+ #include "CoreBuilder.h"
+ CoreBuilder::~CoreBuilder()
+ {
+@@ -16,6 +21,11 @@
+     delete [] coreArray;
+ }
+ 
++/**
++ * @param[out] stageNumber The stage of the rocket for which we would like to create the product
++ * @param[out] rocketName The name of the rocket to generate the correct core for
++ */
++
+ void CoreBuilder::buildCores(int stageNumber, string rocketName)
+ {
+     // check to see if the cores are instantiated if not then instantiate them
+@@ -56,7 +66,7 @@
+     }
+ }
+ 
+-void CoreBuilder::buildEngines(int stageNumber)
++void CoreBuilder::buildEngines(int stageNumber, string rocketName)
+ {
+     cout << "This shouldn't be called with this object EngineBuilder.cpp, this should be engine creation only" << endl;
+ }
