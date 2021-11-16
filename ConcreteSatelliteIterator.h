@@ -2,8 +2,10 @@
 #define CONCRETESATELLITEITERATOR_H
 #include "SatelliteIterator.h"
 /**
- * @author Tshegofatso Manthata
- * 
+ * @author      Tshegofatso Manthata
+ * @headerfile  ConcreteSatelliteIterator.h "ConcreteSatelliteIterator.h"
+ * @brief       This is the Concrete Iterator 
+ * @todo        Implements the SatelliteIterator 
  * 
  */
 class ConcreteSatelliteIterator:public SatelliteIterator
