@@ -3,10 +3,9 @@
 #include<iostream>
 using namespace std;
 /**
- * THE LEDS :
- *  COLLEGUE PARTICIPANT IN THE MEDIATOR
+ * @author Tshegofatso Manthata
+ * @todo declare 
  * 
- *  TODO: Define pure virtual functions that will deal with the colleague communication with its mediator
  */
 class CommunicationNetwork;
 

@@ -23,3 +23,11 @@ SatelliteIterator* StarlinkOrbitingSatellite::createIterator()
 StarlinkOrbitingSatellite::~StarlinkOrbitingSatellite()
 {
 }
+void StarlinkOrbitingSatellite::addList(Satellite* s)
+{
+    if(nullptr==nullptr)
+    {
+
+    }
+
+}

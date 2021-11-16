@@ -13,6 +13,7 @@ class FalconRockets;
 class SatelliteIterator;
 class Satellite
 {
+   
 protected:
     bool isLaunched; 
 public:
@@ -20,6 +21,7 @@ public:
     bool launchSatellite( FalconRockets* transport);
     virtual Satellite* clone()=0;
     virtual SatelliteIterator* createIterator()=0;
+    virtual void addList(Satellite*)=0;
     ~Satellite();
 };
 
