@@ -8,14 +8,8 @@ using namespace std;
 class RocketFactory
 {
 public:
-	RocketFactory() {
-
-	}
-
-	~RocketFactory() {
-
-
-	}
+	RocketFactory();
+	~RocketFactory();
 	
 	virtual Rocket* createRocket() = 0;
 

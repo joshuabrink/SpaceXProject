@@ -8,13 +8,8 @@ using namespace std;
 class PayloadFactory
 {
 public:
-	PayloadFactory() {
-
-	}
-
-	~PayloadFactory() {
-
-	}
+	PayloadFactory();
+	~PayloadFactory();
 
 	virtual Payload* createPayload(string, double) = 0;
 

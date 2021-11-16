@@ -6,13 +6,8 @@ using namespace std;
 class Engine
 {
 public:
-	Engine() {
-
-	}
-
-	~Engine() {
-
-	}
+	Engine();
+	~Engine();
 
 
 private:

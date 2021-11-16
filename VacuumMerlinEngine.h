@@ -8,14 +8,8 @@ using namespace std;
 class VacuumMerlinEngine : public ModifiedMerlinEngine
 {
 public:
-	VacuumMerlinEngine() {
-
-	};
-
-	~VacuumMerlinEngine() {
-
-	};
-
+	VacuumMerlinEngine();
+	~VacuumMerlinEngine();
 
 private:
 

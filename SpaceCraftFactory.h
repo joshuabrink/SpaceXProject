@@ -8,13 +8,8 @@ using namespace std;
 class SpaceCraftFactory
 {
 public:
-	SpaceCraftFactory() {
-	
-	};
-
-	~SpaceCraftFactory() {
-
-	};
+	SpaceCraftFactory();
+	~SpaceCraftFactory();
 
 	virtual SpaceCraft* createSpaceCraft(double, int) = 0;
 private:
