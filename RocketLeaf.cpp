@@ -1,10 +1,16 @@
 //
-// Created by Leonardo on 2021/11/08.
+// Created by Jason on 2021/11/16.
 //
 
-#include "RocketCompositeStage.h"
+#include "RocketLeaf.h"
 
-void RocketCompositeStage::makeFalcon9Stage1()
+RocketLeaf::RocketLeaf(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb) {}
+
+RocketLeaf::~RocketLeaf() {
+
+}
+
+void RocketLeaf::makeFalcon9Stage1()
 {
     cb->buildEngines(0,"falcon9");
     cores = cb->getResult();
@@ -12,7 +18,7 @@ void RocketCompositeStage::makeFalcon9Stage1()
     engines = eb->getResult();
 }
 
-void RocketCompositeStage::makeFalcon9Stage2()
+void RocketLeaf::makeFalcon9Stage2()
 {
     cb->buildEngines(1,"falcon9");
     cores = cb->getResult();
@@ -20,7 +26,7 @@ void RocketCompositeStage::makeFalcon9Stage2()
     engines = eb->getResult();
 }
 
-void RocketCompositeStage::makeFalconHeavyStage1()
+void RocketLeaf::makeFalconHeavyStage1()
 {
     cb->buildEngines(0,"falconHeavy");
     cores = cb->getResult();
@@ -28,11 +34,10 @@ void RocketCompositeStage::makeFalconHeavyStage1()
     engines = eb->getResult();
 }
 
-void RocketCompositeStage::makeFalconHeavyStage2()
+void RocketLeaf::makeFalconHeavyStage2()
 {
     cb->buildEngines(1,"falconHeavy");
     cores = cb->getResult();
     eb->buildEngines(1, "falconHeavy");
     engines = eb->getResult();
 }
-
