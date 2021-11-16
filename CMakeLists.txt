@@ -6,10 +6,17 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(SpaceXProject
+        CompositeStage.cpp
+        CompositeStage.h
+        Core.cpp
+        Core.h
         CoreBuilder.cpp
         CoreBuilder.h
         EngineBuilder.cpp
         EngineBuilder.h
-        RocketCompositeStage.cpp
+        RocketLeaf.cpp
+        RocketLeaf.h
+        RocketStage.cpp
+        RocketStage.h
         StageBuilder.cpp
-        StageBuilder.h Core.cpp Core.h)
+        StageBuilder.h)

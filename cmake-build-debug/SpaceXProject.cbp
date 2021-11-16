@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CompositeStage.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CompositeStage.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
@@ -100,10 +106,16 @@
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketCompositeStage.cpp">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketCompositeStage.h">
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketStage.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketStage.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.cpp">

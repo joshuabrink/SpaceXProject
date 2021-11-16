@@ -128,6 +128,30 @@ SpaceXProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/build
 .PHONY : SpaceXProject/fast
 
+CompositeStage.obj: CompositeStage.cpp.obj
+.PHONY : CompositeStage.obj
+
+# target to build an object file
+CompositeStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj
+.PHONY : CompositeStage.cpp.obj
+
+CompositeStage.i: CompositeStage.cpp.i
+.PHONY : CompositeStage.i
+
+# target to preprocess a source file
+CompositeStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.i
+.PHONY : CompositeStage.cpp.i
+
+CompositeStage.s: CompositeStage.cpp.s
+.PHONY : CompositeStage.s
+
+# target to generate assembly for a file
+CompositeStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.s
+.PHONY : CompositeStage.cpp.s
+
 Core.obj: Core.cpp.obj
 .PHONY : Core.obj
 
@@ -200,29 +224,53 @@ EngineBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s
 .PHONY : EngineBuilder.cpp.s
 
-RocketCompositeStage.obj: RocketCompositeStage.cpp.obj
-.PHONY : RocketCompositeStage.obj
+RocketLeaf.obj: RocketLeaf.cpp.obj
+.PHONY : RocketLeaf.obj
 
 # target to build an object file
-RocketCompositeStage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.obj
-.PHONY : RocketCompositeStage.cpp.obj
+RocketLeaf.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj
+.PHONY : RocketLeaf.cpp.obj
 
-RocketCompositeStage.i: RocketCompositeStage.cpp.i
-.PHONY : RocketCompositeStage.i
+RocketLeaf.i: RocketLeaf.cpp.i
+.PHONY : RocketLeaf.i
 
 # target to preprocess a source file
-RocketCompositeStage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.i
-.PHONY : RocketCompositeStage.cpp.i
+RocketLeaf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.i
+.PHONY : RocketLeaf.cpp.i
 
-RocketCompositeStage.s: RocketCompositeStage.cpp.s
-.PHONY : RocketCompositeStage.s
+RocketLeaf.s: RocketLeaf.cpp.s
+.PHONY : RocketLeaf.s
 
 # target to generate assembly for a file
-RocketCompositeStage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketCompositeStage.cpp.s
-.PHONY : RocketCompositeStage.cpp.s
+RocketLeaf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.s
+.PHONY : RocketLeaf.cpp.s
+
+RocketStage.obj: RocketStage.cpp.obj
+.PHONY : RocketStage.obj
+
+# target to build an object file
+RocketStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj
+.PHONY : RocketStage.cpp.obj
+
+RocketStage.i: RocketStage.cpp.i
+.PHONY : RocketStage.i
+
+# target to preprocess a source file
+RocketStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.i
+.PHONY : RocketStage.cpp.i
+
+RocketStage.s: RocketStage.cpp.s
+.PHONY : RocketStage.s
+
+# target to generate assembly for a file
+RocketStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.s
+.PHONY : RocketStage.cpp.s
 
 StageBuilder.obj: StageBuilder.cpp.obj
 .PHONY : StageBuilder.obj
@@ -257,6 +305,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SpaceXProject
+	@echo ... CompositeStage.obj
+	@echo ... CompositeStage.i
+	@echo ... CompositeStage.s
 	@echo ... Core.obj
 	@echo ... Core.i
 	@echo ... Core.s
@@ -266,9 +317,12 @@ help:
 	@echo ... EngineBuilder.obj
 	@echo ... EngineBuilder.i
 	@echo ... EngineBuilder.s
-	@echo ... RocketCompositeStage.obj
-	@echo ... RocketCompositeStage.i
-	@echo ... RocketCompositeStage.s
+	@echo ... RocketLeaf.obj
+	@echo ... RocketLeaf.i
+	@echo ... RocketLeaf.s
+	@echo ... RocketStage.obj
+	@echo ... RocketStage.i
+	@echo ... RocketStage.s
 	@echo ... StageBuilder.obj
 	@echo ... StageBuilder.i
 	@echo ... StageBuilder.s
