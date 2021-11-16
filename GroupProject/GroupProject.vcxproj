@@ -155,7 +155,14 @@
     <ClInclude Include="SimulationBackupStore.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Earth.cpp" />
+    <ClCompile Include="Interrupt.cpp" />
+    <ClCompile Include="ISS.cpp" />
+    <ClCompile Include="Launch.cpp" />
+    <ClCompile Include="LowOrbit.cpp" />
+    <ClCompile Include="NextStage.cpp" />
     <ClCompile Include="Rocket.cpp" />
+    <ClCompile Include="SetDestination.cpp" />
     <ClCompile Include="Simulation.cpp" />
     <ClCompile Include="SimulationBackup.cpp" />
     <ClCompile Include="SimulationBackupStore.cpp" />

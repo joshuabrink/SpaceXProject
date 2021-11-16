@@ -5,7 +5,7 @@
 
 class Earth : public Destination {
 public:
-	string getDestination() { return "Earth"; };
+	string getDestination();
 };
 
 #endif

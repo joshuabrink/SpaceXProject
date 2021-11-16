@@ -5,7 +5,7 @@
 
 class LowOrbit : public Destination{
 public:
-	string getDestination() { return "Low Orbit"; };
+	string getDestination();
 };
 
 #endif

@@ -11,8 +11,8 @@ private:
 	Destination* destination;
 
 public:
-    SetDestination(Rocket* R, Destination* d) { myRocket = R; destination = d; };
-	void execute() { myRocket->setDestination(destination); };
+    SetDestination(Rocket* R, Destination* d);
+	void execute();
 };
 
 #endif

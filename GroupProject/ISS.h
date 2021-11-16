@@ -5,7 +5,7 @@
 
 class ISS : public Destination {
 public:
-	string getDestination() { return "International Space Station"; };
+	string getDestination();
 };
 
 #endif
