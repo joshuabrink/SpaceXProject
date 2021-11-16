@@ -14,6 +14,7 @@ public:
     void Communicate(string message,string communication) override;
     Satellite* clone() override;
     SatelliteIterator* createIterator() override;
+    void addList(Satellite*);
     ~StarlinkOrbitingSatellite();
 };
 
