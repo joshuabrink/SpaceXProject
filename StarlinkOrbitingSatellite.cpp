@@ -55,3 +55,7 @@ void StarlinkOrbitingSatellite::addList(Satellite* s)
     }
 
 }
+bool StarlinkOrbitingSatellite::operator==(const CommuncationNode &rhs) const
+ {
+        return id == rhs.id;
+    };

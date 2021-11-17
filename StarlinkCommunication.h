@@ -19,7 +19,9 @@ protected:
     string communicationMedium;
 public:
     StarlinkCommunication(/* args */);
+    /* have a randomizer that will choose which message to display in the communicate function*/
     virtual void Communicate(string message,string communication)=0;
+    virtual void ReceivedMessage()=0; 
     void reg(CommunicationNetwork*);
     ~StarlinkCommunication();
 };

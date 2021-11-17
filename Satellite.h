@@ -15,11 +15,11 @@ class SatelliteIterator;
 class Satellite
 {
 private:
-    int id;
+    
 
 protected:
     bool isLaunched;
-
+    int id;
 
 public:
     Satellite(/* args */);
@@ -27,10 +27,7 @@ public:
     virtual Satellite *clone() = 0;
     virtual SatelliteIterator *createIterator() = 0;
     virtual void addList(Satellite *) = 0;
-    bool operator==(const CommuncationNode &rhs) const
-    {
-        return id == rhs.id;
-    };
+   
     ~Satellite();
 };
 
