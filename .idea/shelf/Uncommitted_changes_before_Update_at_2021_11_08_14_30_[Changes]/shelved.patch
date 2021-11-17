@@ -1,0 +1,51 @@
+Index: CMakeLists.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+new file mode 100644
+--- /dev/null	(date 1636283014655)
++++ b/CMakeLists.txt	(date 1636283014655)
+@@ -0,0 +1,21 @@
++cmake_minimum_required(VERSION 3.20)
++project(SpaceXProject)
++
++set(CMAKE_CXX_STANDARD 14)
++
++include_directories(.)
++
++add_executable(SpaceXProject
++        .idea/shelf/Changes/shelved.patch
++        .idea/shelf/Changes.xml
++        .idea/.gitignore
++        .idea/modules.xml
++        .idea/SpaceXProject.iml
++        .idea/vcs.xml
++        .idea/workspace.xml
++        Falcon9Stage.cpp
++        Falcon9Stage.h
++        FalconHeavyStage.cpp
++        FalconHeavyStage.h
++        StageBuilder.cpp
++        StageBuilder.h)
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1636294004244)
++++ b/.idea/modules.xml	(date 1636294004244)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/SpaceXProject.iml" filepath="$PROJECT_DIR$/.idea/SpaceXProject.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/SpaceXProject2.iml" filepath="$PROJECT_DIR$/.idea/SpaceXProject2.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file

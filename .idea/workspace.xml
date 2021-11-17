@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="1.Reloaded CMakeList" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Builder" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="20PxFF9vIYxsYcAaRycTZSPSj6r" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="" />
+      <created>1635959918803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635959918803</updated>
+      <workItem from="1635959920071" duration="565000" />
+      <workItem from="1636279340897" duration="3674000" />
+      <workItem from="1636293998790" duration="2583000" />
+      <workItem from="1636300625128" duration="2948000" />
+      <workItem from="1636374444930" duration="3686000" />
+      <workItem from="1636454259836" duration="737000" />
+      <workItem from="1636642389913" duration="1221000" />
+      <workItem from="1636889668535" duration="666000" />
+      <workItem from="1636984994614" duration="1991000" />
+      <workItem from="1636993617470" duration="993000" />
+      <workItem from="1637073319940" duration="4069000" />
+      <workItem from="1637077414232" duration="1000" />
+    </task>
+    <task id="LOCAL-00001" summary="Testing to see which branch this will add to">
+      <created>1635960272150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635960272150</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Setup Basics">
+      <created>1636302171848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636302171848</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Setup Basics">
+      <created>1636985129335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636985129335</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Setup Basics">
+      <created>1636985273066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636985273066</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added doxygen comments and skeleton for leaf functions, will discuss in meeting">
+      <created>1636986047248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636986047248</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed makefile issue and therefor did more error handling also fleshed out the skeleton for the general creation of products">
+      <created>1636994597581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636994597581</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.Created new Core class that will serve as the factory&#10;2.Fixed the loops which wouldn't work for array of pointers&#10;3.Added size variable to keep track of array size&#10;4.Repaired deletes">
+      <created>1637075669055</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637075669055</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.Created new Core class that will serve as the factory&#10;2.Fixed the loops which wouldn't work for array of pointers&#10;3.Added size variable to keep track of array size&#10;4.Repaired deletes">
+      <created>1637076003365</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637076003365</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.Reloaded CMakeList">
+      <created>1637076577551</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637076577551</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Leonardo_Branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Testing to see which branch this will add to" />
+    <MESSAGE value="Setup Basics" />
+    <MESSAGE value="Added doxygen comments and skeleton for leaf functions, will discuss in meeting" />
+    <MESSAGE value="Fixed makefile issue and therefor did more error handling also fleshed out the skeleton for the general creation of products" />
+    <MESSAGE value="1.Created new Core class that will serve as the factory&#10;2.Fixed the loops which wouldn't work for array of pointers&#10;3.Added size variable to keep track of array size&#10;4.Repaired deletes" />
+    <MESSAGE value="1.Reloaded CMakeList" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Reloaded CMakeList" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
