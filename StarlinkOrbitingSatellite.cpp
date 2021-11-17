@@ -61,8 +61,4 @@ void StarlinkOrbitingSatellite::ReceivedMessage()
 bool StarlinkOrbitingSatellite::operator==(const CommuncationNode &rhs) const
  {
         return id == rhs.id;
-    };
-int StarlinkOrbitingSatellite::getid()
-{
-    return id;
 }

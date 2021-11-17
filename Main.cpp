@@ -12,7 +12,7 @@ int main()
 {
     cout<<"create a new orbiting Satellite\n";
     Satellite* satellites=new StarlinkOrbitingSatellite();
-    //prototypes clone method//
+    /* //prototypes clone method//
     Satellite* clones[10];
     cout<<"create orbiting Satellite clones using the prototype\n";
     for(int i=0;i<10;i++)
@@ -38,7 +38,7 @@ int main()
     
 
 
-
+*/
 
 
     return 0;

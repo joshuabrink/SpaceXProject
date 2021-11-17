@@ -15,7 +15,10 @@ bool Satellite::launchSatellite(FalconRockets* transport)
 
     return isLaunched;
 }
-
+int Satellite::getid()
+{
+    return id;
+}
 Satellite::~Satellite()
 {
 }

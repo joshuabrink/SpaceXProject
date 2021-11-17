@@ -19,12 +19,16 @@ private:
     vector<Satellite*> head;
 public:
     StarlinkOrbitingSatellite(/* args */);
+    //mediator functions
     void Communicate(string message,string communication) override;
-    Satellite* clone() override;
-    SatelliteIterator* createIterator() override;
-    void addList(Satellite*);
     void ReceivedMessage() override;
-    int getid() override;
+    //prototype functions
+    Satellite* clone() override;
+
+    //iterator functions
+    SatelliteIterator* createIterator() override;
+    void addList(Satellite*)override;
+
     bool operator==(const CommuncationNode &rhs) const;
     ~StarlinkOrbitingSatellite();
 };
