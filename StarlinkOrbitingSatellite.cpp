@@ -3,7 +3,7 @@
  * @author      Tshegofatso Manthata
  * @class       StarlinkOrbitingSatellite
  */
-StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args */)
+StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args */):Satellite()
 {
 }
 /**
