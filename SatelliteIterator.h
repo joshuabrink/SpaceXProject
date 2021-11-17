@@ -1,10 +1,15 @@
 #ifndef SATELLITEITERATOR_H
 #define SATELLITEITERATOR_H
 #include "Satellite.h"
-
+/**
+ * @author Tshegofatso Manthata
+ * @todo fix the errors by wednesday
+ * @todo implement the iterator properly
+ */
 class Satellite;
 class SatelliteIterator
 {
+     friend class Satellite;
 protected:
     Satellite* first;
     Satellite* next;

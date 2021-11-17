@@ -3,22 +3,24 @@
 #include<iostream>
 using namespace std;
 /**
- * THE LEDS :
- *  COLLEGUE PARTICIPANT IN THE MEDIATOR
+ * @author      Tshegofatso Manthata
+ * @headerfile  StarlinkCommunication.h "StarlinkCommunication.h"
+ * @brief       This is a collegue interface for the Mediator pattern
+ * @todo        declares operations to be completed by the concrete classes
  * 
- *  TODO: Define pure virtual functions that will deal with the colleague communication with its mediator
  */
 class CommunicationNetwork;
 
 class StarlinkCommunication
 {
 private:
-    CommunicationNetwork* commuicator;
+    CommunicationNetwork* communicator;
 protected:
     string communicationMedium;
 public:
     StarlinkCommunication(/* args */);
     virtual void Communicate(string message,string communication)=0;
+    void reg(CommunicationNetwork*);
     ~StarlinkCommunication();
 };
 
