@@ -1,6 +1,6 @@
 #ifndef STARLINKORBITINGSATELLITE_H
 #define STARLINKORBITINGSATELLITE_H
-
+ 
 #include "StarlinkCommunication.h"
 #include "Satellite.h"
 #include "ConcreteSatelliteIterator.h"

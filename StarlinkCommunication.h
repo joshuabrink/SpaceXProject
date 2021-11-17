@@ -2,7 +2,7 @@
 #define STARLINKCOMMUNICATION_H
 #include<iostream>
 using namespace std;
-/**
+/** 
  * @author      Tshegofatso Manthata
  * @headerfile  StarlinkCommunication.h "StarlinkCommunication.h"
  * @brief       This is a collegue interface for the Mediator pattern

@@ -1,5 +1,5 @@
 #include "StarlinkOrbitingSatellite.h"
-/**
+/** 
  * @author      Tshegofatso Manthata
  * @class       StarlinkOrbitingSatellite
  */
