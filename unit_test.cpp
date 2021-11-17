@@ -16,9 +16,9 @@ protected:
    {
       // You can do set-up work for each test here.
       que = new ComNodeQueue();
-      satellite_0 = new Satellite(3);
+      /*satellite_0 = new Satellite(3);
       satellite_1 = new Satellite(1);
-      satellite_2 = new Satellite(2);
+      satellite_2 = new Satellite(2);*/
    }
 
    ~QueueTest() override

@@ -1,15 +1,14 @@
 #include "SatelliteIterator.h"
 
-SatelliteIterator::SatelliteIterator(/* args */)
+SatelliteIterator::SatelliteIterator()
 {
-    first=next=curr=last=nullptr;
+    first=next=curr=nullptr;
    
 }
 
 SatelliteIterator::~SatelliteIterator()
 {
     delete first;
-    delete last;
     delete curr;
     delete next;
 }

@@ -1,6 +1,9 @@
 #ifndef CONCRETESATELLITEITERATOR_H
 #define CONCRETESATELLITEITERATOR_H
 #include "SatelliteIterator.h"
+#include <iostream>
+using namespace std;
+
 /**
  * @author      Tshegofatso Manthata
  * @headerfile  ConcreteSatelliteIterator.h "ConcreteSatelliteIterator.h"
@@ -10,11 +13,14 @@
  */
 class ConcreteSatelliteIterator:public SatelliteIterator
 {
+    friend class Satellite;
+    private:
+    vector<Satellite*> list;
+    int trav;
 
 public:
-    ConcreteSatelliteIterator(/* args */);
+    ConcreteSatelliteIterator();
     Satellite* firstSat() override;
-    Satellite* lastSat() override;
     Satellite* nextSat() override;
     Satellite* current() override;
     ~ConcreteSatelliteIterator();

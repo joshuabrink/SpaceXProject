@@ -22,6 +22,7 @@ public:
     Satellite* clone() override;
     SatelliteIterator* createIterator() override;
     void addList(Satellite*);
+    void ReceivedMessage() override;
     bool operator==(const CommuncationNode &rhs) const;
     ~StarlinkOrbitingSatellite();
 };

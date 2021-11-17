@@ -1,13 +1,15 @@
 #include "ConcreteSatelliteIterator.h"
 
-ConcreteSatelliteIterator::ConcreteSatelliteIterator(/* args */)
+ConcreteSatelliteIterator::ConcreteSatelliteIterator()
 {
 /**
  * @author      Tshegofatso Manthata
  * @brief       This is the Concrete Satellite Iterator constructor
  * @todo        initialize the attributes "first,next,curr and last" to null
  */
-     first=next=curr=last=nullptr;
+
+     first=next=curr=nullptr;
+     trav=0;
 }
 /**
  * @author      Tshegofatso Manthata
@@ -20,20 +22,43 @@ ConcreteSatelliteIterator::ConcreteSatelliteIterator(/* args */)
  */
 Satellite* ConcreteSatelliteIterator::firstSat()
 {
+    if(!list.empty())
+    {
+        first=list.at(0);
+        return first;
+    }
+    else
+    return nullptr;
+}
 
-    return first;
-}
-Satellite* ConcreteSatelliteIterator::lastSat()
-{
-    return last;
-}
 Satellite* ConcreteSatelliteIterator::current()
 {
+    int i=0;
+    vector<Satellite*>::iterator now=list.begin();
+    while(i<trav)
+    {
+        ++now;
+        ++i;
+    }
+    curr=*now;
     return curr;
+
+
+    
 }
 Satellite* ConcreteSatelliteIterator::nextSat()
 {
+    ++trav;
+   int i=0;
+    vector<Satellite*>::iterator now=list.begin();
+    while(i<trav)
+    {
+        ++now;
+        ++i;
+    }
+    next=*now;
     return next;
+
 }
 
 

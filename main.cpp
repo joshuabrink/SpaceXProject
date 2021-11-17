@@ -6,7 +6,7 @@ using namespace std;
 int main(int argc, char **argv)
 {
 
-    ComNodeQueue que = ComNodeQueue();
+  /*  ComNodeQueue que = ComNodeQueue();
     Satellite s = Satellite(1);
     Satellite s1 = Satellite(2);
     Satellite s2 = Satellite(3);

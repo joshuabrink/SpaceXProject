@@ -1,6 +1,7 @@
 #ifndef SATELLITE_H
 #define SATELLITE_H
 #include <iostream>
+#include <vector>
 using namespace std;
 #include "SatelliteIterator.h"
 #include "CommuncationNode.h"

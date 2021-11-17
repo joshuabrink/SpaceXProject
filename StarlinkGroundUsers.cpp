@@ -19,6 +19,10 @@ void StarlinkGroundUsers::Communicate(string message,string communication)
 {
     cout<<"Ground user is communicating with a Satellite: "<< message<<endl;
 }
+void StarlinkGroundUsers::ReceivedMessage()
+{
+    cout<<"Ground user received the message"<<endl;
+}
 StarlinkGroundUsers::~StarlinkGroundUsers()
 {
 }

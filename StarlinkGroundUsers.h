@@ -16,6 +16,7 @@ private:
 public:
     StarlinkGroundUsers(/* args */);
     void Communicate(string message,string communication) override;
+    void ReceivedMessage() override;
     ~StarlinkGroundUsers();
 };
 
