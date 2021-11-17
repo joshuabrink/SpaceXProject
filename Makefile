@@ -1,8 +1,8 @@
 
 CXX=g++
 CFLAGS=-I. -Wall
-TARGET=main
-OBJS=  main.cpp
+TARGET=Main
+OBJS=Main.cpp Satellite.cpp SatelliteIterator.cpp StarlinkOrbitingSatellite.cpp StarlinkCommunication.cpp ConcreteSatelliteIterator.cpp
 
 all: $(OBJS)
 	$(CXX) $(CFLAGS) $(OBJS) -o $(TARGET)
