@@ -17,13 +17,7 @@ CoreBuilder::CoreBuilder()
 
 CoreBuilder::~CoreBuilder()
 {
-    if(coreArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete coreArray[i];
-        }
-    }
+    resetBuilder();
 
     delete [] coreArray;
 }
@@ -36,13 +30,7 @@ CoreBuilder::~CoreBuilder()
 void CoreBuilder::buildCores(int stageNumber, string rocketName)
 {
     // check to see if the cores are instantiated if not then instantiate them
-    if(coreArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete coreArray[i];
-        }
-    }
+    resetBuilder();
     if(stageNumber == 1)
     {
         //if we already have the coresArray we need to reset it so delete the old
@@ -93,4 +81,21 @@ void CoreBuilder::buildEngines(int stageNumber, string rocketName)
 Core** CoreBuilder::getResult()
 {
     return coreArray;
+}
+
+/**
+ * @fn this function resets the core array
+ */
+
+void CoreBuilder::resetBuilder()
+{
+    if(coreArray)
+    {
+        for (int i = 0; i < arrSize; i++)
+        {
+            delete coreArray[i];
+        }
+    }
+
+    arrSize = 0;
 }

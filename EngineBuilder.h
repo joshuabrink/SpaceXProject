@@ -22,7 +22,9 @@ public:
     void buildCores(int stageNumber, string rocketName) override;
     void buildEngines(int stageNumber, string rocketName) override;
     Engine** getResult();
+    int getNumEngines(){return arrSize;};
 private:
+    void resetBuilder();
     int arrSize;
     Engine** engineArray;
 };

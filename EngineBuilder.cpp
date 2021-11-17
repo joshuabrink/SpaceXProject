@@ -9,13 +9,7 @@
 
 EngineBuilder::~EngineBuilder()
 {
-    if(engineArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete engineArray[i];
-        }
-    }
+    resetBuilder();
     delete [] engineArray;
 }
 
@@ -26,13 +20,7 @@ EngineBuilder::~EngineBuilder()
 void EngineBuilder::buildEngines(int stageNumber, string rocketName)
 {
     // check to see if the cores are instantiated if not then instantiate them
-    if(engineArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete engineArray[i];
-        }
-    }
+    resetBuilder();
     if(stageNumber == 1)
     {
         //if we already have the coresArray we need to reset it so delete the old
@@ -90,4 +78,21 @@ void EngineBuilder::buildCores(int stageNumber, string rocketName)
 Engine** EngineBuilder::getResult()
 {
     return engineArray;
+}
+
+/**
+ * @fn this function resets the engine array
+ */
+
+void EngineBuilder::resetBuilder()
+{
+    if(engineArray)
+    {
+        for (int i = 0; i < arrSize; i++)
+        {
+            delete engineArray[i];
+        }
+    }
+
+    arrSize = 0;
 }
