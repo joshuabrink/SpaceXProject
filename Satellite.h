@@ -13,7 +13,7 @@ using namespace std;
  */
 class FalconRockets;
 class SatelliteIterator;
-  static int counter=0;
+
 class Satellite
 {
     friend class SatelliteIterator;

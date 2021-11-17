@@ -8,7 +8,7 @@ SatelliteIterator::SatelliteIterator()
 
 SatelliteIterator::~SatelliteIterator()
 {
-    delete first;
+  /*  delete first;
     delete curr;
-    delete next;
+    delete next;*/
 }

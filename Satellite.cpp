@@ -1,5 +1,5 @@
 #include "Satellite.h"
-
+static int counter=0;
 Satellite::Satellite(/* args */)
 {
     isLaunched=false;

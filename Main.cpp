@@ -41,6 +41,8 @@ int main()
 
     cout<<"First Satellite id:"<<list->firstSat()->getid()<<endl;
     
+//delete satellites;
+//delete list;
 
 
 
