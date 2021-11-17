@@ -11,7 +11,7 @@ using namespace std;
 class Satellite;
 class SatelliteIterator
 {
-    
+    friend class Satellite;
 
     protected:
     

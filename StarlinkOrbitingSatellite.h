@@ -14,8 +14,9 @@
  */ 
 class StarlinkOrbitingSatellite: public StarlinkCommunication,public Satellite
 {
+    
 private:
-    /* data */
+    vector<Satellite*> head;
 public:
     StarlinkOrbitingSatellite(/* args */);
     void Communicate(string message,string communication) override;
@@ -23,6 +24,7 @@ public:
     SatelliteIterator* createIterator() override;
     void addList(Satellite*);
     void ReceivedMessage() override;
+    int getid() override;
     bool operator==(const CommuncationNode &rhs) const;
     ~StarlinkOrbitingSatellite();
 };

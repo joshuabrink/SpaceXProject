@@ -3,6 +3,8 @@
 Satellite::Satellite(/* args */)
 {
     isLaunched=false;
+    id=counter;
+    counter++;
 }
 bool Satellite::launchSatellite(FalconRockets* transport)
 {
@@ -13,6 +15,7 @@ bool Satellite::launchSatellite(FalconRockets* transport)
 
     return isLaunched;
 }
+
 Satellite::~Satellite()
 {
 }

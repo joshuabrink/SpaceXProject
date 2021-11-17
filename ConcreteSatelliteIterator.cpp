@@ -1,6 +1,6 @@
 #include "ConcreteSatelliteIterator.h"
 
-ConcreteSatelliteIterator::ConcreteSatelliteIterator()
+ConcreteSatelliteIterator::ConcreteSatelliteIterator(vector<Satellite*> v)
 {
 /**
  * @author      Tshegofatso Manthata
@@ -8,6 +8,7 @@ ConcreteSatelliteIterator::ConcreteSatelliteIterator()
  * @todo        initialize the attributes "first,next,curr and last" to null
  */
 
+     list=v;
      first=next=curr=nullptr;
      trav=0;
 }

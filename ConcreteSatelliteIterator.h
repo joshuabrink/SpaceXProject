@@ -19,7 +19,7 @@ class ConcreteSatelliteIterator:public SatelliteIterator
     int trav;
 
 public:
-    ConcreteSatelliteIterator();
+    ConcreteSatelliteIterator(vector<Satellite*>);
     Satellite* firstSat() override;
     Satellite* nextSat() override;
     Satellite* current() override;

@@ -42,20 +42,27 @@ Satellite* StarlinkOrbitingSatellite::clone()
  */
 SatelliteIterator* StarlinkOrbitingSatellite::createIterator()
 {
-    return new ConcreteSatelliteIterator();
+    return new ConcreteSatelliteIterator(head);
 }
 StarlinkOrbitingSatellite::~StarlinkOrbitingSatellite()
 {
+
 }
 void StarlinkOrbitingSatellite::addList(Satellite* s)
 {
-    if(nullptr==nullptr)
-    {
+    
+    head.push_back(s);
 
-    }
-
+}
+void StarlinkOrbitingSatellite::ReceivedMessage()
+{
+    cout<<"Ground user received the message"<<endl;
 }
 bool StarlinkOrbitingSatellite::operator==(const CommuncationNode &rhs) const
  {
         return id == rhs.id;
     };
+int StarlinkOrbitingSatellite::getid()
+{
+    return id;
+}

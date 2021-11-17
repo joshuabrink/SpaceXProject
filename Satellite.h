@@ -13,10 +13,12 @@ using namespace std;
  */
 class FalconRockets;
 class SatelliteIterator;
+  static int counter=0;
 class Satellite
 {
+    friend class SatelliteIterator;
 private:
-    
+  
 
 protected:
     bool isLaunched;
@@ -27,7 +29,8 @@ public:
     bool launchSatellite(FalconRockets *transport);
     virtual Satellite *clone() = 0;
     virtual SatelliteIterator *createIterator() = 0;
-    virtual void addList(Satellite *) = 0;
+    virtual void addList(Satellite*)=0;
+    virtual int getid()=0;
    
     ~Satellite();
 };
