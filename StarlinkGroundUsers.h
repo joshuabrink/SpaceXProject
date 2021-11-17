@@ -3,10 +3,11 @@
 #include "StarlinkCommunication.h"
 
 /**
- * THE LEDS :
- *  CONCRETE COLLEGUE PARTICIPANT IN THE MEDIATOR
+ * @author      Tshegofatso Manthata
+ * @headerfile  StarlinkGroundUsers.h "StarlinkGroundUsers.h"
+ * @brief       This is a concrete collegue for the Mediator pattern
+ * @todo        Implements the StarlinkCommunication
  * 
- *  TODO: Implement the communicate() pure virtual function 
  */
 class StarlinkGroundUsers:public StarlinkCommunication
 {
