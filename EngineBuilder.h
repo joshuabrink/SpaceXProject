@@ -6,7 +6,7 @@
 #define SPACEXPROJECT_ENGINEBUILDER_H
 
 #include "StageBuilder.h"
-#include "ConcreteRocketFactory.h"
+#include "Engine.h"
 
 /**
  * @class EngineBuilder
@@ -16,7 +16,7 @@
 class EngineBuilder : public  StageBuilder
 {
 public:
-    ConcreteRocketFactory* ceb;
+
     EngineBuilder();
     ~EngineBuilder();
     void buildCores(int stageNumber, string rocketName) override;

@@ -60,13 +60,13 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
         if(rocketName == "falcon9")
         {
             engineArray = new Engine*[1];
-            engineArray[0] = new Engine("Vacuum");
+            engineArray[0] = new Engine();
             arrSize = 1;
         }
         else
         {
             engineArray = new Engine*[1];
-            engineArray[0] = new Engine("Vacuum");
+            engineArray[0] = new Engine();
             arrSize = 1;
         }
     }
