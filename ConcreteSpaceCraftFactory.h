@@ -8,6 +8,7 @@ using namespace std;
 class DragonFactory : public SpaceCraftFactory
 {
 public:
+	
 	DragonFactory();
 	~DragonFactory();
 
