@@ -9,11 +9,12 @@
 #include "CoreBuilder.h"
 #include "EngineBuilder.h"
 
-/**
- * @class RocketCompositeStage
- * Serves as the leaf class for the composite design
- * and has arrays of the concrete objects used for the class
- */
+/** @file RocketStage.h
+ * @class RocketStage
+ * @brief RocketStage is a Component participant in the Composite design pattern
+ * RocketStage provides the interface with which the client interacts with.
+ * @author Jason Antalis
+ * @bug No known bugs. */
 
 class RocketStage {
 public:
@@ -21,18 +22,58 @@ public:
     Engine** engines;
     CoreBuilder* cb = new CoreBuilder();
     EngineBuilder* eb = new EngineBuilder();
-
+    /**
+     * @fn     RocketStage(CoreBuilder *cb, EngineBuilder *eb)
+     * @brief  The RocketStage Constructor which will set the values of a
+     * CoreBuilder and EngineBuilder within this class
+     * @param[in] CoreBuilder*, a CoreBuilder pointer
+     * @param[in] EngineBuilder*, a EngineBuilder pointer
+    */
     RocketStage(CoreBuilder *cb, EngineBuilder *eb);
-
+    /**
+     * @fn     virtual void makeFalcon9Stage1()
+     * @brief  This is a pure virtual function which will be implemented
+     * by its children
+     * @return void.
+    */
     virtual void makeFalcon9Stage1() = 0;
+    /**
+     * @fn     virtual void makeFalcon9Stage2()
+     * @brief  This is a pure virtual function which will be implemented
+     * by its children
+     * @return void.
+    */
     virtual void makeFalcon9Stage2() = 0;
+    /**
+     * @fn     virtual void makeFalconHeavyStage1()
+     * @brief  This is a pure virtual function which will be implemented
+     * by its children
+     * @return void.
+    */
     virtual void makeFalconHeavyStage1() = 0;
+    /**
+     * @fn     virtual void makeFalconHeavyStage2()
+     * @brief  This is a pure virtual function which will be implemented
+     * by its children
+     * @return void.
+    */
     virtual void makeFalconHeavyStage2() = 0;
-
+    /**
+     * @fn     virtual ~RocketStage()
+     * @brief  The Destructor for RocketStage
+    */
     virtual ~RocketStage();
-
+    /**
+     * @fn     setCoreBuilder(CoreBuilder *cb)
+     * @brief  sets the value of cb to this->cb
+     * @param[in] CoreBuilder*, a CoreBuilder pointer
+    */
     virtual void setCoreBuilder(CoreBuilder *cb);
-
+    /**
+     * @fn     setEngineBuilder(EngineBuilder *eb)
+     * @brief  sets the value of cb to this->eb
+     * @param[in] EngineBuilder*, a EngineBuilder pointer
+    */
     virtual void setEngineBuilder(EngineBuilder *eb);
 
 };
