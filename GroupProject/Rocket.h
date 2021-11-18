@@ -14,8 +14,10 @@ public:
 	virtual void Interrupt()=0;
 	virtual void NextStage() =0;
 	void setDestination(Destination* d);
+	Destination* getDestination();
 
-	string getDestination();
+	//prototype:
+	virtual Rocket* clone()=0;
 };
 
 #endif

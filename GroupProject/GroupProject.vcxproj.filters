@@ -57,6 +57,9 @@
     <ClInclude Include="Earth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Falcon9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Simulation.cpp">

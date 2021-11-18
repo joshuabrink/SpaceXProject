@@ -6,13 +6,14 @@
 
 class SimulationBackup {
 private:
-	/*TODO: all variables to be backed up*/
+	friend class Simulation;
+	Rocket* myRocket;
+	float price;
+	SimulationBackup(Rocket*,float);
 
 public:
-	SimulationBackup(Destination*,Rocket*);//add variables to constructor
 	virtual ~SimulationBackup();
 
-	/*TODO: getters for all the variables*/
 	
 };
 

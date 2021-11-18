@@ -143,6 +143,7 @@
     <ClInclude Include="Command.h" />
     <ClInclude Include="Destination.h" />
     <ClInclude Include="Earth.h" />
+    <ClInclude Include="Falcon9.h" />
     <ClInclude Include="Interrupt.h" />
     <ClInclude Include="ISS.h" />
     <ClInclude Include="Launch.h" />

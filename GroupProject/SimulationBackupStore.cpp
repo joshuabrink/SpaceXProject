@@ -1,19 +1,25 @@
 #include "SimulationBackupStore.h"
 
-SimulationBackupStore::SimulationBackupStore():memento(0)
+SimulationBackupStore::SimulationBackupStore()
 {
 }
 
 SimulationBackupStore::~SimulationBackupStore()
 {
+
 }
 
 SimulationBackup* SimulationBackupStore::getMemento()
 {
-	return memento;
+	if (mementoStack.empty()) {
+		return nullptr;
+	}else{
+		SimulationBackup* temp= mementoStack.top();
+		mementoStack.pop();
+	}
 }
 
 void SimulationBackupStore::setMemento(SimulationBackup* m)
 {
-	memento = m;
+	mementoStack.push(m);
 }

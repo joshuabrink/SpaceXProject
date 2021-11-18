@@ -1,7 +1,9 @@
 #include "SimulationBackup.h"
 
-SimulationBackup::SimulationBackup(Destination*,Rocket*)//add variables 
+SimulationBackup::SimulationBackup(Rocket* rocket,float price)
 {
+	this->myRocket = rocket->clone();
+	this->price = price;
 }
 
 SimulationBackup::~SimulationBackup()

@@ -2,13 +2,18 @@
 #define SIMULATIONBACKUPSTORE_H
 
 #include "SimulationBackup.h"
+#include <stack>
+
+using namespace std;
 
 class SimulationBackupStore {
 private:
-	SimulationBackup* memento;
+	stack<SimulationBackup*> mementoStack;
+	//SimulationBackup* memento;
 public:
 	SimulationBackupStore();
-	~SimulationBackupStore();
+	virtual ~SimulationBackupStore();
+
 	SimulationBackup* getMemento();
 	void setMemento(SimulationBackup*);
 

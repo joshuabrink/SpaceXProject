@@ -13,19 +13,19 @@ private:
 	Command* launchCommand;
 	Command* interruptCommand;
 	Command* nextStageCommand;
-	/*TODO: necessary variables to be added*/
-	Destination* destination;
+	
 	Rocket* rocket;
+	float price;
+
+
 public:
-	Simulation(Destination*);
+	Simulation(Rocket*);
 	virtual ~Simulation();
 
 	//memento pattern
-
 	SimulationBackup* makeBackup();
 	void restore(SimulationBackup*);
 
-	/*add getters and setters for the variables */
 	Destination* getTripDestination();
 	void setTripDestination(Destination*);
 
