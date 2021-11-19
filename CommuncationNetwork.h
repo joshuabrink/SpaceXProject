@@ -1,16 +1,17 @@
 #ifndef COMMUNCATIONNETWORK_H
 #define COMMUNCATIONNETWORK_H
-// #include "ComNodeCollection.h"
-class ComNodeCollection;
+#include <iostream>
+// #include "StarlinkCollection.h"
+class StarlinkCollection;
 // Mediator
 class CommuncationNetwork
 {
 private:
-    ComNodeCollection *comunicationCollection;
+    StarlinkCollection *comunicationCollection;
 
 public:
     CommuncationNetwork() : comunicationCollection(0){};
-    CommuncationNetwork(ComNodeCollection *);
+    CommuncationNetwork(StarlinkCollection *);
     /**
      * @fn          broadcast(string msg)
      * @brief       This sends a message to all collegues
@@ -22,12 +23,12 @@ public:
     // virtual void addList(Satellite *) = 0;
     ~CommuncationNetwork(){};
 };
-#include "ComNodeCollection.h"
+#include "StarlinkCollection.h"
 
-CommuncationNetwork::CommuncationNetwork(ComNodeCollection *col)
+CommuncationNetwork::CommuncationNetwork(StarlinkCollection *col)
 {
     comunicationCollection = col;
-    ComNodeCollection::iterator it = col->begin();
+    StarlinkCollection::iterator it = col->begin();
 
     while (!(it == col->end()))
     {
@@ -39,7 +40,7 @@ CommuncationNetwork::CommuncationNetwork(ComNodeCollection *col)
 }
 void CommuncationNetwork::broadcast(std::string msg, int id)
 {
-    ComNodeCollection::iterator it = comunicationCollection->begin();
+    StarlinkCollection::iterator it = comunicationCollection->begin();
     while (!(it == comunicationCollection->end()))
     {
         if (id == -1)
