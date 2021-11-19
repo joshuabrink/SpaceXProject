@@ -3,7 +3,7 @@
 MerlinEngine::MerlinEngine() {}
 
 MerlinEngine::MerlinEngine(double C) : Engine(C) {
-	cout << "Creating MerlinEngine at cost " << getCost() << endl;
+	cout << "Creating MerlinEngine at cost: " << getCost() << endl;
 }
 
 MerlinEngine::~MerlinEngine() {

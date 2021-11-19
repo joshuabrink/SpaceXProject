@@ -20,7 +20,7 @@ void createFactories() {
 	Payload** payLoad = new Payload * [3];
 
 	payLoad[0] = SatelliteFact->createPayload("Starlink Satelite", 300000000);
-	payLoad[1] = SuppliesFact->createPayload("Food supply", 50000);
+	payLoad[1] = SuppliesFact->createPayload("Food supply", 500000);
 	payLoad[2] = SuppliesFact->createPayload("Oxygen supply", 2000000);
 
 
