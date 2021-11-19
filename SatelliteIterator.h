@@ -1,6 +1,7 @@
 #ifndef SATELLITEITERATOR_H
 #define SATELLITEITERATOR_H
-#include "Satellite.h"
+#include "SatelliteCollection.h"
+#include "StarlinkOrbitingSatellite.h"
 #include <iostream>
 using namespace std;
 /**
@@ -8,21 +9,22 @@ using namespace std;
  * @todo fix the errors by wednesday
  * @todo implement the iterator properly
  */
-class Satellite;
+
+template <typename Type>
 class SatelliteIterator
 {
-    friend class Satellite;
+    friend class SatelliteCollection;
 
     protected:
-    
-    Satellite* first;
-    Satellite* next;
-    Satellite* curr;
+   
+    StarlinkOrbitingSatellite* first;
+    StarlinkOrbitingSatellite* next;
+    StarlinkOrbitingSatellite* curr;
 public:
     SatelliteIterator();
-    virtual Satellite* firstSat()=0;
-    virtual Satellite* nextSat()=0;
-    virtual Satellite* current()=0;
+    virtual StarlinkOrbitingSatellite* firstSat()=0;
+    virtual StarlinkOrbitingSatellite* nextSat()=0;
+    virtual StarlinkOrbitingSatellite* current()=0;
 
     ~SatelliteIterator();
 };

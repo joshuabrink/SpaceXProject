@@ -1,9 +1,9 @@
-#include "StarlinkOrbitingSatellite.h"
+/*#include "StarlinkOrbitingSatellite.h"
 /**
  * @author      Tshegofatso Manthata
  * @class       StarlinkOrbitingSatellite
- */
-StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args */):Satellite()
+ *
+StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args *):Satellite()
 {
 }
 /**
@@ -13,7 +13,8 @@ StarlinkOrbitingSatellite::StarlinkOrbitingSatellite(/* args */):Satellite()
  * @param[out] message //string message that is going to be displayed
  * @param[in] communication // a string communication to show what kind of device is being communicated with 
  * @return      void 
- */
+ *
+
 void  StarlinkOrbitingSatellite::Communicate(string message,string communication)
 {
     if(communication=="radio waves")
@@ -28,7 +29,7 @@ void  StarlinkOrbitingSatellite::Communicate(string message,string communication
  * @brief       This is the clone() function
  * @todo        create new StarlinkOrbitingSatellite object
  * @return      Satellite*
- */
+ *
 
 Satellite* StarlinkOrbitingSatellite::clone()
 {
@@ -39,7 +40,7 @@ Satellite* StarlinkOrbitingSatellite::clone()
  * @brief       This is the ConcreteSatelliteIterator() function
  * @todo        create new ConcreteSatelliteIterator() object
  * @return      SatelliteIterator*
- */
+ *
 SatelliteIterator* StarlinkOrbitingSatellite::createIterator()
 {
     return new ConcreteSatelliteIterator(head);
@@ -62,3 +63,4 @@ bool StarlinkOrbitingSatellite::operator==(const CommuncationNode &rhs) const
  {
         return id == rhs.id;
 }
+*/

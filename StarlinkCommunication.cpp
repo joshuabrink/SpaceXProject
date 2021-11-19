@@ -1,6 +1,6 @@
-#include "StarlinkCommunication.h"
+/*#include "StarlinkCommunication.h"
 
-StarlinkCommunication::StarlinkCommunication(/* args */)
+StarlinkCommunication::StarlinkCommunication(/* args *)
 {
 }
 void StarlinkCommunication::reg(CommunicationNetwork* cn)
@@ -12,4 +12,4 @@ void StarlinkCommunication::reg(CommunicationNetwork* cn)
 }
 StarlinkCommunication::~StarlinkCommunication()
 {
-}
+}*/
