@@ -9,3 +9,7 @@ void Launch::execute()
 {
 	myRocket->Launch();
 }
+
+Launch::~Launch() {
+
+}

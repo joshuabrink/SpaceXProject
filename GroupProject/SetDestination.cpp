@@ -10,3 +10,7 @@ void SetDestination::execute()
 {
 	myRocket->setDestination(destination);
 }
+
+SetDestination::~SetDestination() {
+
+}

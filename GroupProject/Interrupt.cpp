@@ -9,3 +9,7 @@ void Interrupt::execute()
 {
 	myRocket->Interrupt();
 }
+
+Interrupt::~Interrupt() {
+
+}

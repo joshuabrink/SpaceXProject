@@ -9,3 +9,7 @@ void NextStage::execute()
 {
 	myRocket->NextStage();
 }
+
+NextStage::~NextStage() {
+
+}
