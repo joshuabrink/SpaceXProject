@@ -15,7 +15,7 @@ private:
 	Command* nextStageCommand;
 	
 	Rocket* rocket;
-	float price;
+	double price;
 
 
 public:

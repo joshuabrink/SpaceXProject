@@ -8,8 +8,8 @@ class SimulationBackup {
 private:
 	friend class Simulation;
 	Rocket* myRocket;
-	float price;
-	SimulationBackup(Rocket*,float);
+	double price;
+	SimulationBackup(Rocket*,double);
 
 public:
 	virtual ~SimulationBackup();

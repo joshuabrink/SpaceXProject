@@ -16,6 +16,7 @@ SimulationBackup* SimulationBackupStore::getMemento()
 	}else{
 		SimulationBackup* temp= mementoStack.top();
 		mementoStack.pop();
+		return temp;
 	}
 }
 

@@ -150,6 +150,7 @@
     <ClInclude Include="LowOrbit.h" />
     <ClInclude Include="NextStage.h" />
     <ClInclude Include="Rocket.h" />
+    <ClInclude Include="Satellite.h" />
     <ClInclude Include="SetDestination.h" />
     <ClInclude Include="Simulation.h" />
     <ClInclude Include="SimulationBackup.h" />

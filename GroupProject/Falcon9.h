@@ -5,8 +5,7 @@
 
 class Falcon9 : public Rocket {
 private:
-
-
+	
 public:
 	virtual void Launch() = 0;
 	virtual void Interrupt() = 0;
