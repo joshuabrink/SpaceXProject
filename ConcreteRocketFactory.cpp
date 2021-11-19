@@ -8,8 +8,8 @@ Falcon9Factory::~Falcon9Factory(){
 
 }
 
-Rocket* Falcon9Factory::createRocket() {
-	return new Falcon9();
+Rocket* Falcon9Factory::createRocket(double C) {
+	return new Falcon9(C);
 }
 
 
@@ -21,6 +21,6 @@ FalconHeavyFactory::~FalconHeavyFactory(){
 
 }
 
-Rocket* FalconHeavyFactory::createRocket() {
-	return new FalconHeavy();
+Rocket* FalconHeavyFactory::createRocket(double C) {
+	return new FalconHeavy(C);
 }

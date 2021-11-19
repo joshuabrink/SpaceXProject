@@ -26,10 +26,10 @@ void createFactories() {
 
 	Rocket** rockets = new Rocket * [4];
 
-	rockets[0] = Falcon9Fact->createRocket();
-	rockets[1] = Falcon9Fact->createRocket();
-	rockets[2] = FalconHeavyFact->createRocket();
-	rockets[3] = FalconHeavyFact->createRocket();
+	rockets[0] = Falcon9Fact->createRocket(3000000);
+	rockets[1] = Falcon9Fact->createRocket(3000000);
+	rockets[2] = FalconHeavyFact->createRocket(5000000);
+	rockets[3] = FalconHeavyFact->createRocket(5000000);
 
 
 	SpaceCraft** spaceCraft = new SpaceCraft * [2];

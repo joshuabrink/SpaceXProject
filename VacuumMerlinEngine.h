@@ -9,9 +9,8 @@ class VacuumMerlinEngine : public ModifiedMerlinEngine
 {
 public:
 	VacuumMerlinEngine();
+	VacuumMerlinEngine(double);
 	~VacuumMerlinEngine();
-
-private:
 
 };
 

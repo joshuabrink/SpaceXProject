@@ -11,7 +11,7 @@ public:
 	RocketFactory();
 	~RocketFactory();
 	
-	virtual Rocket* createRocket() = 0;
+	virtual Rocket* createRocket(double) = 0;
 
 private:
 

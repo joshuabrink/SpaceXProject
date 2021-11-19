@@ -5,14 +5,18 @@
 
 using namespace std;
 
-class ModifiedMerlinEngine
+class ModifiedMerlinEngine : public Engine
 {
 public:
 	ModifiedMerlinEngine();
+	ModifiedMerlinEngine(double);
+	virtual double totalCost();
+	virtual void addEngine(Engine*);
+	
+protected:
 	~ModifiedMerlinEngine();
-
 private:
-
+	Engine* engines;
 };
 
 #endif
