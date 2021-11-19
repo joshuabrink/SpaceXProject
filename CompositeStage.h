@@ -76,6 +76,7 @@ public:
     /**
      * @fn     void setNext(RocketStage *next)
      * @brief  Sets the value of the next value in this class
+     * @param[in] RocketStage*, a RocketStage pointer
      * @return void.
     */
     void setNext(RocketStage *next);
