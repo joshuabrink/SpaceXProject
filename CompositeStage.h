@@ -67,6 +67,18 @@ public:
      * @return void.
     */
     virtual void addRocketStage(RocketStage* n);
+    /**
+     * @fn     RocketStage *getNext() const
+     * @brief  Returns a pointer to the current next variable
+     * @return RocketStage*.
+    */
+    RocketStage *getNext() const;
+    /**
+     * @fn     void setNext(RocketStage *next)
+     * @brief  Sets the value of the next value in this class
+     * @return void.
+    */
+    void setNext(RocketStage *next);
 };
 
 

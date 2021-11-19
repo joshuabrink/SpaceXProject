@@ -45,3 +45,11 @@ CompositeStage::~CompositeStage() {
 void CompositeStage::addRocketStage(RocketStage *n) {
     next = n;
 }
+
+RocketStage *CompositeStage::getNext() const {
+    return next;
+}
+
+void CompositeStage::setNext(RocketStage *next) {
+    CompositeStage::next = next;
+}
