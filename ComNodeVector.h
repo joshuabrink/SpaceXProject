@@ -1,20 +1,21 @@
-#ifndef COMNODEQUEUE_H
-#define COMNODEQUEUE_H
+
+#ifndef COMNODEVECTOR_H
+#define COMNODEVECTOR_H
 // Concrete Aggregate
-#include <deque>
+#include <vector>
 #include "ComNodeCollection.h"
 
-// class ComNodeQueueIterator;
-class ComNodeQueue : public ComNodeCollection
+// class ComNodevectorIterator;
+class ComNodeVector : public ComNodeCollection
 {
-    // friend class ComNodeQueueIterator;
+    // friend class ComNodevectorIterator;
 
 private:
-    std::deque<CommuncationNode *> nodeCollection;
+    std::vector<CommuncationNode *> nodeCollection;
     /* data */
 public:
-    ComNodeQueue(){};
-    // ComNodeQueue(ComNodeCollection& col){
+    ComNodeVector(){};
+    // ComNodevector(ComNodeCollection& col){
 
     // };
     void add(CommuncationNode *newNode)
@@ -24,7 +25,7 @@ public:
     }
     void remove()
     {
-        nodeCollection.pop_front();
+        nodeCollection.pop_back();
         // ComNodeCollection::remove();
     }
     ComNodeCollection::iterator begin()
@@ -35,7 +36,7 @@ public:
     {
         return iterator(&this->nodeCollection.back());
     };
-    ~ComNodeQueue(){};
+    ~ComNodeVector(){};
 };
 
 #endif

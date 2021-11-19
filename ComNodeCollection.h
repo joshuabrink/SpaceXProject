@@ -2,39 +2,28 @@
 #define COMNODECOLLECTION_H
 // Aggregate
 #include <memory>
-#include "CommuncationNode.h"
-// #include "ComNodeCollectionIterator.h"
-class ComNodeCollectionIterator; 
+// #include "CommuncationNode.h"
+class CommuncationNode;
+#include "CollectionIterator.h"
 class ComNodeCollection
 {
-
 public:
+    typedef CollectionIterator<CommuncationNode*> iterator;
     ComNodeCollection(){};
-    virtual std::unique_ptr<ComNodeCollectionIterator>begin(){return 0;};
-    virtual std::unique_ptr<ComNodeCollectionIterator>end(){return 0;};
+    virtual ComNodeCollection::iterator begin() = 0;
+    // {
+    //     const ComNodeCollectionIterator& iter = *std::make_unique<ComNodeCollectionIterator>();
+    //     return iter;
+    // };
+    virtual ComNodeCollection::iterator end() = 0;
 
     // Adds to the end of collection
-    virtual void add(CommuncationNode& node)=0;
+    virtual void add(CommuncationNode *node) = 0;
 
-    // Finds element in collection
-    // virtual CommuncationNode* search(const int id) {
-    //     if(head == 0)
-    //         return 0;
-    //     CommuncationNode* temp = head;
-    //     while (temp->next != 0)
-    //     {
-    //         if(temp->id == id) {
-    //             return temp;
-    //         }
-    //         temp = temp->next;
-    //     }
-    //     return 0;
-    // }
     // Removes first element
-    virtual void remove()=0;
-    
-    virtual ~ComNodeCollection() {};
-};
+    virtual void remove() = 0;
 
+    virtual ~ComNodeCollection(){};
+};
 
 #endif
