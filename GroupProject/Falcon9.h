@@ -2,17 +2,19 @@
 #define FALCON9_H
 
 #include "Rocket.h"
+#include "Satellite.h"
+#include <list>
+
+using namespace std;
 
 class Falcon9 : public Rocket {
 private:
-	
+	list<Satellite*> satellites;
 public:
-	virtual void Launch() = 0;
-	virtual void Interrupt() = 0;
-	virtual void NextStage() = 0;
-
+	Falcon9(CompositeStage*);
+	void addSatellites(Satellite*);
 	//prototype:
-	virtual Rocket* clone() = 0;
+	Rocket* clone();
 };
 
 #endif
