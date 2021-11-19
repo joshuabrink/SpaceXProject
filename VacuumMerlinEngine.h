@@ -1,6 +1,8 @@
 #ifndef VACUUMMERLINENGINE_H
 #define VACUUMMERLINENGINE_H
 
+#include <iostream>
+
 #include "ModifiedMerlinEngine.h"
 
 using namespace std;

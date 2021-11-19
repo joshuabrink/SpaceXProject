@@ -53,12 +53,16 @@ void createTransportEntities() {
 	cargo[2] = new Cargo("Tools");
 }
 
+void decorateRocket() {
+
+}
 
 int main() {
 
 	createFactories();
 	createTransportEntities();
 
+	DecorateRocket();
 
 
 

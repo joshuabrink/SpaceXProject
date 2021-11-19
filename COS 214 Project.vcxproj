@@ -159,7 +159,7 @@
     <ClCompile Include="ConcreteSpaceCraftFactory.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MerlinEnigne.cpp" />
+    <ClCompile Include="MerlinEngine.cpp" />
     <ClCompile Include="ModifiedMerlinEngine.cpp" />
     <ClCompile Include="Payload.cpp" />
     <ClCompile Include="PayloadFactory.cpp" />

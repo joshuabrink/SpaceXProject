@@ -1,6 +1,6 @@
 #ifndef PAYLOADFACTORY_H
 #define PAYLOADFACTORY_H
-
+#include <iostream>
 #include "Payload.h"
 
 using namespace std;

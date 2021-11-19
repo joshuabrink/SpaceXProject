@@ -1,6 +1,6 @@
 #ifndef MODIFIEDMERLINENGINE_H
 #define MODIFIEDMERLINENGINE_H
-
+#include <iostream>
 #include "Engine.h"
 
 using namespace std;

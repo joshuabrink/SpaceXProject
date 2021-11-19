@@ -2,7 +2,7 @@
 #define CONCRETEPAYLOADFACTORY_H
 
 #include "PayloadFactory.h"
-
+#include <iostream>
 using namespace std;
 
 class SuppliesFactory : public PayloadFactory

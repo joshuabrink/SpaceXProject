@@ -27,7 +27,9 @@ Dragon::Dragon() {
 
 }
 
-Dragon::Dragon(double Cost, int Capacity) : SpaceCraft (Cost,Capacity) {}
+Dragon::Dragon(double Cost, int Capacity) : SpaceCraft (Cost,Capacity) {
+	cout << "Creating dragon at cost " << getCost() << "with capacity in Litre: "<< getCapacity() << endl;
+}
 
 Dragon::~Dragon() {
 
@@ -38,7 +40,9 @@ DragonCrew::DragonCrew() {
 
 }
 
-DragonCrew::DragonCrew(double Cost, int Capacity) : SpaceCraft(Cost, Capacity) {}
+DragonCrew::DragonCrew(double Cost, int Capacity) : SpaceCraft(Cost, Capacity) {
+	cout << "Creating Crew dragon at cost " << getCost() << "with capacity: " << getCapacity() << endl;
+}
 
 DragonCrew::~DragonCrew() {
 

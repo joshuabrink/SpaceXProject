@@ -1,6 +1,6 @@
 #ifndef PAYLOAD_H
 #define PAYLOAD_H
-
+#include <iostream>
 #include <string>
 
 using namespace std;

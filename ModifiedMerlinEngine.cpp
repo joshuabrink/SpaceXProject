@@ -7,6 +7,7 @@ ModifiedMerlinEngine::ModifiedMerlinEngine() {
 ModifiedMerlinEngine::ModifiedMerlinEngine(double C) : Engine(C)
 {
 	engines = nullptr;
+	cout << "Creating ModifiedMerlinEngine at cost: " << getCost()<< endl;
 }
 
 double ModifiedMerlinEngine::totalCost() {
