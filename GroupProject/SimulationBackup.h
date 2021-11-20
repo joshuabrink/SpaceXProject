@@ -13,7 +13,7 @@
 #define SIMULATIONBACKUP_H
 
 #include "Destination.h"
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 
 class SimulationBackup {
 private:

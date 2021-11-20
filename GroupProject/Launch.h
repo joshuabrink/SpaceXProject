@@ -2,7 +2,7 @@
 #define LAUNCH_H
 
 #include "Command.h"
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 
 /** @file Launch.h
  * @class Launch

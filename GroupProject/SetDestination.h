@@ -2,7 +2,7 @@
 #define SETDESTINATION_H
 
 #include "Command.h"
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 #include "Destination.h"
 
 /** @file SetDestination.h

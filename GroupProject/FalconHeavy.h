@@ -9,7 +9,7 @@
  *  @bug No known bugs.
  */
 
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 
 using namespace std;
 

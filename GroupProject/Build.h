@@ -15,7 +15,7 @@
 
 class Rocket;
 #include "Command.h"
-#include "GroupProject/RocketFactory.h"
+#include "RocketFactory.h"
 
 class Build : public Command{
 private:

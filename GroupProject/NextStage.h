@@ -2,7 +2,7 @@
 #define NEXTSTAGE_H
 
 #include "Command.h"
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 
 /** @file NextStage.h
  * @class NextStage

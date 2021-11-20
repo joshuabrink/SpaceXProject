@@ -9,9 +9,10 @@
  *  @bug No known bugs.
  */
 
-//#include "Rocket.h"
-#include "GroupProject/Rocket.h"
-#include "SatelliteVector.h"
+#include "Rocket.h"
+#include "SatelliteIterator.h"
+
+class SatelliteVector;
 
 using namespace std;
 

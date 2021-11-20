@@ -2,6 +2,7 @@
 #define COMMAND_H
 
 #include <string>
+class Rocket;
 using namespace std;
 
 /** @file Command.h
@@ -26,7 +27,7 @@ public:
      * @brief virtual function that will be implemented by Build class
      * @return Rocket*, Rocket pointer.
     */
-    virtual Rocket* executeBuild() {};
+    virtual Rocket* executeBuild() { return nullptr; };
 	/**
      * @fn     Command()
      * @brief  A constructor for the Command class

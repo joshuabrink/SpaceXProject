@@ -10,35 +10,36 @@
  *  @author Tshegofatso Manthata
  *  @bug No known bugs.
  */
-#ifndef SATELLITE_H
-#define SATELLITE_H
-#include <iostream>
-#include <vector>
-using namespace std;
-//#include "SatelliteIterator.h"
-//#include "CommuncationNode.h"
-#include "Falcon9.h"
 
-class Falcon9;
-class SatelliteIterator;
-
-class Satellite
-{
-    friend class SatelliteIterator;
-private:
-  
-
-protected:
-    bool isLaunched;
-    int id;
-
-public:
+//#ifndef SATELLITE_H
+//#define SATELLITE_H
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+////#include "SatelliteIterator.h"
+////#include "CommuncationNode.h"
+//#include "Falcon9.h"
+//
+//class Falcon9;
+//class SatelliteIterator;
+//
+//class Satellite
+//{
+//    friend class SatelliteIterator;
+//private:
+//  
+//
+//protected:
+//    bool isLaunched;
+//    int id;
+//
+//public:
 /** 
  *  @fn     Satellite()
  *  @brief  Satellite constructor
  *		
  */
-    Satellite(/* args */);
+    //Satellite(/* args */);
 
 /** 
  *  @fn    	bool launchSatellite(FalconRockets *transport)
@@ -49,7 +50,7 @@ public:
  *  @param[in] transport, a FalconRockets pointer
  *  @return bool
  */
-    bool launchSatellite(Falcon9 *transport);
+   /* bool launchSatellite(Falcon9 *transport);*/
 
 /** 
  *  @fn     virtual Satellite *clone() = 0
@@ -59,7 +60,7 @@ public:
  *
  *  @return Satellite* , a Satellite pointer
  */
-    virtual Satellite *clone() = 0;
+   /* virtual Satellite *clone() = 0;*/
 
 /** 
  *  @fn     virtual SatelliteIterator *createIterator() = 0
@@ -70,7 +71,7 @@ public:
  *
  *  @return SatelliteIterator* , a SatelliteIterator pointer
  */
-    virtual SatelliteIterator *createIterator() = 0;
+   /* virtual SatelliteIterator *createIterator() = 0;*/
 
 /** 
  *  @fn     virtual void addList(Satellite*)=0
@@ -81,20 +82,20 @@ public:
  *  @param[in] Satellite*, a Satellite pointer
  *  @return void.
  */
-    virtual void addList(Satellite*)=0;
+  /*  virtual void addList(Satellite*)=0;*/
 /** 
  *  @fn     int getid()
  *  @brief  get function that returns a unique Id for the specified satellite
  *		
  *  @return int, an integer
  */ 
-    int getid();
+    /*int getid();*/
 /** 
  *  @fn     ~Satellite()
  *  @brief  Satellite destructor
  *		
  */
-    ~Satellite();
+  /*  ~Satellite();
 };
 
-#endif
+#endif*/

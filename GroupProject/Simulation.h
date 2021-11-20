@@ -15,7 +15,7 @@
 
 #include "SimulationBackup.h"
 #include "Command.h"
-#include "GroupProject/Rocket.h"
+#include "Rocket.h"
 #include "Destination.h"
 
 class Simulation {

@@ -1,4 +1,5 @@
 #include "Falcon9.h"
+#include "SatelliteVector.h"
 
 Falcon9::Falcon9(CompositeStage* c,double cost):Rocket(c,cost)
 {
@@ -9,7 +10,7 @@ Falcon9::Falcon9(CompositeStage* c,double cost):Rocket(c,cost)
 void Falcon9::addSatellites(SatelliteCollection* s)
 {
 	satellites = s;
-	SatelliteIterator* iterate = satellites->createIterator();
+	iterate = satellites->createIterator();
 
 }
 
@@ -43,7 +44,7 @@ Rocket* Falcon9::clone()
 
 void Falcon9::Launch()
 {
-	if (getDestination == nullptr) {
+	if (getDestination() == nullptr) {
 		cout << "Please set a destination before launch!" << endl;
 		return;
 	}

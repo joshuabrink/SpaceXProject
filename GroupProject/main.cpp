@@ -12,7 +12,23 @@
 
 #include "TransportEntities.h"
 
+#include "Build.h"
+#include "Interrupt.h"
+#include "Command.h"
+#include "Launch.h"
+#include "setDestination.h"
+#include "NextStage.h"
+#include "Simulation.h"
+#include "Destination.h"
+#include "ISS.h"
+#include "LowOrbit.h"
+#include "Earth.h"
+#include "Rocket.h"
+#include "Falcon9.h"
+#include "FalconHeavy.h"
+
 #include <vector>
+#include "SatelliteVector.h"
 
 using namespace std;
 
@@ -141,10 +157,76 @@ void printBuilderInfo(RocketLeaf* rl)
     }
 }
 
+void TestSimulation() {
+    cout << "creating RocketFactories" << endl;
+    RocketFactory* Falcon9Fact = new Falcon9Factory;
+
+    cout << "creating Rockets" << endl;
+    Rocket** rockets = new Rocket * [4];
+
+    rockets[0] = Falcon9Fact->createRocket(3000000);
+    /*rockets[1] = Falcon9Fact->createRocket(3000000);
+    rockets[2] = FalconHeavyFact->createRocket(5000000);
+    rockets[3] = FalconHeavyFact->createRocket(5000000);*/
+
+    cout << "creating Destinations" << endl;
+    Destination* dest = new LowOrbit();
+
+
+    cout << "creating Satallites" << endl;
+    SatelliteCollection* list = new SatelliteVector();
+
+    StarlinkCommunication* s0 = new StarlinkOrbitingSatellite();
+    StarlinkCommunication* s1 = new StarlinkOrbitingSatellite();
+
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
+
+    rockets[0]->addSatellites(list);
+    cout << "create Rocket Stages" << endl;
+    
+    EngineBuilder* eb = new EngineBuilder();
+    CoreBuilder* cb = new CoreBuilder();
+    Core** cores;
+    Engine** engines;
+
+    RocketLeaf* stageArr[4];
+
+    for (int i = 0; i < 4; ++i)
+    {
+        stageArr[i] = new RocketLeaf(cb, eb);
+    }
+
+    for (int i = 0; i < 4; ++i)
+    {
+        switch (i)
+        {
+            case 0:
+            stageArr[i]->makeFalcon9Stage1();
+            break;
+            case 1:
+            stageArr[i]->makeFalcon9Stage2();
+            break;
+            case 2:
+            stageArr[i]->makeFalconHeavyStage1();
+            break;
+            case 3:
+            stageArr[i]->makeFalconHeavyStage2();
+            break;
+        }
+    }
+    CompositeStage* f9 = new CompositeStage(stageArr[0]);
+    f9->addRocketStage(stageArr[1]);
+  /*  CompositeStage* fHeavy = new CompositeStage(stageArr[2]);
+    fHeavy->addRocketStage(stageArr[3]);*/
+    rockets[0]->addStage(f9);
+   
+    Simulation* sim = new Simulation(rockets[0]);
+}
+
 int main()
 {
-
-    cout << "Creating factories:" << endl;
+    /*cout << "Creating factories:" << endl;
     createFactories();
     cout << endl;
     cout << "Creating Entities:" << endl;
@@ -236,7 +318,7 @@ int main()
     delete fHeavy;
     delete f9;
     delete eb;
-    delete cb;
+    delete cb;*/
 
     return 0;
 }

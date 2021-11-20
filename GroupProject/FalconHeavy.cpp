@@ -7,7 +7,7 @@ FalconHeavy::FalconHeavy(CompositeStage* stage, double cost):Rocket(stage,cost)
 Rocket* FalconHeavy::clone()
 {
 	CompositeStage* temp = new CompositeStage(getStage());
-	Rocket* out = new Falcon9(temp, getCost());
+	Rocket* out = new FalconHeavy(temp, getCost());
 	out->setDestination(getDestination()->clone());
 
 	return out;
@@ -15,7 +15,7 @@ Rocket* FalconHeavy::clone()
 
 void FalconHeavy::Launch()
 {
-	if (getDestination == nullptr) {
+	if (getDestination() == nullptr) {
 		cout << "Please set a destination before launch!" << endl;
 		return;
 	}

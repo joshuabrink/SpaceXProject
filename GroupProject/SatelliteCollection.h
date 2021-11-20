@@ -14,6 +14,7 @@
 #include <vector>
 using namespace std;
 class SatelliteIterator;
+class StarlinkOrbitingSatellite;
 class SatelliteCollection
 {
 protected:
