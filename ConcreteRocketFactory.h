@@ -11,7 +11,7 @@ public:
 	Falcon9Factory();
 	~Falcon9Factory();
 
-	Rocket* createRocket(double);
+	//Rocket* createRocket(double);
 private:
 
 };
@@ -22,7 +22,7 @@ public:
 	FalconHeavyFactory();
 	~FalconHeavyFactory();
 
-	Rocket* createRocket(double);
+	//Rocket* createRocket(double);
 private:
 
 };

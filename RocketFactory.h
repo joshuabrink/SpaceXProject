@@ -1,7 +1,7 @@
 #ifndef ROCKETFACTORY_H
 #define  ROCKETFACTORY_H
 #include <iostream>
-#include "Rocket";
+//#include "Rocket";
 
 using namespace std;
 
@@ -11,7 +11,7 @@ public:
 	RocketFactory();
 	~RocketFactory();
 	
-	virtual Rocket* createRocket(double) = 0;
+	//virtual Rocket* createRocket(double) = 0;
 
 private:
 
