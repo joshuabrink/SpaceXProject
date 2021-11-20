@@ -22,6 +22,7 @@ public:
     StarlinkOrbitingSatellite *firstSat() override;
     StarlinkOrbitingSatellite *nextSat() override;
     StarlinkOrbitingSatellite *current() override;
+    StarlinkOrbitingSatellite* lastSat() override;
     ~ConcreteSatelliteIterator();
 };
 #include "ConcreteSatelliteIterator.h"
@@ -45,6 +46,12 @@ StarlinkOrbitingSatellite* ConcreteSatelliteIterator::firstSat()
 {
     first=*(sc->getVector().begin());
     trav=0;
+    return first;
+}
+StarlinkOrbitingSatellite* ConcreteSatelliteIterator::lastSat()
+{
+    last=sc->getVector().back();
+    return last;
 }
 
 StarlinkOrbitingSatellite* ConcreteSatelliteIterator::current()

@@ -28,11 +28,34 @@ private:
     bool isLaunched;
 
 public:
+/** 
+ *  @fn     StarlinkOrbitingSatellite() 
+ *  @brief  StarlinkOrbitingSatellite default constructor
+ *		
+ */
     StarlinkOrbitingSatellite() : StarlinkCommunication(StarlinkOrbitingSatelliteId++)
     {
         isLaunched = false;
     };
+           /** 
+ *  @fn     StarlinkOrbitingSatellite(const int id)
+ *  @brief  StarlinkOrbitingSatellite paramatised constructor which takes in a const integer called id.
+ * 
+ *  @param[in] id, a const integer
+ *		
+ */
+    
     StarlinkOrbitingSatellite(const int id) : StarlinkCommunication(id){};
+
+     /** 
+ *  @fn     void communicate(std::string message, int nodeId = -1) 
+ *  @details communicate() sends the message to the concrete colleague with the id being passed through
+ *           It outputs the message
+ *		    
+ *  @param[out] message, a string message
+ *  @param[in] id, an integer id
+ *  @return void.
+ */
     void communicate(std::string message, int id = -1) override
     {
         // if (isLaunched)
@@ -45,6 +68,14 @@ public:
 
         // }
     };
+
+     /** 
+ *  @fn     void receivedMessage(std::string message)
+ *  @details receivedMessage() outputs that it has indeed received the communicated message
+ *		    
+ *  @param[out] message, a string message
+ *  @return void.
+ */
     void receivedMessage(std::string message) override
     {
         // std::cout << "StarlinkOrbitingSatellite ";
@@ -58,13 +89,18 @@ public:
     // bool launchStarlinkOrbitingSatellite(FalconRockets *transport){return true;};
 
 
-    // virtual StarlinkOrbitingSatelliteIterator *createIterator() = 0;
-    // virtual void addList(StarlinkOrbitingSatellite *) = 0;
+    /** 
+ *  @fn     StarlinkCommunication *clone() 
+ *  @brief  clone() creates and returns a new StarlinkOrbitingSatellite object. It is the implementation of the concrete Prototype.
+ *
+ *  @return StarlinkCommunication* , a StarlinkCommunication pointer to a StarlinkOrbitingSatellite object
+ */
     StarlinkCommunication *clone() { return new StarlinkOrbitingSatellite(this->id); };
-    // bool operator==(const StarlinkCommunication &rhs) const
-    // {
-    //     return id == rhs.id;
-    // };
+      /** 
+ *  @fn     ~StarlinkOrbitingSatellite() 
+ *  @brief  StarlinkOrbitingSatellite destructor
+ *		
+ */
     ~StarlinkOrbitingSatellite(){};
 };
 

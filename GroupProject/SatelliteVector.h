@@ -2,6 +2,7 @@
 #define SATELLITEVECTOR_H
 #include "SatelliteCollection.h"
 #include "ConcreteSatelliteIterator.h"
+class SatelliteIterator;
 class SatelliteVector: public SatelliteCollection
 {
 private:
@@ -10,7 +11,7 @@ public:
     SatelliteVector(/* args */);
     void addList(StarlinkOrbitingSatellite*);
     vector<StarlinkOrbitingSatellite*> getVector();
-    SatelliteIterator* createIterator();
+    SatelliteIterator* createIterator() override;
     ~SatelliteVector();
 };
 

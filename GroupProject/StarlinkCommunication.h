@@ -1,12 +1,3 @@
-#ifndef STARLINKCOMMUNICATION_H
-#define STARLINKCOMMUNICATION_H
-// Collegue AND Node
-#include <iostream>
-// #include "CommuncationNetwork.h"
-class CommuncationNetwork;
-static int counter = 0;
-class StarlinkCommunication
-{
 /** @file StarlinkCommunication.h
  *  @class StarlinkCommunication
  *  @headerfile  StarlinkCommunication.h "StarlinkCommunication.h"
@@ -20,6 +11,16 @@ class StarlinkCommunication
  *  @author Joshua Brink
  *  @bug No known bugs.
  */
+#ifndef STARLINKCOMMUNICATION_H
+#define STARLINKCOMMUNICATION_H
+// Collegue AND Node
+#include <iostream>
+// #include "CommuncationNetwork.h"
+class CommuncationNetwork;
+static int counter = 0;
+class StarlinkCommunication
+{
+
 
 protected:
     const int id;

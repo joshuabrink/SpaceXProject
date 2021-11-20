@@ -1,12 +1,15 @@
 #include "StarlinkQueue.h"
 #include "StarlinkOrbitingSatellite.h"
 #include "StarlinkGroundUser.h"
+#include "ConcreteSatelliteIterator.h"
+#include "SatelliteCollection.h"
+#include "SatelliteVector.h"
 // #include "TECargoCollection.h"
 // #include "TransportEntityCrew.h"
 // #include "TransportEntityCargo.h"
 // #include "SpaceCraftCrewDragon.h"
 // #include "SpaceCraftDragon.h"
-
+#include <vector>
 #include <iostream>
 using namespace std;
 int main(int argc, char **argv)
@@ -14,6 +17,7 @@ int main(int argc, char **argv)
 
    
     StarlinkQueue *que = new StarlinkQueue();
+    SatelliteCollection* list= new SatelliteVector();
     StarlinkCommunication *s0 = new StarlinkOrbitingSatellite();
     StarlinkCommunication *s1 = new StarlinkOrbitingSatellite();
     StarlinkCommunication *g0 = new StarlinkGroundUser();
@@ -25,6 +29,18 @@ int main(int argc, char **argv)
     que->add(s1);
     que->add(g0);
     que->add(s2);
+    SatelliteIterator* iterate= list->createIterator();
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s2));
+    cout<<"Testing the satellite iterator";
+    while(iterate->current()!=iterate->lastSat())
+    {
+        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
+        iterate->nextSat();
+    }
+        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
+
 
     // que->add(&s4);
 

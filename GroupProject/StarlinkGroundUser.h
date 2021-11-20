@@ -46,7 +46,7 @@ public:
  *           It outputs the message
  *		    
  *  @param[out] message, a string message
- *  @param[in] nodeId, an integer id
+ *  @param[in] id, an integer id
  *  @return void.
  */
     void communicate(std::string message, int id = -1) override
@@ -58,7 +58,7 @@ public:
         // }
     };
     /** 
- *  @fn     virtual void receivedMessage(std::string message) = 0
+ *  @fn     void receivedMessage(std::string message)
  *  @details receivedMessage() outputs that it has indeed received the communicated message
  *		    
  *  @param[out] message, a string message
@@ -80,7 +80,11 @@ public:
  */
     
     StarlinkCommunication *clone() { return new StarlinkGroundUser(this->id); };
-  
+    /** 
+ *  @fn     ~StarlinkGroundUser() 
+ *  @brief  StarlinkGroundUser destructor
+ *		
+ */
     ~StarlinkGroundUser(){};
 };
 

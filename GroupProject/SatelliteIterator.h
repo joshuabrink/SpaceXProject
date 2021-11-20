@@ -19,15 +19,32 @@ class SatelliteIterator
     StarlinkOrbitingSatellite* first;
     StarlinkOrbitingSatellite* next;
     StarlinkOrbitingSatellite* curr;
+    StarlinkOrbitingSatellite* last;
 public:
     SatelliteIterator(SatelliteCollection* cn);
     virtual StarlinkOrbitingSatellite* firstSat()=0;
     virtual StarlinkOrbitingSatellite* nextSat()=0;
     virtual StarlinkOrbitingSatellite* current()=0;
+    virtual StarlinkOrbitingSatellite* lastSat()=0;
+
 
     ~SatelliteIterator();
 };
 
+SatelliteIterator::SatelliteIterator(SatelliteCollection* cn)
+{
+  
+     first=next=curr=nullptr;
+     
+    
+   
+}
+SatelliteIterator::~SatelliteIterator()
+{
+  /*  delete first;
+    delete curr;
+    delete next;*/
+}
 
 
 
