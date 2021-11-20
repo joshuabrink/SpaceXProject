@@ -5,12 +5,15 @@
 #ifndef COS214_PROJECT_COMPOSITESTAGE_H
 #define COS214_PROJECT_COMPOSITESTAGE_H
 #include "RocketStage.h"
+#include "RocketLeaf.h"
 
 class CompositeStage: public RocketStage {
 private:
     RocketStage* next;
+    RocketLeaf* val;
 public:
     CompositeStage(CoreBuilder *cb, EngineBuilder *eb);
+    CompositeStage(RocketLeaf* rl){val = rl;};
 
     virtual ~CompositeStage();
 
@@ -23,6 +26,8 @@ public:
     virtual void makeFalconHeavyStage2();
 
     virtual void addRocketStage(RocketStage* n);
+
+    RocketLeaf* getVal(){return val;};
 };
 
 

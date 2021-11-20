@@ -3,6 +3,12 @@
 //
 #include "EngineBuilder.h"
 
+EngineBuilder::EngineBuilder()
+{
+    engineArray = nullptr;
+    arrSize = 0;
+}
+
 /**
  * @author Leonardo Wessels u17229457
  */

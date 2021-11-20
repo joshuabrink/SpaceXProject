@@ -11,7 +11,7 @@
 CoreBuilder::CoreBuilder()
 {
     coreArray = nullptr;
-    coreFactory = new Core();
+    coreFactory = new Core;
     arrSize = 0;
 }
 
@@ -37,7 +37,7 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
         if(rocketName == "falcon9")
         {
             coreArray = new Core*[1];
-            coreArray[0] = new Core();
+            coreArray[0] = coreFactory->getCore();
             arrSize = 1;
         }
         else

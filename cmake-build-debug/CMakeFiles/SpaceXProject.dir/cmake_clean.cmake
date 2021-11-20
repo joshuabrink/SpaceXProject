@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SpaceXProject.dir/Engine.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/Payload.cpp.obj"
+  "CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj"
   "CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj"

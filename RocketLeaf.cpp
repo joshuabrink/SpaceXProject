@@ -12,32 +12,40 @@ RocketLeaf::~RocketLeaf() {
 
 void RocketLeaf::makeFalcon9Stage1()
 {
-    cb->buildCores(0,"falcon9");
-    cores = cb->getResult();
-    eb->buildEngines(0, "falcon9");
-    engines = eb->getResult();
-}
-
-void RocketLeaf::makeFalcon9Stage2()
-{
     cb->buildCores(1,"falcon9");
     cores = cb->getResult();
     eb->buildEngines(1, "falcon9");
     engines = eb->getResult();
+    numCores = cb->getNumCores();
+    numEngines = eb->getNumEngines();
+}
+
+void RocketLeaf::makeFalcon9Stage2()
+{
+    cb->buildCores(2,"falcon9");
+    cores = cb->getResult();
+    eb->buildEngines(2, "falcon9");
+    engines = eb->getResult();
+    numCores = cb->getNumCores();
+    numEngines = eb->getNumEngines();
 }
 
 void RocketLeaf::makeFalconHeavyStage1()
-{
-    cb->buildCores(0,"falconHeavy");
-    cores = cb->getResult();
-    eb->buildEngines(0, "falconHeavy");
-    engines = eb->getResult();
-}
-
-void RocketLeaf::makeFalconHeavyStage2()
 {
     cb->buildCores(1,"falconHeavy");
     cores = cb->getResult();
     eb->buildEngines(1, "falconHeavy");
     engines = eb->getResult();
+    numCores = cb->getNumCores();
+    numEngines = eb->getNumEngines();
+}
+
+void RocketLeaf::makeFalconHeavyStage2()
+{
+    cb->buildCores(2,"falconHeavy");
+    cores = cb->getResult();
+    eb->buildEngines(2, "falconHeavy");
+    engines = eb->getResult();
+    numCores = cb->getNumCores();
+    numEngines = eb->getNumEngines();
 }

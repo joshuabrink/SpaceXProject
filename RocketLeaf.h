@@ -21,6 +21,11 @@ public:
     virtual void makeFalconHeavyStage1();
 
     virtual void makeFalconHeavyStage2();
+
+    int getNumCores(){return numCores;};
+    int getNumEngines(){return numEngines;};
+    Core** getCores(){return cores;};
+    Engine** getEngines(){return engines;};
 };
 
 

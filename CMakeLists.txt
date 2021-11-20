@@ -40,4 +40,4 @@ add_executable(SpaceXProject
         StageBuilder.h
         TransportEntities.cpp
         TransportEntities.h
-        VacuumMerlinEngine.h)
+        VacuumMerlinEngine.h Rocket.cpp Rocket.h)

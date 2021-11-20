@@ -344,6 +344,30 @@ Payload.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Payload.cpp.s
 .PHONY : Payload.cpp.s
 
+Rocket.obj: Rocket.cpp.obj
+.PHONY : Rocket.obj
+
+# target to build an object file
+Rocket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj
+.PHONY : Rocket.cpp.obj
+
+Rocket.i: Rocket.cpp.i
+.PHONY : Rocket.i
+
+# target to preprocess a source file
+Rocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.i
+.PHONY : Rocket.cpp.i
+
+Rocket.s: Rocket.cpp.s
+.PHONY : Rocket.s
+
+# target to generate assembly for a file
+Rocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.s
+.PHONY : Rocket.cpp.s
+
 RocketLeaf.obj: RocketLeaf.cpp.obj
 .PHONY : RocketLeaf.obj
 
@@ -524,6 +548,9 @@ help:
 	@echo ... Payload.obj
 	@echo ... Payload.i
 	@echo ... Payload.s
+	@echo ... Rocket.obj
+	@echo ... Rocket.i
+	@echo ... Rocket.s
 	@echo ... RocketLeaf.obj
 	@echo ... RocketLeaf.i
 	@echo ... RocketLeaf.s

@@ -4,6 +4,11 @@
 
 #include "Core.h"
 
+Core::Core()
+{
+
+}
+
 /**
  * @fn factory method for generating cores
  * @return a new core object
@@ -11,5 +16,5 @@
 
 Core* Core::getCore()
 {
-    return new Core();
+    return new Core;
 }

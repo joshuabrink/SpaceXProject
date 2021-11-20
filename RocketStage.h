@@ -9,6 +9,7 @@
 #include "CoreBuilder.h"
 #include "EngineBuilder.h"
 
+
 /**
  * @class RocketCompositeStage
  * Serves as the leaf class for the composite design
@@ -18,11 +19,14 @@
 class RocketStage {
 public:
     Core** cores;
+    int numCores;
     Engine** engines;
+    int numEngines;
     CoreBuilder* cb = new CoreBuilder();
     EngineBuilder* eb = new EngineBuilder();
 
     RocketStage(CoreBuilder *cb, EngineBuilder *eb);
+    RocketStage(){};
 
     virtual void makeFalcon9Stage1() = 0;
     virtual void makeFalcon9Stage2() = 0;
