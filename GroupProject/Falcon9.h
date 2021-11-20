@@ -11,7 +11,7 @@ class Falcon9 : public Rocket {
 private:
 	list<Satellite*> satellites;
 public:
-	Falcon9(CompositeStage*);
+	Falcon9(CompositeStage*,double);
 	void addSatellites(Satellite*);
 	//prototype:
 	Rocket* clone();

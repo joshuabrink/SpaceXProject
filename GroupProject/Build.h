@@ -10,6 +10,7 @@
 #ifndef BUILD_H
 #define BUILD_H
 
+class Rocket;
 #include "Command.h"
 #include "RocketFactory.h"
 
@@ -19,7 +20,7 @@ private:
 
 public:
 	Build(RocketFactory*);
-	Rocket* execute();
+	Rocket* executeBuild();
 };
 
 #endif

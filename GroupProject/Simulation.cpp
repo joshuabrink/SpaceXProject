@@ -41,7 +41,7 @@ void Simulation::setRocket(Rocket* R)
 
 void Simulation::Build()
 {
-	buildCommand->execute();
+	rocket = buildCommand->executeBuild();
 }
 
 void Simulation::DestinationCommand()

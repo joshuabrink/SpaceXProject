@@ -1,6 +1,6 @@
 #include "Falcon9.h"
 
-Falcon9::Falcon9(CompositeStage* c):Rocket(c)
+Falcon9::Falcon9(CompositeStage* c,double cost):Rocket(c,cost)
 {
 }
 

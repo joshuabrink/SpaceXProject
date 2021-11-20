@@ -20,6 +20,13 @@ public:
      * @return void.
     */
 	virtual void execute() = 0;
+
+    /**
+     * @fn    virtual void executeBuild() 
+     * @brief virtual function that will be implemented by Build class
+     * @return Rocket*, Rocket pointer.
+    */
+    virtual Rocket* executeBuild() {};
 	/**
      * @fn     Command()
      * @brief  A constructor for the Command class

@@ -13,8 +13,9 @@ private:
     Destination* destination;
 	CompositeStage* stage;
 	bool isLaunch;
+	double cost;
 public:
-	Rocket(CompositeStage*);
+	Rocket(CompositeStage*,double);
 
 	virtual void Launch();
 	virtual void Interrupt();

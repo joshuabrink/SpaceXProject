@@ -1,10 +1,11 @@
 #include "Rocket.h"
 
-Rocket::Rocket(CompositeStage* stage)
+Rocket::Rocket(CompositeStage* stage,double cost)
 {
 	this->stage = stage;
 	isLaunch = false;
 	destination = nullptr;
+	this->cost = cost;
 }
 
 void Rocket::Launch()
