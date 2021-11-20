@@ -6,6 +6,7 @@
 #include "Destination.h"
 #include "CompositeStage.h"
 #include "Satellite.h"
+#include "SatelliteCollection.h"
 
 using namespace std;
 
@@ -25,20 +26,20 @@ public:
  */
 	Rocket(CompositeStage*,double);
 /**
- *  @fn     virtual void Launch()
- *  @brief  Launch acts as the receiver for the launch command and responds accordingly. 
+ *  @fn     virtual void Launch()=0
+ *  @brief  Launch acts as the receiver for the launch command and the child class responds accordingly. 
  *	@rerturn void
  */
-	virtual void Launch();
+	virtual void Launch()=0;
 /**
  *  @fn     virtual void Interrupt()
  *  @brief  Interrupt acts as the receiver for the Interrupt command and responds accordingly. 
  *	@rerturn void
  */
-	virtual void Interrupt();
+	virtual void Interrupt()=0;
 /**
  *  @fn     virtual void NextStage()
- *  @brief  NextStage acts as the receiver for the NextStage command and responds accordingly. 
+ *  @brief  NextStage acts as the receiver for the NextStage command and the child class responds accordingly. 
  *	@rerturn void
  */
 	virtual void NextStage();
@@ -103,8 +104,16 @@ public:
  *  @param[in] Satellite, a Satellite pointer.
  *  @return void
  */
-	virtual void addSatellites(Satellite*) {};
+	virtual void addSatellites(SatelliteCollection*) {};
 
+/**
+ *  @fn     void setLaunch(bool)
+ *  @brief  setLaunch changes the state of the Launch in Rocket.
+ *
+ *  @param[in] launch, a boolean value for the Launch state.
+ *  @return void
+ */
+	void setLaunch(bool);
 
 	//prototype:
 /**

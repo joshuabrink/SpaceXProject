@@ -189,6 +189,7 @@
     <ClCompile Include="ISS.cpp" />
     <ClCompile Include="Launch.cpp" />
     <ClCompile Include="LowOrbit.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="NextStage.cpp" />
     <ClCompile Include="Rocket.cpp" />
     <ClCompile Include="SatelliteIterator.cpp" />

@@ -3,16 +3,19 @@
 
 #include "Rocket.h"
 #include "Rocket.h"
-#include <list>
+#include "SatelliteVector.h"
 
 using namespace std;
 
 class Falcon9 : public Rocket {
 private:
-	list<Satellite*> satellites;
+	SatelliteCollection* satellites;
+
 public:
 	Falcon9(CompositeStage*,double);
-	void addSatellites(Satellite*);
+	void addSatellites(SatelliteCollection*);
+	void Launch();
+	void Interrupt();
 	//prototype:
 	Rocket* clone();
 };

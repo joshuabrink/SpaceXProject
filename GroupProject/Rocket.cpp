@@ -8,33 +8,6 @@ Rocket::Rocket(CompositeStage* stage,double cost)
 	this->cost = cost;
 }
 
-void Rocket::Launch()
-{
-	if (destination == nullptr) {
-		cout << "Please set a destination before launch!" << endl;
-		return;
-	}
-
-	if (isLaunch) {
-		cout << "Rocket already launched" << endl;
-	}
-	else {
-		cout << "Launching Rocket" << endl;
-		isLaunch = true;
-	}
-}
-
-void Rocket::Interrupt()
-{
-	if (isLaunch) {
-		cout << "Aborting launch! " << endl;
-		isLaunch = false;
-	}
-	else {
-		cout << "Launch hasn't started yet" << endl;
-	}
-}
-
 void Rocket::NextStage()
 {
 	if (isLaunch) {
@@ -93,4 +66,9 @@ double Rocket::getCost()
 void Rocket::setCost(double cost)
 {
 	this->cost = cost;
+}
+
+void Rocket::setLaunch(bool launch)
+{
+	this->isLaunch = launch;
 }

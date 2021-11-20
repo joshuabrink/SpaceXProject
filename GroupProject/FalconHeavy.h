@@ -8,6 +8,8 @@ using namespace std;
 class FalconHeavy: public Rocket {
 public:
 	FalconHeavy(CompositeStage*,double);
+	void Launch();
+	void Interrupt();
 	//prototype:
 	Rocket* clone();
 };
