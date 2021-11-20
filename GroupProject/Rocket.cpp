@@ -19,6 +19,7 @@ void Rocket::Launch()
 	}
 	else {
 		cout << "Launching Rocket" << endl;
+		isLaunch = true;
 	}
 }
 
