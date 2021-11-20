@@ -1,10 +1,13 @@
-/** @file Launch.h
- * @class Launch
- * @brief Launch is a ConcreteCommand participant in the Command design pattern
- * Launch defines a binding between a Receiver object and an action.
- * Launch implements execute() by invoking the corresponding operation(s) on Receiver.
- * @author Jason Antalis & Joshua Young
- * @bug No known bugs.
+/** @file Build.h
+ *  @class Build
+ *
+ *  @brief Build is a command in the Command design pattern
+ *
+ *  Build defines a binding between a Receiver object and an action.
+ *	Build implements executeBuild() by invoking the corresponding operation(s) on Receiver.
+ *
+ *  @author Joshau Young
+ *  @bug No known bugs.
  */
 
 #ifndef BUILD_H
@@ -22,6 +25,7 @@ private:
 public:
 	Build(RocketFactory*,double);
 	Rocket* executeBuild();
+	virtual ~Build();
 };
 
 #endif

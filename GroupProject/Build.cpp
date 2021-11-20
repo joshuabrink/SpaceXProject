@@ -10,3 +10,7 @@ Rocket* Build::executeBuild()
 {
 	return myRocketFactory->createRocket(cost);
 }
+
+Build::~Build()
+{
+}

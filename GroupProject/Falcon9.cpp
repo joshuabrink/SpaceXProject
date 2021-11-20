@@ -17,7 +17,7 @@ Rocket* Falcon9::clone()
 	list<Satellite*>::iterator it = satellites.begin();
 
 	for (int i = 0; i < satellites.size(); i++) {
-		out->addSatellites(*it);
+		out->addSatellites((*it)->clone());
 		it++;
 	}
 

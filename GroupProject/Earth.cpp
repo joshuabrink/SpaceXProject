@@ -9,3 +9,7 @@ Destination* Earth::clone()
 {
 	return new Earth();
 }
+
+Earth::~Earth()
+{
+}
