@@ -9,11 +9,12 @@
 
 class CompositeStage: public RocketStage {
 private:
-    RocketStage* next;
+    RocketLeaf* next;
     RocketLeaf* val;
 public:
     CompositeStage(CoreBuilder *cb, EngineBuilder *eb);
-    CompositeStage(RocketLeaf* rl){val = rl;};
+    CompositeStage(RocketLeaf* rl){val = rl;next = nullptr;};
+    CompositeStage(CompositeStage* cs);
 
     virtual ~CompositeStage();
 
@@ -25,9 +26,11 @@ public:
 
     virtual void makeFalconHeavyStage2();
 
-    virtual void addRocketStage(RocketStage* n);
+    virtual void addRocketStage(RocketLeaf* n);
 
     RocketLeaf* getVal(){return val;};
+
+    RocketLeaf* getNext(){return next;};
 };
 
 

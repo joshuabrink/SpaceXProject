@@ -4,10 +4,45 @@
 
 #include "RocketLeaf.h"
 
-RocketLeaf::RocketLeaf(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb) {}
+RocketLeaf::RocketLeaf(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb)
+{
+    cores = nullptr;
+    engines = nullptr;
+}
 
-RocketLeaf::~RocketLeaf() {
+RocketLeaf::~RocketLeaf()
+{
 
+}
+
+RocketLeaf::RocketLeaf(RocketLeaf *rl)
+{
+    if(rl->cores)
+    {
+        numCores = rl->getNumCores();
+        cores = new Core*[numCores];
+        for (int i = 0; i < numCores; ++i)
+        {
+            cores[i] = new Core(rl->cores[i]);
+        }
+    }
+    else
+    {
+        cores = nullptr;
+    }
+    if(rl->engines)
+    {
+        numEngines = rl->getNumEngines();
+        engines = new Engine*[numEngines];
+        for (int i = 0; i < numEngines; ++i)
+        {
+            engines[i] = new Engine(rl->engines[i]);
+        }
+    }
+    else
+    {
+        engines = nullptr;
+    }
 }
 
 void RocketLeaf::makeFalcon9Stage1()

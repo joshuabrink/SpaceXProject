@@ -44,12 +44,31 @@ void CompositeStage::makeFalconHeavyStage2()
     numEngines = eb->getNumEngines();
 }
 
-CompositeStage::CompositeStage(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb) {}
-
-CompositeStage::~CompositeStage() {
-
+CompositeStage::CompositeStage(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb)
+{
+    next = nullptr;
+    val = nullptr;
 }
 
-void CompositeStage::addRocketStage(RocketStage *n) {
+CompositeStage::~CompositeStage()
+{
+    next = nullptr;
+    val = nullptr;
+}
+
+void CompositeStage::addRocketStage(RocketLeaf *n)
+{
     next = n;
+}
+
+CompositeStage::CompositeStage(CompositeStage* cs)
+{
+    if(cs->val != nullptr)
+    {
+        val = new RocketLeaf(cs->val);
+    }
+    if(cs->next)
+    {
+        next = new RocketLeaf(cs->next);
+    }
 }

@@ -9,6 +9,11 @@ Core::Core()
 
 }
 
+Core::Core(Core* c)
+{
+    name = c->getName();
+}
+
 /**
  * @fn factory method for generating cores
  * @return a new core object

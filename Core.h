@@ -12,6 +12,8 @@ class Core
 {
 public:
     Core();
+    Core(Core* c);
+    Core(string s){name = s;};
     Core* getCore();
     string getName(){return name;};
 private:

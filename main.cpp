@@ -132,6 +132,7 @@ int main()
 
     printHeading("Creating and connecting composite stages");
 
+    RocketStage* temp;
     CompositeStage* f9 = new CompositeStage(stageArr[0]);
     f9->addRocketStage(stageArr[1]);
     CompositeStage* fHeavy = new CompositeStage(stageArr[2]);
@@ -141,7 +142,11 @@ int main()
 
     printSubHeading("F9");
     printBuilderInfo(f9->getVal());
+    temp = f9->getNext();
+    printBuilderInfo((RocketLeaf*)temp);
     printSubHeading("FHeavy");
+    temp = fHeavy->getNext();
+    printBuilderInfo((RocketLeaf*)temp);
     printBuilderInfo(fHeavy->getVal());
 
     delete fHeavy;

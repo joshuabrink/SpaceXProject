@@ -11,6 +11,7 @@
 class RocketLeaf: public RocketStage {
 public:
     RocketLeaf(CoreBuilder *cb, EngineBuilder *eb);
+    RocketLeaf(RocketLeaf* rl);
 
     virtual ~RocketLeaf();
 

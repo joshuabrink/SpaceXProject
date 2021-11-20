@@ -8,6 +8,7 @@ class Engine
 {
 public:
 	Engine();
+	Engine(Engine* e){name = e->getName();};
 	~Engine();
     string getName(){return name;};
 private:
