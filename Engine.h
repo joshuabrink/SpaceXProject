@@ -1,6 +1,7 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 using namespace std;
@@ -16,7 +17,7 @@ public:
 	string getName();
 	double getCost();
 
-private:
+protected:
 	string name = "engine";
 	double cost;
 };

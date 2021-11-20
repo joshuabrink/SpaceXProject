@@ -7,6 +7,8 @@
 
 #include "TransportEntities.h"
 
+#include <vector>
+
 using namespace std;
 
 void createFactories() {
@@ -31,7 +33,7 @@ void createFactories() {
 
 	supplies[0] = SuppliesFact->createPayload("Water supply", 10000);
 	supplies[1] = SuppliesFact->createPayload("Food supply", 50000);
-	supplies[2] = SuppliesFact->createPayload("Oxygen supply", 2000000);
+	supplies[2] = SuppliesFact->createPayload("Oxygen supply", 200000);
 
 
 	//Rocket** rockets = new Rocket * [4];
@@ -50,11 +52,11 @@ void createFactories() {
 
 void createTransportEntities() {
 	TransportEntities** crew = new TransportEntities * [5];
-	TransportEntities** cargo = new TransportEntities * [2];
+	TransportEntities** cargo = new TransportEntities * [3];
 
 	crew[0] = new Crew("Susan", "Electrical Engineer");
 	crew[1] = new Crew("John", "Mission Specialist 1");
-	crew[2] = new Crew("Victor", "Mission Specialist 2");
+	crew[2] = new Crew("Vector", "Mission Specialist 2");
 	crew[3] = new Crew("Kjell", "Spacecraft Commander");
 	crew[4] = new Crew("Michael", "Pilot");
 
@@ -63,33 +65,35 @@ void createTransportEntities() {
 	cargo[2] = new Cargo("Tools");
 }
 
-void Falcon9Engine() {
-	Engine* engine;
-	engine = new VacuumMerlinEngine(21000000);
-
-	for (int i = 0; i < 9; i++)
-	{
-		engine->addEngine(new MerlinEngine(4200000));
-	}
-
-	cout << "Total cost = " << engine->totalCost() << endl;
-
-	delete engine;
-}
-
-void FalconHeavyEngine() {
-	Engine* engine;
-	engine = new VacuumMerlinEngine(21000000);
-
-	for (int i = 0; i < 27; i++)
-	{
-		engine->addEngine(new MerlinEngine(4200000));
-	}
-
-	cout << "Total cost = " << engine->totalCost() << endl;
-
-	delete engine;
-}
+//void Falcon9Engine() {
+//	Engine* engine;
+//	E* 
+//	engine = new VacuumMerlinEngine(21000000);
+//
+//
+//	for (int i = 0; i < 9; i++)
+//	{
+//		engine->addEngine(new MerlinEngine(4200000));
+//	}
+//
+//	cout << "Total cost = " << engine->totalCost() << endl;
+//
+//	delete engine;
+//}
+//
+//void FalconHeavyEngine() {
+//	Engine* engine;
+//	engine = new VacuumMerlinEngine(21000000);
+//
+//	for (int i = 0; i < 27; i++)
+//	{
+//		engine->addEngine(new MerlinEngine(4200000));
+//	}
+//
+//	cout << "Total cost = " << engine->totalCost() << endl;
+//
+//	delete engine;
+//}
 
 int main() {
 
@@ -100,12 +104,12 @@ int main() {
 	createTransportEntities();
 	cout << endl;
 
-	cout << "Falcon9 Engine:" << endl;
-	Falcon9Engine();
-	cout << endl;
-	cout << "FalconHeavy Engine:" << endl;
-	FalconHeavyEngine();
-	cout << endl;
+	//cout << "Falcon9 Engine:" << endl;
+	//Falcon9Engine();
+	//cout << endl;
+	//cout << "FalconHeavy Engine:" << endl;
+	//FalconHeavyEngine();
+	//cout << endl;
 
 
 	return 0;

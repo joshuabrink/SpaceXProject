@@ -36,7 +36,7 @@ Supplies::Supplies(){
 }
 
 Supplies::Supplies(string Description, double cost) : Payload(Description, cost){
-	cout << "Creating supplies at cost " << getCost() << ", description: " << getDiscription() << endl;
+	cout << "Creating supplies at cost " << fixed << setprecision(2) << getCost() << ", description: " << getDiscription() << endl;
 }
 
 Supplies::~Supplies(){
@@ -49,7 +49,7 @@ Satellite::Satellite(){
 }
 
 Satellite::Satellite(string Description, double cost) : Payload(Description, cost){
-	cout << "Creating sattelite at cost " << getCost() << ", description: " << getDiscription() << endl;
+	cout << "Creating satellite at cost " << fixed << setprecision(2) << getCost() << ", description: " << getDiscription() << endl;
 }
 
 Satellite::~Satellite(){

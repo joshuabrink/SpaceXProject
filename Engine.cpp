@@ -8,6 +8,7 @@ Engine::Engine(double C) {
 	this->cost = C;
 }
 
+
 Engine::~Engine() {
 
 }

@@ -10,11 +10,12 @@ class ModifiedMerlinEngine : public Engine
 public:
 	ModifiedMerlinEngine();
 	ModifiedMerlinEngine(double);
+	ModifiedMerlinEngine(const ModifiedMerlinEngine& E);
+	~ModifiedMerlinEngine();
+
 	virtual double totalCost();
 	virtual void addEngine(Engine*);
-	
-protected:
-	~ModifiedMerlinEngine();
+
 private:
 	Engine* engines;
 };

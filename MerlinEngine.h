@@ -25,7 +25,7 @@ public:
 
 	MerlinEngine();
 	MerlinEngine(double);
-
+	MerlinEngine(const MerlinEngine& E);
 /**
 *	@fn     virtual double totalCost()
 *	@brief  totalCost() will be used to determine the total cost of the Merlin engines
@@ -38,11 +38,14 @@ public:
 */
 	virtual void addEngine(Engine*);
 
+
+protected:
 /**
  *  @fn     ~Satellite()
  *  @brief  Satellite destructor
  */
 	~MerlinEngine();
+
 };
 
 #endif

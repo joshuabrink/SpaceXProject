@@ -4,9 +4,14 @@ ModifiedMerlinEngine::ModifiedMerlinEngine() {
 	engines = nullptr;
 }
 
-ModifiedMerlinEngine::ModifiedMerlinEngine(double C) : Engine(C)
-{
+ModifiedMerlinEngine::ModifiedMerlinEngine(double C) : Engine(C){
 	engines = nullptr;
+}
+
+ModifiedMerlinEngine::ModifiedMerlinEngine(const ModifiedMerlinEngine& E) : Engine(E.cost) {}
+
+ModifiedMerlinEngine::~ModifiedMerlinEngine() {
+	delete engines;
 }
 
 double ModifiedMerlinEngine::totalCost() {
@@ -30,6 +35,5 @@ void ModifiedMerlinEngine::addEngine(Engine* E) {
 	}
 }
 
-ModifiedMerlinEngine::~ModifiedMerlinEngine() {
-	delete engines;
-}
+
+

@@ -6,6 +6,8 @@ MerlinEngine::MerlinEngine(double C) : Engine(C) {
 	cout << "Creating MerlinEngine at cost: " << getCost() << endl;
 }
 
+MerlinEngine::MerlinEngine(const MerlinEngine& E) : Engine(E.cost) {}
+
 MerlinEngine::~MerlinEngine() {
 
 }
