@@ -1,6 +1,7 @@
 #ifndef SPACECRAFT_H
 #define SPACECRAFT_H
-
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 class SpaceCraft

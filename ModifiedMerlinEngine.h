@@ -1,25 +1,23 @@
 #ifndef MODIFIEDMERLINENGINE_H
 #define MODIFIEDMERLINENGINE_H
-
+#include <iostream>
 #include "Engine.h"
 
 using namespace std;
 
-class ModifiedMerlinEngine
+class ModifiedMerlinEngine : public Engine
 {
 public:
-	ModifiedMerlinEngine() {
+	ModifiedMerlinEngine();
+	ModifiedMerlinEngine(double);
+	ModifiedMerlinEngine(const ModifiedMerlinEngine& E);
+	~ModifiedMerlinEngine();
 
-	}
-
-	~ModifiedMerlinEngine() {
-
-
-	}
-
+	virtual double totalCost();
+	virtual void addEngine(Engine*);
 
 private:
-
+	Engine* engines;
 };
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef TRANSPORTENTITIES_H
 #define TRANSPORTENTITIES_H
 
+#include <iostream>
 #include <string>
 
 using namespace std;

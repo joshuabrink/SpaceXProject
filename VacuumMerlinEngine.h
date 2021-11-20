@@ -1,6 +1,8 @@
 #ifndef VACUUMMERLINENGINE_H
 #define VACUUMMERLINENGINE_H
 
+#include <iostream>
+
 #include "ModifiedMerlinEngine.h"
 
 using namespace std;
@@ -8,16 +10,9 @@ using namespace std;
 class VacuumMerlinEngine : public ModifiedMerlinEngine
 {
 public:
-	VacuumMerlinEngine() {
-
-	};
-
-	~VacuumMerlinEngine() {
-
-	};
-
-
-private:
+	VacuumMerlinEngine();
+	VacuumMerlinEngine(double);
+	~VacuumMerlinEngine();
 
 };
 

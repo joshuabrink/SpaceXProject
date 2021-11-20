@@ -1,23 +1,17 @@
 #ifndef ROCKETFACTORY_H
 #define  ROCKETFACTORY_H
-
-#include "Rocket.h"
+#include <iostream>
+//#include "Rocket";
 
 using namespace std;
 
 class RocketFactory
 {
 public:
-	RocketFactory() {
-
-	}
-
-	~RocketFactory() {
-
-
-	}
+	RocketFactory();
+	~RocketFactory();
 	
-	virtual Rocket* createRocket() = 0;
+	//virtual Rocket* createRocket(double) = 0;
 
 private:
 
