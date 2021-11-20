@@ -18,7 +18,8 @@ Rocket* Falcon9::clone()
 	CompositeStage* temp = new CompositeStage(getStage());
 	Rocket* out = new Falcon9(temp,getCost());
 	out->setDestination(getDestination()->clone());
-
+	if(satellites!=nullptr&&iterate!=nullptr)
+	{
 	SatelliteCollection* outSattelites = new SatelliteVector();
 	//vector<OrbitingSatellite*>::iterator it = satellites->getVector().begin();
 	iterate->firstSat();
@@ -32,6 +33,9 @@ Rocket* Falcon9::clone()
 //ASK JOSH ABOUT LINE 32
 	out->addSatellites(outSattelites);
 
+
+	}
+	
 
 	return out;
 	
@@ -49,7 +53,7 @@ void Falcon9::Launch()
 	}
 	else {
 		cout << "Launching Falcon 9" << endl;
-	if(satellites!=nullptr)
+	if(satellites!=nullptr&&iterate!=nullptr)
 	{
 	//SatelliteIterator* iterate = satellites->createIterator();
 	iterate->firstSat();
@@ -71,7 +75,7 @@ void Falcon9::Interrupt()
 {
 	if (getLaunch()) {
 		cout << "Aborting Falcon 9 launch! " << endl;
-		if(satellites!=nullptr)
+	if(satellites!=nullptr&&iterate!=nullptr)
 	{
 	//SatelliteIterator* iterate = satellites->createIterator();
 	iterate->firstSat();
