@@ -34,14 +34,4 @@ public:
 
 };
 
-
-class Satellite : public Payload
-{
-public:
-	Satellite();
-	Satellite(string Description, double cost);
-	~Satellite();
-
-};
-
 #endif

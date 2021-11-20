@@ -27,12 +27,20 @@ public:
 	Falcon9Factory();
 
 	/**
- *  @fn     Falcon9Factory()
+ *  @fn     ~Falcon9Factory()
  *  @brief  Falcon9Factory destructor
  */
 	~Falcon9Factory();
 
+/**
+*  @fn     Payload* createPayload(string, double)
+*  @brief  create a payload with and cost
+*
+*  @param[in] double cost
+*  @return Rocket*, a payload pointer
+*/
 	Rocket* createRocket(double);
+
 private:
 
 };
@@ -47,11 +55,17 @@ public:
 	FalconHeavyFactory();
 
 	/**
- *  @fn     FalconHeavyFactory()
+ *  @fn     ~FalconHeavyFactory()
  *  @brief  FalconHeavyFactory destructor
  */
 	~FalconHeavyFactory();
-
+/**
+*  @fn     Payload* createPayload(string, double)
+*  @brief  create a payload with and cost
+*
+*  @param[in] double cost
+*  @return Rocket*, a payload pointer
+*/
 	Rocket* createRocket(double);
 private:
 

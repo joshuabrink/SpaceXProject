@@ -42,16 +42,3 @@ Supplies::Supplies(string Description, double cost) : Payload(Description, cost)
 Supplies::~Supplies(){
 
 }
-
-
-Satellite::Satellite(){
-
-}
-
-Satellite::Satellite(string Description, double cost) : Payload(Description, cost){
-	cout << "Creating satellite at cost " << fixed << setprecision(2) << getCost() << ", description: " << getDiscription() << endl;
-}
-
-Satellite::~Satellite(){
-
-}
