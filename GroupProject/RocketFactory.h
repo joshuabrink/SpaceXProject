@@ -5,7 +5,7 @@
 
 class RocketFactory {
 public:
-	Rocket* createRocket() { };
+	Rocket* createRocket(double) { };
 };
 
 #endif 

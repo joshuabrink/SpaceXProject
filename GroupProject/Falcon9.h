@@ -2,7 +2,7 @@
 #define FALCON9_H
 
 #include "Rocket.h"
-#include "Satellite.h"
+#include "Rocket.h"
 #include <list>
 
 using namespace std;

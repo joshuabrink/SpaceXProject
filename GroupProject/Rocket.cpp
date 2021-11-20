@@ -84,3 +84,13 @@ bool Rocket::getLaunch()
 {
 	return isLaunch;
 }
+
+double Rocket::getCost()
+{
+	return cost;
+}
+
+void Rocket::setCost(double cost)
+{
+	this->cost = cost;
+}

@@ -6,6 +6,7 @@
 class LowOrbit : public Destination{
 public:
 	string getDestination();
+	Destination* clone();
 };
 
 #endif

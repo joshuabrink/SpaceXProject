@@ -1,11 +1,12 @@
 #include "Build.h"
 
-Build::Build(RocketFactory* factory)
+Build::Build(RocketFactory* factory,double cost)
 {
 	myRocketFactory = factory;
+	this->cost = cost;
 }
 
 Rocket* Build::executeBuild()
 {
-	return myRocketFactory->createRocket();
+	return myRocketFactory->createRocket(cost);
 }

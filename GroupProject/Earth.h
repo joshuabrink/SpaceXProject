@@ -6,6 +6,7 @@
 class Earth : public Destination {
 public:
 	string getDestination();
+	Destination* clone();
 };
 
 #endif

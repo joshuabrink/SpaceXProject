@@ -17,9 +17,10 @@ class Rocket;
 class Build:public Command{
 private:
 	RocketFactory* myRocketFactory;
+	double cost;
 
 public:
-	Build(RocketFactory*);
+	Build(RocketFactory*,double);
 	Rocket* executeBuild();
 };
 

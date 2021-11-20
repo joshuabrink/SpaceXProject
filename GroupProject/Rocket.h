@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Destination.h"
 #include "CompositeStage.h"
+#include "Satellite.h"
 
 using namespace std;
 
@@ -28,6 +29,11 @@ public:
 	void setStage(CompositeStage*);
 
 	bool getLaunch();
+
+	double getCost();
+	void setCost(double);
+
+	virtual void addSatellites(Satellite*) {};
 
 
 	//prototype:
