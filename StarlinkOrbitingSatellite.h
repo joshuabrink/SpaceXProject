@@ -1,30 +1,29 @@
+/** @file StarlinkOrbitingSatellite.h
+ *  @class StarlinkOrbitingSatellite
+ *  @headerfile  StarlinkOrbitingSatellite.h "StarlinkOrbitingSatellite.h"
+ *  @brief StarlinkOrbitingSatellite is a concrete prototype participant in the Prototype design pattern
+ *  @brief StarlinkOrbitingSatellite is a concrete colleague participant the Mediator design pattern
+ *
+ *  StarlinkOrbitingSatellite implements the interface for cloning.
+ *  StarlinkOrbitingSatellite also implements the interface for colleague objects.
+ *
+ *   
+ *   @author Tshegofatso Manthata
+ *   @author Joshua Brink
+ *  @bug No known bugs.
+ */
 #ifndef STARLINKORBITINGSATELLITE_H
 #define STARLINKORBITINGSATELLITE_H
 #include <iostream>
-// #include <vector>
-// using namespace std;
-// #include "StarlinkOrbitingSatelliteIterator.h"
+
 #include "StarlinkCommunication.h"
 #include "CommuncationNetwork.h"
-/**
- * THE LEDS :
- *  Prototype participant in the prototype
- *
- *  TODO: define a pure virtual clone()
- */
+
 class FalconRockets;
-// class StarlinkOrbitingSatelliteIterator;
 static int StarlinkOrbitingSatelliteId = 0;
 class StarlinkOrbitingSatellite : public StarlinkCommunication
 {
-/**
- * @author      Tshegofatso Manthata
- * @headerfile  StarlinkOrbitingSatellite.h "StarlinkOrbitingSatellite.h"
- * @brief       This is a concrete collegue for the Mediator pattern
- * @brief       This is a concrete prototype for the Prototype pattern
- * @brief       This is a concrete aggregate for the iterator pattern
- * @todo        Implements the SatelliteIterator 
- */ 
+
 private:
     bool isLaunched;
 

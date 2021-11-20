@@ -10,10 +10,9 @@ using namespace std;
  * @todo implement the iterator properly
  */
 
-template <typename Type>
+class SatelliteCollection;
 class SatelliteIterator
 {
-    friend class SatelliteCollection;
 
     protected:
    
@@ -21,7 +20,7 @@ class SatelliteIterator
     StarlinkOrbitingSatellite* next;
     StarlinkOrbitingSatellite* curr;
 public:
-    SatelliteIterator();
+    SatelliteIterator(SatelliteCollection* cn);
     virtual StarlinkOrbitingSatellite* firstSat()=0;
     virtual StarlinkOrbitingSatellite* nextSat()=0;
     virtual StarlinkOrbitingSatellite* current()=0;

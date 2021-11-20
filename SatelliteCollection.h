@@ -5,18 +5,20 @@
 class SatelliteCollection
 {
 protected:
-   typedef SatelliteIterator<StarlinkOrbitingSatellite*> satiterator;
 public:
      
 
     SatelliteCollection(/* args */);
     virtual void addList(StarlinkOrbitingSatellite*)=0;
-
+    virtual vector<StarlinkOrbitingSatellite*> getVector()=0;
+    virtual SatelliteIterator* createIterator()=0;
     ~SatelliteCollection();
 };
 SatelliteCollection::SatelliteCollection(/* args */)
 {
-}
+}  
+
+
 SatelliteCollection::~SatelliteCollection()
 {
 }
