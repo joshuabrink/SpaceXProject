@@ -6,50 +6,69 @@
 
 void CompositeStage::makeFalcon9Stage1()
 {
-    cb->buildEngines(0, "falcon9");
+    cb->buildEngines(0,"falcon9");
     cores = cb->getResult();
+    numCores = cb->getNumCores();
     eb->buildEngines(0, "falcon9");
     engines = eb->getResult();
+    numEngines = eb->getNumEngines();
 }
 
 void CompositeStage::makeFalcon9Stage2()
 {
-    cb->buildEngines(1, "falcon9");
+    cb->buildEngines(1,"falcon9");
     cores = cb->getResult();
+    numCores = cb->getNumCores();
     eb->buildEngines(1, "falcon9");
     engines = eb->getResult();
+    numEngines = eb->getNumEngines();
 }
 
 void CompositeStage::makeFalconHeavyStage1()
 {
-    cb->buildEngines(0, "falconHeavy");
+    cb->buildEngines(0,"falconHeavy");
     cores = cb->getResult();
+    numCores = cb->getNumCores();
     eb->buildEngines(0, "falconHeavy");
     engines = eb->getResult();
+    numEngines = eb->getNumEngines();
 }
 
 void CompositeStage::makeFalconHeavyStage2()
 {
-    cb->buildEngines(1, "falconHeavy");
+    cb->buildEngines(1,"falconHeavy");
     cores = cb->getResult();
+    numCores = cb->getNumCores();
     eb->buildEngines(1, "falconHeavy");
     engines = eb->getResult();
+    numEngines = eb->getNumEngines();
 }
 
-CompositeStage::CompositeStage(CoreBuilder* cb, EngineBuilder* eb) : RocketStage(cb, eb) {}
-
-CompositeStage::~CompositeStage() {
-
+CompositeStage::CompositeStage(CoreBuilder *cb, EngineBuilder *eb) : RocketStage(cb, eb)
+{
+    next = nullptr;
+    val = nullptr;
 }
 
-void CompositeStage::addRocketStage(RocketStage* n) {
+CompositeStage::~CompositeStage()
+{
+    next = nullptr;
+    val = nullptr;
+}
+
+void CompositeStage::addRocketStage(RocketLeaf *n)
+{
     next = n;
 }
 
-RocketStage* CompositeStage::getNext() const {
-    return next;
-}
-
-void CompositeStage::setNext(RocketStage* next) {
-    CompositeStage::next = next;
+CompositeStage::CompositeStage(CompositeStage* cs)
+{
+    if(cs->val != nullptr)
+    {
+        val = new RocketLeaf(cs->val);
+    }
+    if(cs->next)
+    {
+        next = new RocketLeaf(cs->next);
+    }
 }

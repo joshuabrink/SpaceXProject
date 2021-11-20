@@ -1,132 +1,244 @@
-#include "../StarlinkQueue.h"
-#include "../StarlinkOrbitingSatellite.h"
-#include "../StarlinkGroundUser.h"
-#include "../ConcreteSatelliteIterator.h"
-#include "../SatelliteCollection.h"
-#include "../SatelliteVector.h"
-// #include "TECargoCollection.h"
-// #include "TransportEntityCrew.h"
-// #include "TransportEntityCargo.h"
-// #include "SpaceCraftCrewDragon.h"
-// #include "SpaceCraftDragon.h"
-#include <vector>
 #include <iostream>
+#include "EngineBuilder.h"
+#include "CoreBuilder.h"
+#include "RocketLeaf.h"
+#include "CompositeStage.h"
+#include "ConcretePayloadFactory.h"
+#include "ConcreteRocketFactory.h"
+#include "ConcreteSpaceCraftFactory.h"
+
+#include "VacuumMerlinEngine.h"
+#include "MerlinEngine.h"
+
+#include "TransportEntities.h"
+
+#include <vector>
+
 using namespace std;
-int main(int argc, char **argv)
+
+void createFactories() {
+    PayloadFactory* SatelliteFact = new SatellitesFactory;
+    PayloadFactory* SuppliesFact = new SuppliesFactory;
+
+    RocketFactory* Falcon9Fact = new Falcon9Factory;
+    RocketFactory* FalconHeavyFact = new FalconHeavyFactory;
+
+    SpaceCraftFactory* DragonFact = new DragonFactory;
+    SpaceCraftFactory* CrewDragonFact = new CrewDragonFactory;
+
+
+    Payload** satellites = new Payload * [60];
+    Payload** supplies = new Payload * [3];
+
+    for (int i = 0; i < 60; i++)
+    {
+        satellites[i] = SatelliteFact->createPayload("Starlink Satelite", 300000000);
+    }
+
+
+    supplies[0] = SuppliesFact->createPayload("Water supply", 10000);
+    supplies[1] = SuppliesFact->createPayload("Food supply", 50000);
+    supplies[2] = SuppliesFact->createPayload("Oxygen supply", 200000);
+
+
+    //Rocket** rockets = new Rocket * [4];
+
+    //rockets[0] = Falcon9Fact->createRocket(3000000);
+    //rockets[1] = Falcon9Fact->createRocket(3000000);
+    //rockets[2] = FalconHeavyFact->createRocket(5000000);
+    //rockets[3] = FalconHeavyFact->createRocket(5000000);
+
+
+    SpaceCraft** spaceCraft = new SpaceCraft * [2];
+    spaceCraft[0] = DragonFact->createSpaceCraft(5000000, 400);
+    spaceCraft[1] = CrewDragonFact->createSpaceCraft(8000000, 10);
+}
+
+
+void createTransportEntities() {
+    TransportEntities** crew = new TransportEntities * [5];
+    TransportEntities** cargo = new TransportEntities * [3];
+
+    crew[0] = new Crew("Susan", "Electrical Engineer");
+    crew[1] = new Crew("John", "Mission Specialist 1");
+    crew[2] = new Crew("Vector", "Mission Specialist 2");
+    crew[3] = new Crew("Kjell", "Spacecraft Commander");
+    crew[4] = new Crew("Michael", "Pilot");
+
+    cargo[0] = new Cargo("Food");
+    cargo[1] = new Cargo("Oxygen");
+    cargo[2] = new Cargo("Tools");
+}
+
+/**
+ * @fn prints heading for testing phase
+ * @param s name of the component you would like a heading for
+ */
+
+void printHeading(string s)
+{
+    string tabs = "-------------------------------\n";
+    cout << tabs;
+    cout << s << endl;
+    cout << tabs;
+}
+
+void printSubHeading(string s)
+{
+    string tabs = "-------------------------------\n";
+    cout << s << endl;
+    cout << tabs;
+}
+
+/**
+ * @fn provides a way to check values of components, prints the names of the cores and engines
+ * @param rocketType falcon9/falconHeavy
+ * @param stageNum stage of rocket, 1/2
+ * @param eb builder to build engines
+ * @param cb builder to build cores
+ * @param engines engine array that will contain the new engines
+ * @param cores core array that will contain the new cores
+ */
+
+//can see if it's working from the output
+void printBuilderInfo(string rocketType, int stageNum, EngineBuilder* eb, CoreBuilder* cb, Engine** engines, Core** cores )
+{
+    eb->buildEngines(stageNum,rocketType);
+    cb->buildCores(stageNum,rocketType);
+
+    engines = eb->getResult();
+    cores = cb->getResult();
+    for (int i = 0; i < eb->getNumEngines(); ++i)
+    {
+        cout << engines[i]->getCost() << endl;
+    }
+    for (int i = 0; i < cb->getNumCores(); ++i)
+    {
+        cout << cores[i]->getName() << endl;
+    }
+}
+
+void printBuilderInfo(RocketLeaf* rl)
+{
+    Engine** e = rl->getEngines();
+    Core** c = rl->getCores();
+
+
+    if(e != nullptr)
+    {
+        for (int i = 0; i < rl->getNumEngines(); ++i)
+        {
+            cout << e[i]->getCost() << endl;
+        }
+    }
+
+    if(c != nullptr)
+    {
+        for (int i = 0; i < rl->getNumCores(); ++i)
+        {
+            cout << c[i]->getName() << endl;
+        }
+    }
+}
+
+int main()
 {
 
-   
-    StarlinkQueue *que = new StarlinkQueue();
-    SatelliteCollection* list= new SatelliteVector();
-    StarlinkCommunication *s0 = new StarlinkOrbitingSatellite();
-    StarlinkCommunication *s1 = new StarlinkOrbitingSatellite();
-    StarlinkCommunication *g0 = new StarlinkGroundUser();
-    StarlinkCommunication *s2 = s1->clone();
-
-    
-    // StarlinkOrbitingSatellite s4 = StarlinkOrbitingSatellite();
-    que->add(s0);
-    que->add(s1);
-    que->add(g0);
-    que->add(s2);
-    SatelliteIterator* iterate= list->createIterator();
-    list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
-    list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
-    list->addList(static_cast<StarlinkOrbitingSatellite*>(s2));
-    cout<<"Testing the satellite iterator";
-    while(iterate->current()!=iterate->lastSat())
-    {
-        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
-        iterate->nextSat();
-    }
-        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
-
-
-    // que->add(&s4);
-
-    CommuncationNetwork network = CommuncationNetwork(que);
-
-    // broadcast all
-    cout << "Ground control communicates to all nodes" << endl;
-    g0->communicate("Rocket reached low orbit");
+    cout << "Creating factories:" << endl;
+    createFactories();
+    cout << endl;
+    cout << "Creating Entities:" << endl;
+    createTransportEntities();
     cout << endl;
 
-    // StarlinkOrbitingSatellite to ground com
-    cout << "StarlinkOrbitingSatellite communicates with ground control" << endl;
-    s1->communicate("Send communcation packet", 0);
-    cout << endl;
+    printHeading("CREATING BUILDERS");
 
-    // all to StarlinkOrbitingSatellite 1
-    cout << "All nodes communicates with StarlinkOrbitingSatellite 1" << endl;
-    StarlinkCollection::iterator it = que->begin();
-    while (!(it == que->end()))
+    EngineBuilder* eb = new EngineBuilder();
+    CoreBuilder* cb = new CoreBuilder();
+    Core** cores;
+    Engine** engines;
+
+    printHeading("Falcon9 - Stage 1 Test");
+
+    printBuilderInfo("falcon9", 1, eb, cb, engines, cores);
+
+    printHeading("Falcon9 - Stage 2 Test");
+
+    printBuilderInfo("falcon9", 2, eb, cb, engines, cores);
+
+    printHeading("FalconHeavy - Stage 1 Test");
+
+    printBuilderInfo("falconHeavy", 1, eb, cb, engines, cores);
+
+    printHeading("FalconHeavy - Stage 2 Test");
+
+    printBuilderInfo("falconHeavy", 2, eb, cb, engines, cores);
+
+    printHeading("CreatingLeaves");
+
+    RocketLeaf* stageArr[4];
+
+    for (int i = 0; i < 4; ++i)
     {
-        (*it)->communicate("Send communcation packet", 1);
-        cout << endl;
-        ++it;
+        stageArr[i] = new RocketLeaf(cb, eb);
     }
-    (*it)->communicate("Send communcation packet", 1);
 
-    delete que;
-    delete s0;
-    delete s1;
-    delete s2;
-    delete g0;
-    
+    printHeading("Creating and displaying all stages");
 
+    for (int i = 0; i < 4; ++i)
+    {
+        switch (i)
+        {
+            case 0:
+            printSubHeading("F9S1");
+            stageArr[i]->makeFalcon9Stage1();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 1:
+            printSubHeading("F9S2");
+            stageArr[i]->makeFalcon9Stage2();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 2:
+            printSubHeading("FHS1");
+            stageArr[i]->makeFalconHeavyStage1();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 3:
+            printSubHeading("FHS2");
+            stageArr[i]->makeFalconHeavyStage2();
+            printBuilderInfo(stageArr[i]);
+            break;
+        }
+    }
 
-    
-    // TransportEntity* crew = new TransportEntityCrew();
+    printHeading("Creating and connecting composite stages");
 
-    // TransportEntityCollection* trans = new TECargoCollection();
-    // trans->add(crew);
+    printBuilderInfo(stageArr[1]);
 
-    // SpaceCraft* crewCraft = new SpaceCraftDragon();
-    // crewCraft->addEntities(trans);
+    RocketStage* temp;
+    CompositeStage* f9 = new CompositeStage(stageArr[0]);
+    f9->addRocketStage(stageArr[1]);
+    CompositeStage* fHeavy = new CompositeStage(stageArr[2]);
+    fHeavy->addRocketStage(stageArr[3]);
+
+    printHeading("Testing Leaf Stages");
+
+    printSubHeading("F9");
+    printBuilderInfo(f9->getVal());
+    temp = f9->getNext();
+    printBuilderInfo((RocketLeaf*)temp);
+    printSubHeading("FHeavy");
+    temp = fHeavy->getNext();
+    printBuilderInfo((RocketLeaf*)temp);
+    printBuilderInfo(fHeavy->getVal());
+
+    delete fHeavy;
+    delete f9;
+    delete eb;
+    delete cb;
 
     return 0;
 }
 
 
-// int main()
-// {
-
-//     cout<<"create a new orbiting Satellite\n";
-//     Satellite* satellites=new StarlinkOrbitingSatellite();
-//      //prototypes clone method//
-//     Satellite* clones[10];
-//     cout<<"create orbiting Satellite clones using the prototype\n";
-//     for(int i=0;i<10;i++)
-//     {
-//         cout<<"Clone:"<<i<<endl;
-//         clones[i]=satellites->clone();
-//     }
-//     cout<<"Finished creating the clones\n";
-//     cout<<"create the concrete iterator\n";
-//     cout<<"adding the satellites to the list\n";
-//     satellites->addList(satellites);
-//     for(int i=0;i<10;i++)
-//     {
-//         cout<<"added clone:"<<i+1<<endl;
-//        satellites->addList(clones[i]); 
-//     }
-
-//     SatelliteIterator* list=satellites->createIterator();
-//     for(int i=0;i<=10;i++)
-//     {
-//         cout<<"Satellite:"<<list->current()->getid()<<endl;
-//         list->nextSat();
-//     }
-
-//     cout<<"First Satellite id:"<<list->firstSat()->getid()<<endl;
-    
-// //delete satellites;
-// //delete list;
-
-
-
-
-
-//     return 0;
-
-// }

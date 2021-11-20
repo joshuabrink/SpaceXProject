@@ -1,15 +1,41 @@
-
 #ifndef SPACECRAFT_H
 #define SPACECRAFT_H
-#include "../TransportEntityCollection.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 class SpaceCraft
 {
-private:
-    
 public:
-    SpaceCraft(/* args */) {}
-    virtual void addEntities(TransportEntityCollection*)=0;
-    ~SpaceCraft() {}
+	SpaceCraft();
+	SpaceCraft(double,int);
+	~SpaceCraft();
+
+	double getCost();
+	int getCapacity();
+
+private:
+	double cost;
+	int capacity;
 };
 
-#endif
+
+class Dragon : public SpaceCraft
+{
+public:
+	Dragon();
+	Dragon(double, int);
+	~Dragon();
+
+};
+
+class DragonCrew : public SpaceCraft
+{
+public:
+	DragonCrew();
+	DragonCrew(double ,int);
+	~DragonCrew();
+
+};
+
+#endif 
