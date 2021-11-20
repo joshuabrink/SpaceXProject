@@ -9,7 +9,7 @@
  *  @bug No known bugs.
  */
 
-#include "Rocket.h"
+//#include "Rocket.h"
 #include "Rocket.h"
 #include "SatelliteVector.h"
 
@@ -18,6 +18,7 @@ using namespace std;
 class Falcon9 : public Rocket {
 private:
 	SatelliteCollection* satellites;
+	SatelliteIterator* iterate;
 
 public:
 /** 

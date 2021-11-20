@@ -19,7 +19,6 @@
 #include "StarlinkCommunication.h"
 #include "CommuncationNetwork.h"
 
-class FalconRockets;
 static int StarlinkOrbitingSatelliteId = 0;
 class StarlinkOrbitingSatellite : public StarlinkCommunication
 {
@@ -86,7 +85,10 @@ public:
     };
     
     
-    // bool launchStarlinkOrbitingSatellite(FalconRockets *transport){return true;};
+    bool launchStarlinkOrbitingSatellite(bool launch){
+        isLaunched=launch;
+        return isLaunched;
+        };
 
 
     /** 
