@@ -3,10 +3,10 @@
 
 #include <string>
 #include <iostream>
-#include "Destination.h"
+#include "../Destination.h"
 #include "CompositeStage.h"
-#include "Satellite.h"
-#include "SatelliteCollection.h"
+#include "../Satellite.h"
+#include "../SatelliteCollection.h"
 
 using namespace std;
 

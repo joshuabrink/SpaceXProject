@@ -2,7 +2,7 @@
 #define INTERRUPT_H
 
 #include "Command.h"
-#include "Rocket.h"
+#include "GroupProject/Rocket.h"
 
 /** @file Interrupt.h
  * @class Interrupt

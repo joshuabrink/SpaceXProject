@@ -1,7 +1,7 @@
 
 #ifndef SPACECRAFT_H
 #define SPACECRAFT_H
-#include "TransportEntityCollection.h"
+#include "../TransportEntityCollection.h"
 class SpaceCraft
 {
 private:
