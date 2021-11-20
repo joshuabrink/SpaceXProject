@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CompositeStage.h
+RocketStage.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketStage.h
+RocketLeaf.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.h
+string
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.h
+StageBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Engine.h
+string
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h
+StageBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
+Engine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Engine.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
+RocketStage.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketStage.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketStage.h
+StageBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
+CoreBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.h
+EngineBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
+string
+-
+iostream
+-
+Core.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/main.cpp
+iostream
+-
+EngineBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h
+CoreBuilder.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CoreBuilder.h
+RocketLeaf.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
+CompositeStage.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CompositeStage.h
+
