@@ -26,10 +26,10 @@ Rocket* Falcon9::clone()
 
 	while (iterate->current() != iterate->lastSat())
 	{
-		outSattelites->addList((iterate->current())->clone()));
+		outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
 		iterate->nextSat();
 	}
-	outSattelites->addList((iterate->current())->clone()));
+	outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
 //ASK JOSH ABOUT LINE 32
 	out->addSatellites(outSattelites);
 

@@ -30,6 +30,9 @@ public:
  */
 	Rocket* clone();
 
+	void Launch();
+	void Interrupt();
+
 /** 
  *  @fn     ~FalconHeavy()
  *  @brief  FalconHeavy destructor
