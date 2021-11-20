@@ -130,7 +130,13 @@
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/MerlinEngine.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/MerlinEngine.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ModifiedMerlinEngine.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ModifiedMerlinEngine.h">
@@ -142,6 +148,9 @@
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Payload.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/PayloadFactory.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/PayloadFactory.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
@@ -149,6 +158,9 @@
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Rocket.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketFactory.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketFactory.h">
@@ -172,6 +184,9 @@
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraft.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraftFactory.cpp">
+			<Option target="SpaceXProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraftFactory.h">
 			<Option target="SpaceXProject"/>
 		</Unit>
@@ -185,6 +200,9 @@
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/TransportEntities.h">
+			<Option target="SpaceXProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/VacuumMerlinEngine.cpp">
 			<Option target="SpaceXProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/VacuumMerlinEngine.h">

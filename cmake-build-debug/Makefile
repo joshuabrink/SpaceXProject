@@ -320,6 +320,54 @@ EngineBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s
 .PHONY : EngineBuilder.cpp.s
 
+MerlinEngine.obj: MerlinEngine.cpp.obj
+.PHONY : MerlinEngine.obj
+
+# target to build an object file
+MerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj
+.PHONY : MerlinEngine.cpp.obj
+
+MerlinEngine.i: MerlinEngine.cpp.i
+.PHONY : MerlinEngine.i
+
+# target to preprocess a source file
+MerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.i
+.PHONY : MerlinEngine.cpp.i
+
+MerlinEngine.s: MerlinEngine.cpp.s
+.PHONY : MerlinEngine.s
+
+# target to generate assembly for a file
+MerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.s
+.PHONY : MerlinEngine.cpp.s
+
+ModifiedMerlinEngine.obj: ModifiedMerlinEngine.cpp.obj
+.PHONY : ModifiedMerlinEngine.obj
+
+# target to build an object file
+ModifiedMerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj
+.PHONY : ModifiedMerlinEngine.cpp.obj
+
+ModifiedMerlinEngine.i: ModifiedMerlinEngine.cpp.i
+.PHONY : ModifiedMerlinEngine.i
+
+# target to preprocess a source file
+ModifiedMerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.i
+.PHONY : ModifiedMerlinEngine.cpp.i
+
+ModifiedMerlinEngine.s: ModifiedMerlinEngine.cpp.s
+.PHONY : ModifiedMerlinEngine.s
+
+# target to generate assembly for a file
+ModifiedMerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.s
+.PHONY : ModifiedMerlinEngine.cpp.s
+
 Payload.obj: Payload.cpp.obj
 .PHONY : Payload.obj
 
@@ -344,6 +392,30 @@ Payload.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Payload.cpp.s
 .PHONY : Payload.cpp.s
 
+PayloadFactory.obj: PayloadFactory.cpp.obj
+.PHONY : PayloadFactory.obj
+
+# target to build an object file
+PayloadFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj
+.PHONY : PayloadFactory.cpp.obj
+
+PayloadFactory.i: PayloadFactory.cpp.i
+.PHONY : PayloadFactory.i
+
+# target to preprocess a source file
+PayloadFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.i
+.PHONY : PayloadFactory.cpp.i
+
+PayloadFactory.s: PayloadFactory.cpp.s
+.PHONY : PayloadFactory.s
+
+# target to generate assembly for a file
+PayloadFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.s
+.PHONY : PayloadFactory.cpp.s
+
 Rocket.obj: Rocket.cpp.obj
 .PHONY : Rocket.obj
 
@@ -367,6 +439,30 @@ Rocket.s: Rocket.cpp.s
 Rocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.s
 .PHONY : Rocket.cpp.s
+
+RocketFactory.obj: RocketFactory.cpp.obj
+.PHONY : RocketFactory.obj
+
+# target to build an object file
+RocketFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj
+.PHONY : RocketFactory.cpp.obj
+
+RocketFactory.i: RocketFactory.cpp.i
+.PHONY : RocketFactory.i
+
+# target to preprocess a source file
+RocketFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.i
+.PHONY : RocketFactory.cpp.i
+
+RocketFactory.s: RocketFactory.cpp.s
+.PHONY : RocketFactory.s
+
+# target to generate assembly for a file
+RocketFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.s
+.PHONY : RocketFactory.cpp.s
 
 RocketLeaf.obj: RocketLeaf.cpp.obj
 .PHONY : RocketLeaf.obj
@@ -440,6 +536,30 @@ SpaceCraft.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.s
 .PHONY : SpaceCraft.cpp.s
 
+SpaceCraftFactory.obj: SpaceCraftFactory.cpp.obj
+.PHONY : SpaceCraftFactory.obj
+
+# target to build an object file
+SpaceCraftFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj
+.PHONY : SpaceCraftFactory.cpp.obj
+
+SpaceCraftFactory.i: SpaceCraftFactory.cpp.i
+.PHONY : SpaceCraftFactory.i
+
+# target to preprocess a source file
+SpaceCraftFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.i
+.PHONY : SpaceCraftFactory.cpp.i
+
+SpaceCraftFactory.s: SpaceCraftFactory.cpp.s
+.PHONY : SpaceCraftFactory.s
+
+# target to generate assembly for a file
+SpaceCraftFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.s
+.PHONY : SpaceCraftFactory.cpp.s
+
 StageBuilder.obj: StageBuilder.cpp.obj
 .PHONY : StageBuilder.obj
 
@@ -487,6 +607,30 @@ TransportEntities.s: TransportEntities.cpp.s
 TransportEntities.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.s
 .PHONY : TransportEntities.cpp.s
+
+VacuumMerlinEngine.obj: VacuumMerlinEngine.cpp.obj
+.PHONY : VacuumMerlinEngine.obj
+
+# target to build an object file
+VacuumMerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj
+.PHONY : VacuumMerlinEngine.cpp.obj
+
+VacuumMerlinEngine.i: VacuumMerlinEngine.cpp.i
+.PHONY : VacuumMerlinEngine.i
+
+# target to preprocess a source file
+VacuumMerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.i
+.PHONY : VacuumMerlinEngine.cpp.i
+
+VacuumMerlinEngine.s: VacuumMerlinEngine.cpp.s
+.PHONY : VacuumMerlinEngine.s
+
+# target to generate assembly for a file
+VacuumMerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.s
+.PHONY : VacuumMerlinEngine.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -545,12 +689,24 @@ help:
 	@echo ... EngineBuilder.obj
 	@echo ... EngineBuilder.i
 	@echo ... EngineBuilder.s
+	@echo ... MerlinEngine.obj
+	@echo ... MerlinEngine.i
+	@echo ... MerlinEngine.s
+	@echo ... ModifiedMerlinEngine.obj
+	@echo ... ModifiedMerlinEngine.i
+	@echo ... ModifiedMerlinEngine.s
 	@echo ... Payload.obj
 	@echo ... Payload.i
 	@echo ... Payload.s
+	@echo ... PayloadFactory.obj
+	@echo ... PayloadFactory.i
+	@echo ... PayloadFactory.s
 	@echo ... Rocket.obj
 	@echo ... Rocket.i
 	@echo ... Rocket.s
+	@echo ... RocketFactory.obj
+	@echo ... RocketFactory.i
+	@echo ... RocketFactory.s
 	@echo ... RocketLeaf.obj
 	@echo ... RocketLeaf.i
 	@echo ... RocketLeaf.s
@@ -560,12 +716,18 @@ help:
 	@echo ... SpaceCraft.obj
 	@echo ... SpaceCraft.i
 	@echo ... SpaceCraft.s
+	@echo ... SpaceCraftFactory.obj
+	@echo ... SpaceCraftFactory.i
+	@echo ... SpaceCraftFactory.s
 	@echo ... StageBuilder.obj
 	@echo ... StageBuilder.i
 	@echo ... StageBuilder.s
 	@echo ... TransportEntities.obj
 	@echo ... TransportEntities.i
 	@echo ... TransportEntities.s
+	@echo ... VacuumMerlinEngine.obj
+	@echo ... VacuumMerlinEngine.i
+	@echo ... VacuumMerlinEngine.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

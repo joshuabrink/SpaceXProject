@@ -6,7 +6,8 @@
 #define SPACEXPROJECT_ENGINEBUILDER_H
 
 #include "StageBuilder.h"
-#include "Engine.h"
+#include "MerlinEngine.h"
+#include "VacuumMerlinEngine.h"
 
 /**
  * @class EngineBuilder

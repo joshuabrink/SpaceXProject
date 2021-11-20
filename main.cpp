@@ -110,7 +110,7 @@ void printBuilderInfo(string rocketType, int stageNum, EngineBuilder* eb, CoreBu
     cores = cb->getResult();
     for (int i = 0; i < eb->getNumEngines(); ++i)
     {
-        cout << engines[i]->getName() << endl;
+        cout << engines[i]->getCost() << endl;
     }
     for (int i = 0; i < cb->getNumCores(); ++i)
     {
@@ -123,18 +123,34 @@ void printBuilderInfo(RocketLeaf* rl)
     Engine** e = rl->getEngines();
     Core** c = rl->getCores();
 
-    for (int i = 0; i < rl->getNumEngines(); ++i)
+
+    if(e != nullptr)
     {
-        cout << e[i]->getName() << endl;
+        for (int i = 0; i < rl->getNumEngines(); ++i)
+        {
+            cout << e[i]->getCost() << endl;
+        }
     }
-    for (int i = 0; i < rl->getNumCores(); ++i)
+
+    if(c != nullptr)
     {
-        cout << c[i]->getName() << endl;
+        for (int i = 0; i < rl->getNumCores(); ++i)
+        {
+            cout << c[i]->getName() << endl;
+        }
     }
 }
 
 int main()
 {
+
+    cout << "Creating factories:" << endl;
+    createFactories();
+    cout << endl;
+    cout << "Creating Entities:" << endl;
+    createTransportEntities();
+    cout << endl;
+
     printHeading("CREATING BUILDERS");
 
     EngineBuilder* eb = new EngineBuilder();
@@ -174,29 +190,31 @@ int main()
         switch (i)
         {
             case 0:
-                printSubHeading("F9S1");
-                stageArr[i]->makeFalcon9Stage1();
-                printBuilderInfo(stageArr[i]);
-                break;
-                case 1:
-                    printSubHeading("F9S2");
-                    stageArr[i]->makeFalcon9Stage2();
-                    printBuilderInfo(stageArr[i]);
-                    break;
-                    case 2:
-                        printSubHeading("FHS1");
-                        stageArr[i]->makeFalconHeavyStage1();
-                        printBuilderInfo(stageArr[i]);
-                        break;
-                        case 3:
-                            printSubHeading("FHS2");
-                            stageArr[i]->makeFalconHeavyStage2();
-                            printBuilderInfo(stageArr[i]);
-                            break;
+            printSubHeading("F9S1");
+            stageArr[i]->makeFalcon9Stage1();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 1:
+            printSubHeading("F9S2");
+            stageArr[i]->makeFalcon9Stage2();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 2:
+            printSubHeading("FHS1");
+            stageArr[i]->makeFalconHeavyStage1();
+            printBuilderInfo(stageArr[i]);
+            break;
+            case 3:
+            printSubHeading("FHS2");
+            stageArr[i]->makeFalconHeavyStage2();
+            printBuilderInfo(stageArr[i]);
+            break;
         }
     }
 
     printHeading("Creating and connecting composite stages");
+
+    printBuilderInfo(stageArr[1]);
 
     RocketStage* temp;
     CompositeStage* f9 = new CompositeStage(stageArr[0]);
@@ -219,13 +237,6 @@ int main()
     delete f9;
     delete eb;
     delete cb;
-
-    cout << "Creating factories:" << endl;
-    createFactories();
-    cout << endl;
-    cout << "Creating Entities:" << endl;
-    createTransportEntities();
-    cout << endl;
 
     return 0;
 }

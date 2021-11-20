@@ -8,9 +8,12 @@ CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj: \
  ../CoreBuilder.h \
  ../Engine.h \
  ../EngineBuilder.h \
+ ../MerlinEngine.h \
+ ../ModifiedMerlinEngine.h \
  ../RocketLeaf.h \
  ../RocketStage.h \
- ../StageBuilder.h
+ ../StageBuilder.h \
+ ../VacuumMerlinEngine.h
 CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj: \
  ../ConcretePayloadFactory.cpp \
  ../ConcretePayloadFactory.h \
@@ -42,33 +45,61 @@ CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj: \
  ../Engine.h \
  ../EngineBuilder.cpp \
  ../EngineBuilder.h \
- ../StageBuilder.h
+ ../MerlinEngine.h \
+ ../ModifiedMerlinEngine.h \
+ ../StageBuilder.h \
+ ../VacuumMerlinEngine.h
+CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj: \
+ ../Engine.h \
+ ../MerlinEngine.cpp \
+ ../MerlinEngine.h
+CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj: \
+ ../Engine.h \
+ ../ModifiedMerlinEngine.cpp \
+ ../ModifiedMerlinEngine.h
 CMakeFiles/SpaceXProject.dir/Payload.cpp.obj: \
  ../Payload.cpp \
  ../Payload.h
+CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj: \
+ ../Payload.h \
+ ../PayloadFactory.cpp \
+ ../PayloadFactory.h
 CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj: \
  ../Rocket.cpp \
  ../Rocket.h
+CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj: \
+ ../RocketFactory.cpp \
+ ../RocketFactory.h
 CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj: \
  ../Core.h \
  ../CoreBuilder.h \
  ../Engine.h \
  ../EngineBuilder.h \
+ ../MerlinEngine.h \
+ ../ModifiedMerlinEngine.h \
  ../RocketLeaf.cpp \
  ../RocketLeaf.h \
  ../RocketStage.h \
- ../StageBuilder.h
+ ../StageBuilder.h \
+ ../VacuumMerlinEngine.h
 CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj: \
  ../Core.h \
  ../CoreBuilder.h \
  ../Engine.h \
  ../EngineBuilder.h \
+ ../MerlinEngine.h \
+ ../ModifiedMerlinEngine.h \
  ../RocketStage.cpp \
  ../RocketStage.h \
- ../StageBuilder.h
+ ../StageBuilder.h \
+ ../VacuumMerlinEngine.h
 CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj: \
  ../SpaceCraft.cpp \
  ../SpaceCraft.h
+CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj: \
+ ../SpaceCraft.h \
+ ../SpaceCraftFactory.cpp \
+ ../SpaceCraftFactory.h
 CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj: \
  ../Core.h \
  ../StageBuilder.cpp \
@@ -76,13 +107,31 @@ CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj: \
 CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj: \
  ../TransportEntities.cpp \
  ../TransportEntities.h
+CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj: \
+ ../Engine.h \
+ ../ModifiedMerlinEngine.h \
+ ../VacuumMerlinEngine.cpp \
+ ../VacuumMerlinEngine.h
 CMakeFiles/SpaceXProject.dir/main.cpp.obj: \
  ../CompositeStage.h \
+ ../ConcretePayloadFactory.h \
+ ../ConcreteRocketFactory.h \
+ ../ConcreteSpaceCraftFactory.h \
  ../Core.h \
  ../CoreBuilder.h \
  ../Engine.h \
  ../EngineBuilder.h \
+ ../MerlinEngine.h \
+ ../ModifiedMerlinEngine.h \
+ ../Payload.h \
+ ../PayloadFactory.h \
+ ../Rocket.h \
+ ../RocketFactory.h \
  ../RocketLeaf.h \
  ../RocketStage.h \
+ ../SpaceCraft.h \
+ ../SpaceCraftFactory.h \
  ../StageBuilder.h \
+ ../TransportEntities.h \
+ ../VacuumMerlinEngine.h \
  ../main.cpp

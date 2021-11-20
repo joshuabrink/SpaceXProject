@@ -1,5 +1,6 @@
 #ifndef CONCRETEROCKETFACTORY_H
 #define CONCRETEROCKETFACTORY_H
+#include "Rocket.h"
 
 /** @file ConcreteRocketFactory.h
  *  @class FalconHeavyFactory

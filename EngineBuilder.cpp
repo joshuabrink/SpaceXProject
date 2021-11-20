@@ -35,7 +35,7 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
             engineArray = new Engine*[9];
             for (int i = 0; i < 9; ++i)
             {
-                engineArray[i] = new Engine();
+                engineArray[i] = new MerlinEngine();
             }
             arrSize = 9;
         }
@@ -44,7 +44,7 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
             engineArray = new Engine*[27];
             for (int i = 0; i < 27; ++i)
             {
-                engineArray[i] = new Engine();
+                engineArray[i] = new MerlinEngine();
             }
             arrSize = 27;
         }
@@ -54,13 +54,13 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
         if(rocketName == "falcon9")
         {
             engineArray = new Engine*[1];
-            engineArray[0] = new Engine();
+            engineArray[0] = new VacuumMerlinEngine();
             arrSize = 1;
         }
         else
         {
             engineArray = new Engine*[1];
-            engineArray[0] = new Engine();
+            engineArray[0] = new VacuumMerlinEngine();
             arrSize = 1;
         }
     }

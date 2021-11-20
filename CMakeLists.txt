@@ -23,11 +23,17 @@ add_executable(SpaceXProject
         EngineBuilder.cpp
         EngineBuilder.h
         main.cpp
+        MerlinEngine.cpp
         MerlinEngine.h
+        ModifiedMerlinEngine.cpp
         ModifiedMerlinEngine.h
         Payload.cpp
         Payload.h
+        PayloadFactory.cpp
         PayloadFactory.h
+        Rocket.cpp
+        Rocket.h
+        RocketFactory.cpp
         RocketFactory.h
         RocketLeaf.cpp
         RocketLeaf.h
@@ -35,9 +41,11 @@ add_executable(SpaceXProject
         RocketStage.h
         SpaceCraft.cpp
         SpaceCraft.h
+        SpaceCraftFactory.cpp
         SpaceCraftFactory.h
         StageBuilder.cpp
         StageBuilder.h
         TransportEntities.cpp
         TransportEntities.h
-        VacuumMerlinEngine.h Rocket.cpp Rocket.h)
+        VacuumMerlinEngine.cpp
+        VacuumMerlinEngine.h)

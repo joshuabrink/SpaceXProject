@@ -36,7 +36,10 @@ RocketLeaf::RocketLeaf(RocketLeaf *rl)
         engines = new Engine*[numEngines];
         for (int i = 0; i < numEngines; ++i)
         {
-            engines[i] = new Engine(rl->engines[i]);
+            if(dynamic_cast<ModifiedMerlinEngine*>(rl->engines[i]))
+                engines[i] = new ModifiedMerlinEngine(*(dynamic_cast<ModifiedMerlinEngine*>(rl->engines[i])));
+            else
+                engines[i] = new VacuumMerlinEngine(*(dynamic_cast<VacuumMerlinEngine*>(rl->engines[i])));
         }
     }
     else

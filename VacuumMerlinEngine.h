@@ -12,6 +12,7 @@ class VacuumMerlinEngine : public ModifiedMerlinEngine
 public:
 	VacuumMerlinEngine();
 	VacuumMerlinEngine(double);
+	VacuumMerlinEngine(const VacuumMerlinEngine& e){this->cost = e.cost;};
 	~VacuumMerlinEngine();
 
 };

@@ -12,6 +12,26 @@ C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/
 RocketLeaf.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
 
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcretePayloadFactory.h
+PayloadFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/PayloadFactory.h
+iostream
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcreteRocketFactory.h
+Rocket.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Rocket.h
+iostream
+-
+RocketFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketFactory.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcreteSpaceCraftFactory.h
+SpaceCraftFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraftFactory.h
+iostream
+-
+
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.h
 string
 -
@@ -21,14 +41,52 @@ StageBuilder.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
 
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Engine.h
+iostream
+-
+iomanip
+-
 string
 -
 
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h
 StageBuilder.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
+MerlinEngine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/MerlinEngine.h
+VacuumMerlinEngine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/VacuumMerlinEngine.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/MerlinEngine.h
+iostream
+-
 Engine.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Engine.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ModifiedMerlinEngine.h
+iostream
+-
+Engine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Engine.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Payload.h
+iostream
+-
+iomanip
+-
+string
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/PayloadFactory.h
+iostream
+-
+Payload.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Payload.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Rocket.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketFactory.h
+iostream
+-
 
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
 RocketStage.h
@@ -42,6 +100,18 @@ C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/
 EngineBuilder.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/EngineBuilder.h
 
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraft.h
+iostream
+-
+iomanip
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraftFactory.h
+iostream
+-
+SpaceCraft.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/SpaceCraft.h
+
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/StageBuilder.h
 string
 -
@@ -49,6 +119,18 @@ iostream
 -
 Core.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/Core.h
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/TransportEntities.h
+iostream
+-
+string
+-
+
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/VacuumMerlinEngine.h
+iostream
+-
+ModifiedMerlinEngine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ModifiedMerlinEngine.h
 
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/main.cpp
 iostream
@@ -61,4 +143,18 @@ RocketLeaf.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/RocketLeaf.h
 CompositeStage.h
 C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/CompositeStage.h
+ConcretePayloadFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcretePayloadFactory.h
+ConcreteRocketFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcreteRocketFactory.h
+ConcreteSpaceCraftFactory.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/ConcreteSpaceCraftFactory.h
+VacuumMerlinEngine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/VacuumMerlinEngine.h
+MerlinEngine.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/MerlinEngine.h
+TransportEntities.h
+C:/Users/Leonardo/Documents/2021/COS214/Assignments/Group Project/SpaceXProject/TransportEntities.h
+vector
+-
 
