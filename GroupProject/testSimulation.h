@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <random>
 #include <vector>
@@ -6,6 +5,76 @@
 #include <unistd.h>
 
 using namespace std;
+
+template <typename Type>
+class CollectionIterator
+{
+protected:
+    Type *ptr;
+
+public:
+    CollectionIterator(){};
+    CollectionIterator(Type *_ptr) { ptr = _ptr; };
+    Type &operator*() { return *ptr; };
+    CollectionIterator<Type> &operator++()
+    {
+        ptr++;
+        return *this;
+    };
+    CollectionIterator<Type> &operator--()
+    {
+        ptr--;
+        return *this;
+    };
+    bool operator==(const CollectionIterator<Type> &r_ptr)
+    {
+        return (ptr == r_ptr.getPtr());
+    };
+    Type *getPtr() const { return ptr; }
+    ~CollectionIterator(){};
+};
+
+class Satellite
+{
+};
+
+class StarlinkCommunication
+{
+};
+class StarlinkCollection
+{
+public:
+    typedef CollectionIterator<StarlinkCommunication *> iterator;
+};
+class StarlinkVector : public StarlinkCollection
+{
+private:
+    std::vector<StarlinkCommunication *> nodeCollection;
+
+public:
+    StarlinkVector(){};
+
+    void add(StarlinkCommunication *newNode)
+    {
+        nodeCollection.push_back(newNode);
+        // StarlinkCollection::add(newNode);
+    }
+
+    void remove()
+    {
+        nodeCollection.pop_back();
+    }
+
+    StarlinkCollection::iterator begin()
+    {
+        return iterator(&this->nodeCollection.front());
+    };
+
+    StarlinkCollection::iterator end()
+    {
+        return iterator(&this->nodeCollection.back());
+    };
+};
 class Destination
 {
 public:
@@ -48,6 +117,7 @@ class Falcon9Factory : public RocketFactory
 class FalconHeavyFactory : public RocketFactory
 {
 };
+class SatelliteFactory {};
 class Command
 {
 private:
@@ -202,12 +272,13 @@ public:
             if (rocket == nullptr)
             {
                 RocketFactory *factory;
+                SatelliteFactory *satelliteFactory;
                 cout << "SELECT ROCKET TYPE" << endl;
                 string rocketMenu[4] = {"Falcon 9", "Falcon Heavy"};
                 short rocketIndex = getMenu(rocketMenu, 2);
 
                 if (rocketIndex == 0)
-                    goto BUILD_MENU;
+                    goto MAIN_MENU;
                 else if (rocketIndex == 1)
                 {
                     factory = new Falcon9Factory();
@@ -216,24 +287,29 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
-                cout << "CONFIGURE ROCKET" << endl;
-                string configMenu[4] = {"Add Satellites", "Add Space Craft", "Set Cost"};
-                short configIndex = getMenu(configMenu, 3);
-
-                if (rocketIndex == 0)
-                    goto BUILD_MENU;
-                else if (rocketIndex == 1)
-                {
-                    factory = new Falcon9Factory();
-                }
-                else if (rocketIndex == 2)
-                {
-                    factory = new FalconHeavyFactory();
-                }
-
                 Command *buildRocket = new Build(factory, distr(eng));
                 setBuild(buildRocket);
                 BuildRocket();
+
+                cout << "CONFIGURE ROCKET" << endl;
+                string configMenu[3] = {"Add Satellites", "Add Space Craft", "Set Cost"};
+                short configIndex = getMenu(configMenu, 3);
+
+                if (configIndex == 0)
+                    goto BUILD_MENU;
+                else if (configIndex == 1)
+                {
+                    short satelliteCount = 0;
+                    cout << "How many satellites? (1-60) ";
+                    cin >> satelliteCount;
+                    for (int i = 0; i < satelliteCount; i++)
+                    {
+                    }
+                }
+                else if (configIndex == 2)
+                {
+                    factory = new FalconHeavyFactory();
+                }
             }
             else
             {
@@ -242,7 +318,7 @@ public:
                 short editIndex = getMenu(editMenu, 3);
 
                 if (editIndex == 0)
-                    goto BUILD_MENU;
+                    goto MAIN_MENU;
                 else if (editIndex == 1)
                 {
                     string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
