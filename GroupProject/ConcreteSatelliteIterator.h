@@ -15,20 +15,19 @@ class ConcreteSatelliteIterator : public SatelliteIterator
 {
 
 private:
-   SatelliteCollection* sc;
+   
     int trav;
 public:
-    ConcreteSatelliteIterator(SatelliteCollection* cn);
+    ConcreteSatelliteIterator();
     StarlinkOrbitingSatellite *firstSat() override;
     StarlinkOrbitingSatellite *nextSat() override;
     StarlinkOrbitingSatellite *current() override;
     StarlinkOrbitingSatellite* lastSat() override;
     ~ConcreteSatelliteIterator();
 };
-#include "ConcreteSatelliteIterator.h"
-ConcreteSatelliteIterator::ConcreteSatelliteIterator(SatelliteCollection* cn):SatelliteIterator(cn)
+
+ConcreteSatelliteIterator::ConcreteSatelliteIterator():SatelliteIterator()
 {
-    sc=cn;
      first=next=curr=nullptr;
      trav=0;
      
@@ -44,20 +43,20 @@ ConcreteSatelliteIterator::ConcreteSatelliteIterator(SatelliteCollection* cn):Sa
  */
 StarlinkOrbitingSatellite* ConcreteSatelliteIterator::firstSat()
 {
-    first=*(sc->getVector().begin());
+    first=*(it.begin());
     trav=0;
     return first;
 }
 StarlinkOrbitingSatellite* ConcreteSatelliteIterator::lastSat()
 {
-    last=sc->getVector().back();
+    last=it.back();
     return last;
 }
 
 StarlinkOrbitingSatellite* ConcreteSatelliteIterator::current()
 {
    int i=0;
-    vector<StarlinkOrbitingSatellite*>::iterator now=sc->getVector().begin();
+    vector<StarlinkOrbitingSatellite*>::iterator now=it.begin();
     while(i<trav)
     {
         ++now;
@@ -71,7 +70,7 @@ StarlinkOrbitingSatellite* ConcreteSatelliteIterator::nextSat()
 {
    ++trav;
    int i=0;
-    vector<StarlinkOrbitingSatellite*>::iterator now=sc->getVector().begin();
+    vector<StarlinkOrbitingSatellite*>::iterator now=it.begin();
     while(i<trav)
     {
         ++now;

@@ -1,7 +1,7 @@
 #ifndef ROCKETFACTORY_H
 #define  ROCKETFACTORY_H
 #include <iostream>
-#include "Rocket.h";
+#include "Rocket.h"
 
 using namespace std;
 
