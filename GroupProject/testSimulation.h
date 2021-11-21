@@ -445,16 +445,66 @@ public:
                         goto BUILD_MENU;
                     else if (editSCIndex == 1)
                     {
+                        cout << "SATELLITE OPTIONS" << endl;
+                        string sOptions[3] = {"Display Satellites", "Add Satellite", "Remove Satellite"};
+                        short sOptionsIndex = getMenu(sOptions, 3);
+                        if(sOptionsIndex == 0)
+                            goto BUILD_MENU;
+                        else if(sOptionsIndex == 1)
+                        {
+
+                        }
+                        else if(sOptionsIndex == 2)
+                        {
+
+                        }
+                        else if(sOptionsIndex == 3)
+                        {
+
+                        }
                         // Edit satellites
                     }
 
                     else if (editSCIndex == 2)
                     {
+                        cout << "CREW OPTIONS" << endl;
+                        string cOptions[3] = {"Display Crew", "Add Crew", "Remove Crew"};
+                        short cOptionsIndex = getMenu(cOptions, 3);
+                        if(cOptionsIndex == 0)
+                            goto BUILD_MENU;
+                        else if(cOptionsIndex == 1)
+                        {
+
+                        }
+                        else if(cOptionsIndex == 2)
+                        {
+
+                        }
+                        else if(cOptionsIndex == 3)
+                        {
+
+                        }
                         // Edit crew
                     }
-
                     else if (editSCIndex == 3)
                     {
+                        cout << "CARGO OPTIONS" << endl;
+                        string cOptions[3] = {"Display Cargo", "Add Cargo", "Remove Cargo"};
+                        short cOptionsIndex = getMenu(cOptions, 3);
+                        if(cOptionsIndex == 0)
+                            goto BUILD_MENU;
+                        else if(cOptionsIndex == 1)
+                        {
+
+                        }
+                        else if(cOptionsIndex == 2)
+                        {
+
+                        }
+                        else if(cOptionsIndex == 3)
+                        {
+
+                        }
                         // Edit cargo
                     }
                     else if (editSCIndex == 4)
