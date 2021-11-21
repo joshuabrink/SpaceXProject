@@ -117,25 +117,26 @@ public:
 class Satellite : public Payload
 {
 public:
-/**
-*  @fn     Satellite()
-*  @brief  constructor
-*/
+	/**
+	*  @fn     Satellite()
+	*  @brief  constructor
+	*/
 	Satellite();
-	
-/**
-*  @fn     Satellite()
-*  @brief  constructor
-*
-*   @param[in] string, Description
-*   @param[in] double, cost
-*/
+
+	/**
+	*  @fn     Satellite()
+	*  @brief  constructor
+	*
+	*   @param[in] string, Description
+	*   @param[in] double, cost
+	*/
 	Satellite(string Description, double cost);
-	
-/**
-*  @fn     Satellite()
-*  @brief  destructor
-*/
+
+	/**
+	*  @fn     Satellite()
+	*  @brief  destructor
+	*/
 	~Satellite();
-}
+};
+
 #endif
