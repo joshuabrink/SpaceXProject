@@ -144,7 +144,7 @@ void printBuilderInfo(RocketLeaf* rl)
 int main()
 {
 
-    cout << "Creating factories:" << endl;
+   /* cout << "Creating factories:" << endl;
     createFactories();
     cout << endl;
     cout << "Creating Entities:" << endl;
@@ -153,10 +153,7 @@ int main()
 
     printHeading("CREATING BUILDERS");
 
-    EngineBuilder* eb = new EngineBuilder();
-    CoreBuilder* cb = new CoreBuilder();
-    Core** cores;
-    Engine** engines;
+
 
     printHeading("Falcon9 - Stage 1 Test");
 
@@ -236,7 +233,45 @@ int main()
     delete fHeavy;
     delete f9;
     delete eb;
-    delete cb;
+    delete cb;*/
+
+   EngineBuilder* eb = new EngineBuilder();
+   CoreBuilder* cb = new CoreBuilder();
+   Core** cores;
+   Engine** engines;
+
+   RocketLeaf* rl = new RocketLeaf(cb,eb);
+   RocketLeaf* rl2 = new RocketLeaf(cb,eb);
+   CompositeStage* cs = new CompositeStage(rl);
+   cs->addRocketStage(rl2);
+   cs->getVal()->makeFalconHeavyStage1();
+   cs->getNext()->makeFalconHeavyStage2();
+
+
+   /* printSubHeading("FalconHeavyS1");
+
+    cout << cs->getVal()->getNumEngines() << endl;
+    cout << cs->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2");
+
+    cout << cs->getNext()->getNumEngines() << endl;
+    cout << cs->getNext()->getNumCores() << endl;
+
+
+    CompositeStage* temp = new CompositeStage(cs);
+
+    printSubHeading("FalconHeavyS1Copy");
+
+    cout << temp->getVal()->getNumEngines() << endl;
+    cout << temp->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2Copy");
+
+    cout << temp->getNext()->getNumEngines() << endl;
+    cout << temp->getNext()->getNumCores() << endl;*/
+
+
 
     return 0;
 }

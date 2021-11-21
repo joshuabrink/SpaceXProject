@@ -22,11 +22,11 @@ public:
     int numCores;
     Engine** engines;
     int numEngines;
-    CoreBuilder* cb = new CoreBuilder();
-    EngineBuilder* eb = new EngineBuilder();
+    CoreBuilder* cb;
+    EngineBuilder* eb;
 
     RocketStage(CoreBuilder *cb, EngineBuilder *eb);
-    RocketStage(){};
+    RocketStage(){cb = nullptr;eb = nullptr;};
 
     virtual void makeFalcon9Stage1() = 0;
     virtual void makeFalcon9Stage2() = 0;

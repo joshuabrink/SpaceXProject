@@ -17,7 +17,7 @@ public:
     Core* getCore();
     string getName(){return name;};
 private:
-    string name = "core";
+    string name;
 };
 
 

@@ -18,7 +18,7 @@ public:
 	double getCost();
 
 protected:
-	string name = "engine";
+	string name;
 	double cost;
 };
 
