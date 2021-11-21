@@ -1,7 +1,8 @@
 #ifndef SATELLITEITERATOR_H
 #define SATELLITEITERATOR_H
-#include "SatelliteCollection.h"
+//#include "SatelliteCollection.h"
 #include "StarlinkOrbitingSatellite.h"
+#include <vector>
 #include <iostream>
 using namespace std;
 /**
@@ -10,34 +11,37 @@ using namespace std;
  * @todo implement the iterator properly
  */
 
-class SatelliteCollection;
 class SatelliteIterator
 {
 
     protected:
-   
+    vector<StarlinkOrbitingSatellite*> it;
     StarlinkOrbitingSatellite* first;
     StarlinkOrbitingSatellite* next;
     StarlinkOrbitingSatellite* curr;
     StarlinkOrbitingSatellite* last;
 public:
-    SatelliteIterator(SatelliteCollection* cn);
+    SatelliteIterator();
     virtual StarlinkOrbitingSatellite* firstSat()=0;
     virtual StarlinkOrbitingSatellite* nextSat()=0;
     virtual StarlinkOrbitingSatellite* current()=0;
     virtual StarlinkOrbitingSatellite* lastSat()=0;
+    void addList(StarlinkOrbitingSatellite*);
 
 
     ~SatelliteIterator();
 };
 
-SatelliteIterator::SatelliteIterator(SatelliteCollection* cn)
+SatelliteIterator::SatelliteIterator()
 {
   
      first=next=curr=nullptr;
-     
-    
-   
+
+}
+void SatelliteIterator::addList(StarlinkOrbitingSatellite* sos)
+{
+    cout<<"in here\n";
+    it.push_back(sos);
 }
 SatelliteIterator::~SatelliteIterator()
 {

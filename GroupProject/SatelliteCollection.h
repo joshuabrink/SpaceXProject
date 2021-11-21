@@ -10,11 +10,10 @@
  */
 #ifndef SATELLITECOLLECTION_H
 #define SATELLITECOLLECTION_H
-#include "SatelliteIterator.h"
 #include <vector>
+//#include "StarlinkOrbitingSatellite.h"
+#include "SatelliteIterator.h"
 using namespace std;
-class SatelliteIterator;
-class StarlinkOrbitingSatellite;
 class SatelliteCollection
 {
 protected:
@@ -37,7 +36,6 @@ public:
  */ 
     virtual void addList(StarlinkOrbitingSatellite*)=0;
     virtual SatelliteIterator* createIterator()=0;
-    virtual vector<StarlinkOrbitingSatellite*> getVector()=0;
    
     ~SatelliteCollection();
 };
