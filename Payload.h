@@ -9,10 +9,32 @@ using namespace std;
 class Payload
 {
 public:
+
+/**
+*  @fn     Payload()
+*  @brief  constructor
+*/
 	Payload();
+
+/**
+*  @fn     Payload()
+*  @brief  constructor
+* 
+* 	@param[in] string, Description
+*   @param[in] double, cost
+*/
 	Payload(string Description,double cost);
+
+/**
+*  @fn     Payload()
+*  @brief  destructor 
+*/
 	~Payload();
 
+/**
+*  @fn     string getDiscription()
+*  @brief  destructor
+*/
 	string getDiscription();
 	double getCost();
 
