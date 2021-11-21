@@ -1,7 +1,8 @@
 #include "Rocket.h"
-Rocket::Rocket(CompositeStage* stage, double cost)
+Rocket::Rocket(CompositeStage* cs, double cost)
 {
-	this->stage = stage;
+	this->stage = cs;
+    currentStage = stage->getVal();
 	isLaunch = false;
 	destination = nullptr;
 	this->cost = cost;
@@ -18,9 +19,6 @@ void Rocket::loadSpaceCraft(SpaceCraft *sc)
 {
     spaceCraft = sc;
 }
-
-
-
 
 void Rocket::addStage(CompositeStage* cs)
 {
