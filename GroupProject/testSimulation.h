@@ -42,6 +42,12 @@ class RocketFactory
 public:
     Rocket *createRocket() { return new Rocket(); }
 };
+class Falcon9Factory : public RocketFactory
+{
+};
+class FalconHeavyFactory : public RocketFactory
+{
+};
 class Command
 {
 private:
@@ -195,7 +201,37 @@ public:
 
             if (rocket == nullptr)
             {
-                Command *buildRocket = new Build(new RocketFactory(), distr(eng));
+                RocketFactory *factory;
+                cout << "SELECT ROCKET TYPE" << endl;
+                string rocketMenu[4] = {"Falcon 9", "Falcon Heavy"};
+                short rocketIndex = getMenu(rocketMenu, 2);
+
+                if (rocketIndex == 0)
+                    goto BUILD_MENU;
+                else if (rocketIndex == 1)
+                {
+                    factory = new Falcon9Factory();
+                }
+                else if (rocketIndex == 2)
+                {
+                    factory = new FalconHeavyFactory();
+                }
+                cout << "CONFIGURE ROCKET" << endl;
+                string configMenu[4] = {"Add Satellites", "Add Space Craft", "Set Cost"};
+                short configIndex = getMenu(configMenu, 3);
+
+                if (rocketIndex == 0)
+                    goto BUILD_MENU;
+                else if (rocketIndex == 1)
+                {
+                    factory = new Falcon9Factory();
+                }
+                else if (rocketIndex == 2)
+                {
+                    factory = new FalconHeavyFactory();
+                }
+
+                Command *buildRocket = new Build(factory, distr(eng));
                 setBuild(buildRocket);
                 BuildRocket();
             }
