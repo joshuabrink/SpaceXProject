@@ -65,369 +65,609 @@ include CMakeFiles/SpaceXProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SpaceXProject.dir/flags.make
 
-CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj: ../CompositeStage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\CompositeStage.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CompositeStage.cpp"
-
-CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CompositeStage.cpp" > CMakeFiles\SpaceXProject.dir\CompositeStage.cpp.i
-
-CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CompositeStage.cpp" -o CMakeFiles\SpaceXProject.dir\CompositeStage.cpp.s
-
-CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj: ../ConcretePayloadFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\ConcretePayloadFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcretePayloadFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcretePayloadFactory.cpp" > CMakeFiles\SpaceXProject.dir\ConcretePayloadFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcretePayloadFactory.cpp" -o CMakeFiles\SpaceXProject.dir\ConcretePayloadFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj: ../ConcreteRocketFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\ConcreteRocketFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteRocketFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteRocketFactory.cpp" > CMakeFiles\SpaceXProject.dir\ConcreteRocketFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteRocketFactory.cpp" -o CMakeFiles\SpaceXProject.dir\ConcreteRocketFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj: ../ConcreteSpaceCraftFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\ConcreteSpaceCraftFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteSpaceCraftFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteSpaceCraftFactory.cpp" > CMakeFiles\SpaceXProject.dir\ConcreteSpaceCraftFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ConcreteSpaceCraftFactory.cpp" -o CMakeFiles\SpaceXProject.dir\ConcreteSpaceCraftFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/Core.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/Core.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/Core.cpp.obj: ../Core.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceXProject.dir/Core.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\Core.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Core.cpp"
-
-CMakeFiles/SpaceXProject.dir/Core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/Core.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Core.cpp" > CMakeFiles\SpaceXProject.dir\Core.cpp.i
-
-CMakeFiles/SpaceXProject.dir/Core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/Core.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Core.cpp" -o CMakeFiles\SpaceXProject.dir\Core.cpp.s
-
-CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj: ../CoreBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\CoreBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CoreBuilder.cpp"
-
-CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CoreBuilder.cpp" > CMakeFiles\SpaceXProject.dir\CoreBuilder.cpp.i
-
-CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\CoreBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\CoreBuilder.cpp.s
-
-CMakeFiles/SpaceXProject.dir/Engine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/Engine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/Engine.cpp.obj: ../Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceXProject.dir/Engine.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\Engine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Engine.cpp"
-
-CMakeFiles/SpaceXProject.dir/Engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/Engine.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Engine.cpp" > CMakeFiles\SpaceXProject.dir\Engine.cpp.i
-
-CMakeFiles/SpaceXProject.dir/Engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/Engine.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Engine.cpp" -o CMakeFiles\SpaceXProject.dir\Engine.cpp.s
-
-CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj: ../EngineBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\EngineBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\EngineBuilder.cpp"
-
-CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\EngineBuilder.cpp" > CMakeFiles\SpaceXProject.dir\EngineBuilder.cpp.i
-
-CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\EngineBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\EngineBuilder.cpp.s
-
-CMakeFiles/SpaceXProject.dir/main.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/main.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceXProject.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\main.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\main.cpp"
-
-CMakeFiles/SpaceXProject.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\main.cpp" > CMakeFiles\SpaceXProject.dir\main.cpp.i
-
-CMakeFiles/SpaceXProject.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\main.cpp" -o CMakeFiles\SpaceXProject.dir\main.cpp.s
-
-CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj: ../MerlinEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\MerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\MerlinEngine.cpp"
-
-CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\MerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\MerlinEngine.cpp.i
-
-CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\MerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\MerlinEngine.cpp.s
-
-CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj: ../ModifiedMerlinEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\ModifiedMerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ModifiedMerlinEngine.cpp"
-
-CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ModifiedMerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\ModifiedMerlinEngine.cpp.i
-
-CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\ModifiedMerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\ModifiedMerlinEngine.cpp.s
-
-CMakeFiles/SpaceXProject.dir/Payload.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/Payload.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/Payload.cpp.obj: ../Payload.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceXProject.dir/Payload.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\Payload.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Payload.cpp"
-
-CMakeFiles/SpaceXProject.dir/Payload.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/Payload.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Payload.cpp" > CMakeFiles\SpaceXProject.dir\Payload.cpp.i
-
-CMakeFiles/SpaceXProject.dir/Payload.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/Payload.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Payload.cpp" -o CMakeFiles\SpaceXProject.dir\Payload.cpp.s
-
-CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj: ../PayloadFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\PayloadFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\PayloadFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\PayloadFactory.cpp" > CMakeFiles\SpaceXProject.dir\PayloadFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\PayloadFactory.cpp" -o CMakeFiles\SpaceXProject.dir\PayloadFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj: ../Rocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\Rocket.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Rocket.cpp"
-
-CMakeFiles/SpaceXProject.dir/Rocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/Rocket.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Rocket.cpp" > CMakeFiles\SpaceXProject.dir\Rocket.cpp.i
-
-CMakeFiles/SpaceXProject.dir/Rocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/Rocket.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\Rocket.cpp" -o CMakeFiles\SpaceXProject.dir\Rocket.cpp.s
-
-CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj: ../RocketFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\RocketFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketFactory.cpp" > CMakeFiles\SpaceXProject.dir\RocketFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketFactory.cpp" -o CMakeFiles\SpaceXProject.dir\RocketFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj: ../RocketLeaf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\RocketLeaf.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketLeaf.cpp"
-
-CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketLeaf.cpp" > CMakeFiles\SpaceXProject.dir\RocketLeaf.cpp.i
-
-CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketLeaf.cpp" -o CMakeFiles\SpaceXProject.dir\RocketLeaf.cpp.s
-
-CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj: ../RocketStage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\RocketStage.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketStage.cpp"
-
-CMakeFiles/SpaceXProject.dir/RocketStage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/RocketStage.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketStage.cpp" > CMakeFiles\SpaceXProject.dir\RocketStage.cpp.i
-
-CMakeFiles/SpaceXProject.dir/RocketStage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/RocketStage.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\RocketStage.cpp" -o CMakeFiles\SpaceXProject.dir\RocketStage.cpp.s
-
-CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj: ../SpaceCraft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\SpaceCraft.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraft.cpp"
-
-CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraft.cpp" > CMakeFiles\SpaceXProject.dir\SpaceCraft.cpp.i
-
-CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraft.cpp" -o CMakeFiles\SpaceXProject.dir\SpaceCraft.cpp.s
-
-CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj: ../SpaceCraftFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\SpaceCraftFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraftFactory.cpp"
-
-CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraftFactory.cpp" > CMakeFiles\SpaceXProject.dir\SpaceCraftFactory.cpp.i
-
-CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\SpaceCraftFactory.cpp" -o CMakeFiles\SpaceXProject.dir\SpaceCraftFactory.cpp.s
-
-CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj: ../StageBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\StageBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\StageBuilder.cpp"
-
-CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\StageBuilder.cpp" > CMakeFiles\SpaceXProject.dir\StageBuilder.cpp.i
-
-CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\StageBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\StageBuilder.cpp.s
-
-CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj: ../TransportEntities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\TransportEntities.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\TransportEntities.cpp"
-
-CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\TransportEntities.cpp" > CMakeFiles\SpaceXProject.dir\TransportEntities.cpp.i
-
-CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\TransportEntities.cpp" -o CMakeFiles\SpaceXProject.dir\TransportEntities.cpp.s
-
-CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
-CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
-CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj: ../VacuumMerlinEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\VacuumMerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\VacuumMerlinEngine.cpp"
-
-CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\VacuumMerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\VacuumMerlinEngine.cpp.i
-
-CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\VacuumMerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\VacuumMerlinEngine.cpp.s
+CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj: ../GroupProject/Build.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Build.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Build.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Build.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Build.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Build.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Build.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj: ../GroupProject/CompositeStage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\CompositeStage.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CompositeStage.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CompositeStage.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\CompositeStage.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CompositeStage.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\CompositeStage.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj: ../GroupProject/ConcretePayloadFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcretePayloadFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcretePayloadFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcretePayloadFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\ConcretePayloadFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcretePayloadFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcretePayloadFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj: ../GroupProject/ConcreteRocketFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteRocketFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteRocketFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteRocketFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteRocketFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteRocketFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteRocketFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj: ../GroupProject/ConcreteSpaceCraftFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteSpaceCraftFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteSpaceCraftFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteSpaceCraftFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteSpaceCraftFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ConcreteSpaceCraftFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\ConcreteSpaceCraftFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj: ../GroupProject/Core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Core.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Core.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Core.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Core.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Core.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Core.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj: ../GroupProject/CoreBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\CoreBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CoreBuilder.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CoreBuilder.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\CoreBuilder.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\CoreBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\CoreBuilder.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj: ../GroupProject/Earth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Earth.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Earth.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Earth.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Earth.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Earth.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Earth.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj: ../GroupProject/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Engine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Engine.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Engine.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Engine.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Engine.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Engine.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj: ../GroupProject/EngineBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\EngineBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\EngineBuilder.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\EngineBuilder.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\EngineBuilder.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\EngineBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\EngineBuilder.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj: ../GroupProject/Falcon9.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Falcon9.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Falcon9.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Falcon9.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Falcon9.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Falcon9.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Falcon9.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj: ../GroupProject/FalconHeavy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\FalconHeavy.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\FalconHeavy.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\FalconHeavy.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\FalconHeavy.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\FalconHeavy.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\FalconHeavy.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj: ../GroupProject/Interrupt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Interrupt.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Interrupt.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Interrupt.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Interrupt.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Interrupt.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Interrupt.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj: ../GroupProject/ISS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\ISS.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ISS.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ISS.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\ISS.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ISS.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\ISS.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj: ../GroupProject/Launch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Launch.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Launch.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Launch.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Launch.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Launch.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Launch.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj: ../GroupProject/LowOrbit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\LowOrbit.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\LowOrbit.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\LowOrbit.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\LowOrbit.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\LowOrbit.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\LowOrbit.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj: ../GroupProject/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\main.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\main.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\main.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\main.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\main.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\main.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj: ../GroupProject/MerlinEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\MerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\MerlinEngine.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\MerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\MerlinEngine.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\MerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\MerlinEngine.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj: ../GroupProject/ModifiedMerlinEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\ModifiedMerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ModifiedMerlinEngine.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ModifiedMerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\ModifiedMerlinEngine.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\ModifiedMerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\ModifiedMerlinEngine.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj: ../GroupProject/NextStage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\NextStage.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\NextStage.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\NextStage.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\NextStage.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\NextStage.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\NextStage.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj: ../GroupProject/Payload.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Payload.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Payload.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Payload.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Payload.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Payload.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Payload.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj: ../GroupProject/PayloadFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\PayloadFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\PayloadFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\PayloadFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\PayloadFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\PayloadFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\PayloadFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj: ../GroupProject/Rocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Rocket.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Rocket.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Rocket.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Rocket.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Rocket.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Rocket.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj: ../GroupProject/RocketFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\RocketFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj: ../GroupProject/RocketLeaf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketLeaf.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketLeaf.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketLeaf.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\RocketLeaf.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketLeaf.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketLeaf.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj: ../GroupProject/RocketStage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketStage.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketStage.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketStage.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\RocketStage.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\RocketStage.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\RocketStage.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj: ../GroupProject/SatelliteIterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SatelliteIterator.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SatelliteIterator.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SatelliteIterator.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SatelliteIterator.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SatelliteIterator.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SatelliteIterator.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj: ../GroupProject/SetDestination.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SetDestination.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SetDestination.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SetDestination.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SetDestination.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SetDestination.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SetDestination.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj: ../GroupProject/Simulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\Simulation.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Simulation.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Simulation.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\Simulation.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\Simulation.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\Simulation.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj: ../GroupProject/SimulationBackup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackup.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackup.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackup.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackup.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackup.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackup.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj: ../GroupProject/SimulationBackupStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackupStore.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackupStore.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackupStore.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackupStore.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SimulationBackupStore.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SimulationBackupStore.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj: ../GroupProject/SpaceCraft.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraft.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraft.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraft.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraft.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraft.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraft.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj: ../GroupProject/SpaceCraftFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraftFactory.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraftFactory.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraftFactory.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraftFactory.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\SpaceCraftFactory.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\SpaceCraftFactory.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj: ../GroupProject/StageBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\StageBuilder.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\StageBuilder.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\StageBuilder.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\StageBuilder.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\StageBuilder.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\StageBuilder.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj: ../GroupProject/TransportEntities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\TransportEntities.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\TransportEntities.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\TransportEntities.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\TransportEntities.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\TransportEntities.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\TransportEntities.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj: ../GroupProject/unit_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\unit_test.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\unit_test.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\unit_test.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\unit_test.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\unit_test.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\unit_test.cpp.s
+
+CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/flags.make
+CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj: CMakeFiles/SpaceXProject.dir/includes_CXX.rsp
+CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj: ../GroupProject/VacuumMerlinEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceXProject.dir\GroupProject\VacuumMerlinEngine.cpp.obj -c "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\VacuumMerlinEngine.cpp"
+
+CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\VacuumMerlinEngine.cpp" > CMakeFiles\SpaceXProject.dir\GroupProject\VacuumMerlinEngine.cpp.i
+
+CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\GroupProject\VacuumMerlinEngine.cpp" -o CMakeFiles\SpaceXProject.dir\GroupProject\VacuumMerlinEngine.cpp.s
 
 # Object files for target SpaceXProject
 SpaceXProject_OBJECTS = \
-"CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/Core.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/Engine.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/main.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/Payload.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj" \
-"CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj"
+"CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj" \
+"CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj"
 
 # External object files for target SpaceXProject
 SpaceXProject_EXTERNAL_OBJECTS =
 
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/Core.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/Engine.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/main.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/Payload.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj
-SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj
+SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj
 SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/build.make
 SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/linklibs.rsp
 SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/objects1.rsp
 SpaceXProject.exe: CMakeFiles/SpaceXProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable SpaceXProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable SpaceXProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SpaceXProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
