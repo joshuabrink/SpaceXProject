@@ -6,6 +6,20 @@
 
 using namespace std;
 
+class Payload
+{
+};
+
+class Crew : public Payload
+{
+};
+class Cargo : public Payload
+{
+};
+class PayloadFactory
+{
+};
+
 template <typename Type>
 class CollectionIterator
 {
@@ -38,7 +52,7 @@ class StarlinkCommunication
 {
 };
 
-class Satellite : public StarlinkCommunication
+class Satellite : public StarlinkCommunication, public Cargo
 {
 };
 
@@ -111,19 +125,7 @@ public:
      SpaceCraft *buildSpaceCraft() { return new CrewDragonSpaceCraft();}
 };
 
-class Payload
-{
-};
 
-class Crew : public Payload
-{
-};
-class Cargo : public Payload
-{
-};
-class PayloadFactory
-{
-};
 
 class Destination
 {
@@ -244,6 +246,7 @@ private:
     int backupCount = 0;
     SimulationBackupStore *backupStore = new SimulationBackupStore();
     Rocket *rocket;
+    SpaceCraft *spaceCraft;
     Command *buildCommand;
     double price;
     void setBuild(Command *c)
@@ -382,7 +385,7 @@ public:
                         spaceCraftFactory = new CrewDragonFactory();
                     }
 
-                    SpaceCraft *spaceCraft = spaceCraftFactory->buildSpaceCraft();
+                    spaceCraft = spaceCraftFactory->buildSpaceCraft();
 
                     string spaceCraftMenu[3] = {"Add Cargo", "Add Satellites"};
                     short spaceCraftIndex;
@@ -400,12 +403,15 @@ public:
                         goto CONFIGURE_ROCKET;
                     else if (spaceCraftIndex == 1)
                     {
+                        spaceCraft->addCargo(new Cargo());
                     }
                     else if (spaceCraftIndex == 2)
                     {
+                        spaceCraft->addCargo(new Satellite());
                     }
                     else if (spaceCraftIndex == 3)
                     {
+                        spaceCraft->addCrew(new Crew());
                     }
                 }
             }
