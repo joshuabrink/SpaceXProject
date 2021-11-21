@@ -58,7 +58,7 @@ protected:
 
 TEST_F(QueueTest, QueueAdd)
 {
-   que->add(*satellite_0); 
+   que->add(*satellite_0);
    EXPECT_EQ(que->end(), ComNodeQueueIterator(que, 3)) << "Value was not added to queue.";
    // EXPECT_EQ(*satellite_2->next, 0) << "Node next incorrect.";
    que->add(*satellite_1);
@@ -68,11 +68,11 @@ TEST_F(QueueTest, QueueAdd)
 
 TEST_F(QueueTest, QueueRemove)
 {
-   que->remove(); 
+   que->remove();
    EXPECT_EQ(*que->begin(), *satellite_1) << "Value was not removed from queue.";
-   que->remove(); 
+   que->remove();
    EXPECT_EQ(*que->begin(), *satellite_2) << "Value was not removed from queue.";
-   // que->remove(); 
+   // que->remove();
    // EXPECT_EQ(**que->begin(), 0) << "Value was not removed from queue.";
 
 }
