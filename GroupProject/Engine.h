@@ -43,8 +43,8 @@ public:
 	*
 	*	@return double
 	*/
-	//virtual double totalCost() = 0;
-	//virtual void addEngine(Engine*) = 0;
+	virtual double totalCost() = 0;
+	virtual void addEngine(Engine*) = 0;
 
 /**
 *	@fn  string getName();
