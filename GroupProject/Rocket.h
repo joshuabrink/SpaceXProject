@@ -14,6 +14,7 @@ class Rocket {
 private:
 	Destination* destination;
 	CompositeStage* stage;
+	RocketLeaf* currentStage;
 	bool isLaunch;
 	double cost;
 public:

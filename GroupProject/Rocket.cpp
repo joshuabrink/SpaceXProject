@@ -25,7 +25,7 @@ void Rocket::NextStage()
 	if (isLaunch) {
 		cout << "Ejecting stage starting next stage." << endl;
 		//type mismatch need to fix
-		//stage = stage->getNext();
+		currentStage = stage->getNext();
 	}
 	else {
 		cout << "Rocket needs to be launched." << endl;
@@ -60,9 +60,11 @@ void Rocket::setStage(CompositeStage* c)
 	if (stage != nullptr) {
 		delete stage;
 		stage = c;
+		currentStage = c->getVal();
 	}
 	else {
 		stage = c;
+		currentStage = c->getVal();
 	}
 }
 
