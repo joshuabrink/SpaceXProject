@@ -96,22 +96,42 @@ public:
         return iterator(&this->nodeCollection.back());
     };
 };
-class TransportEntityCollection
+class TransportEntity
 {
 
+};
+class TransportEntityCargo : public TransportEntity
+{
+
+};
+class TransportEntityCrew: public TransportEntity
+{
+
+};
+
+class TransportEntityCollection
+{
+public:
+    void display();
+    void add(TransportEntity* te);
+    TransportEntity* remove();
+};
+class TECargoCollection : public TransportEntityCollection
+{
+public:
+    void add(TransportEntity*);
+};
+class TECrewCollection : public TransportEntityCollection
+{
+public:
+    void add(TransportEntity*);
 };
 class SpaceCraft
 {
 public:
-    void addCrew(Crew *) {}
-    Crew* getCrew() {}
-    Crew*  popCrew() {}
-    void addCargo(Cargo *) {}
-    Cargo* getCargo() {}
-    Cargo* popCargo() {}
-    void setTec(TransportEntityCollection *) {}
-    TransportEntityCollection* getTec() {}
-    TransportEntityCollection* popTEC() {}
+     void setTEC(TransportEntityCollection*);
+     TransportEntityCollection* getTEC();
+
 };
 class DragonSpaceCraft : public SpaceCraft
 {
@@ -448,39 +468,13 @@ public:
                 }
                 else if (editIndex == 2)
                 {
-                    cout << "EDIT SPACE CRAFT" << endl;
-                    string editSCMenu[4] = {"Edit Satellites", "Edit Crew", "Edit Cargo", "Change Space Craft Type"};
-                    short editSCIndex = getMenu(editSCMenu, 4);
+                    cout << "EDIT SPACECRAFT" << endl;
+                    string editSCMenu[2] = {"Edit Crew", "Edit Cargo"};
+                    short editSCIndex = getMenu(editSCMenu, 2);
 
                     if (editSCIndex == 0)
                         goto BUILD_MENU;
                     else if (editSCIndex == 1)
-                    {
-                        cout << "SATELLITE OPTIONS" << endl;
-                        string sOptions[3] = {"Display Satellites", "Add Satellite", "Remove Satellite"};
-                        short sOptionsIndex = getMenu(sOptions, 3);
-                        if(sOptionsIndex == 0)
-                            goto BUILD_MENU;
-                        else if(sOptionsIndex == 1)
-                        {
-                            if(spaceCraft->getTec())
-                            {
-                                TransportEntityCollection* dispTec = spaceCraft->getTec();
-                            }
-                        }
-                        else if(sOptionsIndex == 2)
-                        {
-                            TransportEntityCollection* temp = new TransportEntityCollection();
-                            spaceCraft->setTec(temp);
-                        }
-                        else if(sOptionsIndex == 3)
-                        {
-                            spaceCraft->popTEC();
-                        }
-                        // Edit satellites
-                    }
-
-                    else if (editSCIndex == 2)
                     {
                         cout << "CREW OPTIONS" << endl;
                         string cOptions[3] = {"Display Crew", "Add Crew", "Remove Crew"};
@@ -489,21 +483,32 @@ public:
                             goto BUILD_MENU;
                         else if(cOptionsIndex == 1)
                         {
-                            if(spaceCraft->getCrew())
-                                Crew* dispCrew = spaceCraft->getCrew();
+                            spaceCraft->getTEC()->display();
                         }
                         else if(cOptionsIndex == 2)
                         {
-                            Crew* c = new Crew();
-                            spaceCraft->addCrew(c);
+                            int numAddCrew;
+                            cout << "Please enter the number of Crew to add: ";
+                            cin >> numAddCrew;
+                            TECrewCollection* tec;
+                            for (int i = 0; i < numAddCrew; ++i)
+                            {
+                                TransportEntityCrew* addCrew = new TransportEntityCrew();
+                                tec->add(addCrew);
+                            }
+                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            spaceCraft->setTEC(tec);
+                            delete temp;
                         }
                         else if(cOptionsIndex == 3)
                         {
-                            spaceCraft->popCrew();
+                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            spaceCraft->setTEC(nullptr);
+                            delete temp;
                         }
                         // Edit crew
                     }
-                    else if (editSCIndex == 3)
+                    else if (editSCIndex == 2)
                     {
                         cout << "CARGO OPTIONS" << endl;
                         string cOptions[3] = {"Display Cargo", "Add Cargo", "Remove Cargo"};
@@ -512,17 +517,28 @@ public:
                             goto BUILD_MENU;
                         else if(cOptionsIndex == 1)
                         {
-                            if(spaceCraft->getCargo())
-                                Cargo* dispCargo = spaceCraft->getCargo();
+                            spaceCraft->getTEC()->display();
                         }
                         else if(cOptionsIndex == 2)
                         {
-                            Cargo* c = new Cargo();
-                            spaceCraft->addCargo(c);
+                            int numAddCargo;
+                            cout << "Please enter the number of Crew to add: ";
+                            cin >> numAddCargo;
+                            TECrewCollection* tec;
+                            for (int i = 0; i < numAddCargo; ++i)
+                            {
+                                TransportEntityCargo* addCargo = new TransportEntityCargo();
+                                tec->add(addCargo);
+                            }
+                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            spaceCraft->setTEC(tec);
+                            delete temp;
                         }
                         else if(cOptionsIndex == 3)
                         {
-                            spaceCraft->popCargo();
+                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            spaceCraft->setTEC(nullptr);
+                            delete temp;
                         }
                         // Edit cargo
                     }
