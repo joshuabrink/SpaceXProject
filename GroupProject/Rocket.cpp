@@ -21,9 +21,11 @@ void Rocket::loadSpaceCraft(SpaceCraft *sc)
 
 
 
-void Rocket::addStage(CompositeStage* stage)
+
+void Rocket::addStage(CompositeStage* cs)
 {
-	this->stage = stage;
+	this->stage = cs;
+	currentStage = stage->getVal();
 }
 
 Rocket::Rocket(double cost)

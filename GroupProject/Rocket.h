@@ -29,6 +29,8 @@ public:
 	 *  @param[in] cost, a double value for the cost of a Rocket.
 	 */
 	Rocket(CompositeStage*, double);
+
+	void addStage(CompositeStage* cs);
 	 
 	/**
      * @brief SpaceCraft setter
