@@ -32,8 +32,8 @@ public:
 	*  @fn     Payload()
 	*  @brief  constructor
 	*
-	* 	@param[in] string, Description
-	*   @param[in] double, cost
+	*  @param[in] string, Description
+	*  @param[in] double, cost
 	*/
 	Payload(string Description, double cost);
 
@@ -89,7 +89,7 @@ class Supplies : public Payload
 {
 public:
 /**
-*  @fn     Payload()
+*  @fn     Supplies()
 *  @brief  constructor
 */
 	Supplies();
@@ -98,7 +98,7 @@ public:
 *  @fn     Supplies()
 *  @brief  constructor
 *
-* 	@param[in] string, Description
+*   @param[in] string, Description
 *   @param[in] double, cost
 */
 	Supplies(string Description, double cost);
@@ -110,5 +110,29 @@ public:
 	~Supplies();
 
 };
+
+class Satellite : public Payload
+{
+public:
+/**
+*  @fn     Satellite()
+*  @brief  constructor
+*/
+	Satellite();
+	
+/**
+*  @fn     Satellite()
+*  @brief  constructor
+*
+*   @param[in] string, Description
+*   @param[in] double, cost
+*/
+	Satellite(string Description, double cost);
+	
+/**
+*  @fn     Satellite()
+*  @brief  destructor
+*/
+	~Satellite();
 
 #endif
