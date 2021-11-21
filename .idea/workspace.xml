@@ -14,9 +14,27 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="Readded getters amd setters for Spacecraft in rocket, added getters and setters for Transport ... consult 11/21/2021 at  13:37 commit for more details">
+    <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="Skeleton spacecraft options more fleshed out">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_08_14_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_08_14_30__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_15_16_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_15_16_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GroupProject/Rocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/Rocket.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject/Rocket.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/Rocket.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/TECargoCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/TECargoCollection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/TECrewCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/TECrewCollection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/TransportEntityCargo.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/TransportEntityCargo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/TransportEntityCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/TransportEntityCollection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/TransportEntityCrew.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/TransportEntityCrew.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceXProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceXProject.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceXProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceXProject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

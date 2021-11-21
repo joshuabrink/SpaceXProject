@@ -8,5 +8,6 @@ private:
 public:
     TransportEntityCargo(/* args */) {}
     ~TransportEntityCargo() {}
+    void display(){cout << "Cargo" << endl;};
 };
 #endif

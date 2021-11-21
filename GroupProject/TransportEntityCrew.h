@@ -8,5 +8,6 @@ private:
 public:
     TransportEntityCrew(/* args */) {}
     ~TransportEntityCrew() {}
+    void display(){cout << "Crew Member" << endl;};
 };
 #endif

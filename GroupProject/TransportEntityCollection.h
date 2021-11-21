@@ -12,6 +12,7 @@ public:
     };
 
     virtual void remove() = 0;
+    virtual void display() = 0;
     ~TransportEntityCollection() {}
 };
 #endif

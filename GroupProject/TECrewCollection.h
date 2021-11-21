@@ -20,6 +20,14 @@ public:
 
         entities.pop_back();
     };
+    void display() override
+    {
+        for(TransportEntityCrew* tec : entities)
+        {
+            tec->display();
+        }
+
+    }
     ~TECrewCollection() {}
 };
 #endif

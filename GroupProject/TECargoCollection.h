@@ -19,6 +19,13 @@ public:
 
         entities.pop_back();
     };
+    void display() override
+    {
+        for (TransportEntityCargo* tec: entities)
+        {
+            tec->display();
+        }
+    }
     ~TECargoCollection() {}
 };
 #endif
