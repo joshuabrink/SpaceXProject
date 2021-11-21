@@ -14,17 +14,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="Added getters and setters for Spacecraft in rocket, added getters and setters for TransportEntityCollection in Spacecraft">
+    <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="Added todo where errors are occuring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject/ConcreteRocketFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/ConcreteRocketFactory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject/RocketFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/RocketFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject/unit_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/unit_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompositeStage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CompositeStage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CoreBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EngineBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EngineBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MerlinEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MerlinEngine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketLeaf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RocketLeaf.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketLeaf.h" beforeDir="false" afterPath="$PROJECT_DIR$/RocketLeaf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketStage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RocketStage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketStage.h" beforeDir="false" afterPath="$PROJECT_DIR$/RocketStage.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceXProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceXProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceXProject.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceXProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceXProject.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Builder" />
+        <entry key="$PROJECT_DIR$" value="Testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,11 +84,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Leonardo\Documents\2021\COS214\Assignments\Group Project\SpaceXProject" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -128,12 +131,6 @@
       <workItem from="1637430968498" duration="1509000" />
       <workItem from="1637432976747" duration="1373000" />
       <workItem from="1637435792734" duration="638000" />
-      <workItem from="1637440474376" duration="378000" />
-      <workItem from="1637440874582" duration="40000" />
-      <workItem from="1637441027661" duration="723000" />
-      <workItem from="1637491722158" duration="259000" />
-      <workItem from="1637493454303" duration="1247000" />
-      <workItem from="1637495843753" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="Testing to see which branch this will add to">
       <created>1635960272150</created>
@@ -233,28 +230,7 @@
       <option name="project" value="LOCAL" />
       <updated>1637407848376</updated>
     </task>
-    <task id="LOCAL-00015" summary="COMPILED ALL CODE INTO TESTING BRANCH">
-      <created>1637440312563</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1637440312563</updated>
-    </task>
-    <task id="LOCAL-00016" summary="CLION background">
-      <created>1637440823796</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1637440823796</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Added getters and setters for Spacecraft in rocket, added getters and setters for TransportEntityCollection in Spacecraft">
-      <created>1637494642522</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1637494642522</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,10 +279,7 @@
     <MESSAGE value="Fleshed out main, need to add testing for composite test and for decorators" />
     <MESSAGE value="Added multiple getters and setters, added finished main for basic testing" />
     <MESSAGE value="Added clone constructor for memento" />
-    <MESSAGE value="COMPILED ALL CODE INTO TESTING BRANCH" />
-    <MESSAGE value="CLION background" />
-    <MESSAGE value="Added getters and setters for Spacecraft in rocket, added getters and setters for TransportEntityCollection in Spacecraft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getters and setters for Spacecraft in rocket, added getters and setters for TransportEntityCollection in Spacecraft" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added clone constructor for memento" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

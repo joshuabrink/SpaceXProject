@@ -188,7 +188,7 @@ void TestSimulation() {
 
    /* rockets[0]->addSatellites(list);*/
     cout << "create Rocket Stages" << endl;
-    
+
     EngineBuilder* eb = new EngineBuilder();
     CoreBuilder* cb = new CoreBuilder();
     Core** cores;
@@ -228,7 +228,7 @@ void TestSimulation() {
     cout << "creating Destinations" << endl;
     Destination* dest = new Earth();
 
-    //creating commands 
+    //creating commands
     Command* launch = new Launch(rockets[0]);
     Command* destination = new SetDestination(rockets[0],dest);
     Command* abort = new Interrupt(rockets[0]);
@@ -243,7 +243,7 @@ void TestSimulation() {
     launch->execute();
     stage->execute();
 
-   
+
     Simulation* sim = new Simulation(rockets[0]);
 
     //memento
@@ -349,6 +349,44 @@ int main()
     delete f9;
     delete eb;
     delete cb;*/
+
+   EngineBuilder* eb = new EngineBuilder();
+   CoreBuilder* cb = new CoreBuilder();
+   Core** cores;
+   Engine** engines;
+
+   RocketLeaf* rl = new RocketLeaf(cb,eb);
+   RocketLeaf* rl2 = new RocketLeaf(cb,eb);
+   CompositeStage* cs = new CompositeStage(rl);
+   cs->addRocketStage(rl2);
+   cs->getVal()->makeFalconHeavyStage1();
+   cs->getNext()->makeFalconHeavyStage2();
+
+
+   /* printSubHeading("FalconHeavyS1");
+
+    cout << cs->getVal()->getNumEngines() << endl;
+    cout << cs->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2");
+
+    cout << cs->getNext()->getNumEngines() << endl;
+    cout << cs->getNext()->getNumCores() << endl;
+
+
+    CompositeStage* temp = new CompositeStage(cs);
+
+    printSubHeading("FalconHeavyS1Copy");
+
+    cout << temp->getVal()->getNumEngines() << endl;
+    cout << temp->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2Copy");
+
+    cout << temp->getNext()->getNumEngines() << endl;
+    cout << temp->getNext()->getNumCores() << endl;*/
+
+
 
     return 0;
 }
