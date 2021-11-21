@@ -2,7 +2,7 @@
 #define SATELLITEVECTOR_H
 #include "SatelliteCollection.h"
 #include "ConcreteSatelliteIterator.h"
-class SatelliteIterator;
+
 class SatelliteVector: public SatelliteCollection
 {
 private:
