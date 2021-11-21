@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Destination.h"
 #include "CompositeStage.h"
+#include "SpaceCraft.h"
 class SatelliteCollection;
 
 using namespace std;
@@ -12,6 +13,7 @@ using namespace std;
 class Rocket {
 private:
 	Destination* destination;
+	SpaceCraft* spaceCraft;
 	CompositeStage* stage;
 	bool isLaunch;
 	double cost;
@@ -26,6 +28,18 @@ public:
 	Rocket(CompositeStage*, double);
 	 
 	void addStage(CompositeStage*);
+
+	/**
+	 * @brief SpaceCraft setter
+	 * @param sc, SpaceCraft to set the current value to
+	 */
+	void loadSpaceCraft(SpaceCraft* sc);
+
+	/**
+	 * @brief SpaceCraft getAndReset
+	 * @return current SpaceCraft
+	 */
+	SpaceCraft* unloadSpaceCraft();
 
 	Rocket(double);
 	/**
@@ -126,6 +140,8 @@ public:
  *  @return Rocket*, Rocket pointer.
  */
 	virtual Rocket* clone() = 0;
+
+
 };
 
 #endif

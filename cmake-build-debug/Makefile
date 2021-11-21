@@ -128,533 +128,893 @@ SpaceXProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/build
 .PHONY : SpaceXProject/fast
 
-CompositeStage.obj: CompositeStage.cpp.obj
-.PHONY : CompositeStage.obj
+GroupProject/Build.obj: GroupProject/Build.cpp.obj
+.PHONY : GroupProject/Build.obj
 
 # target to build an object file
-CompositeStage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.obj
-.PHONY : CompositeStage.cpp.obj
+GroupProject/Build.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.obj
+.PHONY : GroupProject/Build.cpp.obj
 
-CompositeStage.i: CompositeStage.cpp.i
-.PHONY : CompositeStage.i
+GroupProject/Build.i: GroupProject/Build.cpp.i
+.PHONY : GroupProject/Build.i
 
 # target to preprocess a source file
-CompositeStage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.i
-.PHONY : CompositeStage.cpp.i
+GroupProject/Build.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.i
+.PHONY : GroupProject/Build.cpp.i
 
-CompositeStage.s: CompositeStage.cpp.s
-.PHONY : CompositeStage.s
+GroupProject/Build.s: GroupProject/Build.cpp.s
+.PHONY : GroupProject/Build.s
 
 # target to generate assembly for a file
-CompositeStage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CompositeStage.cpp.s
-.PHONY : CompositeStage.cpp.s
+GroupProject/Build.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Build.cpp.s
+.PHONY : GroupProject/Build.cpp.s
 
-ConcretePayloadFactory.obj: ConcretePayloadFactory.cpp.obj
-.PHONY : ConcretePayloadFactory.obj
+GroupProject/CompositeStage.obj: GroupProject/CompositeStage.cpp.obj
+.PHONY : GroupProject/CompositeStage.obj
 
 # target to build an object file
-ConcretePayloadFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.obj
-.PHONY : ConcretePayloadFactory.cpp.obj
+GroupProject/CompositeStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.obj
+.PHONY : GroupProject/CompositeStage.cpp.obj
 
-ConcretePayloadFactory.i: ConcretePayloadFactory.cpp.i
-.PHONY : ConcretePayloadFactory.i
+GroupProject/CompositeStage.i: GroupProject/CompositeStage.cpp.i
+.PHONY : GroupProject/CompositeStage.i
 
 # target to preprocess a source file
-ConcretePayloadFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.i
-.PHONY : ConcretePayloadFactory.cpp.i
+GroupProject/CompositeStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.i
+.PHONY : GroupProject/CompositeStage.cpp.i
 
-ConcretePayloadFactory.s: ConcretePayloadFactory.cpp.s
-.PHONY : ConcretePayloadFactory.s
+GroupProject/CompositeStage.s: GroupProject/CompositeStage.cpp.s
+.PHONY : GroupProject/CompositeStage.s
 
 # target to generate assembly for a file
-ConcretePayloadFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcretePayloadFactory.cpp.s
-.PHONY : ConcretePayloadFactory.cpp.s
+GroupProject/CompositeStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CompositeStage.cpp.s
+.PHONY : GroupProject/CompositeStage.cpp.s
 
-ConcreteRocketFactory.obj: ConcreteRocketFactory.cpp.obj
-.PHONY : ConcreteRocketFactory.obj
+GroupProject/ConcretePayloadFactory.obj: GroupProject/ConcretePayloadFactory.cpp.obj
+.PHONY : GroupProject/ConcretePayloadFactory.obj
 
 # target to build an object file
-ConcreteRocketFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.obj
-.PHONY : ConcreteRocketFactory.cpp.obj
+GroupProject/ConcretePayloadFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.obj
+.PHONY : GroupProject/ConcretePayloadFactory.cpp.obj
 
-ConcreteRocketFactory.i: ConcreteRocketFactory.cpp.i
-.PHONY : ConcreteRocketFactory.i
+GroupProject/ConcretePayloadFactory.i: GroupProject/ConcretePayloadFactory.cpp.i
+.PHONY : GroupProject/ConcretePayloadFactory.i
 
 # target to preprocess a source file
-ConcreteRocketFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.i
-.PHONY : ConcreteRocketFactory.cpp.i
+GroupProject/ConcretePayloadFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.i
+.PHONY : GroupProject/ConcretePayloadFactory.cpp.i
 
-ConcreteRocketFactory.s: ConcreteRocketFactory.cpp.s
-.PHONY : ConcreteRocketFactory.s
+GroupProject/ConcretePayloadFactory.s: GroupProject/ConcretePayloadFactory.cpp.s
+.PHONY : GroupProject/ConcretePayloadFactory.s
 
 # target to generate assembly for a file
-ConcreteRocketFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteRocketFactory.cpp.s
-.PHONY : ConcreteRocketFactory.cpp.s
+GroupProject/ConcretePayloadFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcretePayloadFactory.cpp.s
+.PHONY : GroupProject/ConcretePayloadFactory.cpp.s
 
-ConcreteSpaceCraftFactory.obj: ConcreteSpaceCraftFactory.cpp.obj
-.PHONY : ConcreteSpaceCraftFactory.obj
+GroupProject/ConcreteRocketFactory.obj: GroupProject/ConcreteRocketFactory.cpp.obj
+.PHONY : GroupProject/ConcreteRocketFactory.obj
 
 # target to build an object file
-ConcreteSpaceCraftFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.obj
-.PHONY : ConcreteSpaceCraftFactory.cpp.obj
+GroupProject/ConcreteRocketFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.obj
+.PHONY : GroupProject/ConcreteRocketFactory.cpp.obj
 
-ConcreteSpaceCraftFactory.i: ConcreteSpaceCraftFactory.cpp.i
-.PHONY : ConcreteSpaceCraftFactory.i
+GroupProject/ConcreteRocketFactory.i: GroupProject/ConcreteRocketFactory.cpp.i
+.PHONY : GroupProject/ConcreteRocketFactory.i
 
 # target to preprocess a source file
-ConcreteSpaceCraftFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.i
-.PHONY : ConcreteSpaceCraftFactory.cpp.i
+GroupProject/ConcreteRocketFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.i
+.PHONY : GroupProject/ConcreteRocketFactory.cpp.i
 
-ConcreteSpaceCraftFactory.s: ConcreteSpaceCraftFactory.cpp.s
-.PHONY : ConcreteSpaceCraftFactory.s
+GroupProject/ConcreteRocketFactory.s: GroupProject/ConcreteRocketFactory.cpp.s
+.PHONY : GroupProject/ConcreteRocketFactory.s
 
 # target to generate assembly for a file
-ConcreteSpaceCraftFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ConcreteSpaceCraftFactory.cpp.s
-.PHONY : ConcreteSpaceCraftFactory.cpp.s
+GroupProject/ConcreteRocketFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteRocketFactory.cpp.s
+.PHONY : GroupProject/ConcreteRocketFactory.cpp.s
 
-Core.obj: Core.cpp.obj
-.PHONY : Core.obj
+GroupProject/ConcreteSpaceCraftFactory.obj: GroupProject/ConcreteSpaceCraftFactory.cpp.obj
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.obj
 
 # target to build an object file
-Core.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.obj
-.PHONY : Core.cpp.obj
+GroupProject/ConcreteSpaceCraftFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.obj
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.cpp.obj
 
-Core.i: Core.cpp.i
-.PHONY : Core.i
+GroupProject/ConcreteSpaceCraftFactory.i: GroupProject/ConcreteSpaceCraftFactory.cpp.i
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.i
 
 # target to preprocess a source file
-Core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.i
-.PHONY : Core.cpp.i
+GroupProject/ConcreteSpaceCraftFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.i
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.cpp.i
 
-Core.s: Core.cpp.s
-.PHONY : Core.s
+GroupProject/ConcreteSpaceCraftFactory.s: GroupProject/ConcreteSpaceCraftFactory.cpp.s
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.s
 
 # target to generate assembly for a file
-Core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Core.cpp.s
-.PHONY : Core.cpp.s
+GroupProject/ConcreteSpaceCraftFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ConcreteSpaceCraftFactory.cpp.s
+.PHONY : GroupProject/ConcreteSpaceCraftFactory.cpp.s
 
-CoreBuilder.obj: CoreBuilder.cpp.obj
-.PHONY : CoreBuilder.obj
+GroupProject/Core.obj: GroupProject/Core.cpp.obj
+.PHONY : GroupProject/Core.obj
 
 # target to build an object file
-CoreBuilder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.obj
-.PHONY : CoreBuilder.cpp.obj
+GroupProject/Core.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.obj
+.PHONY : GroupProject/Core.cpp.obj
 
-CoreBuilder.i: CoreBuilder.cpp.i
-.PHONY : CoreBuilder.i
+GroupProject/Core.i: GroupProject/Core.cpp.i
+.PHONY : GroupProject/Core.i
 
 # target to preprocess a source file
-CoreBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.i
-.PHONY : CoreBuilder.cpp.i
+GroupProject/Core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.i
+.PHONY : GroupProject/Core.cpp.i
 
-CoreBuilder.s: CoreBuilder.cpp.s
-.PHONY : CoreBuilder.s
+GroupProject/Core.s: GroupProject/Core.cpp.s
+.PHONY : GroupProject/Core.s
 
 # target to generate assembly for a file
-CoreBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/CoreBuilder.cpp.s
-.PHONY : CoreBuilder.cpp.s
+GroupProject/Core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Core.cpp.s
+.PHONY : GroupProject/Core.cpp.s
 
-Engine.obj: Engine.cpp.obj
-.PHONY : Engine.obj
+GroupProject/CoreBuilder.obj: GroupProject/CoreBuilder.cpp.obj
+.PHONY : GroupProject/CoreBuilder.obj
 
 # target to build an object file
-Engine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Engine.cpp.obj
-.PHONY : Engine.cpp.obj
+GroupProject/CoreBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.obj
+.PHONY : GroupProject/CoreBuilder.cpp.obj
 
-Engine.i: Engine.cpp.i
-.PHONY : Engine.i
+GroupProject/CoreBuilder.i: GroupProject/CoreBuilder.cpp.i
+.PHONY : GroupProject/CoreBuilder.i
 
 # target to preprocess a source file
-Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Engine.cpp.i
-.PHONY : Engine.cpp.i
+GroupProject/CoreBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.i
+.PHONY : GroupProject/CoreBuilder.cpp.i
 
-Engine.s: Engine.cpp.s
-.PHONY : Engine.s
+GroupProject/CoreBuilder.s: GroupProject/CoreBuilder.cpp.s
+.PHONY : GroupProject/CoreBuilder.s
 
 # target to generate assembly for a file
-Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Engine.cpp.s
-.PHONY : Engine.cpp.s
+GroupProject/CoreBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/CoreBuilder.cpp.s
+.PHONY : GroupProject/CoreBuilder.cpp.s
 
-EngineBuilder.obj: EngineBuilder.cpp.obj
-.PHONY : EngineBuilder.obj
+GroupProject/Earth.obj: GroupProject/Earth.cpp.obj
+.PHONY : GroupProject/Earth.obj
 
 # target to build an object file
-EngineBuilder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.obj
-.PHONY : EngineBuilder.cpp.obj
+GroupProject/Earth.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.obj
+.PHONY : GroupProject/Earth.cpp.obj
 
-EngineBuilder.i: EngineBuilder.cpp.i
-.PHONY : EngineBuilder.i
+GroupProject/Earth.i: GroupProject/Earth.cpp.i
+.PHONY : GroupProject/Earth.i
 
 # target to preprocess a source file
-EngineBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.i
-.PHONY : EngineBuilder.cpp.i
+GroupProject/Earth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.i
+.PHONY : GroupProject/Earth.cpp.i
 
-EngineBuilder.s: EngineBuilder.cpp.s
-.PHONY : EngineBuilder.s
+GroupProject/Earth.s: GroupProject/Earth.cpp.s
+.PHONY : GroupProject/Earth.s
 
 # target to generate assembly for a file
-EngineBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/EngineBuilder.cpp.s
-.PHONY : EngineBuilder.cpp.s
+GroupProject/Earth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Earth.cpp.s
+.PHONY : GroupProject/Earth.cpp.s
 
-MerlinEngine.obj: MerlinEngine.cpp.obj
-.PHONY : MerlinEngine.obj
+GroupProject/Engine.obj: GroupProject/Engine.cpp.obj
+.PHONY : GroupProject/Engine.obj
 
 # target to build an object file
-MerlinEngine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.obj
-.PHONY : MerlinEngine.cpp.obj
+GroupProject/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.obj
+.PHONY : GroupProject/Engine.cpp.obj
 
-MerlinEngine.i: MerlinEngine.cpp.i
-.PHONY : MerlinEngine.i
+GroupProject/Engine.i: GroupProject/Engine.cpp.i
+.PHONY : GroupProject/Engine.i
 
 # target to preprocess a source file
-MerlinEngine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.i
-.PHONY : MerlinEngine.cpp.i
+GroupProject/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.i
+.PHONY : GroupProject/Engine.cpp.i
 
-MerlinEngine.s: MerlinEngine.cpp.s
-.PHONY : MerlinEngine.s
+GroupProject/Engine.s: GroupProject/Engine.cpp.s
+.PHONY : GroupProject/Engine.s
 
 # target to generate assembly for a file
-MerlinEngine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/MerlinEngine.cpp.s
-.PHONY : MerlinEngine.cpp.s
+GroupProject/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Engine.cpp.s
+.PHONY : GroupProject/Engine.cpp.s
 
-ModifiedMerlinEngine.obj: ModifiedMerlinEngine.cpp.obj
-.PHONY : ModifiedMerlinEngine.obj
+GroupProject/EngineBuilder.obj: GroupProject/EngineBuilder.cpp.obj
+.PHONY : GroupProject/EngineBuilder.obj
 
 # target to build an object file
-ModifiedMerlinEngine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.obj
-.PHONY : ModifiedMerlinEngine.cpp.obj
+GroupProject/EngineBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.obj
+.PHONY : GroupProject/EngineBuilder.cpp.obj
 
-ModifiedMerlinEngine.i: ModifiedMerlinEngine.cpp.i
-.PHONY : ModifiedMerlinEngine.i
+GroupProject/EngineBuilder.i: GroupProject/EngineBuilder.cpp.i
+.PHONY : GroupProject/EngineBuilder.i
 
 # target to preprocess a source file
-ModifiedMerlinEngine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.i
-.PHONY : ModifiedMerlinEngine.cpp.i
+GroupProject/EngineBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.i
+.PHONY : GroupProject/EngineBuilder.cpp.i
 
-ModifiedMerlinEngine.s: ModifiedMerlinEngine.cpp.s
-.PHONY : ModifiedMerlinEngine.s
+GroupProject/EngineBuilder.s: GroupProject/EngineBuilder.cpp.s
+.PHONY : GroupProject/EngineBuilder.s
 
 # target to generate assembly for a file
-ModifiedMerlinEngine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/ModifiedMerlinEngine.cpp.s
-.PHONY : ModifiedMerlinEngine.cpp.s
+GroupProject/EngineBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/EngineBuilder.cpp.s
+.PHONY : GroupProject/EngineBuilder.cpp.s
 
-Payload.obj: Payload.cpp.obj
-.PHONY : Payload.obj
+GroupProject/Falcon9.obj: GroupProject/Falcon9.cpp.obj
+.PHONY : GroupProject/Falcon9.obj
 
 # target to build an object file
-Payload.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Payload.cpp.obj
-.PHONY : Payload.cpp.obj
+GroupProject/Falcon9.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.obj
+.PHONY : GroupProject/Falcon9.cpp.obj
 
-Payload.i: Payload.cpp.i
-.PHONY : Payload.i
+GroupProject/Falcon9.i: GroupProject/Falcon9.cpp.i
+.PHONY : GroupProject/Falcon9.i
 
 # target to preprocess a source file
-Payload.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Payload.cpp.i
-.PHONY : Payload.cpp.i
+GroupProject/Falcon9.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.i
+.PHONY : GroupProject/Falcon9.cpp.i
 
-Payload.s: Payload.cpp.s
-.PHONY : Payload.s
+GroupProject/Falcon9.s: GroupProject/Falcon9.cpp.s
+.PHONY : GroupProject/Falcon9.s
 
 # target to generate assembly for a file
-Payload.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Payload.cpp.s
-.PHONY : Payload.cpp.s
+GroupProject/Falcon9.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Falcon9.cpp.s
+.PHONY : GroupProject/Falcon9.cpp.s
 
-PayloadFactory.obj: PayloadFactory.cpp.obj
-.PHONY : PayloadFactory.obj
+GroupProject/FalconHeavy.obj: GroupProject/FalconHeavy.cpp.obj
+.PHONY : GroupProject/FalconHeavy.obj
 
 # target to build an object file
-PayloadFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.obj
-.PHONY : PayloadFactory.cpp.obj
+GroupProject/FalconHeavy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.obj
+.PHONY : GroupProject/FalconHeavy.cpp.obj
 
-PayloadFactory.i: PayloadFactory.cpp.i
-.PHONY : PayloadFactory.i
+GroupProject/FalconHeavy.i: GroupProject/FalconHeavy.cpp.i
+.PHONY : GroupProject/FalconHeavy.i
 
 # target to preprocess a source file
-PayloadFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.i
-.PHONY : PayloadFactory.cpp.i
+GroupProject/FalconHeavy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.i
+.PHONY : GroupProject/FalconHeavy.cpp.i
 
-PayloadFactory.s: PayloadFactory.cpp.s
-.PHONY : PayloadFactory.s
+GroupProject/FalconHeavy.s: GroupProject/FalconHeavy.cpp.s
+.PHONY : GroupProject/FalconHeavy.s
 
 # target to generate assembly for a file
-PayloadFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/PayloadFactory.cpp.s
-.PHONY : PayloadFactory.cpp.s
+GroupProject/FalconHeavy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/FalconHeavy.cpp.s
+.PHONY : GroupProject/FalconHeavy.cpp.s
 
-Rocket.obj: Rocket.cpp.obj
-.PHONY : Rocket.obj
+GroupProject/ISS.obj: GroupProject/ISS.cpp.obj
+.PHONY : GroupProject/ISS.obj
 
 # target to build an object file
-Rocket.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.obj
-.PHONY : Rocket.cpp.obj
+GroupProject/ISS.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.obj
+.PHONY : GroupProject/ISS.cpp.obj
 
-Rocket.i: Rocket.cpp.i
-.PHONY : Rocket.i
+GroupProject/ISS.i: GroupProject/ISS.cpp.i
+.PHONY : GroupProject/ISS.i
 
 # target to preprocess a source file
-Rocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.i
-.PHONY : Rocket.cpp.i
+GroupProject/ISS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.i
+.PHONY : GroupProject/ISS.cpp.i
 
-Rocket.s: Rocket.cpp.s
-.PHONY : Rocket.s
+GroupProject/ISS.s: GroupProject/ISS.cpp.s
+.PHONY : GroupProject/ISS.s
 
 # target to generate assembly for a file
-Rocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/Rocket.cpp.s
-.PHONY : Rocket.cpp.s
+GroupProject/ISS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ISS.cpp.s
+.PHONY : GroupProject/ISS.cpp.s
 
-RocketFactory.obj: RocketFactory.cpp.obj
-.PHONY : RocketFactory.obj
+GroupProject/Interrupt.obj: GroupProject/Interrupt.cpp.obj
+.PHONY : GroupProject/Interrupt.obj
 
 # target to build an object file
-RocketFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.obj
-.PHONY : RocketFactory.cpp.obj
+GroupProject/Interrupt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.obj
+.PHONY : GroupProject/Interrupt.cpp.obj
 
-RocketFactory.i: RocketFactory.cpp.i
-.PHONY : RocketFactory.i
+GroupProject/Interrupt.i: GroupProject/Interrupt.cpp.i
+.PHONY : GroupProject/Interrupt.i
 
 # target to preprocess a source file
-RocketFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.i
-.PHONY : RocketFactory.cpp.i
+GroupProject/Interrupt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.i
+.PHONY : GroupProject/Interrupt.cpp.i
 
-RocketFactory.s: RocketFactory.cpp.s
-.PHONY : RocketFactory.s
+GroupProject/Interrupt.s: GroupProject/Interrupt.cpp.s
+.PHONY : GroupProject/Interrupt.s
 
 # target to generate assembly for a file
-RocketFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketFactory.cpp.s
-.PHONY : RocketFactory.cpp.s
+GroupProject/Interrupt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Interrupt.cpp.s
+.PHONY : GroupProject/Interrupt.cpp.s
 
-RocketLeaf.obj: RocketLeaf.cpp.obj
-.PHONY : RocketLeaf.obj
+GroupProject/Launch.obj: GroupProject/Launch.cpp.obj
+.PHONY : GroupProject/Launch.obj
 
 # target to build an object file
-RocketLeaf.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.obj
-.PHONY : RocketLeaf.cpp.obj
+GroupProject/Launch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.obj
+.PHONY : GroupProject/Launch.cpp.obj
 
-RocketLeaf.i: RocketLeaf.cpp.i
-.PHONY : RocketLeaf.i
+GroupProject/Launch.i: GroupProject/Launch.cpp.i
+.PHONY : GroupProject/Launch.i
 
 # target to preprocess a source file
-RocketLeaf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.i
-.PHONY : RocketLeaf.cpp.i
+GroupProject/Launch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.i
+.PHONY : GroupProject/Launch.cpp.i
 
-RocketLeaf.s: RocketLeaf.cpp.s
-.PHONY : RocketLeaf.s
+GroupProject/Launch.s: GroupProject/Launch.cpp.s
+.PHONY : GroupProject/Launch.s
 
 # target to generate assembly for a file
-RocketLeaf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketLeaf.cpp.s
-.PHONY : RocketLeaf.cpp.s
+GroupProject/Launch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Launch.cpp.s
+.PHONY : GroupProject/Launch.cpp.s
 
-RocketStage.obj: RocketStage.cpp.obj
-.PHONY : RocketStage.obj
+GroupProject/LowOrbit.obj: GroupProject/LowOrbit.cpp.obj
+.PHONY : GroupProject/LowOrbit.obj
 
 # target to build an object file
-RocketStage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.obj
-.PHONY : RocketStage.cpp.obj
+GroupProject/LowOrbit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.obj
+.PHONY : GroupProject/LowOrbit.cpp.obj
 
-RocketStage.i: RocketStage.cpp.i
-.PHONY : RocketStage.i
+GroupProject/LowOrbit.i: GroupProject/LowOrbit.cpp.i
+.PHONY : GroupProject/LowOrbit.i
 
 # target to preprocess a source file
-RocketStage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.i
-.PHONY : RocketStage.cpp.i
+GroupProject/LowOrbit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.i
+.PHONY : GroupProject/LowOrbit.cpp.i
 
-RocketStage.s: RocketStage.cpp.s
-.PHONY : RocketStage.s
+GroupProject/LowOrbit.s: GroupProject/LowOrbit.cpp.s
+.PHONY : GroupProject/LowOrbit.s
 
 # target to generate assembly for a file
-RocketStage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/RocketStage.cpp.s
-.PHONY : RocketStage.cpp.s
+GroupProject/LowOrbit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/LowOrbit.cpp.s
+.PHONY : GroupProject/LowOrbit.cpp.s
 
-SpaceCraft.obj: SpaceCraft.cpp.obj
-.PHONY : SpaceCraft.obj
+GroupProject/MerlinEngine.obj: GroupProject/MerlinEngine.cpp.obj
+.PHONY : GroupProject/MerlinEngine.obj
 
 # target to build an object file
-SpaceCraft.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.obj
-.PHONY : SpaceCraft.cpp.obj
+GroupProject/MerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.obj
+.PHONY : GroupProject/MerlinEngine.cpp.obj
 
-SpaceCraft.i: SpaceCraft.cpp.i
-.PHONY : SpaceCraft.i
+GroupProject/MerlinEngine.i: GroupProject/MerlinEngine.cpp.i
+.PHONY : GroupProject/MerlinEngine.i
 
 # target to preprocess a source file
-SpaceCraft.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.i
-.PHONY : SpaceCraft.cpp.i
+GroupProject/MerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.i
+.PHONY : GroupProject/MerlinEngine.cpp.i
 
-SpaceCraft.s: SpaceCraft.cpp.s
-.PHONY : SpaceCraft.s
+GroupProject/MerlinEngine.s: GroupProject/MerlinEngine.cpp.s
+.PHONY : GroupProject/MerlinEngine.s
 
 # target to generate assembly for a file
-SpaceCraft.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraft.cpp.s
-.PHONY : SpaceCraft.cpp.s
+GroupProject/MerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/MerlinEngine.cpp.s
+.PHONY : GroupProject/MerlinEngine.cpp.s
 
-SpaceCraftFactory.obj: SpaceCraftFactory.cpp.obj
-.PHONY : SpaceCraftFactory.obj
+GroupProject/ModifiedMerlinEngine.obj: GroupProject/ModifiedMerlinEngine.cpp.obj
+.PHONY : GroupProject/ModifiedMerlinEngine.obj
 
 # target to build an object file
-SpaceCraftFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.obj
-.PHONY : SpaceCraftFactory.cpp.obj
+GroupProject/ModifiedMerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.obj
+.PHONY : GroupProject/ModifiedMerlinEngine.cpp.obj
 
-SpaceCraftFactory.i: SpaceCraftFactory.cpp.i
-.PHONY : SpaceCraftFactory.i
+GroupProject/ModifiedMerlinEngine.i: GroupProject/ModifiedMerlinEngine.cpp.i
+.PHONY : GroupProject/ModifiedMerlinEngine.i
 
 # target to preprocess a source file
-SpaceCraftFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.i
-.PHONY : SpaceCraftFactory.cpp.i
+GroupProject/ModifiedMerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.i
+.PHONY : GroupProject/ModifiedMerlinEngine.cpp.i
 
-SpaceCraftFactory.s: SpaceCraftFactory.cpp.s
-.PHONY : SpaceCraftFactory.s
+GroupProject/ModifiedMerlinEngine.s: GroupProject/ModifiedMerlinEngine.cpp.s
+.PHONY : GroupProject/ModifiedMerlinEngine.s
 
 # target to generate assembly for a file
-SpaceCraftFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/SpaceCraftFactory.cpp.s
-.PHONY : SpaceCraftFactory.cpp.s
+GroupProject/ModifiedMerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/ModifiedMerlinEngine.cpp.s
+.PHONY : GroupProject/ModifiedMerlinEngine.cpp.s
 
-StageBuilder.obj: StageBuilder.cpp.obj
-.PHONY : StageBuilder.obj
+GroupProject/NextStage.obj: GroupProject/NextStage.cpp.obj
+.PHONY : GroupProject/NextStage.obj
 
 # target to build an object file
-StageBuilder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.obj
-.PHONY : StageBuilder.cpp.obj
+GroupProject/NextStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.obj
+.PHONY : GroupProject/NextStage.cpp.obj
 
-StageBuilder.i: StageBuilder.cpp.i
-.PHONY : StageBuilder.i
+GroupProject/NextStage.i: GroupProject/NextStage.cpp.i
+.PHONY : GroupProject/NextStage.i
 
 # target to preprocess a source file
-StageBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.i
-.PHONY : StageBuilder.cpp.i
+GroupProject/NextStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.i
+.PHONY : GroupProject/NextStage.cpp.i
 
-StageBuilder.s: StageBuilder.cpp.s
-.PHONY : StageBuilder.s
+GroupProject/NextStage.s: GroupProject/NextStage.cpp.s
+.PHONY : GroupProject/NextStage.s
 
 # target to generate assembly for a file
-StageBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/StageBuilder.cpp.s
-.PHONY : StageBuilder.cpp.s
+GroupProject/NextStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/NextStage.cpp.s
+.PHONY : GroupProject/NextStage.cpp.s
 
-TransportEntities.obj: TransportEntities.cpp.obj
-.PHONY : TransportEntities.obj
+GroupProject/Payload.obj: GroupProject/Payload.cpp.obj
+.PHONY : GroupProject/Payload.obj
 
 # target to build an object file
-TransportEntities.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.obj
-.PHONY : TransportEntities.cpp.obj
+GroupProject/Payload.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.obj
+.PHONY : GroupProject/Payload.cpp.obj
 
-TransportEntities.i: TransportEntities.cpp.i
-.PHONY : TransportEntities.i
+GroupProject/Payload.i: GroupProject/Payload.cpp.i
+.PHONY : GroupProject/Payload.i
 
 # target to preprocess a source file
-TransportEntities.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.i
-.PHONY : TransportEntities.cpp.i
+GroupProject/Payload.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.i
+.PHONY : GroupProject/Payload.cpp.i
 
-TransportEntities.s: TransportEntities.cpp.s
-.PHONY : TransportEntities.s
+GroupProject/Payload.s: GroupProject/Payload.cpp.s
+.PHONY : GroupProject/Payload.s
 
 # target to generate assembly for a file
-TransportEntities.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/TransportEntities.cpp.s
-.PHONY : TransportEntities.cpp.s
+GroupProject/Payload.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Payload.cpp.s
+.PHONY : GroupProject/Payload.cpp.s
 
-VacuumMerlinEngine.obj: VacuumMerlinEngine.cpp.obj
-.PHONY : VacuumMerlinEngine.obj
+GroupProject/PayloadFactory.obj: GroupProject/PayloadFactory.cpp.obj
+.PHONY : GroupProject/PayloadFactory.obj
 
 # target to build an object file
-VacuumMerlinEngine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.obj
-.PHONY : VacuumMerlinEngine.cpp.obj
+GroupProject/PayloadFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.obj
+.PHONY : GroupProject/PayloadFactory.cpp.obj
 
-VacuumMerlinEngine.i: VacuumMerlinEngine.cpp.i
-.PHONY : VacuumMerlinEngine.i
+GroupProject/PayloadFactory.i: GroupProject/PayloadFactory.cpp.i
+.PHONY : GroupProject/PayloadFactory.i
 
 # target to preprocess a source file
-VacuumMerlinEngine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.i
-.PHONY : VacuumMerlinEngine.cpp.i
+GroupProject/PayloadFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.i
+.PHONY : GroupProject/PayloadFactory.cpp.i
 
-VacuumMerlinEngine.s: VacuumMerlinEngine.cpp.s
-.PHONY : VacuumMerlinEngine.s
+GroupProject/PayloadFactory.s: GroupProject/PayloadFactory.cpp.s
+.PHONY : GroupProject/PayloadFactory.s
 
 # target to generate assembly for a file
-VacuumMerlinEngine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/VacuumMerlinEngine.cpp.s
-.PHONY : VacuumMerlinEngine.cpp.s
+GroupProject/PayloadFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/PayloadFactory.cpp.s
+.PHONY : GroupProject/PayloadFactory.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+GroupProject/Rocket.obj: GroupProject/Rocket.cpp.obj
+.PHONY : GroupProject/Rocket.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+GroupProject/Rocket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.obj
+.PHONY : GroupProject/Rocket.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+GroupProject/Rocket.i: GroupProject/Rocket.cpp.i
+.PHONY : GroupProject/Rocket.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/main.cpp.i
-.PHONY : main.cpp.i
+GroupProject/Rocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.i
+.PHONY : GroupProject/Rocket.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+GroupProject/Rocket.s: GroupProject/Rocket.cpp.s
+.PHONY : GroupProject/Rocket.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/main.cpp.s
-.PHONY : main.cpp.s
+GroupProject/Rocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Rocket.cpp.s
+.PHONY : GroupProject/Rocket.cpp.s
+
+GroupProject/RocketFactory.obj: GroupProject/RocketFactory.cpp.obj
+.PHONY : GroupProject/RocketFactory.obj
+
+# target to build an object file
+GroupProject/RocketFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.obj
+.PHONY : GroupProject/RocketFactory.cpp.obj
+
+GroupProject/RocketFactory.i: GroupProject/RocketFactory.cpp.i
+.PHONY : GroupProject/RocketFactory.i
+
+# target to preprocess a source file
+GroupProject/RocketFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.i
+.PHONY : GroupProject/RocketFactory.cpp.i
+
+GroupProject/RocketFactory.s: GroupProject/RocketFactory.cpp.s
+.PHONY : GroupProject/RocketFactory.s
+
+# target to generate assembly for a file
+GroupProject/RocketFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketFactory.cpp.s
+.PHONY : GroupProject/RocketFactory.cpp.s
+
+GroupProject/RocketLeaf.obj: GroupProject/RocketLeaf.cpp.obj
+.PHONY : GroupProject/RocketLeaf.obj
+
+# target to build an object file
+GroupProject/RocketLeaf.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.obj
+.PHONY : GroupProject/RocketLeaf.cpp.obj
+
+GroupProject/RocketLeaf.i: GroupProject/RocketLeaf.cpp.i
+.PHONY : GroupProject/RocketLeaf.i
+
+# target to preprocess a source file
+GroupProject/RocketLeaf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.i
+.PHONY : GroupProject/RocketLeaf.cpp.i
+
+GroupProject/RocketLeaf.s: GroupProject/RocketLeaf.cpp.s
+.PHONY : GroupProject/RocketLeaf.s
+
+# target to generate assembly for a file
+GroupProject/RocketLeaf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketLeaf.cpp.s
+.PHONY : GroupProject/RocketLeaf.cpp.s
+
+GroupProject/RocketStage.obj: GroupProject/RocketStage.cpp.obj
+.PHONY : GroupProject/RocketStage.obj
+
+# target to build an object file
+GroupProject/RocketStage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.obj
+.PHONY : GroupProject/RocketStage.cpp.obj
+
+GroupProject/RocketStage.i: GroupProject/RocketStage.cpp.i
+.PHONY : GroupProject/RocketStage.i
+
+# target to preprocess a source file
+GroupProject/RocketStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.i
+.PHONY : GroupProject/RocketStage.cpp.i
+
+GroupProject/RocketStage.s: GroupProject/RocketStage.cpp.s
+.PHONY : GroupProject/RocketStage.s
+
+# target to generate assembly for a file
+GroupProject/RocketStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/RocketStage.cpp.s
+.PHONY : GroupProject/RocketStage.cpp.s
+
+GroupProject/SatelliteIterator.obj: GroupProject/SatelliteIterator.cpp.obj
+.PHONY : GroupProject/SatelliteIterator.obj
+
+# target to build an object file
+GroupProject/SatelliteIterator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.obj
+.PHONY : GroupProject/SatelliteIterator.cpp.obj
+
+GroupProject/SatelliteIterator.i: GroupProject/SatelliteIterator.cpp.i
+.PHONY : GroupProject/SatelliteIterator.i
+
+# target to preprocess a source file
+GroupProject/SatelliteIterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.i
+.PHONY : GroupProject/SatelliteIterator.cpp.i
+
+GroupProject/SatelliteIterator.s: GroupProject/SatelliteIterator.cpp.s
+.PHONY : GroupProject/SatelliteIterator.s
+
+# target to generate assembly for a file
+GroupProject/SatelliteIterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SatelliteIterator.cpp.s
+.PHONY : GroupProject/SatelliteIterator.cpp.s
+
+GroupProject/SetDestination.obj: GroupProject/SetDestination.cpp.obj
+.PHONY : GroupProject/SetDestination.obj
+
+# target to build an object file
+GroupProject/SetDestination.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.obj
+.PHONY : GroupProject/SetDestination.cpp.obj
+
+GroupProject/SetDestination.i: GroupProject/SetDestination.cpp.i
+.PHONY : GroupProject/SetDestination.i
+
+# target to preprocess a source file
+GroupProject/SetDestination.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.i
+.PHONY : GroupProject/SetDestination.cpp.i
+
+GroupProject/SetDestination.s: GroupProject/SetDestination.cpp.s
+.PHONY : GroupProject/SetDestination.s
+
+# target to generate assembly for a file
+GroupProject/SetDestination.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SetDestination.cpp.s
+.PHONY : GroupProject/SetDestination.cpp.s
+
+GroupProject/Simulation.obj: GroupProject/Simulation.cpp.obj
+.PHONY : GroupProject/Simulation.obj
+
+# target to build an object file
+GroupProject/Simulation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.obj
+.PHONY : GroupProject/Simulation.cpp.obj
+
+GroupProject/Simulation.i: GroupProject/Simulation.cpp.i
+.PHONY : GroupProject/Simulation.i
+
+# target to preprocess a source file
+GroupProject/Simulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.i
+.PHONY : GroupProject/Simulation.cpp.i
+
+GroupProject/Simulation.s: GroupProject/Simulation.cpp.s
+.PHONY : GroupProject/Simulation.s
+
+# target to generate assembly for a file
+GroupProject/Simulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/Simulation.cpp.s
+.PHONY : GroupProject/Simulation.cpp.s
+
+GroupProject/SimulationBackup.obj: GroupProject/SimulationBackup.cpp.obj
+.PHONY : GroupProject/SimulationBackup.obj
+
+# target to build an object file
+GroupProject/SimulationBackup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.obj
+.PHONY : GroupProject/SimulationBackup.cpp.obj
+
+GroupProject/SimulationBackup.i: GroupProject/SimulationBackup.cpp.i
+.PHONY : GroupProject/SimulationBackup.i
+
+# target to preprocess a source file
+GroupProject/SimulationBackup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.i
+.PHONY : GroupProject/SimulationBackup.cpp.i
+
+GroupProject/SimulationBackup.s: GroupProject/SimulationBackup.cpp.s
+.PHONY : GroupProject/SimulationBackup.s
+
+# target to generate assembly for a file
+GroupProject/SimulationBackup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackup.cpp.s
+.PHONY : GroupProject/SimulationBackup.cpp.s
+
+GroupProject/SimulationBackupStore.obj: GroupProject/SimulationBackupStore.cpp.obj
+.PHONY : GroupProject/SimulationBackupStore.obj
+
+# target to build an object file
+GroupProject/SimulationBackupStore.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.obj
+.PHONY : GroupProject/SimulationBackupStore.cpp.obj
+
+GroupProject/SimulationBackupStore.i: GroupProject/SimulationBackupStore.cpp.i
+.PHONY : GroupProject/SimulationBackupStore.i
+
+# target to preprocess a source file
+GroupProject/SimulationBackupStore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.i
+.PHONY : GroupProject/SimulationBackupStore.cpp.i
+
+GroupProject/SimulationBackupStore.s: GroupProject/SimulationBackupStore.cpp.s
+.PHONY : GroupProject/SimulationBackupStore.s
+
+# target to generate assembly for a file
+GroupProject/SimulationBackupStore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SimulationBackupStore.cpp.s
+.PHONY : GroupProject/SimulationBackupStore.cpp.s
+
+GroupProject/SpaceCraft.obj: GroupProject/SpaceCraft.cpp.obj
+.PHONY : GroupProject/SpaceCraft.obj
+
+# target to build an object file
+GroupProject/SpaceCraft.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.obj
+.PHONY : GroupProject/SpaceCraft.cpp.obj
+
+GroupProject/SpaceCraft.i: GroupProject/SpaceCraft.cpp.i
+.PHONY : GroupProject/SpaceCraft.i
+
+# target to preprocess a source file
+GroupProject/SpaceCraft.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.i
+.PHONY : GroupProject/SpaceCraft.cpp.i
+
+GroupProject/SpaceCraft.s: GroupProject/SpaceCraft.cpp.s
+.PHONY : GroupProject/SpaceCraft.s
+
+# target to generate assembly for a file
+GroupProject/SpaceCraft.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraft.cpp.s
+.PHONY : GroupProject/SpaceCraft.cpp.s
+
+GroupProject/SpaceCraftFactory.obj: GroupProject/SpaceCraftFactory.cpp.obj
+.PHONY : GroupProject/SpaceCraftFactory.obj
+
+# target to build an object file
+GroupProject/SpaceCraftFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.obj
+.PHONY : GroupProject/SpaceCraftFactory.cpp.obj
+
+GroupProject/SpaceCraftFactory.i: GroupProject/SpaceCraftFactory.cpp.i
+.PHONY : GroupProject/SpaceCraftFactory.i
+
+# target to preprocess a source file
+GroupProject/SpaceCraftFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.i
+.PHONY : GroupProject/SpaceCraftFactory.cpp.i
+
+GroupProject/SpaceCraftFactory.s: GroupProject/SpaceCraftFactory.cpp.s
+.PHONY : GroupProject/SpaceCraftFactory.s
+
+# target to generate assembly for a file
+GroupProject/SpaceCraftFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/SpaceCraftFactory.cpp.s
+.PHONY : GroupProject/SpaceCraftFactory.cpp.s
+
+GroupProject/StageBuilder.obj: GroupProject/StageBuilder.cpp.obj
+.PHONY : GroupProject/StageBuilder.obj
+
+# target to build an object file
+GroupProject/StageBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.obj
+.PHONY : GroupProject/StageBuilder.cpp.obj
+
+GroupProject/StageBuilder.i: GroupProject/StageBuilder.cpp.i
+.PHONY : GroupProject/StageBuilder.i
+
+# target to preprocess a source file
+GroupProject/StageBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.i
+.PHONY : GroupProject/StageBuilder.cpp.i
+
+GroupProject/StageBuilder.s: GroupProject/StageBuilder.cpp.s
+.PHONY : GroupProject/StageBuilder.s
+
+# target to generate assembly for a file
+GroupProject/StageBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/StageBuilder.cpp.s
+.PHONY : GroupProject/StageBuilder.cpp.s
+
+GroupProject/TransportEntities.obj: GroupProject/TransportEntities.cpp.obj
+.PHONY : GroupProject/TransportEntities.obj
+
+# target to build an object file
+GroupProject/TransportEntities.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.obj
+.PHONY : GroupProject/TransportEntities.cpp.obj
+
+GroupProject/TransportEntities.i: GroupProject/TransportEntities.cpp.i
+.PHONY : GroupProject/TransportEntities.i
+
+# target to preprocess a source file
+GroupProject/TransportEntities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.i
+.PHONY : GroupProject/TransportEntities.cpp.i
+
+GroupProject/TransportEntities.s: GroupProject/TransportEntities.cpp.s
+.PHONY : GroupProject/TransportEntities.s
+
+# target to generate assembly for a file
+GroupProject/TransportEntities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/TransportEntities.cpp.s
+.PHONY : GroupProject/TransportEntities.cpp.s
+
+GroupProject/VacuumMerlinEngine.obj: GroupProject/VacuumMerlinEngine.cpp.obj
+.PHONY : GroupProject/VacuumMerlinEngine.obj
+
+# target to build an object file
+GroupProject/VacuumMerlinEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.obj
+.PHONY : GroupProject/VacuumMerlinEngine.cpp.obj
+
+GroupProject/VacuumMerlinEngine.i: GroupProject/VacuumMerlinEngine.cpp.i
+.PHONY : GroupProject/VacuumMerlinEngine.i
+
+# target to preprocess a source file
+GroupProject/VacuumMerlinEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.i
+.PHONY : GroupProject/VacuumMerlinEngine.cpp.i
+
+GroupProject/VacuumMerlinEngine.s: GroupProject/VacuumMerlinEngine.cpp.s
+.PHONY : GroupProject/VacuumMerlinEngine.s
+
+# target to generate assembly for a file
+GroupProject/VacuumMerlinEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/VacuumMerlinEngine.cpp.s
+.PHONY : GroupProject/VacuumMerlinEngine.cpp.s
+
+GroupProject/main.obj: GroupProject/main.cpp.obj
+.PHONY : GroupProject/main.obj
+
+# target to build an object file
+GroupProject/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.obj
+.PHONY : GroupProject/main.cpp.obj
+
+GroupProject/main.i: GroupProject/main.cpp.i
+.PHONY : GroupProject/main.i
+
+# target to preprocess a source file
+GroupProject/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.i
+.PHONY : GroupProject/main.cpp.i
+
+GroupProject/main.s: GroupProject/main.cpp.s
+.PHONY : GroupProject/main.s
+
+# target to generate assembly for a file
+GroupProject/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/main.cpp.s
+.PHONY : GroupProject/main.cpp.s
+
+GroupProject/unit_test.obj: GroupProject/unit_test.cpp.obj
+.PHONY : GroupProject/unit_test.obj
+
+# target to build an object file
+GroupProject/unit_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.obj
+.PHONY : GroupProject/unit_test.cpp.obj
+
+GroupProject/unit_test.i: GroupProject/unit_test.cpp.i
+.PHONY : GroupProject/unit_test.i
+
+# target to preprocess a source file
+GroupProject/unit_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.i
+.PHONY : GroupProject/unit_test.cpp.i
+
+GroupProject/unit_test.s: GroupProject/unit_test.cpp.s
+.PHONY : GroupProject/unit_test.s
+
+# target to generate assembly for a file
+GroupProject/unit_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpaceXProject.dir\build.make CMakeFiles/SpaceXProject.dir/GroupProject/unit_test.cpp.s
+.PHONY : GroupProject/unit_test.cpp.s
 
 # Help Target
 help:
@@ -665,72 +1025,117 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SpaceXProject
-	@echo ... CompositeStage.obj
-	@echo ... CompositeStage.i
-	@echo ... CompositeStage.s
-	@echo ... ConcretePayloadFactory.obj
-	@echo ... ConcretePayloadFactory.i
-	@echo ... ConcretePayloadFactory.s
-	@echo ... ConcreteRocketFactory.obj
-	@echo ... ConcreteRocketFactory.i
-	@echo ... ConcreteRocketFactory.s
-	@echo ... ConcreteSpaceCraftFactory.obj
-	@echo ... ConcreteSpaceCraftFactory.i
-	@echo ... ConcreteSpaceCraftFactory.s
-	@echo ... Core.obj
-	@echo ... Core.i
-	@echo ... Core.s
-	@echo ... CoreBuilder.obj
-	@echo ... CoreBuilder.i
-	@echo ... CoreBuilder.s
-	@echo ... Engine.obj
-	@echo ... Engine.i
-	@echo ... Engine.s
-	@echo ... EngineBuilder.obj
-	@echo ... EngineBuilder.i
-	@echo ... EngineBuilder.s
-	@echo ... MerlinEngine.obj
-	@echo ... MerlinEngine.i
-	@echo ... MerlinEngine.s
-	@echo ... ModifiedMerlinEngine.obj
-	@echo ... ModifiedMerlinEngine.i
-	@echo ... ModifiedMerlinEngine.s
-	@echo ... Payload.obj
-	@echo ... Payload.i
-	@echo ... Payload.s
-	@echo ... PayloadFactory.obj
-	@echo ... PayloadFactory.i
-	@echo ... PayloadFactory.s
-	@echo ... Rocket.obj
-	@echo ... Rocket.i
-	@echo ... Rocket.s
-	@echo ... RocketFactory.obj
-	@echo ... RocketFactory.i
-	@echo ... RocketFactory.s
-	@echo ... RocketLeaf.obj
-	@echo ... RocketLeaf.i
-	@echo ... RocketLeaf.s
-	@echo ... RocketStage.obj
-	@echo ... RocketStage.i
-	@echo ... RocketStage.s
-	@echo ... SpaceCraft.obj
-	@echo ... SpaceCraft.i
-	@echo ... SpaceCraft.s
-	@echo ... SpaceCraftFactory.obj
-	@echo ... SpaceCraftFactory.i
-	@echo ... SpaceCraftFactory.s
-	@echo ... StageBuilder.obj
-	@echo ... StageBuilder.i
-	@echo ... StageBuilder.s
-	@echo ... TransportEntities.obj
-	@echo ... TransportEntities.i
-	@echo ... TransportEntities.s
-	@echo ... VacuumMerlinEngine.obj
-	@echo ... VacuumMerlinEngine.i
-	@echo ... VacuumMerlinEngine.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... GroupProject/Build.obj
+	@echo ... GroupProject/Build.i
+	@echo ... GroupProject/Build.s
+	@echo ... GroupProject/CompositeStage.obj
+	@echo ... GroupProject/CompositeStage.i
+	@echo ... GroupProject/CompositeStage.s
+	@echo ... GroupProject/ConcretePayloadFactory.obj
+	@echo ... GroupProject/ConcretePayloadFactory.i
+	@echo ... GroupProject/ConcretePayloadFactory.s
+	@echo ... GroupProject/ConcreteRocketFactory.obj
+	@echo ... GroupProject/ConcreteRocketFactory.i
+	@echo ... GroupProject/ConcreteRocketFactory.s
+	@echo ... GroupProject/ConcreteSpaceCraftFactory.obj
+	@echo ... GroupProject/ConcreteSpaceCraftFactory.i
+	@echo ... GroupProject/ConcreteSpaceCraftFactory.s
+	@echo ... GroupProject/Core.obj
+	@echo ... GroupProject/Core.i
+	@echo ... GroupProject/Core.s
+	@echo ... GroupProject/CoreBuilder.obj
+	@echo ... GroupProject/CoreBuilder.i
+	@echo ... GroupProject/CoreBuilder.s
+	@echo ... GroupProject/Earth.obj
+	@echo ... GroupProject/Earth.i
+	@echo ... GroupProject/Earth.s
+	@echo ... GroupProject/Engine.obj
+	@echo ... GroupProject/Engine.i
+	@echo ... GroupProject/Engine.s
+	@echo ... GroupProject/EngineBuilder.obj
+	@echo ... GroupProject/EngineBuilder.i
+	@echo ... GroupProject/EngineBuilder.s
+	@echo ... GroupProject/Falcon9.obj
+	@echo ... GroupProject/Falcon9.i
+	@echo ... GroupProject/Falcon9.s
+	@echo ... GroupProject/FalconHeavy.obj
+	@echo ... GroupProject/FalconHeavy.i
+	@echo ... GroupProject/FalconHeavy.s
+	@echo ... GroupProject/ISS.obj
+	@echo ... GroupProject/ISS.i
+	@echo ... GroupProject/ISS.s
+	@echo ... GroupProject/Interrupt.obj
+	@echo ... GroupProject/Interrupt.i
+	@echo ... GroupProject/Interrupt.s
+	@echo ... GroupProject/Launch.obj
+	@echo ... GroupProject/Launch.i
+	@echo ... GroupProject/Launch.s
+	@echo ... GroupProject/LowOrbit.obj
+	@echo ... GroupProject/LowOrbit.i
+	@echo ... GroupProject/LowOrbit.s
+	@echo ... GroupProject/MerlinEngine.obj
+	@echo ... GroupProject/MerlinEngine.i
+	@echo ... GroupProject/MerlinEngine.s
+	@echo ... GroupProject/ModifiedMerlinEngine.obj
+	@echo ... GroupProject/ModifiedMerlinEngine.i
+	@echo ... GroupProject/ModifiedMerlinEngine.s
+	@echo ... GroupProject/NextStage.obj
+	@echo ... GroupProject/NextStage.i
+	@echo ... GroupProject/NextStage.s
+	@echo ... GroupProject/Payload.obj
+	@echo ... GroupProject/Payload.i
+	@echo ... GroupProject/Payload.s
+	@echo ... GroupProject/PayloadFactory.obj
+	@echo ... GroupProject/PayloadFactory.i
+	@echo ... GroupProject/PayloadFactory.s
+	@echo ... GroupProject/Rocket.obj
+	@echo ... GroupProject/Rocket.i
+	@echo ... GroupProject/Rocket.s
+	@echo ... GroupProject/RocketFactory.obj
+	@echo ... GroupProject/RocketFactory.i
+	@echo ... GroupProject/RocketFactory.s
+	@echo ... GroupProject/RocketLeaf.obj
+	@echo ... GroupProject/RocketLeaf.i
+	@echo ... GroupProject/RocketLeaf.s
+	@echo ... GroupProject/RocketStage.obj
+	@echo ... GroupProject/RocketStage.i
+	@echo ... GroupProject/RocketStage.s
+	@echo ... GroupProject/SatelliteIterator.obj
+	@echo ... GroupProject/SatelliteIterator.i
+	@echo ... GroupProject/SatelliteIterator.s
+	@echo ... GroupProject/SetDestination.obj
+	@echo ... GroupProject/SetDestination.i
+	@echo ... GroupProject/SetDestination.s
+	@echo ... GroupProject/Simulation.obj
+	@echo ... GroupProject/Simulation.i
+	@echo ... GroupProject/Simulation.s
+	@echo ... GroupProject/SimulationBackup.obj
+	@echo ... GroupProject/SimulationBackup.i
+	@echo ... GroupProject/SimulationBackup.s
+	@echo ... GroupProject/SimulationBackupStore.obj
+	@echo ... GroupProject/SimulationBackupStore.i
+	@echo ... GroupProject/SimulationBackupStore.s
+	@echo ... GroupProject/SpaceCraft.obj
+	@echo ... GroupProject/SpaceCraft.i
+	@echo ... GroupProject/SpaceCraft.s
+	@echo ... GroupProject/SpaceCraftFactory.obj
+	@echo ... GroupProject/SpaceCraftFactory.i
+	@echo ... GroupProject/SpaceCraftFactory.s
+	@echo ... GroupProject/StageBuilder.obj
+	@echo ... GroupProject/StageBuilder.i
+	@echo ... GroupProject/StageBuilder.s
+	@echo ... GroupProject/TransportEntities.obj
+	@echo ... GroupProject/TransportEntities.i
+	@echo ... GroupProject/TransportEntities.s
+	@echo ... GroupProject/VacuumMerlinEngine.obj
+	@echo ... GroupProject/VacuumMerlinEngine.i
+	@echo ... GroupProject/VacuumMerlinEngine.s
+	@echo ... GroupProject/main.obj
+	@echo ... GroupProject/main.i
+	@echo ... GroupProject/main.s
+	@echo ... GroupProject/unit_test.obj
+	@echo ... GroupProject/unit_test.i
+	@echo ... GroupProject/unit_test.s
 .PHONY : help
 
 
