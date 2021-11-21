@@ -16,7 +16,7 @@
 #include "Interrupt.h"
 #include "Command.h"
 #include "Launch.h"
-#include "setDestination.h"
+#include "SetDestination.h"
 #include "NextStage.h"
 #include "Simulation.h"
 #include "Destination.h"
@@ -34,6 +34,7 @@
 #include "StarlinkGroundUser.h"
 #include "ConcreteSatelliteIterator.h"
 #include "SatelliteCollection.h"
+#include "SatelliteVector.h"
 
 using namespace std;
 
@@ -163,6 +164,68 @@ void printBuilderInfo(RocketLeaf* rl)
 }
 
 void TestSimulation() {
+
+       StarlinkQueue *que = new StarlinkQueue();
+    SatelliteCollection* list= new SatelliteVector();
+    StarlinkCommunication *s0 = new StarlinkOrbitingSatellite();
+    StarlinkCommunication *s1 = new StarlinkOrbitingSatellite();
+    StarlinkCommunication *g0 = new StarlinkGroundUser();
+    StarlinkCommunication *s2 = s1->clone();
+    cout<<"create the rocket\n";
+    Rocket* rocket= new Falcon9(3300);
+    cout<<"create the rocket\n";
+
+
+    
+    // StarlinkOrbitingSatellite s4 = StarlinkOrbitingSatellite();
+    que->add(s0);
+    que->add(s1);
+    que->add(g0);
+    que->add(s2);
+        cout<<"create the rocket\n";
+
+    SatelliteIterator* iterate= list->createIterator();
+        cout<<"create list\n";
+
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
+        cout<<"create the rocket\n";
+
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
+    list->addList(static_cast<StarlinkOrbitingSatellite*>(s2));
+    cout<<"Testing the satellite iterator";
+    while(iterate->current()!=iterate->lastSat())
+    {
+        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
+        iterate->nextSat();
+    }
+        cout<<"Satellite:"<<iterate->current()->getId()<<endl;
+
+
+    // que->add(&s4);
+
+    CommuncationNetwork network = CommuncationNetwork(que);
+
+    // broadcast all
+    cout << "Ground control communicates to all nodes" << endl;
+    g0->communicate("Rocket reached low orbit");
+    cout << endl;
+
+    // StarlinkOrbitingSatellite to ground com
+    cout << "StarlinkOrbitingSatellite communicates with ground control" << endl;
+    s1->communicate("Send communcation packet", 0);
+    cout << endl;
+
+    // all to StarlinkOrbitingSatellite 1
+    cout << "All nodes communicates with StarlinkOrbitingSatellite 1" << endl;
+    StarlinkCollection::iterator it = que->begin();
+    while (!(it == que->end()))
+    {
+        (*it)->communicate("Send communcation packet", 1);
+        cout << endl;
+        ++it;
+    }
+    (*it)->communicate("Send communcation packet", 1);
+
     cout << "creating RocketFactories" << endl;
     RocketFactory* Falcon9Fact = new Falcon9Factory;
 
@@ -180,15 +243,15 @@ void TestSimulation() {
     cout << "creating Satallites" << endl;
     //SatelliteCollection* list = new SatelliteVector();
 
-    StarlinkCommunication* s0 = new StarlinkOrbitingSatellite();
-    StarlinkCommunication* s1 = new StarlinkOrbitingSatellite();
+    // StarlinkCommunication* s0 = new StarlinkOrbitingSatellite();
+    // StarlinkCommunication* s1 = new StarlinkOrbitingSatellite();
 
     //list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
     //list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
 
    /* rockets[0]->addSatellites(list);*/
     cout << "create Rocket Stages" << endl;
-    
+
     EngineBuilder* eb = new EngineBuilder();
     CoreBuilder* cb = new CoreBuilder();
     Core** cores;
@@ -228,7 +291,7 @@ void TestSimulation() {
     cout << "creating Destinations" << endl;
     Destination* dest = new Earth();
 
-    //creating commands 
+    //creating commands
     Command* launch = new Launch(rockets[0]);
     Command* destination = new SetDestination(rockets[0],dest);
     Command* abort = new Interrupt(rockets[0]);
@@ -243,7 +306,7 @@ void TestSimulation() {
     launch->execute();
     stage->execute();
 
-   
+
     Simulation* sim = new Simulation(rockets[0]);
 
     //memento
@@ -349,6 +412,44 @@ int main()
     delete f9;
     delete eb;
     delete cb;*/
+
+   EngineBuilder* eb = new EngineBuilder();
+   CoreBuilder* cb = new CoreBuilder();
+   Core** cores;
+   Engine** engines;
+
+   RocketLeaf* rl = new RocketLeaf(cb,eb);
+   RocketLeaf* rl2 = new RocketLeaf(cb,eb);
+   CompositeStage* cs = new CompositeStage(rl);
+   cs->addRocketStage(rl2);
+   cs->getVal()->makeFalconHeavyStage1();
+   cs->getNext()->makeFalconHeavyStage2();
+
+
+   /* printSubHeading("FalconHeavyS1");
+
+    cout << cs->getVal()->getNumEngines() << endl;
+    cout << cs->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2");
+
+    cout << cs->getNext()->getNumEngines() << endl;
+    cout << cs->getNext()->getNumCores() << endl;
+
+
+    CompositeStage* temp = new CompositeStage(cs);
+
+    printSubHeading("FalconHeavyS1Copy");
+
+    cout << temp->getVal()->getNumEngines() << endl;
+    cout << temp->getVal()->getNumCores() << endl;
+
+    printSubHeading("FalconHeavyS2Copy");
+
+    cout << temp->getNext()->getNumEngines() << endl;
+    cout << temp->getNext()->getNumCores() << endl;*/
+
+
 
     return 0;
 }

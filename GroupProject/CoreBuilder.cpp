@@ -50,14 +50,16 @@ void CoreBuilder::buildCores(int stageNumber, string rocketName)
             arrSize = 3;
         }
     }
-    else
+    else if(stageNumber == 2)
     {
         if(rocketName == "falcon9")
         {
+            arrSize = 0;
             coreArray = nullptr;
         }
         else
         {
+            arrSize = 0;
             coreArray = nullptr;
         }
     }
@@ -89,13 +91,7 @@ Core** CoreBuilder::getResult()
 
 void CoreBuilder::resetBuilder()
 {
-    if(coreArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete coreArray[i];
-        }
-    }
-
     arrSize = 0;
+
+    coreArray = nullptr;
 }

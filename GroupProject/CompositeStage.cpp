@@ -63,7 +63,7 @@ void CompositeStage::addRocketStage(RocketLeaf *n)
 
 CompositeStage::CompositeStage(CompositeStage* cs)
 {
-    if(cs->val != nullptr)
+    if(cs->val)
     {
         val = new RocketLeaf(cs->val);
     }

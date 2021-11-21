@@ -10,7 +10,11 @@ RocketStage::~RocketStage() {
 
 }
 
-RocketStage::RocketStage(CoreBuilder *cb, EngineBuilder *eb) : cb(cb), eb(eb) {}
+RocketStage::RocketStage(CoreBuilder *cb, EngineBuilder *eb)
+{
+    this->cb = cb;
+    this->eb = eb;
+}
 
 void RocketStage::setCoreBuilder(CoreBuilder *cb) {
     RocketStage::cb = cb;

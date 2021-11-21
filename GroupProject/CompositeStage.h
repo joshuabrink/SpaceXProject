@@ -10,7 +10,7 @@
 class CompositeStage: public RocketStage {
 private:
     RocketLeaf* next;
-    RocketLeaf* val;
+    RocketLeaf* val; //current leaf
 public:
     CompositeStage(CoreBuilder *cb, EngineBuilder *eb);
     CompositeStage(RocketLeaf* rl){val = rl;next = nullptr;};
@@ -30,7 +30,7 @@ public:
 
     RocketLeaf* getVal(){return val;};
 
-    RocketLeaf* getNext(){return next;};
+    RocketLeaf* getNext(){return next;}; //will always return second stage
 };
 
 

@@ -10,7 +10,7 @@
  */
 
 #include <iostream>
-#include "Rocket.h";
+#include "Rocket.h"
 
 using namespace std;
 

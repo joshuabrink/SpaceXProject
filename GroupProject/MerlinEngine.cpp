@@ -1,6 +1,6 @@
 #include "MerlinEngine.h"
 
-MerlinEngine::MerlinEngine() {}
+MerlinEngine::MerlinEngine(){}
 
 MerlinEngine::MerlinEngine(double C) : Engine(C) {
 	cout << "Creating MerlinEngine at cost: " << getCost() << endl;

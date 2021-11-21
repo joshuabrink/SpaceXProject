@@ -35,9 +35,10 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
             engineArray = new Engine*[9];
             for (int i = 0; i < 9; ++i)
             {
-                engineArray[i] = new MerlinEngine();
+                engineArray[i] = new MerlinEngine(0.0);
             }
             arrSize = 9;
+            return;
         }
         else
         {
@@ -47,6 +48,7 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
                 engineArray[i] = new MerlinEngine();
             }
             arrSize = 27;
+            return;
         }
     }
     else
@@ -56,12 +58,14 @@ void EngineBuilder::buildEngines(int stageNumber, string rocketName)
             engineArray = new Engine*[1];
             engineArray[0] = new VacuumMerlinEngine();
             arrSize = 1;
+            return;
         }
         else
         {
             engineArray = new Engine*[1];
             engineArray[0] = new VacuumMerlinEngine();
             arrSize = 1;
+            return;
         }
     }
 }
@@ -92,13 +96,7 @@ Engine** EngineBuilder::getResult()
 
 void EngineBuilder::resetBuilder()
 {
-    if(engineArray)
-    {
-        for (int i = 0; i < arrSize; i++)
-        {
-            delete engineArray[i];
-        }
-    }
+    engineArray = nullptr;
 
     arrSize = 0;
 }

@@ -1,5 +1,5 @@
 /** @file Satellite.h
- *  @class Satellite
+ *  //class Satellite
  *
  *  @brief Satellite is a prototype participant in the Prototype design pattern
  *  @brief Satellite is an aggregate participant the iterator design pattern

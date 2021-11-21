@@ -2,15 +2,14 @@
 #define SATELLITEVECTOR_H
 #include "SatelliteCollection.h"
 #include "ConcreteSatelliteIterator.h"
-class SatelliteIterator;
+
 class SatelliteVector: public SatelliteCollection
 {
 private:
-    vector<StarlinkOrbitingSatellite*> it;
+    SatelliteIterator* it;
 public:
     SatelliteVector(/* args */);
     void addList(StarlinkOrbitingSatellite*);
-    vector<StarlinkOrbitingSatellite*> getVector();
     SatelliteIterator* createIterator() override;
     ~SatelliteVector();
 };
@@ -20,15 +19,13 @@ SatelliteVector::SatelliteVector(/* args */)
 }
 void SatelliteVector::addList(StarlinkOrbitingSatellite* sos)
 {
-    it.push_back(sos);
+    it->addList(sos);
 }
-vector<StarlinkOrbitingSatellite*> SatelliteVector::getVector()
-{
-    return it;
-}
+
 SatelliteIterator* SatelliteVector::createIterator()
 {
-    return new ConcreteSatelliteIterator(this);
+    it= new ConcreteSatelliteIterator();
+    return it;
 }
   
 SatelliteVector::~SatelliteVector()

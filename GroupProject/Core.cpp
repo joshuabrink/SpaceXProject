@@ -6,11 +6,12 @@
 
 Core::Core()
 {
-
+    name = "core";
 }
 
 Core::Core(Core* c)
 {
+
     name = c->getName();
 }
 
@@ -21,5 +22,5 @@ Core::Core(Core* c)
 
 Core* Core::getCore()
 {
-    return new Core;
+    return new Core("core");
 }

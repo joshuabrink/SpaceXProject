@@ -2,10 +2,12 @@
 
 Engine::Engine() {
 	this->cost = 0;
+	this->name = "engine";
 }
 
 Engine::Engine(double C) {
-	this->cost = C;
+    this->cost = C;
+    this->name = "engine";
 }
 
 
