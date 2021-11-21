@@ -16,7 +16,7 @@
 #include "Interrupt.h"
 #include "Command.h"
 #include "Launch.h"
-#include "setDestination.h"
+#include "SetDestination.h"
 #include "NextStage.h"
 #include "Simulation.h"
 #include "Destination.h"
