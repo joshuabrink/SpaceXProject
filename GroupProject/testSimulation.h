@@ -34,17 +34,24 @@ public:
     ~CollectionIterator(){};
 };
 
-class Satellite
-{
-};
-
 class StarlinkCommunication
 {
 };
+
+class Satellite : public StarlinkCommunication
+{
+};
+
 class StarlinkCollection
 {
 public:
     typedef CollectionIterator<StarlinkCommunication *> iterator;
+    virtual void add(StarlinkCommunication *newNode) = 0;
+
+    virtual void remove() = 0;
+
+    virtual StarlinkCollection::iterator begin() = 0;
+    virtual StarlinkCollection::iterator end() = 0;
 };
 class StarlinkVector : public StarlinkCollection
 {
@@ -75,6 +82,49 @@ public:
         return iterator(&this->nodeCollection.back());
     };
 };
+class SpaceCraft
+{
+public:
+    void addCrew(Crew *) {}
+    void addCargo(Cargo *) {}
+};
+class DragonSpaceCraft : public SpaceCraft
+{
+};
+class CrewDragonSpaceCraft : public SpaceCraft
+{
+};
+class SpaceCraftFactory
+{
+public:
+    virtual SpaceCraft *buildSpaceCraft()=0;
+};
+class DragonFactory : public SpaceCraftFactory
+{
+public:
+    SpaceCraft *buildSpaceCraft() { return new DragonSpaceCraft();}
+};
+
+class CrewDragonFactory : public SpaceCraftFactory
+{
+public:
+     SpaceCraft *buildSpaceCraft() { return new CrewDragonSpaceCraft();}
+};
+
+class Payload
+{
+};
+
+class Crew : public Payload
+{
+};
+class Cargo : public Payload
+{
+};
+class PayloadFactory
+{
+};
+
 class Destination
 {
 public:
@@ -117,7 +167,11 @@ class Falcon9Factory : public RocketFactory
 class FalconHeavyFactory : public RocketFactory
 {
 };
-class SatelliteFactory {};
+class SatelliteFactory
+{
+public:
+    Satellite *createSatellite() { return new Satellite(); };
+};
 class Command
 {
 private:
@@ -126,14 +180,14 @@ public:
     virtual Rocket *executeBuild() { return nullptr; };
 };
 
-class Build : public Command
+class BuildRocket : public Command
 {
 private:
     RocketFactory *myRocketFactory = new RocketFactory();
 
 public:
-    Build() {}
-    Build(RocketFactory *, double) {}
+    BuildRocket() {}
+    BuildRocket(RocketFactory *, double) {}
     Rocket *executeBuild() { return myRocketFactory->createRocket(); }
 };
 
@@ -196,11 +250,11 @@ private:
     {
         buildCommand = c;
     }
-    void BuildRocket()
+    void buildRocket()
     {
         rocket = buildCommand->executeBuild();
     }
-    void Launch() {}
+    void launch() {}
     void setTripDestination(Destination *d)
     {
         rocket->setDestination(d);
@@ -226,7 +280,7 @@ private:
             sleep(1);
         }
 
-        Launch();
+        launch();
     }
 
     int getMenu(string *menuArr, int arrSize)
@@ -273,6 +327,8 @@ public:
             {
                 RocketFactory *factory;
                 SatelliteFactory *satelliteFactory;
+                StarlinkCollection *starlinkCollection = new StarlinkVector();
+
                 cout << "SELECT ROCKET TYPE" << endl;
                 string rocketMenu[4] = {"Falcon 9", "Falcon Heavy"};
                 short rocketIndex = getMenu(rocketMenu, 2);
@@ -287,12 +343,12 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
-                Command *buildRocket = new Build(factory, distr(eng));
-                setBuild(buildRocket);
-                BuildRocket();
+                setBuild(new BuildRocket(factory, distr(eng)));
+                this->buildRocket();
 
+            CONFIGURE_ROCKET:
                 cout << "CONFIGURE ROCKET" << endl;
-                string configMenu[3] = {"Add Satellites", "Add Space Craft", "Set Cost"};
+                string configMenu[3] = {"Add Satellites", "Build Space Craft", "Set Cost"};
                 short configIndex = getMenu(configMenu, 3);
 
                 if (configIndex == 0)
@@ -302,13 +358,55 @@ public:
                     short satelliteCount = 0;
                     cout << "How many satellites? (1-60) ";
                     cin >> satelliteCount;
+
                     for (int i = 0; i < satelliteCount; i++)
                     {
+                        starlinkCollection->add(satelliteFactory->createSatellite());
+                        // satelliteFactory->createSatellite();
                     }
                 }
                 else if (configIndex == 2)
                 {
-                    factory = new FalconHeavyFactory();
+                    SpaceCraftFactory *spaceCraftFactory;
+                    cout << "SELECT SPACE CRAFT TYPE" << endl;
+                    string typeMenu[2] = {"Dragon", "Crew Dragon"};
+                    short typeMenuIndex = getMenu(typeMenu, 2);
+                    if (typeMenuIndex == 0)
+                        goto CONFIGURE_ROCKET;
+                    if (typeMenuIndex == 1)
+                    {
+                        spaceCraftFactory = new DragonFactory();
+                    }
+                    else if (typeMenuIndex == 2)
+                    {
+                        spaceCraftFactory = new CrewDragonFactory();
+                    }
+
+                    SpaceCraft *spaceCraft = spaceCraftFactory->buildSpaceCraft();
+
+                    string spaceCraftMenu[3] = {"Add Cargo", "Add Satellites"};
+                    short spaceCraftIndex;
+                    if (typeMenuIndex == 2)
+                    {
+                        spaceCraftMenu[2] = "Add Crew";
+                        spaceCraftIndex = getMenu(spaceCraftMenu, 3);
+                    }
+                    else
+                    {
+                        spaceCraftIndex = getMenu(spaceCraftMenu, 2);
+                    }
+
+                    if (spaceCraftIndex == 0)
+                        goto CONFIGURE_ROCKET;
+                    else if (spaceCraftIndex == 1)
+                    {
+                    }
+                    else if (spaceCraftIndex == 2)
+                    {
+                    }
+                    else if (spaceCraftIndex == 3)
+                    {
+                    }
                 }
             }
             else
