@@ -1,7 +1,5 @@
 #ifndef CONCRETEROCKETFACTORY_H
 #define CONCRETEROCKETFACTORY_H
-#include "Falcon9.h"
-#include "FalconHeavy.h"
 
 /** @file ConcreteRocketFactory.h
  *  @class FalconHeavyFactory
@@ -29,12 +27,20 @@ public:
 	Falcon9Factory();
 
 	/**
- *  @fn     Falcon9Factory()
+ *  @fn     ~Falcon9Factory()
  *  @brief  Falcon9Factory destructor
  */
 	~Falcon9Factory();
 
+	/**
+	*  @fn     Payload* createPayload(string, double)
+	*  @brief  create a payload with and cost
+	*
+	*  @param[in] double cost
+	*  @return Rocket*, a payload pointer
+	*/
 	Rocket* createRocket(double);
+
 private:
 
 };
@@ -42,18 +48,25 @@ private:
 class FalconHeavyFactory : public RocketFactory
 {
 public:
-	/**
+/**
  *  @fn     FalconHeavyFactory()
  *  @brief  FalconHeavyFactory constructor
  */
 	FalconHeavyFactory();
 
-	/**
- *  @fn     FalconHeavyFactory()
+/**
+ *  @fn     ~FalconHeavyFactory()
  *  @brief  FalconHeavyFactory destructor
  */
 	~FalconHeavyFactory();
 
+/**
+*  @fn     Payload* createPayload(string, double)
+*  @brief  create a payload with and cost
+*
+*  @param[in] double cost
+*  @return Rocket*, a payload pointer
+*/
 	Rocket* createRocket(double);
 private:
 
@@ -61,4 +74,3 @@ private:
 
 
 #endif 
-
