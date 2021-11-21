@@ -5,15 +5,14 @@
 #include <iostream>
 #include "Destination.h"
 #include "CompositeStage.h"
-#include "SpaceCraft.h"
-class SatelliteCollection;
-
+//#include "SatelliteCollection.h"
+//#include "SatelliteVector.h"
+//class SatelliteCollection;
 using namespace std;
 
 class Rocket {
 private:
 	Destination* destination;
-	SpaceCraft* spaceCraft;
 	CompositeStage* stage;
 	bool isLaunch;
 	double cost;
@@ -28,18 +27,6 @@ public:
 	Rocket(CompositeStage*, double);
 	 
 	void addStage(CompositeStage*);
-
-	/**
-	 * @brief SpaceCraft setter
-	 * @param sc, SpaceCraft to set the current value to
-	 */
-	void loadSpaceCraft(SpaceCraft* sc);
-
-	/**
-	 * @brief SpaceCraft getAndReset
-	 * @return current SpaceCraft
-	 */
-	SpaceCraft* unloadSpaceCraft();
 
 	Rocket(double);
 	/**
@@ -121,7 +108,7 @@ public:
 	 *  @param[in] Satellite, a Satellite pointer.
 	 *  @return void
 	 */
-	virtual void addSatellites(SatelliteCollection*) {};
+	/*virtual void addSatellites(SatelliteCollection*) {};*/
 
 	/**
 	 *  @fn     void setLaunch(bool)
@@ -140,8 +127,6 @@ public:
  *  @return Rocket*, Rocket pointer.
  */
 	virtual Rocket* clone() = 0;
-
-
 };
 
 #endif

@@ -39,6 +39,8 @@ public:
  *  @return Rocket*, a Rocket pointer
  */
 	Rocket* executeBuild();
+
+	void execute() {};
 	
 /** 
  *  @fn     virtual~Earth()

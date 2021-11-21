@@ -21,7 +21,7 @@ public:
  *  @brief  FalconHeavy constructor
  */
 	FalconHeavy(CompositeStage*,double);
-	
+	FalconHeavy(double);
 /** 
  *  @fn     Rocket* clone()
  *  @brief  clone() acts as a prototype in the receiver class

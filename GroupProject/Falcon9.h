@@ -10,16 +10,14 @@
  */
 
 #include "Rocket.h"
-#include "SatelliteIterator.h"
 
-class SatelliteVector;
 
 using namespace std;
 
 class Falcon9 : public Rocket {
 private:
-	SatelliteCollection* satellites;
-	SatelliteIterator* iterate;
+	/*SatelliteCollection* satellites;
+	SatelliteIterator* iterate;*/
 
 public:
 /** 
@@ -27,7 +25,8 @@ public:
  *  @brief  Falcon9 constructor
  */
 	Falcon9(CompositeStage*,double);
-	void addSatellites(SatelliteCollection*);
+	Falcon9(double);
+	/*void addSatellites(SatelliteCollection*);*/
 	void Launch();
 	void Interrupt();
 	//prototype:

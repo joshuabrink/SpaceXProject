@@ -36,7 +36,7 @@ public:
  *  @fn     ~LowOrbit()
  *  @brief  LowOrbit destructor
  */
-	~LowOrbit();
+	~LowOrbit() {};
 };
 
 #endif

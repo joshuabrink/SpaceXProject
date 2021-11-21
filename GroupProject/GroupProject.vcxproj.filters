@@ -15,37 +15,136 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Simulation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SimulationBackup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SimulationBackupStore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Command.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Build.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SetDestination.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Launch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interrupt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NextStage.h">
+    <ClInclude Include="Falcon9.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Rocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Destination.h">
+    <ClInclude Include="SatelliteCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteRocketFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulationBackup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NextStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDestination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Satellite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interrupt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Launch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FalconHeavy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Build.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VacuumMerlinEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportEntityCrew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportEntityCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportEntityCargo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportEntities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TECrewCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TECargoCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkOrbitingSatellite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkGroundUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkCommunication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarlinkCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StageBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCraftFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCraftDragon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCraftCrewDragon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCraft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulationBackupStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketLeaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PayloadFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Payload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifiedMerlinEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MerlinEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LowOrbit.h">
@@ -54,87 +153,72 @@
     <ClInclude Include="ISS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EngineBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Earth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Falcon9.h">
+    <ClInclude Include="Destination.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Satellite.h">
+    <ClInclude Include="CoreBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CompositeStage.h">
+    <ClInclude Include="Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CollectionIterator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CommuncationNetwork.h">
+    <ClInclude Include="ConcreteSpaceCraftFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ConcreteSatelliteIterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SatelliteIterator.h">
+    <ClInclude Include="ConcretePayloadFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SatelliteVector.h">
+    <ClInclude Include="CompositeStage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpaceCraft.h">
+    <ClInclude Include="CommuncationNetwork.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpaceCraftCrewDragon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SpaceCraftDragon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkCollection.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkCommunication.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkGroundUser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkOrbitingSatellite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StarlinkVector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TECargoCollection.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TECrewCollection.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TransportEntity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TransportEntityCargo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TransportEntityCollection.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TransportEntityCrew.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RocketFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FalconHeavy.h">
+    <ClInclude Include="CollectionIterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Simulation.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Falcon9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteRocketFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FalconHeavy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VacuumMerlinEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportEntities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StageBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceCraftFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceCraft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SimulationBackupStore.cpp">
@@ -143,10 +227,43 @@
     <ClCompile Include="SimulationBackup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Rocket.cpp">
+    <ClCompile Include="Simulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Earth.cpp">
+    <ClCompile Include="SetDestination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteIterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketStage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketLeaf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PayloadFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Payload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NextStage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifiedMerlinEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MerlinEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LowOrbit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Launch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Interrupt.cpp">
@@ -155,34 +272,31 @@
     <ClCompile Include="ISS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Launch.cpp">
+    <ClCompile Include="EngineBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LowOrbit.cpp">
+    <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NextStage.cpp">
+    <ClCompile Include="Earth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SetDestination.cpp">
+    <ClCompile Include="CoreBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteSpaceCraftFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcretePayloadFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CompositeStage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Falcon9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Build.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SatelliteIterator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FalconHeavy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

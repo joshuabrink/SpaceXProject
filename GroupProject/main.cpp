@@ -23,12 +23,17 @@
 #include "ISS.h"
 #include "LowOrbit.h"
 #include "Earth.h"
-#include "Rocket.h"
 #include "Falcon9.h"
 #include "FalconHeavy.h"
+#include "SimulationBackupStore.h"
+#include "SimulationBackup.h"
 
 #include <vector>
-#include "SatelliteVector.h"
+#include "StarlinkQueue.h"
+#include "StarlinkOrbitingSatellite.h"
+#include "StarlinkGroundUser.h"
+#include "ConcreteSatelliteIterator.h"
+#include "SatelliteCollection.h"
 
 using namespace std;
 
@@ -169,20 +174,19 @@ void TestSimulation() {
     rockets[2] = FalconHeavyFact->createRocket(5000000);
     rockets[3] = FalconHeavyFact->createRocket(5000000);*/
 
-    cout << "creating Destinations" << endl;
-    Destination* dest = new LowOrbit();
+
 
 
     cout << "creating Satallites" << endl;
-    SatelliteCollection* list = new SatelliteVector();
+    //SatelliteCollection* list = new SatelliteVector();
 
     StarlinkCommunication* s0 = new StarlinkOrbitingSatellite();
     StarlinkCommunication* s1 = new StarlinkOrbitingSatellite();
 
-    list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
-    list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
+    //list->addList(static_cast<StarlinkOrbitingSatellite*>(s0));
+    //list->addList(static_cast<StarlinkOrbitingSatellite*>(s1));
 
-    rockets[0]->addSatellites(list);
+   /* rockets[0]->addSatellites(list);*/
     cout << "create Rocket Stages" << endl;
     
     EngineBuilder* eb = new EngineBuilder();
@@ -220,12 +224,38 @@ void TestSimulation() {
   /*  CompositeStage* fHeavy = new CompositeStage(stageArr[2]);
     fHeavy->addRocketStage(stageArr[3]);*/
     rockets[0]->addStage(f9);
+
+    cout << "creating Destinations" << endl;
+    Destination* dest = new Earth();
+
+    //creating commands 
+    Command* launch = new Launch(rockets[0]);
+    Command* destination = new SetDestination(rockets[0],dest);
+    Command* abort = new Interrupt(rockets[0]);
+    Command* build = new Build(Falcon9Fact,300000000);
+    Command* stage = new NextStage(rockets[0]);
+
+
+    launch->execute();
+    destination->execute();
+    launch->execute();
+    abort->execute();
+    launch->execute();
+    stage->execute();
+
    
     Simulation* sim = new Simulation(rockets[0]);
+
+    //memento
+    SimulationBackupStore* caretaker = new SimulationBackupStore();
+    cout << "Creating backup" << endl;
+    caretaker->setMemento(sim->makeBackup());
+    sim->restore(caretaker->getMemento());
 }
 
 int main()
 {
+    TestSimulation();
     /*cout << "Creating factories:" << endl;
     createFactories();
     cout << endl;

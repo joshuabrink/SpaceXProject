@@ -1,5 +1,4 @@
 #include "ConcreteRocketFactory.h"
-
 Falcon9Factory::Falcon9Factory(){
 
 }

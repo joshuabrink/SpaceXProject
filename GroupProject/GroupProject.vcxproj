@@ -18,10 +18,108 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Build.h" />
+    <ClInclude Include="CollectionIterator.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommuncationNetwork.h" />
+    <ClInclude Include="CompositeStage.h" />
+    <ClInclude Include="ConcretePayloadFactory.h" />
+    <ClInclude Include="ConcreteRocketFactory.h" />
+    <ClInclude Include="ConcreteSatelliteIterator.h" />
+    <ClInclude Include="ConcreteSpaceCraftFactory.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="CoreBuilder.h" />
+    <ClInclude Include="Destination.h" />
+    <ClInclude Include="Earth.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineBuilder.h" />
+    <ClInclude Include="Falcon9.h" />
+    <ClInclude Include="FalconHeavy.h" />
+    <ClInclude Include="Interrupt.h" />
+    <ClInclude Include="ISS.h" />
+    <ClInclude Include="Launch.h" />
+    <ClInclude Include="LowOrbit.h" />
+    <ClInclude Include="MerlinEngine.h" />
+    <ClInclude Include="ModifiedMerlinEngine.h" />
+    <ClInclude Include="NextStage.h" />
+    <ClInclude Include="Payload.h" />
+    <ClInclude Include="PayloadFactory.h" />
+    <ClInclude Include="Rocket.h" />
+    <ClInclude Include="RocketFactory.h" />
+    <ClInclude Include="RocketLeaf.h" />
+    <ClInclude Include="RocketStage.h" />
+    <ClInclude Include="Satellite.h" />
+    <ClInclude Include="SatelliteCollection.h" />
+    <ClInclude Include="SatelliteIterator.h" />
+    <ClInclude Include="SatelliteVector.h" />
+    <ClInclude Include="SetDestination.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="SimulationBackup.h" />
+    <ClInclude Include="SimulationBackupStore.h" />
+    <ClInclude Include="SpaceCraft.h" />
+    <ClInclude Include="SpaceCraftCrewDragon.h" />
+    <ClInclude Include="SpaceCraftDragon.h" />
+    <ClInclude Include="SpaceCraftFactory.h" />
+    <ClInclude Include="StageBuilder.h" />
+    <ClInclude Include="StarlinkCollection.h" />
+    <ClInclude Include="StarlinkCommunication.h" />
+    <ClInclude Include="StarlinkGroundUser.h" />
+    <ClInclude Include="StarlinkOrbitingSatellite.h" />
+    <ClInclude Include="StarlinkQueue.h" />
+    <ClInclude Include="StarlinkVector.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="TECargoCollection.h" />
+    <ClInclude Include="TECrewCollection.h" />
+    <ClInclude Include="TransportEntities.h" />
+    <ClInclude Include="TransportEntity.h" />
+    <ClInclude Include="TransportEntityCargo.h" />
+    <ClInclude Include="TransportEntityCollection.h" />
+    <ClInclude Include="TransportEntityCrew.h" />
+    <ClInclude Include="VacuumMerlinEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Build.cpp" />
+    <ClCompile Include="CompositeStage.cpp" />
+    <ClCompile Include="ConcretePayloadFactory.cpp" />
+    <ClCompile Include="ConcreteRocketFactory.cpp" />
+    <ClCompile Include="ConcreteSpaceCraftFactory.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="CoreBuilder.cpp" />
+    <ClCompile Include="Earth.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineBuilder.cpp" />
+    <ClCompile Include="Falcon9.cpp" />
+    <ClCompile Include="FalconHeavy.cpp" />
+    <ClCompile Include="Interrupt.cpp" />
+    <ClCompile Include="ISS.cpp" />
+    <ClCompile Include="Launch.cpp" />
+    <ClCompile Include="LowOrbit.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MerlinEngine.cpp" />
+    <ClCompile Include="ModifiedMerlinEngine.cpp" />
+    <ClCompile Include="NextStage.cpp" />
+    <ClCompile Include="Payload.cpp" />
+    <ClCompile Include="PayloadFactory.cpp" />
+    <ClCompile Include="Rocket.cpp" />
+    <ClCompile Include="RocketFactory.cpp" />
+    <ClCompile Include="RocketLeaf.cpp" />
+    <ClCompile Include="RocketStage.cpp" />
+    <ClCompile Include="SatelliteIterator.cpp" />
+    <ClCompile Include="SetDestination.cpp" />
+    <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="SimulationBackup.cpp" />
+    <ClCompile Include="SimulationBackupStore.cpp" />
+    <ClCompile Include="SpaceCraft.cpp" />
+    <ClCompile Include="SpaceCraftFactory.cpp" />
+    <ClCompile Include="StageBuilder.cpp" />
+    <ClCompile Include="TransportEntities.cpp" />
+    <ClCompile Include="VacuumMerlinEngine.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bdb9197d-e03b-409d-aeed-9185458a828a}</ProjectGuid>
+    <ProjectGuid>{3c376e0c-bd21-4c29-9105-b283916cba50}</ProjectGuid>
     <RootNamespace>GroupProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -138,66 +236,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Build.h" />
-    <ClInclude Include="CollectionIterator.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="CommuncationNetwork.h" />
-    <ClInclude Include="CompositeStage.h" />
-    <ClInclude Include="ConcreteSatelliteIterator.h" />
-    <ClInclude Include="Destination.h" />
-    <ClInclude Include="Earth.h" />
-    <ClInclude Include="Falcon9.h" />
-    <ClInclude Include="FalconHeavy.h" />
-    <ClInclude Include="Interrupt.h" />
-    <ClInclude Include="ISS.h" />
-    <ClInclude Include="Launch.h" />
-    <ClInclude Include="LowOrbit.h" />
-    <ClInclude Include="NextStage.h" />
-    <ClInclude Include="Rocket.h" />
-    <ClInclude Include="RocketFactory.h" />
-    <ClInclude Include="Satellite.h" />
-    <ClInclude Include="SatelliteIterator.h" />
-    <ClInclude Include="SatelliteVector.h" />
-    <ClInclude Include="SetDestination.h" />
-    <ClInclude Include="Simulation.h" />
-    <ClInclude Include="SimulationBackup.h" />
-    <ClInclude Include="SimulationBackupStore.h" />
-    <ClInclude Include="SpaceCraft.h" />
-    <ClInclude Include="SpaceCraftCrewDragon.h" />
-    <ClInclude Include="SpaceCraftDragon.h" />
-    <ClInclude Include="StarlinkCollection.h" />
-    <ClInclude Include="StarlinkCommunication.h" />
-    <ClInclude Include="StarlinkGroundUser.h" />
-    <ClInclude Include="StarlinkOrbitingSatellite.h" />
-    <ClInclude Include="StarlinkQueue.h" />
-    <ClInclude Include="StarlinkVector.h" />
-    <ClInclude Include="TECargoCollection.h" />
-    <ClInclude Include="TECrewCollection.h" />
-    <ClInclude Include="TransportEntity.h" />
-    <ClInclude Include="TransportEntityCargo.h" />
-    <ClInclude Include="TransportEntityCollection.h" />
-    <ClInclude Include="TransportEntityCrew.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Build.cpp" />
-    <ClCompile Include="CompositeStage.cpp" />
-    <ClCompile Include="Earth.cpp" />
-    <ClCompile Include="Falcon9.cpp" />
-    <ClCompile Include="FalconHeavy.cpp" />
-    <ClCompile Include="Interrupt.cpp" />
-    <ClCompile Include="ISS.cpp" />
-    <ClCompile Include="Launch.cpp" />
-    <ClCompile Include="LowOrbit.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NextStage.cpp" />
-    <ClCompile Include="Rocket.cpp" />
-    <ClCompile Include="SatelliteIterator.cpp" />
-    <ClCompile Include="SetDestination.cpp" />
-    <ClCompile Include="Simulation.cpp" />
-    <ClCompile Include="SimulationBackup.cpp" />
-    <ClCompile Include="SimulationBackupStore.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
