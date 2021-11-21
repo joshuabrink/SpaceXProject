@@ -96,11 +96,22 @@ public:
         return iterator(&this->nodeCollection.back());
     };
 };
+class TransportEntityCollection
+{
+
+};
 class SpaceCraft
 {
 public:
     void addCrew(Crew *) {}
+    Crew* getCrew() {}
+    Crew*  popCrew() {}
     void addCargo(Cargo *) {}
+    Cargo* getCargo() {}
+    Cargo* popCargo() {}
+    void setTec(TransportEntityCollection *) {}
+    TransportEntityCollection* getTec() {}
+    TransportEntityCollection* popTEC() {}
 };
 class DragonSpaceCraft : public SpaceCraft
 {
@@ -452,15 +463,19 @@ public:
                             goto BUILD_MENU;
                         else if(sOptionsIndex == 1)
                         {
-
+                            if(spaceCraft->getTec())
+                            {
+                                TransportEntityCollection* dispTec = spaceCraft->getTec();
+                            }
                         }
                         else if(sOptionsIndex == 2)
                         {
-
+                            TransportEntityCollection* temp = new TransportEntityCollection();
+                            spaceCraft->setTec(temp);
                         }
                         else if(sOptionsIndex == 3)
                         {
-
+                            spaceCraft->popTEC();
                         }
                         // Edit satellites
                     }
@@ -474,15 +489,17 @@ public:
                             goto BUILD_MENU;
                         else if(cOptionsIndex == 1)
                         {
-
+                            if(spaceCraft->getCrew())
+                                Crew* dispCrew = spaceCraft->getCrew();
                         }
                         else if(cOptionsIndex == 2)
                         {
-
+                            Crew* c = new Crew();
+                            spaceCraft->addCrew(c);
                         }
                         else if(cOptionsIndex == 3)
                         {
-
+                            spaceCraft->popCrew();
                         }
                         // Edit crew
                     }
@@ -495,21 +512,19 @@ public:
                             goto BUILD_MENU;
                         else if(cOptionsIndex == 1)
                         {
-
+                            if(spaceCraft->getCargo())
+                                Cargo* dispCargo = spaceCraft->getCargo();
                         }
                         else if(cOptionsIndex == 2)
                         {
-
+                            Cargo* c = new Cargo();
+                            spaceCraft->addCargo(c);
                         }
                         else if(cOptionsIndex == 3)
                         {
-
+                            spaceCraft->popCargo();
                         }
                         // Edit cargo
-                    }
-                    else if (editSCIndex == 4)
-                    {
-                        // Edit space craft
                     }
                 }
                 else
