@@ -49,3 +49,13 @@ DragonCrew::~DragonCrew() {
 
 }
 
+void SpaceCraft::setTEC(TransportEntityCollection *trec)
+{
+    tec = trec;
+}
+
+TransportEntityCollection* SpaceCraft::getTEC()
+{
+    return tec;
+}
+

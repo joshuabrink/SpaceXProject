@@ -7,6 +7,18 @@ Rocket::Rocket(CompositeStage* stage, double cost)
 	this->cost = cost;
 }
 
+void Rocket::loadSpaceCraft(SpaceCraft *sc)
+{
+    spaceCraft = sc;
+}
+
+SpaceCraft* Rocket::unloadSpaceCraft()
+{
+    SpaceCraft* returner = spaceCraft;
+    spaceCraft = nullptr;
+    return returner;
+}
+
 void Rocket::addStage(CompositeStage* stage)
 {
 	this->stage = stage;

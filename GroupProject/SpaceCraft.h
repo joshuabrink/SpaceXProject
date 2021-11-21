@@ -2,6 +2,7 @@
 #define SPACECRAFT_H
 #include <iostream>
 #include <iomanip>
+#include "TransportEntityCollection.h"
 using namespace std;
 
 class SpaceCraft
@@ -14,9 +15,13 @@ public:
 	double getCost();
 	int getCapacity();
 
+	void setTEC(TransportEntityCollection* trec);
+	TransportEntityCollection* getTEC();
+
 private:
 	double cost;
 	int capacity;
+	TransportEntityCollection* tec;
 };
 
 

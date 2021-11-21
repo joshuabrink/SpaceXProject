@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Destination.h"
 #include "CompositeStage.h"
+#include "SpaceCraft.h"
 //#include "SatelliteCollection.h"
 //#include "SatelliteVector.h"
 //class SatelliteCollection;
@@ -17,6 +18,7 @@ private:
 	RocketLeaf* currentStage;
 	bool isLaunch;
 	double cost;
+    SpaceCraft* spaceCraft;
 public:
 	/**
 	 *  @fn     Rocket(CompositeStage*,double)
@@ -27,7 +29,17 @@ public:
 	 */
 	Rocket(CompositeStage*, double);
 	 
-	void addStage(CompositeStage*);
+    /**
+     * @brief SpaceCraft setter
+     * @param sc, SpaceCraft to set the current value to
+     */
+	void loadSpaceCraft(SpaceCraft* sc);
+
+	/**
+	 * @brief SpaceCraft getAndReset
+	 * @return current SpaceCraft
+	 */
+	SpaceCraft* unloadSpaceCraft();
 
 	Rocket(double);
 	/**
