@@ -12,11 +12,11 @@ public:
 	SpaceCraft(double,int);
 	~SpaceCraft();
 
-	double getCost();
-	int getCapacity();
-
 	void setTEC(TransportEntityCollection* trec);
 	TransportEntityCollection* getTEC();
+
+	double getCost();
+	int getCapacity();
 
 private:
 	double cost;

@@ -18,7 +18,8 @@ private:
 	RocketLeaf* currentStage;
 	bool isLaunch;
 	double cost;
-    SpaceCraft* spaceCraft;
+	SpaceCraft* spaceCraft;
+
 public:
 	/**
 	 *  @fn     Rocket(CompositeStage*,double)
@@ -29,7 +30,7 @@ public:
 	 */
 	Rocket(CompositeStage*, double);
 	 
-    /**
+	/**
      * @brief SpaceCraft setter
      * @param sc, SpaceCraft to set the current value to
      */

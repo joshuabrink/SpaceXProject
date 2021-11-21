@@ -15,8 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b07a00a-d4e0-434b-bbae-6cb8aa58557c" name="Changes" comment="Readded getters amd setters for Spacecraft in rocket, added getters and setters for Transport ... consult 11/21/2021 at  13:37 commit for more details">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/Rocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/Rocket.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject/Rocket.h" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject/Rocket.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1637430968498" duration="1509000" />
       <workItem from="1637432976747" duration="1373000" />
       <workItem from="1637435792734" duration="638000" />
-      <workItem from="1637513556985" duration="1000" />
+      <workItem from="1637513556985" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="Testing to see which branch this will add to">
       <created>1635960272150</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637509591891</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Readded getters amd setters for Spacecraft in rocket, added getters and setters for Transport ... consult 11/21/2021 at  13:37 commit for more details">
+      <created>1637513699484</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1637513699484</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +251,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="Testing" />
                       </list>
                     </value>
                   </entry>
@@ -272,7 +279,8 @@
     <MESSAGE value="Added multiple getters and setters, added finished main for basic testing" />
     <MESSAGE value="Added clone constructor for memento" />
     <MESSAGE value="Updated Rocket to handle composite stages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Rocket to handle composite stages." />
+    <MESSAGE value="Readded getters amd setters for Spacecraft in rocket, added getters and setters for Transport ... consult 11/21/2021 at  13:37 commit for more details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readded getters amd setters for Spacecraft in rocket, added getters and setters for Transport ... consult 11/21/2021 at  13:37 commit for more details" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
