@@ -4,6 +4,10 @@ FalconHeavy::FalconHeavy(CompositeStage* stage, double cost):Rocket(stage,cost)
 {
 }
 
+FalconHeavy::FalconHeavy(double cost):Rocket(cost)
+{
+}
+
 Rocket* FalconHeavy::clone()
 {
 	CompositeStage* temp = new CompositeStage(getStage());

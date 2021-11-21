@@ -1,45 +1,48 @@
 #include "Falcon9.h"
-#include "SatelliteVector.h"
+
 
 Falcon9::Falcon9(CompositeStage* c,double cost):Rocket(c,cost)
 {
-	satellites=nullptr;
-	iterate=nullptr;
+	/*satellites=nullptr;
+	iterate=nullptr;*/
 }
 
-void Falcon9::addSatellites(SatelliteCollection* s)
+Falcon9::Falcon9(double cost):Rocket(cost)
 {
-	satellites = s;
-	iterate = satellites->createIterator();
-
 }
+
+//void Falcon9::addSatellites(SatelliteCollection* s)
+//{
+//	satellites = s;
+//	iterate = satellites->createIterator();
+//
+//}
 
 Rocket* Falcon9::clone()
 {
 	CompositeStage* temp = new CompositeStage(getStage());
 	Rocket* out = new Falcon9(temp,getCost());
 	out->setDestination(getDestination()->clone());
-	if(satellites!=nullptr&&iterate!=nullptr)
-	{
-	SatelliteCollection* outSattelites = new SatelliteVector();
-	//vector<OrbitingSatellite*>::iterator it = satellites->getVector().begin();
-	iterate->firstSat();
-
-	while (iterate->current() != iterate->lastSat())
-	{
-		outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
-		iterate->nextSat();
-	}
-	outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
-//ASK JOSH ABOUT LINE 32
-	out->addSatellites(outSattelites);
-
-
-	}
+//	if(satellites!=nullptr&&iterate!=nullptr)
+//	{
+//	SatelliteCollection* outSattelites = new SatelliteVector();
+//	//vector<OrbitingSatellite*>::iterator it = satellites->getVector().begin();
+//	iterate->firstSat();
+//
+//	while (iterate->current() != iterate->lastSat())
+//	{
+//		outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
+//		iterate->nextSat();
+//	}
+//	outSattelites->addList(static_cast<StarlinkOrbitingSatellite*>((iterate->current())->clone()));
+////ASK JOSH ABOUT LINE 32
+//	out->addSatellites(outSattelites);
+//
+//
+//	}
 	
 
 	return out;
-	
 }
 
 void Falcon9::Launch()
@@ -54,9 +57,9 @@ void Falcon9::Launch()
 	}
 	else {
 		cout << "Launching Falcon 9" << endl;
-	if(satellites!=nullptr&&iterate!=nullptr)
+	/*if(satellites!=nullptr&&iterate!=nullptr)
 	{
-	//SatelliteIterator* iterate = satellites->createIterator();
+	SatelliteIterator* iterate = satellites->createIterator();
 	iterate->firstSat();
 
 	while (iterate->current() != iterate->lastSat())
@@ -65,7 +68,7 @@ void Falcon9::Launch()
 		iterate->nextSat();
 	}
 	iterate->current()->launchStarlinkOrbitingSatellite(true);
-	}
+	}*/
 
 
 		setLaunch(true);
@@ -76,9 +79,9 @@ void Falcon9::Interrupt()
 {
 	if (getLaunch()) {
 		cout << "Aborting Falcon 9 launch! " << endl;
-	if(satellites!=nullptr&&iterate!=nullptr)
+	/*if(satellites!=nullptr&&iterate!=nullptr)
 	{
-	//SatelliteIterator* iterate = satellites->createIterator();
+	SatelliteIterator* iterate = satellites->createIterator();
 	iterate->firstSat();
 
 	while (iterate->current() != iterate->lastSat())
@@ -90,7 +93,7 @@ void Falcon9::Interrupt()
 	}
 
 
-		setLaunch(false);
+		setLaunch(false);*/
 	}
 	else {
 		cout << "Falcon 9 Launch hasn't started yet" << endl;

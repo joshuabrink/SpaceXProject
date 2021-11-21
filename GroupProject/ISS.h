@@ -36,7 +36,7 @@ public:
  *  @fn     ~ISS()
  *  @brief  ISS destructor
  */
-	~ISS();
+	~ISS() {};
 };
 
 #endif

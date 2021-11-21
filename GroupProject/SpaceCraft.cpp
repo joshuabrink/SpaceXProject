@@ -1,6 +1,5 @@
 #include "SpaceCraft.h"
 
-
 SpaceCraft::SpaceCraft() {
 	this->cost = 0;
 	this->capacity = 0;
@@ -13,16 +12,6 @@ SpaceCraft::SpaceCraft(double Cost, int Capacity) {
 
 SpaceCraft::~SpaceCraft() {
 
-}
-
-void SpaceCraft::setTEC(TransportEntityCollection *trec)
-{
-    tec = trec;
-}
-
-TransportEntityCollection* SpaceCraft::getTEC()
-{
-    return tec;
 }
 
 double SpaceCraft::getCost() {
