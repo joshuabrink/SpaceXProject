@@ -7,6 +7,9 @@
  *
  *  @class Supplies
  *  @brief Supplies is the concrete product in the Factory method design pattern
+ 
+ *  @class Satellite
+ *  @brief Satellite is the concrete product in the Factory method design pattern
  * 
  *  @author Anru Nel
  *  @bug No known bugs.
