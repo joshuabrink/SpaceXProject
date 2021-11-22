@@ -14,6 +14,7 @@
 #include "SpaceCraft.h"
 #include "SpaceCraftFactory.h"
 #include "StarlinkVector.h"
+#include "StarlinkOrbitingSatellite.h"
 #include "TransportEntityCargo.h"
 #include "TransportEntityCrew.h"
 #include "Rocket.h"
@@ -68,6 +69,7 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
+    StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite;
     CommuncationNetwork *comNetwork;
 
     double price;
@@ -150,8 +152,7 @@ public:
             if (rocket == nullptr)
             {
                 RocketFactory *factory;
-                // SatelliteFactory *satelliteFactory;
-                StarlinkCommunication *satelliteFactory;
+
                 StarlinkCollection *starlinkCollection = new StarlinkVector();
 
                 cout << "SELECT ROCKET TYPE" << endl;
@@ -194,6 +195,7 @@ public:
                     destinationIndex--;
 
                     setTripDestination(destinations[destinationIndex]);
+                    goto CONFIGURE_ROCKET;
                 }
                 else if (configIndex == 2)
                 {
@@ -205,13 +207,20 @@ public:
                     {
                         starlinkCollection->add(satelliteFactory->clone());
                     }
+
+                    cout << satelliteCount << " Satellites Added" << endl;
+                    cout << endl;
+                    goto CONFIGURE_ROCKET;
                 }
                 else if (configIndex == 3)
                 {
+                CONFIGURE_SPACECRAFT:
+                    short typeMenuIndex;
+
                     SpaceCraftFactory *spaceCraftFactory;
                     cout << "SELECT SPACE CRAFT TYPE" << endl;
                     string typeMenu[2] = {"Dragon", "Crew Dragon"};
-                    short typeMenuIndex = getMenu(typeMenu, 2);
+                    typeMenuIndex = getMenu(typeMenu, 2);
                     if (typeMenuIndex == 0)
                         goto CONFIGURE_ROCKET;
                     if (typeMenuIndex == 1)
@@ -222,17 +231,16 @@ public:
                     {
                         spaceCraftFactory = new CrewDragonFactory();
                     }
-                    cout << "CHOOSE A PRICE (DOUBLE): ";
+                    cout << "Choose a Price (double): ";
                     double p;
                     cin >> p;
                     cout << endl;
-                    cout << "CHOOSE A CAPACITY (INT): ";
+                    cout << "Choose a Capacity (int): ";
                     int cap;
                     cin >> cap;
 
                     spaceCraft = spaceCraftFactory->createSpaceCraft(p, cap);
 
-                CONFIGURE_SPACECRAFT:
                     string spaceCraftMenu[2] = {"Add Cargo"};
                     short spaceCraftIndex;
                     if (typeMenuIndex == 2)
@@ -252,6 +260,7 @@ public:
                         int numAddCargo;
                         cout << "Please enter the number of Cargo to add: ";
                         cin >> numAddCargo;
+                        // spaceCraft->setTEC(new TransportEntityCollection)
                         TransportEntityCollection *tec = spaceCraft->getTEC();
                         for (int i = 0; i < numAddCargo; ++i)
                         {
@@ -280,12 +289,11 @@ public:
 
                 // goto CONFIGURE_SPACECRAFT;
             }
-            // goto CONFIGURE_ROCKET;
 
             else
             {
                 cout << "EDIT ROCKET" << endl;
-                string editMenu[3] = {"Change destination", "Edit Spacecraft", "Change Rocket Type"};
+                string editMenu[3] = {"Change destination", "Edit Spacecraft"};
                 short editIndex = getMenu(editMenu, 3);
 
                 if (editIndex == 0)

@@ -39,7 +39,7 @@ Dragon::Dragon() {
 }
 
 Dragon::Dragon(double Cost, int Capacity) : SpaceCraft (Cost,Capacity) {
-	cout << "Creating dragon at cost " << fixed << setprecision(2) << getCost() << " with capacity in Litre: "<< getCapacity() << endl;
+	cout << "Creating dragon at cost " << fixed << setprecision(2) << getCost() << " with capacity: "<< getCapacity() << endl;
 }
 
 Dragon::~Dragon() {
