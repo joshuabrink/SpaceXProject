@@ -9,18 +9,16 @@ SimulationBackupStore::~SimulationBackupStore()
 
 }
 
-SimulationBackup* SimulationBackupStore::getMemento()
+SimulationBackup* SimulationBackupStore::getMemento(int i)
 {
 	if (mementoStack.empty()) {
 		return nullptr;
 	}else{
-		SimulationBackup* temp= mementoStack.top();
-		mementoStack.pop();
-		return temp;
+		return mementoStack[i];
 	}
 }
 
 void SimulationBackupStore::setMemento(SimulationBackup* m)
 {
-	mementoStack.push(m);
+	mementoStack.push_back(m);
 }

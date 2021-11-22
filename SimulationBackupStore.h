@@ -14,12 +14,13 @@
 
 #include "SimulationBackup.h"
 #include <stack>
+#include <vector>
 
 using namespace std;
 
 class SimulationBackupStore {
 private:
-	stack<SimulationBackup*> mementoStack;
+	vector<SimulationBackup*> mementoStack;
 	//SimulationBackup* memento;
 public:
 
@@ -40,7 +41,7 @@ public:
  *
  *  @return SimulationBackup* , a pointer to the SimulationBakcup.
  */
-	SimulationBackup* getMemento();
+	SimulationBackup* getMemento(int);
 /**
  *  @fn     void setMemento(SimulationBackup*);
  *  @brief  setMemento will add SimulationBackup* objects to the top of the stack.

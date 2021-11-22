@@ -132,7 +132,7 @@ private:
     {
         rocket->setDestination(d);
     }
-    void makeBackupTS()
+    int makeBackupTS()
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
@@ -185,9 +185,10 @@ public:
         else
             cout << "0 - Edit Rocket" << endl;
 
-        cout << "1 - Begin Launch" << endl;
-        cout << "2 - Restore Previous Simulation" << endl;
-        cout << "3 - Exit Simulation" << endl;
+        cout << "1 - Save Rocket" << endl;
+        cout << "2 - Begin Launch" << endl;
+        cout << "3 - Restore Previous Simulation" << endl;
+        cout << "4 - Exit Simulation" << endl;
         cout << "Command: ";
         cin >> choice;
         cout << endl;
@@ -448,8 +449,11 @@ public:
 
             goto MAIN_MENU;
         }
-
         else if (choice == 1)
+        {
+            cout << "Saving rocket at " << makeBackupTS();
+        }
+        else if (choice == 2)
         {
 
             if (rocket == nullptr)
@@ -473,7 +477,7 @@ public:
 
             beginCountdown();
         }
-        else if (choice == 2)
+        else if (choice == 3)
         {
             short backupIndex = 0;
             cout << "0 - Go Back" << endl;
@@ -481,11 +485,16 @@ public:
             // for (int i = 0; i < backupCount; i++)
             //{
             // cout << (i + 1) << " - " << "Backup ";
-            cout << (1) << " - "
-                 << "Backup ";
+            //cout << (1) << " - " << "Backup ";
             // cout << backupStore->getAt(i)->myRocket->destination->name;
-            cout << backupStore->getMemento()->getMyRocket()->getDestination();
+            //cout << backupStore->getMemento()->getMyRocket()->getDestination();
             //}
+
+
+            for (int i = 0; i < backupCount; ++i)
+            {
+                cout << (i+1) << " - Backup" << endl;
+            }
 
             cin >> backupIndex;
 
@@ -497,9 +506,9 @@ public:
             backupIndex--;
 
             // rocket = backupStore->getAt(backupIndex)->myRocket;
-            rocket = backupStore->getMemento()->getMyRocket();
+            rocket = backupStore->getMemento(backupIndex)->getMyRocket();
             // price = backupStore->getAt(backupIndex)->price;
-            price = backupStore->getMemento()->getPrice();
+            price = backupStore->getMemento(backupIndex)->getPrice();
             goto MAIN_MENU;
         }
         else
