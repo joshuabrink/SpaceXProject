@@ -222,12 +222,18 @@ public:
                     else if (spaceCraftIndex == 1)
                     {
                         // spaceCraft->addCargo(new Cargo());
-                        spaceCraft->setTEC(new TransportEntityCargo());
+                        //spaceCraft->setTEC(new TransportEntityCargo());
+                        TransportEntityCollection* temp = spaceCraft->getTEC();
+                        temp->add(new Cargo());
+                        spaceCraft->setTEC(temp);
                     }
                     else if (spaceCraftIndex == 2)
                     {
                         // spaceCraft->addCrew(new Crew());
-                        spaceCraft->setTEC(spaceCraft->getTEC()->add(new TransportEntityCargo()));
+                        //spaceCraft->setTEC(spaceCraft->getTEC()->add(new TransportEntityCargo()));
+                        TransportEntityCollection* temp = spaceCraft->getTEC();
+                        temp->add(new Crew());
+                        spaceCraft->setTEC(temp);
                     }
                 }
             }
