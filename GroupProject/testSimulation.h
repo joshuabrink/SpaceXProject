@@ -20,6 +20,8 @@ class PayloadFactory
 {
 };
 
+
+
 template <typename Type>
 class CollectionIterator
 {
@@ -98,40 +100,36 @@ public:
 };
 class TransportEntity
 {
-
 };
 class TransportEntityCargo : public TransportEntity
 {
-
 };
-class TransportEntityCrew: public TransportEntity
+class TransportEntityCrew : public TransportEntity
 {
-
 };
 
 class TransportEntityCollection
 {
 public:
-    void display();
-    void add(TransportEntity* te);
-    TransportEntity* remove();
+    void display(){};
+    void add(TransportEntity *te){};
+    TransportEntity *remove(){return nullptr;};
 };
 class TECargoCollection : public TransportEntityCollection
 {
 public:
-    void add(TransportEntity*);
+    void add(TransportEntity *){};
 };
 class TECrewCollection : public TransportEntityCollection
 {
 public:
-    void add(TransportEntity*);
+    void add(TransportEntity *){};
 };
 class SpaceCraft
 {
 public:
-     void setTEC(TransportEntityCollection*);
-     TransportEntityCollection* getTEC();
-
+    void setTEC(TransportEntityCollection *) {};
+    TransportEntityCollection *getTEC() {return nullptr;};
 };
 class DragonSpaceCraft : public SpaceCraft
 {
@@ -142,21 +140,19 @@ class CrewDragonSpaceCraft : public SpaceCraft
 class SpaceCraftFactory
 {
 public:
-    virtual SpaceCraft *buildSpaceCraft()=0;
+    virtual SpaceCraft *buildSpaceCraft() = 0;
 };
 class DragonFactory : public SpaceCraftFactory
 {
 public:
-    SpaceCraft *buildSpaceCraft() { return new DragonSpaceCraft();}
+    SpaceCraft *buildSpaceCraft() { return new DragonSpaceCraft(); }
 };
 
 class CrewDragonFactory : public SpaceCraftFactory
 {
 public:
-     SpaceCraft *buildSpaceCraft() { return new CrewDragonSpaceCraft();}
+    SpaceCraft *buildSpaceCraft() { return new CrewDragonSpaceCraft(); }
 };
-
-
 
 class Destination
 {
@@ -293,7 +289,7 @@ private:
     {
         rocket->setDestination(d);
     }
-    void *makeBackup()
+    void makeBackup()
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
@@ -356,7 +352,6 @@ public:
         if (choice == 0)
         {
         BUILD_MENU:
-
             if (rocket == nullptr)
             {
                 RocketFactory *factory;
@@ -398,6 +393,8 @@ public:
                         starlinkCollection->add(satelliteFactory->createSatellite());
                         // satelliteFactory->createSatellite();
                     }
+                    // add satellites to rocket
+                    goto CONFIGURE_ROCKET;
                 }
                 else if (configIndex == 2)
                 {
@@ -418,32 +415,52 @@ public:
 
                     spaceCraft = spaceCraftFactory->buildSpaceCraft();
 
-                    string spaceCraftMenu[3] = {"Add Cargo", "Add Satellites"};
+                CONFIGURE_SPACECRAFT:
+                    string spaceCraftMenu[2] = {"Add Cargo"};
                     short spaceCraftIndex;
                     if (typeMenuIndex == 2)
                     {
-                        spaceCraftMenu[2] = "Add Crew";
-                        spaceCraftIndex = getMenu(spaceCraftMenu, 3);
+                        spaceCraftMenu[1] = "Add Crew";
+                        spaceCraftIndex = getMenu(spaceCraftMenu, 2);
                     }
                     else
                     {
-                        spaceCraftIndex = getMenu(spaceCraftMenu, 2);
+                        spaceCraftIndex = getMenu(spaceCraftMenu, 1);
                     }
 
                     if (spaceCraftIndex == 0)
                         goto CONFIGURE_ROCKET;
                     else if (spaceCraftIndex == 1)
                     {
-                        spaceCraft->addCargo(new Cargo());
+                        int numAddCargo;
+                        cout << "Please enter the number of Cargo to add: ";
+                        cin >> numAddCargo;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCargo; ++i)
+                        {
+                            TransportEntityCargo *addCargo = new TransportEntityCargo();
+                            tec->add(addCargo);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
                     }
                     else if (spaceCraftIndex == 2)
                     {
-                        spaceCraft->addCargo(new Satellite());
+                        int numAddCrew;
+                        cout << "Please enter the number of Crew to add: ";
+                        cin >> numAddCrew;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCrew; ++i)
+                        {
+                            TransportEntityCrew *addCrew = new TransportEntityCrew();
+                            tec->add(addCrew);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
                     }
-                    else if (spaceCraftIndex == 3)
-                    {
-                        spaceCraft->addCrew(new Crew());
-                    }
+                    goto CONFIGURE_SPACECRAFT;
                 }
             }
             else
@@ -479,30 +496,30 @@ public:
                         cout << "CREW OPTIONS" << endl;
                         string cOptions[3] = {"Display Crew", "Add Crew", "Remove Crew"};
                         short cOptionsIndex = getMenu(cOptions, 3);
-                        if(cOptionsIndex == 0)
+                        if (cOptionsIndex == 0)
                             goto BUILD_MENU;
-                        else if(cOptionsIndex == 1)
+                        else if (cOptionsIndex == 1)
                         {
                             spaceCraft->getTEC()->display();
                         }
-                        else if(cOptionsIndex == 2)
+                        else if (cOptionsIndex == 2)
                         {
                             int numAddCrew;
                             cout << "Please enter the number of Crew to add: ";
                             cin >> numAddCrew;
-                            TECrewCollection* tec;
+                            TECrewCollection *tec;
                             for (int i = 0; i < numAddCrew; ++i)
                             {
-                                TransportEntityCrew* addCrew = new TransportEntityCrew();
+                                TransportEntityCrew *addCrew = new TransportEntityCrew();
                                 tec->add(addCrew);
                             }
-                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            TransportEntityCollection *temp = spaceCraft->getTEC();
                             spaceCraft->setTEC(tec);
                             delete temp;
                         }
-                        else if(cOptionsIndex == 3)
+                        else if (cOptionsIndex == 3)
                         {
-                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            TransportEntityCollection *temp = spaceCraft->getTEC();
                             spaceCraft->setTEC(nullptr);
                             delete temp;
                         }
@@ -513,30 +530,30 @@ public:
                         cout << "CARGO OPTIONS" << endl;
                         string cOptions[3] = {"Display Cargo", "Add Cargo", "Remove Cargo"};
                         short cOptionsIndex = getMenu(cOptions, 3);
-                        if(cOptionsIndex == 0)
+                        if (cOptionsIndex == 0)
                             goto BUILD_MENU;
-                        else if(cOptionsIndex == 1)
+                        else if (cOptionsIndex == 1)
                         {
                             spaceCraft->getTEC()->display();
                         }
-                        else if(cOptionsIndex == 2)
+                        else if (cOptionsIndex == 2)
                         {
                             int numAddCargo;
-                            cout << "Please enter the number of Crew to add: ";
+                            cout << "Please enter the number of Cargo to add: ";
                             cin >> numAddCargo;
-                            TECrewCollection* tec;
+                            TECrewCollection *tec;
                             for (int i = 0; i < numAddCargo; ++i)
                             {
-                                TransportEntityCargo* addCargo = new TransportEntityCargo();
+                                TransportEntityCargo *addCargo = new TransportEntityCargo();
                                 tec->add(addCargo);
                             }
-                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            TransportEntityCollection *temp = spaceCraft->getTEC();
                             spaceCraft->setTEC(tec);
                             delete temp;
                         }
-                        else if(cOptionsIndex == 3)
+                        else if (cOptionsIndex == 3)
                         {
-                            TransportEntityCollection* temp = spaceCraft->getTEC();
+                            TransportEntityCollection *temp = spaceCraft->getTEC();
                             spaceCraft->setTEC(nullptr);
                             delete temp;
                         }
