@@ -20,8 +20,6 @@ class PayloadFactory
 {
 };
 
-
-
 template <typename Type>
 class CollectionIterator
 {
@@ -54,7 +52,15 @@ class StarlinkCommunication
 {
 };
 
-class Satellite : public StarlinkCommunication, public Cargo
+class StarlinkGroundUser : public StarlinkCommunication
+{
+};
+
+class StarlinkOrbitingSatellite : public StarlinkCommunication
+{
+};
+
+class Satellite : public StarlinkCommunication
 {
 };
 
@@ -98,6 +104,13 @@ public:
         return iterator(&this->nodeCollection.back());
     };
 };
+
+class CommunicationNetwork
+{
+public:
+    void addStarlinkCollection(StarlinkCollection *col) {}
+};
+
 class TransportEntity
 {
 };
@@ -113,7 +126,7 @@ class TransportEntityCollection
 public:
     void display(){};
     void add(TransportEntity *te){};
-    TransportEntity *remove(){return nullptr;};
+    TransportEntity *remove() { return nullptr; };
 };
 class TECargoCollection : public TransportEntityCollection
 {
@@ -128,8 +141,8 @@ public:
 class SpaceCraft
 {
 public:
-    void setTEC(TransportEntityCollection *) {};
-    TransportEntityCollection *getTEC() {return nullptr;};
+    void setTEC(TransportEntityCollection *){};
+    TransportEntityCollection *getTEC() { return nullptr; };
 };
 class DragonSpaceCraft : public SpaceCraft
 {
@@ -180,10 +193,12 @@ class Rocket
 {
 public:
     Destination *destination;
+    SpaceCraft *spaceCraft;
     void setDestination(Destination *d)
     {
         destination = d;
     }
+    void loadSpaceCraft(SpaceCraft *sc) { spaceCraft = sc; }
 };
 class RocketFactory
 {
@@ -266,6 +281,12 @@ public:
         destinations[0] = new Earth();
         destinations[1] = new LowOrbit();
         destinations[2] = new ISS();
+
+        groundUsers->add(new StarlinkGroundUser());
+        groundUsers->add(new StarlinkGroundUser());
+        groundUsers->add(new StarlinkGroundUser());
+
+        comNetwork->addStarlinkCollection(groundUsers);
     }
 
 private:
@@ -275,6 +296,9 @@ private:
     Rocket *rocket;
     SpaceCraft *spaceCraft;
     Command *buildCommand;
+    CommunicationNetwork *comNetwork = new CommunicationNetwork();
+    StarlinkCollection *satellites = new StarlinkVector();
+    StarlinkCollection *groundUsers = new StarlinkVector();
     double price;
     void setBuild(Command *c)
     {
@@ -356,7 +380,6 @@ public:
             {
                 RocketFactory *factory;
                 SatelliteFactory *satelliteFactory;
-                StarlinkCollection *starlinkCollection = new StarlinkVector();
 
                 cout << "SELECT ROCKET TYPE" << endl;
                 string rocketMenu[4] = {"Falcon 9", "Falcon Heavy"};
@@ -377,8 +400,8 @@ public:
 
             CONFIGURE_ROCKET:
                 cout << "CONFIGURE ROCKET" << endl;
-                string configMenu[3] = {"Add Satellites", "Build Space Craft", "Set Cost"};
-                short configIndex = getMenu(configMenu, 3);
+                string configMenu[2] = {"Add Satellites", "Build Space Craft"};
+                short configIndex = getMenu(configMenu, 2);
 
                 if (configIndex == 0)
                     goto BUILD_MENU;
@@ -390,10 +413,9 @@ public:
 
                     for (int i = 0; i < satelliteCount; i++)
                     {
-                        starlinkCollection->add(satelliteFactory->createSatellite());
+                        satellites->add(satelliteFactory->createSatellite());
                         // satelliteFactory->createSatellite();
                     }
-                    // add satellites to rocket
                     goto CONFIGURE_ROCKET;
                 }
                 else if (configIndex == 2)
@@ -557,12 +579,7 @@ public:
                             spaceCraft->setTEC(nullptr);
                             delete temp;
                         }
-                        // Edit cargo
                     }
-                }
-                else
-                {
-                    // change rocket type
                 }
             }
 
@@ -576,7 +593,6 @@ public:
                 cout << "Need to build rocket before launching" << endl;
                 goto MAIN_MENU;
             }
-            cout << "0 - Go Back" << endl;
 
             string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
             short destinationIndex = getMenu(destinationMenu, 3);
