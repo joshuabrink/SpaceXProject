@@ -174,6 +174,9 @@ public:
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
+                cout << "CONFIGURE ROCKET" << endl;
+                string configMenu[3] = {"Set Destination","Add Satellites", "Build Space Craft"};
+                short configIndex = getMenu(configMenu, 3);
                 if (configIndex == 0)
                     goto MAIN_MENU;
 
