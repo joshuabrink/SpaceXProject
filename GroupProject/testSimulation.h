@@ -1,5 +1,4 @@
 #include <iostream>
-#include <random>
 #include <vector>
 #include <stdlib.h>
 #include <unistd.h>
@@ -191,25 +190,69 @@ public:
 };
 class Rocket
 {
-public:
+private:
     Destination *destination;
     SpaceCraft *spaceCraft;
+    string rocketType;
+
+public:
+    Rocket() {}
+    Rocket(string s) : rocketType(s) {}
+    bool isLaunched = false;
     void setDestination(Destination *d)
     {
         destination = d;
     }
+    Destination* getDestination() {
+        return destination;
+    }
+    virtual void launch()
+    {
+        if (destination == nullptr)
+        {
+            cout << "Please set a destination before launch!" << endl;
+            return;
+        }
+
+        if (isLaunched)
+        {
+            cout << rocketType << " already launched" << endl;
+        }
+        else
+        {
+            cout << "Launching " << rocketType << endl;
+            isLaunched = true;
+        }
+    }
+
     void loadSpaceCraft(SpaceCraft *sc) { spaceCraft = sc; }
 };
+
+class Falcon9 : public Rocket
+{
+public:
+    Falcon9() : Rocket("Falcon 9") {}
+};
+class FalconHeavy : public Rocket
+{
+public:
+    FalconHeavy() : Rocket("Falcon Heavy") {}
+};
+
 class RocketFactory
 {
 public:
-    Rocket *createRocket() { return new Rocket(); }
+    virtual Rocket *createRocket() = 0;
 };
 class Falcon9Factory : public RocketFactory
 {
+public:
+    Rocket *createRocket() { return new Falcon9(); }
 };
 class FalconHeavyFactory : public RocketFactory
 {
+public:
+    virtual Rocket *createRocket() { return new FalconHeavy(); }
 };
 class SatelliteFactory
 {
@@ -222,17 +265,29 @@ private:
 public:
     Command() {}
     virtual Rocket *executeBuild() { return nullptr; };
+    virtual void execute() {};
 };
 
-class BuildRocket : public Command
+class BuildCommand : public Command
 {
 private:
-    RocketFactory *myRocketFactory = new RocketFactory();
+    RocketFactory *myRocketFactory;
 
 public:
-    BuildRocket() {}
-    BuildRocket(RocketFactory *, double) {}
+    BuildCommand() {}
+    BuildCommand(RocketFactory *rF, double) { myRocketFactory = rF; }
     Rocket *executeBuild() { return myRocketFactory->createRocket(); }
+};
+
+class LaunchCommand : public Command
+{
+private:
+    Rocket *rocket;
+
+public:
+    LaunchCommand() {}
+    LaunchCommand(Rocket *r) { rocket = r; }
+    void execute() { rocket->launch(); }
 };
 
 class SimulationBackup
@@ -308,7 +363,11 @@ private:
     {
         rocket = buildCommand->executeBuild();
     }
-    void launch() {}
+    void launch()
+    {
+        Command *launch = new LaunchCommand(rocket);
+        launch->execute();
+    }
     void setTripDestination(Destination *d)
     {
         rocket->setDestination(d);
@@ -328,7 +387,7 @@ private:
     void beginCountdown()
     {
 
-        for (int i = 10; i > 0; i--)
+        for (int i = 5; i > 0; i--)
         {
             cout << "Launch in " << i << endl;
             sleep(1);
@@ -354,9 +413,6 @@ private:
 public:
     void start()
     {
-        random_device rd;
-        default_random_engine eng(rd());
-        uniform_real_distribution<double> distr(0, 1000);
 
     MAIN_MENU:
         int choice = 0;
@@ -382,7 +438,7 @@ public:
                 SatelliteFactory *satelliteFactory;
 
                 cout << "SELECT ROCKET TYPE" << endl;
-                string rocketMenu[4] = {"Falcon 9", "Falcon Heavy"};
+                string rocketMenu[2] = {"Falcon 9", "Falcon Heavy"};
                 short rocketIndex = getMenu(rocketMenu, 2);
 
                 if (rocketIndex == 0)
@@ -395,17 +451,30 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
-                setBuild(new BuildRocket(factory, distr(eng)));
+                setBuild(new BuildCommand(factory, 1000));
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
                 cout << "CONFIGURE ROCKET" << endl;
-                string configMenu[2] = {"Add Satellites", "Build Space Craft"};
-                short configIndex = getMenu(configMenu, 2);
+                string configMenu[3] = {"Set Destination", "Add Satellites", "Build Space Craft"};
+                short configIndex = getMenu(configMenu, 3);
 
                 if (configIndex == 0)
                     goto MAIN_MENU;
+
                 else if (configIndex == 1)
+                {
+                    string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+                    short destinationIndex = getMenu(destinationMenu, 3);
+
+                    if (destinationIndex == 0)
+                        goto BUILD_MENU;
+
+                    destinationIndex--;
+
+                    setTripDestination(destinations[destinationIndex]);
+                }
+                else if (configIndex == 2)
                 {
                     short satelliteCount = 0;
                     cout << "How many satellites? (1-60) ";
@@ -415,9 +484,8 @@ public:
                     {
                         satellites->add(satelliteFactory->createSatellite());
                     }
-                    goto CONFIGURE_ROCKET;
                 }
-                else if (configIndex == 2)
+                else if (configIndex == 3)
                 {
                     SpaceCraftFactory *spaceCraftFactory;
                     cout << "SELECT SPACE CRAFT TYPE" << endl;
@@ -483,6 +551,7 @@ public:
                     }
                     goto CONFIGURE_SPACECRAFT;
                 }
+                goto CONFIGURE_ROCKET;
             }
             else
             {
@@ -593,15 +662,15 @@ public:
                 goto MAIN_MENU;
             }
 
-            string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
-            short destinationIndex = getMenu(destinationMenu, 3);
+            // string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+            // short destinationIndex = getMenu(destinationMenu, 3);
 
-            if (destinationIndex == 0)
-                goto MAIN_MENU;
+            // if (destinationIndex == 0)
+            //     goto MAIN_MENU;
 
-            destinationIndex--;
+            // destinationIndex--;
 
-            setTripDestination(destinations[destinationIndex]);
+            // setTripDestination(destinations[destinationIndex]);
 
             makeBackup();
 
@@ -616,7 +685,7 @@ public:
             {
                 cout << (i + 1) << " - "
                      << "Backup ";
-                cout << backupStore->getAt(i)->myRocket->destination->name;
+                cout << backupStore->getAt(i)->myRocket->getDestination()->name;
             }
 
             cin >> backupIndex;
