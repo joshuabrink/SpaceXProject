@@ -6,6 +6,9 @@
  * @author Leonardo Wessels u17229457
  */
 
+/**
+ * @fn CoreBuilder, default constructor for CoreBuilder
+ */
 
 #include "CoreBuilder.h"
 CoreBuilder::CoreBuilder()
@@ -14,6 +17,10 @@ CoreBuilder::CoreBuilder()
     coreFactory = new Core;
     arrSize = 0;
 }
+
+/**
+ * @fn ~CoreBuilder delete builder;
+ */
 
 CoreBuilder::~CoreBuilder()
 {
@@ -86,7 +93,7 @@ Core** CoreBuilder::getResult()
 }
 
 /**
- * @fn this function resets the core array
+ * @fn resetBuilder() this function resets the core array
  */
 
 void CoreBuilder::resetBuilder()

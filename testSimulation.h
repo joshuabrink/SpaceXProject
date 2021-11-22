@@ -204,7 +204,6 @@ public:
                 {
                     goto MAIN_MENU;
                 }
-
                 else if (rocketIndex == 1)
                 {
                     factory = new Falcon9Factory();
@@ -303,13 +302,12 @@ public:
                         cout << "Please enter the number of Cargo to add: ";
                         cin >> numAddCargo;
                         // spaceCraft->setTEC(new TransportEntityCollection)
-                        TransportEntityCollection *tec = spaceCraft->getTEC();
+                        TransportEntityCollection *tec = new TECargoCollection();
                         for (int i = 0; i < numAddCargo; ++i)
                         {
                             TransportEntity *addCargo = new Cargo();
                             tec->add(addCargo);
                         }
-
                         spaceCraft->setTEC(tec);
                     }
                     else if (spaceCraftIndex == 2)
@@ -318,13 +316,12 @@ public:
                         int numAddCrew;
                         cout << "Please enter the number of Crew to add: ";
                         cin >> numAddCrew;
-                        TransportEntityCollection *tec = spaceCraft->getTEC();
+                        TransportEntityCollection *tec = new TECrewCollection();
                         for (int i = 0; i < numAddCrew; ++i)
                         {
                             TransportEntity *addCrew = new Crew();
                             tec->add(addCrew);
                         }
-
                         spaceCraft->setTEC(tec);
                     }
                 }

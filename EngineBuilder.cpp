@@ -3,6 +3,10 @@
 //
 #include "EngineBuilder.h"
 
+/**
+ * @fn EngineBuilder() default constructor for engine
+ */
+
 EngineBuilder::EngineBuilder()
 {
     engineArray = nullptr;
