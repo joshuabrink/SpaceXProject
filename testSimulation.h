@@ -65,7 +65,7 @@ private:
     Destination **destinations = new Destination *[3];
     int backupCount = 0;
     SimulationBackupStore *backupStore = new SimulationBackupStore();
-    Rocket *rocket;
+    Rocket *rocket = 0;
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
@@ -123,6 +123,7 @@ private:
             }
         }
         // RETURN_FLIGHT:
+        
 
         
     }
