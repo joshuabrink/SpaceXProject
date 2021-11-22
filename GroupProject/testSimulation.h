@@ -45,10 +45,10 @@ public:
     Satellite *createSatellite() { return new Satellite(); };
 };
  */
-class Simulation
+class testSimulation
 {
 public:
-    Simulation()
+    testSimulation()
     {
         destinations[0] = new Earth();
         destinations[1] = new LowOrbit();
@@ -59,6 +59,10 @@ public:
         groundUsers->add(new StarlinkGroundUser());
 
         comNetwork->addStarlinkCollection(groundUsers);
+    }
+
+    ~testSimulation(){
+
     }
 
 private:
