@@ -10,7 +10,7 @@
 #include "VacuumMerlinEngine.h"
 #include "MerlinEngine.h"
 
-#include "TransportEntities.h"
+#include "TransportEntity.h"
 
 #include "Build.h"
 #include "Interrupt.h"
@@ -29,7 +29,7 @@
 #include "SimulationBackup.h"
 
 #include <vector>
-#include "StarlinkQueue.h"
+//#include "StarlinkQueue.h"
 #include "StarlinkOrbitingSatellite.h"
 #include "StarlinkGroundUser.h"
 #include "ConcreteSatelliteIterator.h"
@@ -78,8 +78,8 @@ void createFactories() {
 
 
 void createTransportEntities() {
-    TransportEntities** crew = new TransportEntities * [5];
-    TransportEntities** cargo = new TransportEntities * [3];
+    TransportEntity** crew = new TransportEntity * [5];
+    TransportEntity** cargo = new TransportEntity * [3];
 
     crew[0] = new Crew("Susan", "Electrical Engineer");
     crew[1] = new Crew("John", "Mission Specialist 1");
