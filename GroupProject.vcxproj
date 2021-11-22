@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Build.h" />
+    <ClInclude Include="CollectionIterator.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommuncationNetwork.h" />
+    <ClInclude Include="CompositeStage.h" />
+    <ClInclude Include="ConcretePayloadFactory.h" />
+    <ClInclude Include="ConcreteRocketFactory.h" />
+    <ClInclude Include="ConcreteSatelliteIterator.h" />
+    <ClInclude Include="ConcreteSpaceCraftFactory.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="CoreBuilder.h" />
+    <ClInclude Include="Destination.h" />
+    <ClInclude Include="Earth.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineBuilder.h" />
+    <ClInclude Include="Falcon9.h" />
+    <ClInclude Include="FalconHeavy.h" />
+    <ClInclude Include="Interrupt.h" />
+    <ClInclude Include="ISS.h" />
+    <ClInclude Include="Launch.h" />
+    <ClInclude Include="LowOrbit.h" />
+    <ClInclude Include="MerlinEngine.h" />
+    <ClInclude Include="ModifiedMerlinEngine.h" />
+    <ClInclude Include="NextStage.h" />
+    <ClInclude Include="Payload.h" />
+    <ClInclude Include="PayloadFactory.h" />
+    <ClInclude Include="Rocket.h" />
+    <ClInclude Include="RocketFactory.h" />
+    <ClInclude Include="RocketLeaf.h" />
+    <ClInclude Include="RocketStage.h" />
+    <ClInclude Include="Satellite.h" />
+    <ClInclude Include="SatelliteCollection.h" />
+    <ClInclude Include="SatelliteIterator.h" />
+    <ClInclude Include="SatelliteVector.h" />
+    <ClInclude Include="SetDestination.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="SimulationBackup.h" />
+    <ClInclude Include="SimulationBackupStore.h" />
+    <ClInclude Include="SpaceCraft.h" />
+    <ClInclude Include="SpaceCraftCrewDragon.h" />
+    <ClInclude Include="SpaceCraftDragon.h" />
+    <ClInclude Include="SpaceCraftFactory.h" />
+    <ClInclude Include="StageBuilder.h" />
+    <ClInclude Include="StarlinkCollection.h" />
+    <ClInclude Include="StarlinkCommunication.h" />
+    <ClInclude Include="StarlinkGroundUser.h" />
+    <ClInclude Include="StarlinkOrbitingSatellite.h" />
+    <ClInclude Include="StarlinkQueue.h" />
+    <ClInclude Include="StarlinkVector.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="TECargoCollection.h" />
+    <ClInclude Include="TECrewCollection.h" />
+    <ClInclude Include="TransportEntities.h" />
+    <ClInclude Include="TransportEntity.h" />
+    <ClInclude Include="TransportEntityCargo.h" />
+    <ClInclude Include="TransportEntityCollection.h" />
+    <ClInclude Include="TransportEntityCrew.h" />
+    <ClInclude Include="VacuumMerlinEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Build.cpp" />
+    <ClCompile Include="CompositeStage.cpp" />
+    <ClCompile Include="ConcretePayloadFactory.cpp" />
+    <ClCompile Include="ConcreteRocketFactory.cpp" />
+    <ClCompile Include="ConcreteSpaceCraftFactory.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="CoreBuilder.cpp" />
+    <ClCompile Include="Earth.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineBuilder.cpp" />
+    <ClCompile Include="Falcon9.cpp" />
+    <ClCompile Include="FalconHeavy.cpp" />
+    <ClCompile Include="Interrupt.cpp" />
+    <ClCompile Include="ISS.cpp" />
+    <ClCompile Include="Launch.cpp" />
+    <ClCompile Include="LowOrbit.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MerlinEngine.cpp" />
+    <ClCompile Include="ModifiedMerlinEngine.cpp" />
+    <ClCompile Include="NextStage.cpp" />
+    <ClCompile Include="Payload.cpp" />
+    <ClCompile Include="PayloadFactory.cpp" />
+    <ClCompile Include="Rocket.cpp" />
+    <ClCompile Include="RocketFactory.cpp" />
+    <ClCompile Include="RocketLeaf.cpp" />
+    <ClCompile Include="RocketStage.cpp" />
+    <ClCompile Include="SatelliteIterator.cpp" />
+    <ClCompile Include="SetDestination.cpp" />
+    <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="SimulationBackup.cpp" />
+    <ClCompile Include="SimulationBackupStore.cpp" />
+    <ClCompile Include="SpaceCraft.cpp" />
+    <ClCompile Include="SpaceCraftFactory.cpp" />
+    <ClCompile Include="StageBuilder.cpp" />
+    <ClCompile Include="TransportEntities.cpp" />
+    <ClCompile Include="VacuumMerlinEngine.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3c376e0c-bd21-4c29-9105-b283916cba50}</ProjectGuid>
+    <RootNamespace>GroupProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
