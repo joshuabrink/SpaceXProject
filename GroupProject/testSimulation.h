@@ -8,7 +8,7 @@
 #include "StarlinkGroundUser.h"
 #include "CollectionIterator.h"
 #include "StarlinkCollection.h"
-#include "StarlinkGroundUserCollection.h"
+//#include "StarlinkGroundUserCollection.h"
 #include "ConcreteSpaceCraftFactory.h"
 #include "TransportEntity.h"
 #include "TransportEntityCollection.h"
@@ -219,8 +219,15 @@ public:
                     {
                         spaceCraftFactory = new CrewDragonFactory();
                     }
+                    cout<<"CHOOSE A PRICE (DOUBLE): ";
+                    double p;
+                    cin >> p;
+                    cout<<endl;
+                    cout<<"CHOOSE A CAPACITY (INT): ";
+                    int cap;
+                    cin >> cap;
 
-                    spaceCraft = spaceCraftFactory->buildSpaceCraft();
+                    spaceCraft = spaceCraftFactory->createSpaceCraft(p, cap);
 
                 CONFIGURE_SPACECRAFT:
                     string spaceCraftMenu[2] = {"Add Cargo"};
@@ -242,10 +249,10 @@ public:
                         int numAddCargo;
                         cout << "Please enter the number of Cargo to add: ";
                         cin >> numAddCargo;
-                        TECrewCollection *tec = spaceCraft->getTEC();
+                        TransportEntityCollection *tec = spaceCraft->getTEC();
                         for (int i = 0; i < numAddCargo; ++i)
                         {
-                            TransportEntityCargo *addCargo = new TransportEntityCargo();
+                            TransportEntity *addCargo = new Cargo();
                             tec->add(addCargo);
                         }
 
@@ -257,10 +264,10 @@ public:
                         int numAddCrew;
                         cout << "Please enter the number of Crew to add: ";
                         cin >> numAddCrew;
-                        TECrewCollection *tec = spaceCraft->getTEC();
+                        TransportEntityCollection *tec = spaceCraft->getTEC();
                         for (int i = 0; i < numAddCrew; ++i)
                         {
-                            TransportEntityCrew *addCrew = new TransportEntityCrew();
+                            TransportEntity *addCrew = new Crew();
                             tec->add(addCrew);
                         }
      
@@ -428,6 +435,5 @@ public:
     {
         return;
     }
-}
 }
 ;
