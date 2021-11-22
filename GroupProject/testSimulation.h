@@ -44,10 +44,10 @@ public:
     Satellite *createSatellite() { return new Satellite(); };
 };
  */
-class Simulation
+class TestSimulation
 {
 public:
-    Simulation()
+    TestSimulation()
     {
         destinations[0] = new Earth();
         destinations[1] = new LowOrbit();
@@ -92,8 +92,8 @@ private:
 
     void restoreTS(SimulationBackup *backup)
     {
-        this->price = backup->price;
-        this->rocket = backup->myRocket;
+        this->price = backup->getPrice();
+        this->rocket = backup->getMyRocket();
     }
 
     void beginCountdown()
@@ -418,7 +418,7 @@ public:
             cout << (1) << " - "
                  << "Backup ";
             // cout << backupStore->getAt(i)->myRocket->destination->name;
-            cout << backupStore->getMemento()->myRocket->getDestination();
+            cout << backupStore->getMemento()->getMyRocket()->getDestination();
             //}
 
             cin >> backupIndex;
@@ -431,9 +431,9 @@ public:
             backupIndex--;
 
             // rocket = backupStore->getAt(backupIndex)->myRocket;
-            rocket = backupStore->getMemento()->myRocket;
+            rocket = backupStore->getMemento()->getMyRocket();
             // price = backupStore->getAt(backupIndex)->price;
-            price = backupStore->getMemento()->price;
+            price = backupStore->getMemento()->getPrice();
             goto MAIN_MENU;
         }
         else
