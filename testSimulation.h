@@ -482,7 +482,7 @@ public:
         }
         else if (choice == 1)
         {
-            cout << "Saving rocket at " << makeBackupTS();
+            cout << "Saving rocket at " << makeBackupTS() << endl;
             goto MAIN_MENU;
         }
         else if (choice == 2)
