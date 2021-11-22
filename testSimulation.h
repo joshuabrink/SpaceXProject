@@ -336,8 +336,8 @@ public:
             else
             {
                 cout << "EDIT ROCKET" << endl;
-                string editMenu[3] = {"Change destination", "Edit Spacecraft"};
-                short editIndex = getMenu(editMenu, 3);
+                string editMenu[2] = {"Change destination", "Edit Spacecraft"};
+                short editIndex = getMenu(editMenu, 2);
 
                 if (editIndex == 0)
                     goto MAIN_MENU;
