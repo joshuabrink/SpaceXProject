@@ -57,7 +57,7 @@ public:
         groundUsers->add(new StarlinkGroundUser());
         groundUsers->add(new StarlinkGroundUser());
 
-        comNetwork->addStarlinkCollection(groundUsers);
+        comNetwork = new CommuncationNetwork(groundUsers);
     }
 
 private:
@@ -68,10 +68,10 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
-    CommuncationNetwork *comNetwork = new CommuncationNetwork();
+    CommuncationNetwork *comNetwork;
 
     double price;
-    void setBuild(Command *c)
+    void setBuildTS(Command *c)
     {
         buildCommand = c;
     }
@@ -84,13 +84,13 @@ private:
     {
         rocket->setDestination(d);
     }
-    void *makeBackup()
+    void makeBackupTS()
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
     }
 
-    void restore(SimulationBackup *backup)
+    void restoreTS(SimulationBackup *backup)
     {
         this->price = backup->price;
         this->rocket = backup->myRocket;
@@ -171,7 +171,7 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
-                setBuild(new Build(factory, distr(eng)));
+                setBuildTS(new Build(factory, distr(eng)));
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
@@ -403,7 +403,7 @@ public:
 
             // setTripDestination(destinations[destinationIndex]);
 
-            makeBackup();
+            makeBackupTS();
 
             beginCountdown();
         }
