@@ -69,7 +69,6 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
-    StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite;
     CommuncationNetwork *comNetwork;
 
     double price;
@@ -77,9 +76,29 @@ private:
     {
         buildCommand = c;
     }
-    void buildRocket()
+    void buildRocket(int rocketType)
     {
         rocket = buildCommand->executeBuild();
+
+        RocketLeaf* stage1;
+        RocketLeaf* stage2;
+        CompositeStage* cs = new CompositeStage(stage1);
+        cs->addRocketStage(stage2);
+
+        switch(rocketType)
+        {
+            case(1):
+                stage1->makeFalcon9Stage1();
+                stage2->makeFalcon9Stage2();
+                break;
+            case(2):
+                stage1->makeFalconHeavyStage1();
+                stage2->makeFalconHeavyStage2();
+                break;
+        }
+
+        rocket->addStage(cs);
+
     }
     void launch() {}
     void setTripDestination(Destination *d)
@@ -172,8 +191,11 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
+
                 setBuildTS(new Build(factory, distr(eng)));
-                this->buildRocket();
+                this->buildRocket(rocketIndex);
+
+
 
             CONFIGURE_ROCKET:
                 cout << "CONFIGURE ROCKET" << endl;
@@ -289,6 +311,7 @@ public:
 
                 // goto CONFIGURE_SPACECRAFT;
             }
+            // goto CONFIGURE_ROCKET;
 
             else
             {
