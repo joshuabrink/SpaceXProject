@@ -168,6 +168,7 @@ private:
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
+        return backupCount;
     }
 
     void restoreTS(SimulationBackup *backup)
