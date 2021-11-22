@@ -69,8 +69,8 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
-    CommuncationNetwork* comNetwork = new CommuncationNetwork();
-    
+    CommuncationNetwork *comNetwork = new CommuncationNetwork();
+
     double price;
     void setBuild(Command *c)
     {
@@ -174,7 +174,7 @@ public:
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
-                 if (configIndex == 0)
+                if (configIndex == 0)
                     goto MAIN_MENU;
 
                 else if (configIndex == 1)
@@ -236,178 +236,195 @@ public:
                         goto CONFIGURE_ROCKET;
                     else if (spaceCraftIndex == 1)
                     {
-                        // spaceCraft->addCargo(new Cargo());
-                        //spaceCraft->setTEC(new TransportEntityCargo());
-                        TransportEntityCollection* temp = spaceCraft->getTEC();
-                        temp->add(new Cargo());
-                        spaceCraft->setTEC(temp);
+                        int numAddCargo;
+                        cout << "Please enter the number of Cargo to add: ";
+                        cin >> numAddCargo;
+                        TECrewCollection *tec = spaceCraft->getTEC();
+                        for (int i = 0; i < numAddCargo; ++i)
+                        {
+                            TransportEntityCargo *addCargo = new TransportEntityCargo();
+                            tec->add(addCargo);
+                        }
+
+                        spaceCraft->setTEC(tec);
                     }
                     else if (spaceCraftIndex == 2)
                     {
-                        // spaceCraft->addCrew(new Crew());
-                        //spaceCraft->setTEC(spaceCraft->getTEC()->add(new TransportEntityCargo()));
-                        TransportEntityCollection* temp = spaceCraft->getTEC();
-                        temp->add(new Crew());
-                        spaceCraft->setTEC(temp);
-                    }
-                    goto CONFIGURE_SPACECRAFT;
-                }
-                goto CONFIGURE_ROCKET;
-            }
-            else
-            {
-                cout << "EDIT ROCKET" << endl;
-                string editMenu[3] = {"Change destination", "Edit Spacecraft", "Change Rocket Type"};
-                short editIndex = getMenu(editMenu, 3);
 
-                if (editIndex == 0)
-                    goto MAIN_MENU;
-                else if (editIndex == 1)
-                {
-                    string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
-                    short destinationIndex = getMenu(destinationMenu, 3);
+                        int numAddCrew;
+                        cout << "Please enter the number of Crew to add: ";
+                        cin >> numAddCrew;
+                        TECrewCollection *tec = spaceCraft->getTEC();
+                        for (int i = 0; i < numAddCrew; ++i)
+                        {
+                            TransportEntityCrew *addCrew = new TransportEntityCrew();
+                            tec->add(addCrew);
+                        }
+     
+                        spaceCraft->setTEC(tec);
 
-                    if (destinationIndex == 0)
-                        goto BUILD_MENU;
-
-                    destinationIndex--;
-
-                    setTripDestination(destinations[destinationIndex]);
-                }
-                else if (editIndex == 2)
-                {
-                    cout << "EDIT SPACECRAFT" << endl;
-                    string editSCMenu[2] = {"Edit Crew", "Edit Cargo"};
-                    short editSCIndex = getMenu(editSCMenu, 2);
-
-                    if (editSCIndex == 0)
-                        goto BUILD_MENU;
-                    else if (editSCIndex == 1)
-                    {
-                        cout << "CREW OPTIONS" << endl;
-                        string cOptions[3] = {"Display Crew", "Add Crew", "Remove Crew"};
-                        short cOptionsIndex = getMenu(cOptions, 3);
-                        if (cOptionsIndex == 0)
-                            goto BUILD_MENU;
-                        else if (cOptionsIndex == 1)
-                        {
-                            spaceCraft->getTEC()->display();
-                        }
-                        else if (cOptionsIndex == 2)
-                        {
-                            int numAddCrew;
-                            cout << "Please enter the number of Crew to add: ";
-                            cin >> numAddCrew;
-                            TECrewCollection *tec;
-                            for (int i = 0; i < numAddCrew; ++i)
-                            {
-                                TransportEntityCrew *addCrew = new TransportEntityCrew();
-                                tec->add(addCrew);
-                            }
-                            TransportEntityCollection *temp = spaceCraft->getTEC();
-                            spaceCraft->setTEC(tec);
-                            delete temp;
-                        }
-                        else if (cOptionsIndex == 3)
-                        {
-                            TransportEntityCollection *temp = spaceCraft->getTEC();
-                            spaceCraft->setTEC(nullptr);
-                            delete temp;
-                        }
-                        // Edit crew
-                    }
-                    else if (editSCIndex == 2)
-                    {
-                        cout << "CARGO OPTIONS" << endl;
-                        string cOptions[3] = {"Display Cargo", "Add Cargo", "Remove Cargo"};
-                        short cOptionsIndex = getMenu(cOptions, 3);
-                        if (cOptionsIndex == 0)
-                            goto BUILD_MENU;
-                        else if (cOptionsIndex == 1)
-                        {
-                            spaceCraft->getTEC()->display();
-                        }
-                        else if (cOptionsIndex == 2)
-                        {
-                            int numAddCargo;
-                            cout << "Please enter the number of Crew to add: ";
-                            cin >> numAddCargo;
-                            TECrewCollection *tec;
-                            for (int i = 0; i < numAddCargo; ++i)
-                            {
-                                TransportEntityCargo *addCargo = new TransportEntityCargo();
-                                tec->add(addCargo);
-                            }
-                            TransportEntityCollection *temp = spaceCraft->getTEC();
-                            spaceCraft->setTEC(tec);
-                            delete temp;
-                        }
-                        else if (cOptionsIndex == 3)
-                        {
-                            TransportEntityCollection *temp = spaceCraft->getTEC();
-                            spaceCraft->setTEC(nullptr);
-                            delete temp;
-                        }
                     }
                 }
+
+                goto CONFIGURE_SPACECRAFT;
             }
-
-            goto MAIN_MENU;
-        }
-        else if (choice == 1)
-        {
-
-            if (rocket == nullptr)
-            {
-                cout << "Need to build rocket before launching" << endl;
-                goto MAIN_MENU;
-            }
-            // cout << "0 - Go Back" << endl;
-
-// string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
-            // short destinationIndex = getMenu(destinationMenu, 3);
-
-            // if (destinationIndex == 0)
-            //     goto MAIN_MENU;
-
-            // destinationIndex--;
-
-            // setTripDestination(destinations[destinationIndex]);
-
-            makeBackup();
-
-            beginCountdown();
-        }
-        else if (choice == 2)
-        {
-            short backupIndex = 0;
-            cout << "0 - Go Back" << endl;
-            cout << "Choose backup:" << endl;
-            // for (int i = 0; i < backupCount; i++)
-            //{
-            // cout << (i + 1) << " - " << "Backup ";
-            cout << (1) << " - "
-                 << "Backup ";
-            // cout << backupStore->getAt(i)->myRocket->destination->name;
-            cout << backupStore->getMemento()->myRocket->getDestination();
-            //}
-
-            cin >> backupIndex;
-
-            if (backupIndex == 0)
-                goto MAIN_MENU;
-
-            backupIndex--;
-
-            // rocket = backupStore->getAt(backupIndex)->myRocket;
-            rocket = backupStore->getMemento()->myRocket;
-            // price = backupStore->getAt(backupIndex)->price;
-            price = backupStore->getMemento()->price;
-            goto MAIN_MENU;
+            goto CONFIGURE_ROCKET;
         }
         else
         {
-            return;
+            cout << "EDIT ROCKET" << endl;
+            string editMenu[3] = {"Change destination", "Edit Spacecraft", "Change Rocket Type"};
+            short editIndex = getMenu(editMenu, 3);
+
+            if (editIndex == 0)
+                goto MAIN_MENU;
+            else if (editIndex == 1)
+            {
+                string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+                short destinationIndex = getMenu(destinationMenu, 3);
+
+                if (destinationIndex == 0)
+                    goto BUILD_MENU;
+
+                destinationIndex--;
+
+                setTripDestination(destinations[destinationIndex]);
+            }
+            else if (editIndex == 2)
+            {
+                cout << "EDIT SPACECRAFT" << endl;
+                string editSCMenu[2] = {"Edit Crew", "Edit Cargo"};
+                short editSCIndex = getMenu(editSCMenu, 2);
+
+                if (editSCIndex == 0)
+                    goto BUILD_MENU;
+                else if (editSCIndex == 1)
+                {
+                    cout << "CREW OPTIONS" << endl;
+                    string cOptions[3] = {"Display Crew", "Add Crew", "Remove Crew"};
+                    short cOptionsIndex = getMenu(cOptions, 3);
+                    if (cOptionsIndex == 0)
+                        goto BUILD_MENU;
+                    else if (cOptionsIndex == 1)
+                    {
+                        spaceCraft->getTEC()->display();
+                    }
+                    else if (cOptionsIndex == 2)
+                    {
+                        int numAddCrew;
+                        cout << "Please enter the number of Crew to add: ";
+                        cin >> numAddCrew;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCrew; ++i)
+                        {
+                            TransportEntityCrew *addCrew = new TransportEntityCrew();
+                            tec->add(addCrew);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
+                    }
+                    else if (cOptionsIndex == 3)
+                    {
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(nullptr);
+                        delete temp;
+                    }
+                    // Edit crew
+                }
+                else if (editSCIndex == 2)
+                {
+                    cout << "CARGO OPTIONS" << endl;
+                    string cOptions[3] = {"Display Cargo", "Add Cargo", "Remove Cargo"};
+                    short cOptionsIndex = getMenu(cOptions, 3);
+                    if (cOptionsIndex == 0)
+                        goto BUILD_MENU;
+                    else if (cOptionsIndex == 1)
+                    {
+                        spaceCraft->getTEC()->display();
+                    }
+                    else if (cOptionsIndex == 2)
+                    {
+                        int numAddCargo;
+                        cout << "Please enter the number of Crew to add: ";
+                        cin >> numAddCargo;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCargo; ++i)
+                        {
+                            TransportEntityCargo *addCargo = new TransportEntityCargo();
+                            tec->add(addCargo);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
+                    }
+                    else if (cOptionsIndex == 3)
+                    {
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(nullptr);
+                        delete temp;
+                    }
+                }
+            }
         }
+
+        goto MAIN_MENU;
     }
-};
+    else if (choice == 1)
+    {
+
+        if (rocket == nullptr)
+        {
+            cout << "Need to build rocket before launching" << endl;
+            goto MAIN_MENU;
+        }
+        // cout << "0 - Go Back" << endl;
+
+        // string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+        // short destinationIndex = getMenu(destinationMenu, 3);
+
+        // if (destinationIndex == 0)
+        //     goto MAIN_MENU;
+
+        // destinationIndex--;
+
+        // setTripDestination(destinations[destinationIndex]);
+
+        makeBackup();
+
+        beginCountdown();
+    }
+    else if (choice == 2)
+    {
+        short backupIndex = 0;
+        cout << "0 - Go Back" << endl;
+        cout << "Choose backup:" << endl;
+        // for (int i = 0; i < backupCount; i++)
+        //{
+        // cout << (i + 1) << " - " << "Backup ";
+        cout << (1) << " - "
+             << "Backup ";
+        // cout << backupStore->getAt(i)->myRocket->destination->name;
+        cout << backupStore->getMemento()->myRocket->getDestination();
+        //}
+
+        cin >> backupIndex;
+
+        if (backupIndex == 0)
+            goto MAIN_MENU;
+
+        backupIndex--;
+
+        // rocket = backupStore->getAt(backupIndex)->myRocket;
+        rocket = backupStore->getMemento()->myRocket;
+        // price = backupStore->getAt(backupIndex)->price;
+        price = backupStore->getMemento()->price;
+        goto MAIN_MENU;
+    }
+    else
+    {
+        return;
+    }
+}
+}
+;
