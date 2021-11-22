@@ -2,7 +2,7 @@
 #define SPACECRAFTCREWDRAGON_H
 #include <vector>
 #include <iostream>
-#include "GroupProject/SpaceCraft.h"
+#include "SpaceCraft.h"
 #include "TransportEntityCollection.h"
 class SpaceCraftCrewDragon : public SpaceCraft
 {

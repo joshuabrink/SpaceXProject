@@ -125,7 +125,7 @@ public:
     };
 };
 
-#include "CommuncationNetwork.h"
+// #include "CommuncationNetwork.h"
 
 void StarlinkCommunication::registerNetwork(CommuncationNetwork *net)
 {

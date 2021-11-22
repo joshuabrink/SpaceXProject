@@ -1,8 +1,8 @@
 
 CXX=g++
 CFLAGS=-I. -Wall
-TARGET=main
-OBJS=main.cpp 
+TARGET=testSimulation
+OBJS=*.cpp 
 
 all: $(OBJS)
 	$(CXX) $(CFLAGS) $(OBJS) -o $(TARGET)
