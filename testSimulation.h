@@ -371,7 +371,18 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            spaceCraft->getTEC()->display();
+                            if(spaceCraft == nullptr)
+                            {
+                                if(spaceCraft->getTEC() == nullptr)
+                                    cout << "There is no crew to display";
+                                else
+                                    spaceCraft->getTEC()->display();
+                            }
+                            else
+                            {
+                                cout << "SpaceCraft has not been created" << endl;
+                            }
+
                         }
                         else if (cOptionsIndex == 2)
                         {
@@ -405,12 +416,22 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            spaceCraft->getTEC()->display();
+                            if(spaceCraft == nullptr)
+                            {
+                                if(spaceCraft->getTEC() == nullptr)
+                                    cout << "There is no crew to display";
+                                else
+                                    spaceCraft->getTEC()->display();
+                            }
+                            else
+                                cout << "SpaceCraft has not been created" << endl;
+
+
                         }
                         else if (cOptionsIndex == 2)
                         {
                             int numAddCargo;
-                            cout << "Please enter the number of Crew to add: ";
+                            cout << "Please enter the number of Cargo to add: ";
                             cin >> numAddCargo;
                             TECrewCollection *tec;
                             for (int i = 0; i < numAddCargo; ++i)

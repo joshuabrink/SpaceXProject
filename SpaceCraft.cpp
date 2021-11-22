@@ -3,11 +3,13 @@
 SpaceCraft::SpaceCraft() {
 	this->cost = 0;
 	this->capacity = 0;
+	tec = nullptr;
 }
 
 SpaceCraft::SpaceCraft(double Cost, int Capacity) {
 	this->cost = Cost;
 	this->capacity = Capacity;
+	tec = nullptr;
 }
 
 SpaceCraft::~SpaceCraft() {
