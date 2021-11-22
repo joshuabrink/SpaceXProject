@@ -2,6 +2,6 @@
 // Start Simulation
 int main()
 {
-    Simulation *sim = new Simulation();
+    testSimulation *sim = new testSimulation();
     sim->start();
 }
