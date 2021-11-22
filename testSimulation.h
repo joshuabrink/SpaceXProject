@@ -107,6 +107,7 @@ private:
     }
     void launch()
     {
+
         rocket->setLaunch(true);
         sleep(1);
         cout << "Rocket has reached 200 kilometers" << endl;
@@ -120,13 +121,44 @@ private:
             while (!(it == starlinkCollection->end()))
             {
                 cout << (*it)->getId() << " Satellite has been deployed" << endl;
+                ++it;
             }
         }
-         string inSpaceMenu[3] = {"Communicate between Satellites", "Broadcast to Satellites", "Communicate to Ground Users" };
-        // RETURN_FLIGHT:
-        
+    RETURN_FLIGHT:
+        string message;
+        string inSpaceMenu[3] = {"Communicate between Satellites", "Broadcast to Satellites", "Communicate to Ground Users"};
+        short inSpaceIndex = getMenu(inSpaceMenu, 3);
 
-        
+        if (inSpaceIndex == 0)
+        {
+            goto RETURN_FLIGHT;
+        }
+        else if (inSpaceIndex == 1)
+        {
+            cout << "Message: ";
+            cin >> message;
+            for (int i = 3; i < satelliteCount + 3; i++)
+            {
+                comNetwork->broadcast(message, i);
+            }
+        }
+        else if (inSpaceIndex == 2)
+        {
+            cout << "Message: ";
+            cin >> message;
+            comNetwork->broadcast(message);
+        }
+        else if (inSpaceIndex == 3)
+        {
+            cout << "Message: ";
+            cin >> message;
+            for (int i = 0; i < 3; i++)
+            {
+                comNetwork->broadcast(message, i);
+            }
+        }
+        goto RETURN_FLIGHT;
+        //
     }
     void setTripDestination(Destination *d)
     {
@@ -372,13 +404,12 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            if(spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
+                            if (spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
                             {
-                                    spaceCraft->getTEC()->display();
+                                spaceCraft->getTEC()->display();
                             }
                             else
                                 cout << "SpaceCraft has not been created or no transport entity collection has been created" << endl;
-
                         }
                         else if (cOptionsIndex == 2)
                         {
@@ -412,13 +443,12 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            if(spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
+                            if (spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
                             {
-                                    spaceCraft->getTEC()->display();
+                                spaceCraft->getTEC()->display();
                             }
                             else
                                 cout << "SpaceCraft has not been created or no transport entity collection has been created" << endl;
-
                         }
                         else if (cOptionsIndex == 2)
                         {
