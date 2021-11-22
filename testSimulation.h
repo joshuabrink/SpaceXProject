@@ -73,6 +73,7 @@ private:
     CoreBuilder* cb = new CoreBuilder();
 
     CommuncationNetwork *comNetwork;
+    StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite();
 
     double price;
     void setBuildTS(Command *c)
