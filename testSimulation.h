@@ -71,7 +71,6 @@ private:
     StarlinkCollection *groundUsers = new StarlinkVector();
     EngineBuilder* eb = new EngineBuilder();
     CoreBuilder* cb = new CoreBuilder();
-
     CommuncationNetwork *comNetwork;
     StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite();
 
