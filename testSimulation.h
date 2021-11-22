@@ -69,7 +69,8 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
-    CommuncationNetwork *comNetwork;
+    CommuncationNetwork *comNetwork; 
+    StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite();
 
     double price;
     void setBuildTS(Command *c)
