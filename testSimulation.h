@@ -107,6 +107,7 @@ private:
     }
     void launch()
     {
+        rocket->setLaunch(true);
         sleep(1);
         cout << "Rocket has reached 200 kilometers" << endl;
         sleep(1);
@@ -120,8 +121,10 @@ private:
             {
                 cout << (*it)->getId() << " Satellite has been deployed" << endl;
             }
-            
         }
+        RETURN_FLIGHT:
+        
+        
     }
     void setTripDestination(Destination *d)
     {
@@ -142,7 +145,7 @@ private:
     void beginCountdown()
     {
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 5; i > 0; i--)
         {
             cout << "Launch in " << i << endl;
             sleep(1);
