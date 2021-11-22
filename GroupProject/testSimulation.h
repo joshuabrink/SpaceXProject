@@ -5,8 +5,10 @@
 #include <unistd.h>
 #include "Payload.h"
 #include "StarlinkCommunication.h"
+#include "StarlinkGroundUser.h"
 #include "CollectionIterator.h"
 #include "StarlinkCollection.h"
+#include "StarlinkGroundUserCollection.h"
 #include "ConcreteSpaceCraftFactory.h"
 #include "TransportEntity.h"
 #include "TransportEntityCollection.h"
@@ -66,6 +68,9 @@ private:
     Rocket *rocket;
     SpaceCraft *spaceCraft;
     Command *buildCommand;
+    StarlinkCollection *groundUsers = new StarlinkVector();
+    CommuncationNetwork* comNetwork = new CommuncationNetwork();
+    
     double price;
     void setBuild(Command *c)
     {
@@ -231,7 +236,6 @@ public:
                         goto CONFIGURE_ROCKET;
                     else if (spaceCraftIndex == 1)
                     {
-<<<<<<< HEAD
                         // spaceCraft->addCargo(new Cargo());
                         //spaceCraft->setTEC(new TransportEntityCargo());
                         TransportEntityCollection* temp = spaceCraft->getTEC();
@@ -245,35 +249,6 @@ public:
                         TransportEntityCollection* temp = spaceCraft->getTEC();
                         temp->add(new Crew());
                         spaceCraft->setTEC(temp);
-=======
-                        int numAddCargo;
-                        cout << "Please enter the number of Cargo to add: ";
-                        cin >> numAddCargo;
-                        TECrewCollection *tec;
-                        for (int i = 0; i < numAddCargo; ++i)
-                        {
-                            TransportEntityCargo *addCargo = new TransportEntityCargo();
-                            tec->add(addCargo);
-                        }
-                        TransportEntityCollection *temp = spaceCraft->getTEC();
-                        spaceCraft->setTEC(tec);
-                        delete temp;
-                    }
-                    else if (spaceCraftIndex == 2)
-                    {
-                        int numAddCrew;
-                        cout << "Please enter the number of Crew to add: ";
-                        cin >> numAddCrew;
-                        TECrewCollection *tec;
-                        for (int i = 0; i < numAddCrew; ++i)
-                        {
-                            TransportEntityCrew *addCrew = new TransportEntityCrew();
-                            tec->add(addCrew);
-                        }
-                        TransportEntityCollection *temp = spaceCraft->getTEC();
-                        spaceCraft->setTEC(tec);
-                        delete temp;
->>>>>>> b986623c4ad249dbf4b6633c3ea5c5b5668d0264
                     }
                     goto CONFIGURE_SPACECRAFT;
                 }
@@ -389,7 +364,7 @@ public:
             }
             // cout << "0 - Go Back" << endl;
 
-            // string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+// string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
             // short destinationIndex = getMenu(destinationMenu, 3);
 
             // if (destinationIndex == 0)
