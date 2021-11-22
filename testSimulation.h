@@ -69,6 +69,8 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
+    CoreBuilder* cb = new CoreBuilder();
+    EngineBuilder* eb = new EngineBuilder();
     CommuncationNetwork *comNetwork;
 
     double price;
@@ -80,8 +82,8 @@ private:
     {
         rocket = buildCommand->executeBuild();
 
-        RocketLeaf* stage1;
-        RocketLeaf* stage2;
+        RocketLeaf* stage1 = new RocketLeaf(cb, eb);
+        RocketLeaf* stage2 = new RocketLeaf(cb, eb);
         CompositeStage* cs = new CompositeStage(stage1);
         cs->addRocketStage(stage2);
 
