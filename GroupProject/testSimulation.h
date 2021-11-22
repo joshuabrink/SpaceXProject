@@ -5,9 +5,10 @@
 #include <unistd.h>
 #include "Payload.h"
 #include "StarlinkCommunication.h"
-#include "StarlinkGroundUser.h"
+//#include "StarlinkGroundUser.h"
 #include "CollectionIterator.h"
 #include "StarlinkCollection.h"
+//#include "StarlinkGroundUserCollection.h"
 #include "ConcreteSpaceCraftFactory.h"
 #include "TransportEntity.h"
 #include "TransportEntityCollection.h"
@@ -44,20 +45,24 @@ public:
     Satellite *createSatellite() { return new Satellite(); };
 };
  */
-class TestSimulation
+class testSimulation
 {
 public:
-    TestSimulation()
+    testSimulation()
     {
         destinations[0] = new Earth();
         destinations[1] = new LowOrbit();
         destinations[2] = new ISS();
-
+        /*
         groundUsers->add(new StarlinkGroundUser());
         groundUsers->add(new StarlinkGroundUser());
         groundUsers->add(new StarlinkGroundUser());
 
-        comNetwork = new CommuncationNetwork(groundUsers);
+        comNetwork->addStarlinkCollection(groundUsers);*/
+    }
+
+    ~testSimulation(){
+
     }
 
 private:
@@ -67,11 +72,11 @@ private:
     Rocket *rocket;
     SpaceCraft *spaceCraft;
     Command *buildCommand;
-    StarlinkCollection *groundUsers = new StarlinkVector();
-    CommuncationNetwork *comNetwork;
+    //StarlinkCollection *groundUsers = new StarlinkVector();
+    //CommuncationNetwork *comNetwork = new CommuncationNetwork();
 
     double price;
-    void setBuildTS(Command *c)
+    void setBuild(Command *c)
     {
         buildCommand = c;
     }
@@ -84,13 +89,13 @@ private:
     {
         rocket->setDestination(d);
     }
-    void makeBackupTS()
+    void makeBackupTestSimulation()
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
     }
 
-    void restoreTS(SimulationBackup *backup)
+    void restoreTestSimulation(SimulationBackup *backup)
     {
         this->price = backup->getPrice();
         this->rocket = backup->getMyRocket();
@@ -125,6 +130,7 @@ private:
 public:
     void start()
     {
+
         random_device rd;
         default_random_engine eng(rd());
         uniform_real_distribution<double> distr(0, 1000);
@@ -171,7 +177,7 @@ public:
                 {
                     factory = new FalconHeavyFactory();
                 }
-                setBuildTS(new Build(factory, distr(eng)));
+                setBuild(new Build(factory, distr(eng)));
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
@@ -403,7 +409,7 @@ public:
 
             // setTripDestination(destinations[destinationIndex]);
 
-            makeBackupTS();
+            makeBackupTestSimulation();
 
             beginCountdown();
         }

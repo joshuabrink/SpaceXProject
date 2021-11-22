@@ -37,7 +37,7 @@ CommuncationNetwork::CommuncationNetwork(StarlinkCollection *col)
         {
             (*it)->registerNetwork(this);
 
-     ++(it);
+            ++(it);
         }
         (*it)->registerNetwork(this);
     }
@@ -80,5 +80,7 @@ void CommuncationNetwork::broadcast(std::string msg, int id)
         (*it)->receivedMessage(msg);
     }
 }
+
+
 
 #endif

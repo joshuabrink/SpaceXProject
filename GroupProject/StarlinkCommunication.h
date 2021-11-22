@@ -69,7 +69,10 @@ public:
  *  @return void
  *		
  */
-    void registerNetwork(CommuncationNetwork *);
+       void registerNetwork(CommuncationNetwork *net)
+       {
+           comunicationNetwork = net;
+       };
 
 
     /** 
@@ -123,14 +126,14 @@ public:
     {
         return id == rhs.id;
     };
+
+
+
 };
 
-// #include "CommuncationNetwork.h"
+//#include "CommuncationNetwork.h"
 
-void StarlinkCommunication::registerNetwork(CommuncationNetwork *net)
-{
-    comunicationNetwork = net;
-}
+
 // void StarlinkCommunication::receivedMessage(std::string message)
 // {
 // std::cout << id << " received message: " << message << std::endl;

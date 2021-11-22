@@ -1,7 +1,8 @@
 #include "testSimulation.h"
 // Start Simulation
+/*
 int main()
 {
-    TestSimulation *sim = new TestSimulation();
+    testSimulation *sim = new testSimulation();
     sim->start();
-}
+}*/
