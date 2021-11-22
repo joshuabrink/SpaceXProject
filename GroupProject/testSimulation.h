@@ -328,7 +328,7 @@ private:
     void beginCountdown()
     {
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 10; i > 0; i--)
         {
             cout << "Launch in " << i << endl;
             sleep(1);
@@ -404,7 +404,7 @@ public:
                 short configIndex = getMenu(configMenu, 2);
 
                 if (configIndex == 0)
-                    goto BUILD_MENU;
+                    goto MAIN_MENU;
                 else if (configIndex == 1)
                 {
                     short satelliteCount = 0;
@@ -414,7 +414,6 @@ public:
                     for (int i = 0; i < satelliteCount; i++)
                     {
                         satellites->add(satelliteFactory->createSatellite());
-                        // satelliteFactory->createSatellite();
                     }
                     goto CONFIGURE_ROCKET;
                 }
@@ -488,8 +487,8 @@ public:
             else
             {
                 cout << "EDIT ROCKET" << endl;
-                string editMenu[3] = {"Change destination", "Edit Spacecraft", "Change Rocket Type"};
-                short editIndex = getMenu(editMenu, 3);
+                string editMenu[2] = {"Change destination", "Edit Spacecraft"};
+                short editIndex = getMenu(editMenu, 2);
 
                 if (editIndex == 0)
                     goto MAIN_MENU;
