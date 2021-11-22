@@ -122,8 +122,8 @@ private:
                 cout << (*it)->getId() << " Satellite has been deployed" << endl;
             }
         }
-        RETURN_FLIGHT:
-        
+        // RETURN_FLIGHT:
+
         
     }
     void setTripDestination(Destination *d)
