@@ -28,7 +28,6 @@ private:
  *	@param[in] rocket, a Rocket pointer
  *  @param[in] price, The price of a rocket
  */
-	SimulationBackup(Rocket*,double);
 
 public:
 /**
@@ -36,9 +35,19 @@ public:
 *  @brief  SimulationBackup destructor
 *
 */
+    SimulationBackup(Rocket*,double);
+
 	virtual ~SimulationBackup();
 
-	
+    Rocket *getMyRocket() const;
+
+    void setMyRocket(Rocket *myRocket);
+
+    double getPrice() const;
+
+    void setPrice(double price);
+
+
 };
 
 
