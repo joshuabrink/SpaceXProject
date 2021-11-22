@@ -169,13 +169,22 @@ public:
                 this->buildRocket();
 
             CONFIGURE_ROCKET:
-                cout << "CONFIGURE ROCKET" << endl;
-                string configMenu[3] = {"Set Destination","Add Satellites", "Build Space Craft"};
-                short configIndex = getMenu(configMenu, 3);
-
-                if (configIndex == 0)
+                 if (configIndex == 0)
                     goto MAIN_MENU;
+
                 else if (configIndex == 1)
+                {
+                    string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+                    short destinationIndex = getMenu(destinationMenu, 3);
+
+                    if (destinationIndex == 0)
+                        goto BUILD_MENU;
+
+                    destinationIndex--;
+
+                    setTripDestination(destinations[destinationIndex]);
+                }
+                else if (configIndex == 2)
                 {
                     short satelliteCount = 0;
                     cout << "How many satellites? (1-60) ";
@@ -184,10 +193,9 @@ public:
                     for (int i = 0; i < satelliteCount; i++)
                     {
                         starlinkCollection->add(satelliteFactory->clone());
-                        // satelliteFactory->createSatellite();
                     }
                 }
-                else if (configIndex == 2)
+                else if (configIndex == 3)
                 {
                     SpaceCraftFactory *spaceCraftFactory;
                     cout << "SELECT SPACE CRAFT TYPE" << endl;
@@ -204,8 +212,9 @@ public:
                         spaceCraftFactory = new CrewDragonFactory();
                     }
 
-                    spaceCraft = spaceCraftFactory->createSpaceCraft(); // needs parameters
+                    spaceCraft = spaceCraftFactory->buildSpaceCraft();
 
+                CONFIGURE_SPACECRAFT:
                     string spaceCraftMenu[2] = {"Add Cargo"};
                     short spaceCraftIndex;
                     if (typeMenuIndex == 2)
@@ -217,19 +226,42 @@ public:
                     {
                         spaceCraftIndex = getMenu(spaceCraftMenu, 1);
                     }
+
                     if (spaceCraftIndex == 0)
                         goto CONFIGURE_ROCKET;
                     else if (spaceCraftIndex == 1)
                     {
-                        // spaceCraft->addCargo(new Cargo());
-                        spaceCraft->setTEC(new TransportEntityCargo());
+                        int numAddCargo;
+                        cout << "Please enter the number of Cargo to add: ";
+                        cin >> numAddCargo;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCargo; ++i)
+                        {
+                            TransportEntityCargo *addCargo = new TransportEntityCargo();
+                            tec->add(addCargo);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
                     }
                     else if (spaceCraftIndex == 2)
                     {
-                        // spaceCraft->addCrew(new Crew());
-                        spaceCraft->setTEC(spaceCraft->getTEC()->add(new TransportEntityCargo()));
+                        int numAddCrew;
+                        cout << "Please enter the number of Crew to add: ";
+                        cin >> numAddCrew;
+                        TECrewCollection *tec;
+                        for (int i = 0; i < numAddCrew; ++i)
+                        {
+                            TransportEntityCrew *addCrew = new TransportEntityCrew();
+                            tec->add(addCrew);
+                        }
+                        TransportEntityCollection *temp = spaceCraft->getTEC();
+                        spaceCraft->setTEC(tec);
+                        delete temp;
                     }
+                    goto CONFIGURE_SPACECRAFT;
                 }
+                goto CONFIGURE_ROCKET;
             }
             else
             {
@@ -325,12 +357,7 @@ public:
                             spaceCraft->setTEC(nullptr);
                             delete temp;
                         }
-                        // Edit cargo
                     }
-                }
-                else
-                {
-                    // change rocket type
                 }
             }
 
@@ -344,17 +371,17 @@ public:
                 cout << "Need to build rocket before launching" << endl;
                 goto MAIN_MENU;
             }
-            cout << "0 - Go Back" << endl;
+            // cout << "0 - Go Back" << endl;
 
-            string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
-            short destinationIndex = getMenu(destinationMenu, 3);
+            // string destinationMenu[3] = {"Low Orbit", "International Space Station", "Earth"};
+            // short destinationIndex = getMenu(destinationMenu, 3);
 
-            if (destinationIndex == 0)
-                goto MAIN_MENU;
+            // if (destinationIndex == 0)
+            //     goto MAIN_MENU;
 
-            destinationIndex--;
+            // destinationIndex--;
 
-            setTripDestination(destinations[destinationIndex]);
+            // setTripDestination(destinations[destinationIndex]);
 
             makeBackup();
 
