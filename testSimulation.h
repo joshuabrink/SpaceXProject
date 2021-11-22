@@ -371,17 +371,12 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            if(spaceCraft == nullptr)
+                            if(spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
                             {
-                                if(spaceCraft->getTEC() == nullptr)
-                                    cout << "There is no crew to display";
-                                else
                                     spaceCraft->getTEC()->display();
                             }
                             else
-                            {
-                                cout << "SpaceCraft has not been created" << endl;
-                            }
+                                cout << "SpaceCraft has not been created or no transport entity collection has been created" << endl;
 
                         }
                         else if (cOptionsIndex == 2)
@@ -416,16 +411,12 @@ public:
                             goto BUILD_MENU;
                         else if (cOptionsIndex == 1)
                         {
-                            if(spaceCraft == nullptr)
+                            if(spaceCraft != nullptr && spaceCraft->getTEC() != nullptr)
                             {
-                                if(spaceCraft->getTEC() == nullptr)
-                                    cout << "There is no crew to display";
-                                else
                                     spaceCraft->getTEC()->display();
                             }
                             else
-                                cout << "SpaceCraft has not been created" << endl;
-
+                                cout << "SpaceCraft has not been created or no transport entity collection has been created" << endl;
 
                         }
                         else if (cOptionsIndex == 2)
@@ -440,6 +431,7 @@ public:
                                 tec->add(addCargo);
                             }
                             TransportEntityCollection *temp = spaceCraft->getTEC();
+
                             spaceCraft->setTEC(tec);
                             delete temp;
                         }
