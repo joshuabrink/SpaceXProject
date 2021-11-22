@@ -69,10 +69,12 @@ private:
     SpaceCraft *spaceCraft;
     Command *buildCommand;
     StarlinkCollection *groundUsers = new StarlinkVector();
-    EngineBuilder* eb = new EngineBuilder();
-    CoreBuilder* cb = new CoreBuilder();
+    EngineBuilder *eb = new EngineBuilder();
+    CoreBuilder *cb = new CoreBuilder();
     CommuncationNetwork *comNetwork;
     StarlinkOrbitingSatellite *satelliteFactory = new StarlinkOrbitingSatellite();
+    StarlinkCollection *starlinkCollection = new StarlinkVector();
+    short satelliteCount = 0;
 
     double price;
     void setBuildTS(Command *c)
@@ -83,28 +85,44 @@ private:
     {
         rocket = buildCommand->executeBuild();
 
-        RocketLeaf* stage2 = new RocketLeaf(cb, eb);
-        RocketLeaf* stage1 = new RocketLeaf(cb, eb);
+        RocketLeaf *stage2 = new RocketLeaf(cb, eb);
+        RocketLeaf *stage1 = new RocketLeaf(cb, eb);
 
-        CompositeStage* cs = new CompositeStage(stage1);
+        CompositeStage *cs = new CompositeStage(stage1);
         cs->addRocketStage(stage2);
 
-        switch(rocketType)
+        switch (rocketType)
         {
-            case(1):
-                stage1->makeFalcon9Stage1();
-                stage2->makeFalcon9Stage2();
-                break;
-            case(2):
-                stage1->makeFalconHeavyStage1();
-                stage2->makeFalconHeavyStage2();
-                break;
+        case (1):
+            stage1->makeFalcon9Stage1();
+            stage2->makeFalcon9Stage2();
+            break;
+        case (2):
+            stage1->makeFalconHeavyStage1();
+            stage2->makeFalconHeavyStage2();
+            break;
         }
 
         rocket->addStage(cs);
-
     }
-    void launch() {}
+    void launch()
+    {
+        sleep(1);
+        cout << "Rocket has reached 200 kilometers" << endl;
+        sleep(1);
+        cout << "Rocket has reached 400 kilometers" << endl;
+        rocket->NextStage();
+        if (!starlinkCollection->isEmpty())
+        {
+            cout << "Rocket has deployed " << satelliteCount << " into lower orbit" << endl;
+            StarlinkCollection::iterator it = starlinkCollection->begin();
+            while (!(it == starlinkCollection->end()))
+            {
+                cout << (*it)->getId() << " Satellite has been deployed" << endl;
+            }
+            
+        }
+    }
     void setTripDestination(Destination *d)
     {
         rocket->setDestination(d);
@@ -176,7 +194,7 @@ public:
             {
                 RocketFactory *factory;
 
-                StarlinkCollection *starlinkCollection = new StarlinkVector();
+                starlinkCollection = new StarlinkVector();
 
                 cout << "SELECT ROCKET TYPE" << endl;
                 string rocketMenu[2] = {"Falcon 9", "Falcon Heavy"};
@@ -198,8 +216,6 @@ public:
 
                 setBuildTS(new Build(factory, distr(eng)));
                 this->buildRocket(rocketIndex);
-
-
 
             CONFIGURE_ROCKET:
                 cout << "CONFIGURE ROCKET" << endl;
@@ -225,7 +241,7 @@ public:
                 }
                 else if (configIndex == 2)
                 {
-                    short satelliteCount = 0;
+                    satelliteCount = 0;
                     cout << "How many satellites? (1-60) ";
                     cin >> satelliteCount;
 
