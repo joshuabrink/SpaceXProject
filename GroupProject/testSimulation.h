@@ -85,13 +85,13 @@ private:
     {
         rocket->setDestination(d);
     }
-    void *makeBackup()
+    void makeBackupTestSimulation()
     {
         backupStore->setMemento(new SimulationBackup(rocket, price));
         backupCount++;
     }
 
-    void restore(SimulationBackup *backup)
+    void restoreTestSimulation(SimulationBackup *backup)
     {
         this->price = backup->price;
         this->rocket = backup->myRocket;
@@ -404,7 +404,7 @@ public:
 
             // setTripDestination(destinations[destinationIndex]);
 
-            makeBackup();
+            makeBackupTestSimulation();
 
             beginCountdown();
         }
