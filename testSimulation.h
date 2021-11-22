@@ -122,6 +122,7 @@ private:
                 cout << (*it)->getId() << " Satellite has been deployed" << endl;
             }
         }
+         string inSpaceMenu[3] = {"Communicate between Satellites", "Broadcast to Satellites", "Communicate to Ground Users" };
         // RETURN_FLIGHT:
         
 
