@@ -50,9 +50,9 @@ class TestSimulation
 public:
     TestSimulation()
     {
-        destinations[0] = new Earth();
-        destinations[1] = new LowOrbit();
-        destinations[2] = new ISS();
+        destinations[0] = new LowOrbit();
+        destinations[1] = new ISS();
+        destinations[2] = new Earth();
 
         groundUsers->add(new StarlinkGroundUser());
         groundUsers->add(new StarlinkGroundUser());
@@ -109,56 +109,64 @@ private:
     {
 
         rocket->setLaunch(true);
+        cout << "Rocket has launched" << endl;
         sleep(1);
-        cout << "Rocket has reached 200 kilometers" << endl;
-        sleep(1);
-        cout << "Rocket has reached 400 kilometers" << endl;
+        cout << "Rocket is flying though atmosphere" << endl;
         rocket->NextStage();
+        sleep(1);
+        cout << "Rocket has reached destination" << endl;
+        sleep(1);
+        cout << "Deploying Payload:" << endl;
+        SpaceCraft *deploySpaceCraft = rocket->unloadSpaceCraft();
+        if (deploySpaceCraft != nullptr)
+        {
+            deploySpaceCraft->getTEC()->display();
+        }
+
         if (!starlinkCollection->isEmpty())
         {
-            cout << "Rocket has deployed " << satelliteCount << " into lower orbit" << endl;
+            cout << "Rocket has deployed " << satelliteCount << " satellites" << endl;
             StarlinkCollection::iterator it = starlinkCollection->begin();
             while (!(it == starlinkCollection->end()))
             {
                 cout << (*it)->getId() << " Satellite has been deployed" << endl;
                 ++it;
             }
-        }
-    RETURN_FLIGHT:
-        string message;
-        string inSpaceMenu[3] = {"Communicate between Satellites", "Broadcast to Satellites", "Communicate to Ground Users"};
-        short inSpaceIndex = getMenu(inSpaceMenu, 3);
 
-        if (inSpaceIndex == 0)
-        {
-            goto RETURN_FLIGHT;
-        }
-        else if (inSpaceIndex == 1)
-        {
-            cout << "Message: ";
-            cin >> message;
-            for (int i = 3; i < satelliteCount + 3; i++)
+        COMMUNICATE:
+            string message;
+            int id;
+            string inSpaceMenu[3] = {"Display Nodes", "Communicate to Communication Node", "Broadcast"};
+            short inSpaceIndex = getMenu(inSpaceMenu, 3);
+
+            if (inSpaceIndex == 0)
             {
-                comNetwork->broadcast(message, i);
+                return;
             }
-        }
-        else if (inSpaceIndex == 2)
-        {
-            cout << "Message: ";
-            cin >> message;
-            comNetwork->broadcast(message);
-        }
-        else if (inSpaceIndex == 3)
-        {
-            cout << "Message: ";
-            cin >> message;
-            for (int i = 0; i < 3; i++)
+            else if (inSpaceIndex == 1)
             {
-                comNetwork->broadcast(message, i);
+                StarlinkCollection::iterator it = starlinkCollection->begin();
+                while (!(it == starlinkCollection->end()))
+                {
+                    cout << (*it)->getId() << " communication node";
+                }
             }
+            else if (inSpaceIndex == 2)
+            {
+                cout << "Message: ";
+                cin >> message;
+                cout << "ID:";
+                cin >> id;
+                comNetwork->broadcast(message, id);
+            }
+            else if (inSpaceIndex == 3)
+            {
+                cout << "Message: ";
+                cin >> message;
+                comNetwork->broadcast(message);
+            }
+            goto COMMUNICATE;
         }
-        goto RETURN_FLIGHT;
-        //
     }
     void setTripDestination(Destination *d)
     {
@@ -213,20 +221,26 @@ public:
     MAIN_MENU:
         int choice = 0;
         cout << "MAIN MENU" << endl;
-        if (rocket == nullptr)
-            cout << "0 - Build Rocket" << endl;
-        else
-            cout << "0 - Edit Rocket" << endl;
+        cout << "0 - Exit Simulation" << endl;
 
-        cout << "1 - Save Rocket" << endl;
+        if (rocket == nullptr)
+            cout << "1 - Build Rocket" << endl;
+        else
+            cout << "1 - Edit Rocket" << endl;
+
         cout << "2 - Begin Launch" << endl;
         cout << "3 - Restore Previous Simulation" << endl;
-        cout << "4 - Exit Simulation" << endl;
+        if (rocket != nullptr)
+            cout << "4 - Save Rocket" << endl;
+
         cout << "Command: ";
         cin >> choice;
         cout << endl;
-
         if (choice == 0)
+        {
+            return;
+        }
+        else if (choice == 1)
         {
         BUILD_MENU:
             if (rocket == nullptr)
@@ -480,11 +494,7 @@ public:
 
             goto MAIN_MENU;
         }
-        else if (choice == 1)
-        {
-            cout << "Saving rocket at " << makeBackupTS() << endl;
-            goto MAIN_MENU;
-        }
+
         else if (choice == 2)
         {
 
@@ -508,24 +518,26 @@ public:
             makeBackupTS();
 
             beginCountdown();
+            goto MAIN_MENU;
         }
         else if (choice == 3)
+
         {
             short backupIndex = 0;
-            cout << "0 - Go Back" << endl;
             cout << "Choose backup:" << endl;
+            cout << "0 - Go Back" << endl;
+
             // for (int i = 0; i < backupCount; i++)
             //{
             // cout << (i + 1) << " - " << "Backup ";
-            //cout << (1) << " - " << "Backup ";
+            // cout << (1) << " - " << "Backup ";
             // cout << backupStore->getAt(i)->myRocket->destination->name;
-            //cout << backupStore->getMemento()->getMyRocket()->getDestination();
+            // cout << backupStore->getMemento()->getMyRocket()->getDestination();
             //}
-
 
             for (int i = 0; i < backupCount; ++i)
             {
-                cout << (i+1) << " - Backup" << endl;
+                cout << (i + 1) << " - Backup" << endl;
             }
 
             cin >> backupIndex;
@@ -543,9 +555,10 @@ public:
             price = backupStore->getMemento(backupIndex)->getPrice();
             goto MAIN_MENU;
         }
-        else
+        else if (choice == 4)
         {
-            return;
+            cout << "Saving rocket at " << makeBackupTS() << endl;
+            goto MAIN_MENU;
         }
     }
 };
