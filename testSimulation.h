@@ -511,22 +511,27 @@ public:
         }
         else if (choice == 3)
         {
+            if(backupCount==0){
+                cout<<"No backups stored, first create a backup."<<endl;
+                goto MAIN_MENU;
+            }
+            
             short backupIndex = 0;
             cout << "0 - Go Back" << endl;
             cout << "Choose backup:" << endl;
-            // for (int i = 0; i < backupCount; i++)
-            //{
-            // cout << (i + 1) << " - " << "Backup ";
-            //cout << (1) << " - " << "Backup ";
-            // cout << backupStore->getAt(i)->myRocket->destination->name;
-            //cout << backupStore->getMemento()->getMyRocket()->getDestination();
-            //}
-
-
-            for (int i = 0; i < backupCount; ++i)
+             for (int i = 0; i < backupCount; i++)
             {
-                cout << (i+1) << " - Backup" << endl;
+                cout << (i + 1) << " - " << "Backup ";
+                //cout << (1) << " - " << "Backup ";
+                cout << backupStore->getAt(i)->myRocket->destination->name;
+                cout << backupStore->getMemento()->getMyRocket()->getDestination();
             }
+
+
+            //for (int i = 0; i < backupCount; ++i)
+            //{
+            //    cout << (i+1) << " - Backup" << endl;
+            //}
 
             cin >> backupIndex;
 
@@ -541,6 +546,7 @@ public:
             rocket = backupStore->getMemento(backupIndex)->getMyRocket();
             // price = backupStore->getAt(backupIndex)->price;
             price = backupStore->getMemento(backupIndex)->getPrice();
+
             goto MAIN_MENU;
         }
         else
