@@ -19,6 +19,7 @@ public:
      * @return      void
      */
     void broadcast(std::string msg, int id = -1);
+    void display();
     // virtual Satellite *clone() = 0;
     // virtual SatelliteIterator *createIterator() = 0;
     // virtual void addList(Satellite *) = 0;
@@ -78,6 +79,24 @@ void CommuncationNetwork::broadcast(std::string msg, int id)
             ++(it);
         }
         (*it)->receivedMessage(msg);
+    }
+}
+
+void CommuncationNetwork::display()
+{
+    StarlinkCollection::iterator it = comunicationCollection->begin();
+    if (!comunicationCollection->isEmpty())
+    {
+        while (!(it == comunicationCollection->end()))
+        {
+                cout <<
+                (*it)->getId() << " is deployed" << endl;
+      
+      
+
+            ++(it);
+        }
+        // (*it)->receivedMessage(msg);
     }
 }
 

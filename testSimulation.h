@@ -37,7 +37,9 @@
 #include "TransportEntity.h"
 
 using namespace std;
-
+// Okay guys i have a list of things:
+//  - Display deployed cargo and crew at the destination the rocket reached
+//  - Test backup and restore
 /*
 class SatelliteFactory
 {
@@ -114,24 +116,17 @@ private:
         cout << "Rocket is flying though atmosphere" << endl;
         rocket->NextStage();
         sleep(1);
-        cout << "Rocket has reached destination" << endl;
+        cout << "Rocket has reached destination " << rocket->getDestination()->getDestination() << endl;
         sleep(1);
-        cout << "Deploying Payload:" << endl;
-        SpaceCraft *deploySpaceCraft = rocket->unloadSpaceCraft();
-        if (deploySpaceCraft != nullptr)
+        cout << "Deploying Payload" << endl;
+        // SpaceCraft *deploySpaceCraft = rocket->unloadSpaceCraft();
+        if (spaceCraft != nullptr)
         {
-            deploySpaceCraft->getTEC()->display();
+            spaceCraft->getTEC()->display();
         }
-
         if (!starlinkCollection->isEmpty())
         {
             cout << "Rocket has deployed " << satelliteCount << " satellites" << endl;
-            StarlinkCollection::iterator it = starlinkCollection->begin();
-            while (!(it == starlinkCollection->end()))
-            {
-                cout << (*it)->getId() << " Satellite has been deployed" << endl;
-                ++it;
-            }
 
         COMMUNICATE:
             string message;
@@ -145,11 +140,7 @@ private:
             }
             else if (inSpaceIndex == 1)
             {
-                StarlinkCollection::iterator it = starlinkCollection->begin();
-                while (!(it == starlinkCollection->end()))
-                {
-                    cout << (*it)->getId() << " communication node";
-                }
+               comNetwork->display();
             }
             else if (inSpaceIndex == 2)
             {
@@ -187,6 +178,11 @@ private:
 
     void beginCountdown()
     {
+        if (rocket->getDestination() == nullptr)
+        {
+            cout << "No destination set" << endl;
+            return;
+        }
 
         for (int i = 5; i > 0; i--)
         {
@@ -247,7 +243,7 @@ public:
             {
                 RocketFactory *factory;
 
-                starlinkCollection = new StarlinkVector();
+                // starlinkCollection = new StarlinkVector();
 
                 cout << "SELECT ROCKET TYPE" << endl;
                 string rocketMenu[2] = {"Falcon 9", "Falcon Heavy"};
@@ -301,8 +297,10 @@ public:
                     {
                         starlinkCollection->add(satelliteFactory->clone());
                     }
+                    comNetwork->addStarlinkCollection(starlinkCollection);
 
                     cout << satelliteCount << " Satellites Added" << endl;
+
                     cout << endl;
                     goto CONFIGURE_ROCKET;
                 }
@@ -523,14 +521,14 @@ public:
         else if (choice == 3)
 
         {
-            if(backupCount==0){
-                cout<<"No backups stored, first create a backup."<<endl;
+            if (backupCount == 0)
+            {
+                cout << "No backups stored, first create a backup." << endl;
                 goto MAIN_MENU;
             }
-            
+
             short backupIndex = 0;
             cout << "Choose backup:" << endl;
-<<<<<<< HEAD
             cout << "0 - Go Back" << endl;
 
             // for (int i = 0; i < backupCount; i++)
@@ -541,24 +539,23 @@ public:
             // cout << backupStore->getMemento()->getMyRocket()->getDestination();
             //}
 
-            for (int i = 0; i < backupCount; ++i)
+            // for (int i = 0; i < backupCount; ++i)
+            // {
+            //     cout << (i + 1) << " - Backup" << endl;
+
+            for (int i = 0; i < backupCount; i++)
             {
-                cout << (i + 1) << " - Backup" << endl;
-=======
-             for (int i = 0; i < backupCount; i++)
-            {
-                cout << (i + 1) << " - " << "Backup ";
-                //cout << (1) << " - " << "Backup ";
-                cout << backupStore->getAt(i)->myRocket->destination->name;
-                cout << backupStore->getMemento()->getMyRocket()->getDestination();
->>>>>>> ccaa0f56bc6016ec0bcab03e5d85f3fd3154ecc2
+                cout << (i + 1) << " - "
+                     << "Backup ";
+                // cout << (1) << " - " << "Backup ";
+                //  cout << backupStore->getAt(i)->myRocket->destination->name;
+                //  cout << backupStore->getMemento()->getMyRocket()->getDestination();
             }
 
-
-            //for (int i = 0; i < backupCount; ++i)
+            // for (int i = 0; i < backupCount; ++i)
             //{
-            //    cout << (i+1) << " - Backup" << endl;
-            //}
+            //     cout << (i+1) << " - Backup" << endl;
+            // }
 
             cin >> backupIndex;
 
